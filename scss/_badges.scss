@@ -1,0 +1,31 @@
+.state {
+  @apply inline-block px-4 py-1 font-semibold bg-gray-200 rounded-xl;
+  &.primary { @apply bg-primary-700 text-white; }
+  &.secondary { @apply bg-secondary-700 text-white; }
+  &.tertiary { @apply bg-tertiary-700 text-white; }
+  &.danger { @apply bg-red-500 text-white; }
+  &.warning { @apply bg-yellow-400 text-white; }
+  &.success { @apply bg-green-500 text-white; }
+  &.info { @apply bg-blue-500 text-white; }
+
+  &.primary-outline { @apply text-primary-700 border-2 border-primary-700 bg-transparent; }
+  &.secondary-outline { @apply text-secondary-700 border-2 border-secondary-700 bg-transparent; }
+  &.tertiary-outline { @apply text-tertiary-700 border-2 border-tertiary-700 bg-transparent; }
+  &.danger-outline { @apply text-red-500 border-2 border-red-500 bg-transparent; }
+  &.warning-outline { @apply text-yellow-400 border-2 border-yellow-400 bg-transparent; }
+  &.success-outline { @apply text-green-500 border-2 border-green-500 bg-transparent; }
+  &.info-outline { @apply text-blue-500 border-2 border-blue-500 bg-transparent; }
+
+  &.semi-primary { @apply bg-primary-700 text-primary-700 bg-opacity-30; }
+  &.semi-secondary { @apply bg-secondary-700 text-secondary-800 bg-opacity-30; }
+  &.semi-tertiary { @apply bg-tertiary-700 text-tertiary-700 bg-opacity-30; }
+  &.semi-danger { @apply bg-red-500 text-red-600 bg-opacity-30; }
+  &.semi-warning { @apply bg-yellow-400 text-yellow-600 bg-opacity-30; }
+  &.semi-success { @apply bg-green-500 text-green-600 bg-opacity-30; }
+  &.semi-info { @apply bg-blue-500 text-blue-600 bg-opacity-30; }
+  
+  &.has-icon {
+    @apply inline-flex flex-wrap items-center;
+  }
+  .icon { @apply ml-1 w-5 h-5; }
+}

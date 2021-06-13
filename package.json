@@ -1,0 +1,35 @@
+{
+  "name": "not-idea-ui",
+  "version": "1.0.0-alpha-1",
+  "description": "A Framework UI to start making beautiful things.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IsraelDCastro/not-idea-ui.git"
+  },
+  "keywords": [
+    "css",
+    "sass",
+    "responsive",
+    "tailwincss",
+    "components",
+    "ui",
+    "framework"
+  ],
+  "author": {
+    "name": "Israel De Castro Alfonso",
+    "email": "israeldalfons@gmail.com",
+    "url": "https://castrodev.netlify.app/"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/IsraelDCastro/not-idea-ui/issues"
+  },
+  "homepage": "https://github.com/IsraelDCastro/not-idea-ui#readme",
+  "dependencies": {
+    "user": "0.0.0"
+  }
+}

@@ -1,0 +1,64 @@
+.slider,
+.carousel {
+  @apply relative;
+}
+
+.content-slider {
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  aspect-ratio: 16/9;
+  @apply grid grid-flow-col overflow-x-auto w-full;
+  .slide {
+    scroll-snap-align: center;
+    aspect-ratio: 16/9;
+    @apply text-white h-full grid place-content-center;
+  }
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.dots {
+  @apply w-full absolute bottom-5 flex flex-wrap justify-center mt-5;
+  .dot {
+    @apply inline-block rounded-full w-4 h-4 mx-1 bg-gray-500 bg-opacity-80 shadow-md cursor-pointer transition-all ease-in-out duration-400 transform scale-100;
+    &:hover,
+    &.active {
+      transform: scale(1.25);
+      @apply bg-secondary-700 scale-125;
+    }
+  }
+}
+
+.btn-slide {
+  @apply transform -translate-y-1/2 cursor-pointer bg-gray-500 bg-opacity-20 w-10 h-10 rounded-md transition-all duration-400 ease-in-out absolute top-1/2;
+  &:hover {
+    @apply bg-opacity-50;
+  }
+  &.prev { @apply left-5; }
+  &.next { @apply right-5; }
+}
+
+.content-carousel {
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  @apply flex overflow-x-auto w-full;
+  .carousel-item {
+    scroll-snap-align: start;
+    @apply text-white h-32 grid place-content-center;
+    width: calc(25% - 10px);
+    flex: 0 0 calc(25% - 10px);
+  }
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.btn-carousel {
+  @apply transform -translate-y-1/2 cursor-pointer bg-gray-500 bg-opacity-20 w-10 h-10 rounded-md transition-all duration-400 ease-in-out absolute top-1/2;
+  &:hover {
+    @apply bg-opacity-50;
+  }
+  &.prev { @apply left-5; }
+  &.next { @apply right-5; }
+}

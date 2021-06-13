@@ -1,0 +1,21 @@
+.image {
+  @apply overflow-hidden;
+  &.is-rounded {
+    @apply rounded;
+  }
+  &.is-circle {
+    @apply rounded-full;
+  }
+  &.is-shadow {
+    @apply shadow-md;
+  }
+  figcaption {
+    @apply px-2 pt-1;
+  }
+  &.float-caption {
+    @apply relative;
+    figcaption {
+      @apply absolute left-0 right-0 bottom-0 z-10 p-4 bg-black bg-opacity-60 text-white;
+    }
+  }
+}

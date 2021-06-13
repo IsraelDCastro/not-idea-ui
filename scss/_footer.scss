@@ -1,0 +1,21 @@
+.footer {
+  @apply bg-white px-8 py-6;
+  .copyright { @apply mb-0; }
+  .footer-menu {
+    @apply space-x-2;
+    a {
+      @apply inline-block hover:text-primary-700 font-semibold transition-all duration-400 ease-in-out;
+    }
+  }
+  .social-media {
+    @apply flex space-x-2;
+    a {
+      @apply inline-block hover:text-primary-700 font-semibold transition-all duration-400 ease-in-out;
+    }
+  }
+  &.has-menu,
+  &.has-media,
+  &.has-media-menu {
+    @apply flex flex-wrap justify-between;
+  }
+}

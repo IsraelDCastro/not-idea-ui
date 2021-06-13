@@ -1,0 +1,480 @@
+.accordion {
+  @apply bg-white rounded-md overflow-hidden; }
+  .accordion .accordion-head {
+    @apply border-b border-gray-300 border-opacity-25 px-6 py-3 flex flex-wrap justify-between items-center; }
+    .accordion .accordion-head .open, .accordion .accordion-head .close {
+      @apply transform px-2 cursor-pointer rounded transition-all duration-500 ease-in-out; }
+      .accordion .accordion-head .open.rotate, .accordion .accordion-head .close.rotate {
+        @apply rotate-180; }
+    .accordion .accordion-head .open {
+      @apply text-2xl; }
+  .accordion.focused .accordion-head:focus {
+    @apply bg-primary-50 bg-opacity-10; }
+    .accordion.focused .accordion-head:focus + .accordion-content {
+      @apply opacity-100 h-full py-6 z-10; }
+    .accordion.focused .accordion-head:focus .open {
+      @apply transform rotate-180; }
+  .accordion .accordion-content {
+    @apply relative bg-gray-100 bg-opacity-50 px-6 py-0 opacity-0 border-l-4 border-primary-700 transition-all duration-500 ease-in-out;
+    z-index: -1;
+    height: 0px; }
+    .accordion .accordion-content.is-active {
+      @apply opacity-100 h-full py-6 z-10; }
+
+.alert {
+  @apply rounded bg-gray-200 p-6 shadow-alert relative; }
+  .alert p {
+    @apply mb-0; }
+  .alert.primary {
+    @apply bg-primary-700 text-white; }
+  .alert.secondary {
+    @apply bg-secondary-700 text-white; }
+  .alert.tertiary {
+    @apply bg-tertiary-700 text-white; }
+  .alert.danger {
+    @apply bg-red-500 text-white; }
+  .alert.warning {
+    @apply bg-yellow-300 text-white; }
+  .alert.success {
+    @apply bg-green-400 text-white; }
+  .alert.info {
+    @apply bg-blue-500 text-white; }
+  .alert.flat {
+    @apply rounded-none; }
+    .alert.flat .close-alert {
+      @apply rounded-none; }
+  .alert.full-rounded {
+    @apply rounded-2xl; }
+    .alert.full-rounded .close-alert {
+      @apply rounded-2xl; }
+  .alert .close-alert {
+    @apply inline-block w-6 h-6 cursor-pointer rounded p-1 absolute right-4 top-4 z-10 transition-all duration-400 ease-in-out; }
+    .alert .close-alert:hover {
+      @apply bg-red-700 text-white; }
+
+.state {
+  @apply inline-block px-4 py-1 font-semibold bg-gray-200 rounded-xl; }
+  .state.primary {
+    @apply bg-primary-700 text-white; }
+  .state.secondary {
+    @apply bg-secondary-700 text-white; }
+  .state.tertiary {
+    @apply bg-tertiary-700 text-white; }
+  .state.danger {
+    @apply bg-red-500 text-white; }
+  .state.warning {
+    @apply bg-yellow-400 text-white; }
+  .state.success {
+    @apply bg-green-500 text-white; }
+  .state.info {
+    @apply bg-blue-500 text-white; }
+  .state.primary-outline {
+    @apply text-primary-700 border-2 border-primary-700 bg-transparent; }
+  .state.secondary-outline {
+    @apply text-secondary-700 border-2 border-secondary-700 bg-transparent; }
+  .state.tertiary-outline {
+    @apply text-tertiary-700 border-2 border-tertiary-700 bg-transparent; }
+  .state.danger-outline {
+    @apply text-red-500 border-2 border-red-500 bg-transparent; }
+  .state.warning-outline {
+    @apply text-yellow-400 border-2 border-yellow-400 bg-transparent; }
+  .state.success-outline {
+    @apply text-green-500 border-2 border-green-500 bg-transparent; }
+  .state.info-outline {
+    @apply text-blue-500 border-2 border-blue-500 bg-transparent; }
+  .state.semi-primary {
+    @apply bg-primary-700 text-primary-700 bg-opacity-30; }
+  .state.semi-secondary {
+    @apply bg-secondary-700 text-secondary-800 bg-opacity-30; }
+  .state.semi-tertiary {
+    @apply bg-tertiary-700 text-tertiary-700 bg-opacity-30; }
+  .state.semi-danger {
+    @apply bg-red-500 text-red-600 bg-opacity-30; }
+  .state.semi-warning {
+    @apply bg-yellow-400 text-yellow-600 bg-opacity-30; }
+  .state.semi-success {
+    @apply bg-green-500 text-green-600 bg-opacity-30; }
+  .state.semi-info {
+    @apply bg-blue-500 text-blue-600 bg-opacity-30; }
+  .state.has-icon {
+    @apply inline-flex flex-wrap items-center; }
+  .state .icon {
+    @apply ml-1 w-5 h-5; }
+
+.button {
+  @apply bg-gray-200 hover:bg-gray-300 border-2 border-gray-200 hover:border-gray-300 rounded px-5 py-2 text-gray-700 inline-block cursor-pointer transition-all duration-400 ease-in-out; }
+  .button.button-primary {
+    @apply bg-primary-700 border-primary-700 text-white; }
+    .button.button-primary:hover {
+      @apply bg-primary-800 border-primary-800; }
+  .button.button-primary-outline {
+    @apply border-primary-700 text-primary-700 bg-transparent; }
+    .button.button-primary-outline:hover {
+      @apply bg-primary-700 text-white; }
+  .button.button-primary-flat {
+    @apply bg-primary-700 border-primary-700 text-white rounded-none; }
+    .button.button-primary-flat:hover {
+      @apply bg-primary-700; }
+  .button.button-primary-flat-outline {
+    @apply border-primary-700 text-primary-700 bg-transparent rounded-none; }
+    .button.button-primary-flat-outline:hover {
+      @apply bg-primary-700 text-white; }
+  .button.button-primary-rounded {
+    @apply bg-primary-700 border-primary-700 rounded-3xl text-white; }
+    .button.button-primary-rounded:hover {
+      @apply bg-primary-800 border-primary-800; }
+  .button.button-primary-rounded-outline {
+    @apply border-primary-700 text-primary-700 bg-transparent rounded-3xl; }
+    .button.button-primary-rounded-outline:hover {
+      @apply bg-primary-700 border-primary-700 text-white; }
+  .button.button-secondary {
+    @apply bg-secondary-700 border-secondary-700 text-white; }
+    .button.button-secondary:hover {
+      @apply bg-secondary-800 border-secondary-800; }
+  .button.button-secondary-outline {
+    @apply border-secondary-700 text-secondary-700 bg-transparent; }
+    .button.button-secondary-outline:hover {
+      @apply bg-secondary-700 text-white; }
+  .button.button-secondary-flat {
+    @apply bg-secondary-700 border-secondary-700 text-white rounded-none; }
+    .button.button-secondary-flat:hover {
+      @apply bg-secondary-800 border-secondary-800; }
+  .button.button-secondary-flat-outline {
+    @apply border-secondary-700 text-secondary-700 bg-transparent rounded-none; }
+    .button.button-secondary-flat-outline:hover {
+      @apply bg-secondary-700 text-white; }
+  .button.button-secondary-rounded {
+    @apply bg-secondary-700 border-secondary-700 rounded-3xl text-white; }
+    .button.button-secondary-rounded:hover {
+      @apply bg-secondary-800 border-secondary-800; }
+  .button.button-secondary-rounded-outline {
+    @apply border-secondary-700 text-secondary-700 bg-transparent rounded-3xl; }
+    .button.button-secondary-rounded-outline:hover {
+      @apply bg-secondary-700 border-secondary-700 text-white; }
+  .button.button-tertiary {
+    @apply bg-tertiary-700 border-tertiary-700 text-white; }
+    .button.button-tertiary:hover {
+      @apply bg-tertiary-800 border-tertiary-800; }
+  .button.button-tertiary-outline {
+    @apply border-tertiary-700 text-tertiary-700 bg-transparent; }
+    .button.button-tertiary-outline:hover {
+      @apply bg-tertiary-700 text-white; }
+  .button.button-tertiary-flat {
+    @apply bg-tertiary-700 border-tertiary-700 text-white rounded-none; }
+    .button.button-tertiary-flat:hover {
+      @apply bg-tertiary-800 border-tertiary-800; }
+  .button.button-tertiary-flat-outline {
+    @apply border-tertiary-700 text-tertiary-700 bg-transparent rounded-none; }
+    .button.button-tertiary-flat-outline:hover {
+      @apply bg-tertiary-700 text-white; }
+  .button.button-tertiary-rounded {
+    @apply bg-tertiary-700 border-tertiary-700 rounded-3xl text-white; }
+    .button.button-tertiary-rounded:hover {
+      @apply bg-tertiary-800 border-tertiary-800; }
+  .button.button-tertiary-rounded-outline {
+    @apply border-tertiary-700 text-tertiary-700 bg-transparent rounded-3xl; }
+    .button.button-tertiary-rounded-outline:hover {
+      @apply bg-tertiary-700 border-tertiary-700 text-white; }
+  .button.button-danger {
+    @apply bg-red-500 border-red-500 text-white; }
+    .button.button-danger:hover {
+      @apply bg-red-600 border-red-600; }
+  .button.button-danger-outline {
+    @apply border-red-500 text-red-500 bg-transparent; }
+    .button.button-danger-outline:hover {
+      @apply bg-red-500 text-white; }
+  .button.button-danger-flat {
+    @apply bg-red-500 border-red-500 text-white rounded-none; }
+    .button.button-danger-flat:hover {
+      @apply bg-red-600 border-red-600; }
+  .button.button-danger-flat-outline {
+    @apply border-red-500 text-red-500 bg-transparent rounded-none; }
+    .button.button-danger-flat-outline:hover {
+      @apply bg-red-500 text-white; }
+  .button.button-danger-rounded {
+    @apply bg-red-500 border-red-500 rounded-3xl text-white; }
+    .button.button-danger-rounded:hover {
+      @apply bg-red-600 border-red-600; }
+  .button.button-danger-rounded-outline {
+    @apply border-red-500 text-red-500 bg-transparent rounded-3xl; }
+    .button.button-danger-rounded-outline:hover {
+      @apply bg-red-500 border-red-500 text-white; }
+  .button.button-warning {
+    @apply bg-yellow-400 border-yellow-400 text-white; }
+    .button.button-warning:hover {
+      @apply bg-yellow-500 border-yellow-500; }
+  .button.button-warning-outline {
+    @apply border-yellow-400 text-yellow-400 bg-transparent; }
+    .button.button-warning-outline:hover {
+      @apply bg-yellow-400 text-white; }
+  .button.button-warning-flat {
+    @apply bg-yellow-400 border-yellow-400 text-white rounded-none; }
+    .button.button-warning-flat:hover {
+      @apply bg-yellow-500 border-yellow-500; }
+  .button.button-warning-flat-outline {
+    @apply border-yellow-400 text-yellow-400 bg-transparent rounded-none; }
+    .button.button-warning-flat-outline:hover {
+      @apply bg-yellow-400 text-white; }
+  .button.button-warning-rounded {
+    @apply bg-yellow-400 border-yellow-400 rounded-3xl text-white; }
+    .button.button-warning-rounded:hover {
+      @apply bg-yellow-500 border-yellow-500; }
+  .button.button-warning-rounded-outline {
+    @apply border-yellow-400 text-yellow-400 bg-transparent rounded-3xl; }
+    .button.button-warning-rounded-outline:hover {
+      @apply bg-yellow-400 border-yellow-400 text-white; }
+  .button.button-success {
+    @apply bg-green-500 border-green-500 text-white; }
+    .button.button-success:hover {
+      @apply bg-green-600 border-green-600; }
+  .button.button-success-outline {
+    @apply border-green-500 text-green-500 bg-transparent; }
+    .button.button-success-outline:hover {
+      @apply bg-green-500 text-white; }
+  .button.button-success-flat {
+    @apply bg-green-500 border-green-500 text-white rounded-none; }
+    .button.button-success-flat:hover {
+      @apply bg-green-600 border-green-600; }
+  .button.button-success-flat-outline {
+    @apply border-green-500 text-green-500 bg-transparent rounded-none; }
+    .button.button-success-flat-outline:hover {
+      @apply bg-green-500 text-white; }
+  .button.button-success-rounded {
+    @apply bg-green-500 border-green-500 rounded-3xl text-white; }
+    .button.button-success-rounded:hover {
+      @apply bg-green-500 border-green-500; }
+  .button.button-success-rounded-outline {
+    @apply border-green-500 text-green-500 bg-transparent rounded-3xl; }
+    .button.button-success-rounded-outline:hover {
+      @apply bg-green-500 border-green-500 text-white; }
+  .button.button-info {
+    @apply bg-blue-500 border-blue-500 text-white; }
+    .button.button-info:hover {
+      @apply bg-blue-600 border-blue-600; }
+  .button.button-info-outline {
+    @apply border-blue-500 text-blue-500 bg-transparent; }
+    .button.button-info-outline:hover {
+      @apply bg-blue-500 text-white; }
+  .button.button-info-flat {
+    @apply bg-blue-500 border-blue-500 text-white rounded-none; }
+    .button.button-info-flat:hover {
+      @apply bg-blue-600 border-blue-600; }
+  .button.button-info-flat-outline {
+    @apply border-blue-500 text-blue-500 bg-transparent rounded-none; }
+    .button.button-info-flat-outline:hover {
+      @apply bg-blue-500 text-white; }
+  .button.button-info-rounded {
+    @apply bg-blue-500 border-blue-500 rounded-3xl text-white; }
+    .button.button-info-rounded:hover {
+      @apply bg-blue-600 border-blue-600; }
+  .button.button-info-rounded-outline {
+    @apply border-blue-500 text-blue-500 bg-transparent rounded-3xl; }
+    .button.button-info-rounded-outline:hover {
+      @apply bg-blue-500 border-blue-500 text-white; }
+  .button.is-small {
+    @apply text-sm px-3 py-1; }
+  .button.is-large {
+    @apply text-xl px-6 py-3; }
+  .button[disabled] {
+    @apply opacity-80 cursor-not-allowed; }
+
+.card {
+  @apply bg-white shadow rounded overflow-hidden; }
+  .card .card-header {
+    aspect-ratio: 16/9;
+    @apply overflow-hidden; }
+  .card .card-content {
+    @apply p-6; }
+    .card .card-content .card-title {
+      @apply text-2xl text-primary-700 font-semibold mb-2; }
+    .card .card-content p:not(:last-child) {
+      @apply mb-5; }
+  .card .card-footer {
+    @apply flex flex-wrap justify-between border-t border-gray-200 border-opacity-50 p-6; }
+  .card.card-image {
+    @apply relative bg-cover bg-center bg-no-repeat h-48; }
+    .card.card-image .card-content {
+      @apply absolute left-0 bottom-0 text-white p-4 bg-black bg-opacity-50; }
+      .card.card-image .card-content .card-title {
+        @apply text-white text-lg; }
+      .card.card-image .card-content p {
+        @apply mb-0 text-sm leading-none; }
+    .card.card-image .card-category {
+      @apply absolute right-2 top-2 text-white px-4 py-1 bg-primary-700 rounded-3xl text-sm; }
+  .card.card-user {
+    @apply p-4; }
+    .card.card-user .card-head {
+      @apply flex flex-wrap; }
+      .card.card-user .card-head h5 {
+        @apply font-semibold text-primary-900; }
+      .card.card-user .card-head p {
+        @apply text-sm text-gray-500; }
+      .card.card-user .card-head .user-profile {
+        @apply w-10 h-10 overflow-hidden rounded-full shadow mr-2; }
+    .card.card-user .card-content {
+      @apply py-4 px-0; }
+    .card.card-user .card-footer {
+      @apply pt-4 pb-0 px-0; }
+
+.slider,
+.carousel {
+  @apply relative; }
+
+.content-slider {
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  aspect-ratio: 16/9;
+  @apply grid grid-flow-col overflow-x-auto w-full; }
+  .content-slider .slide {
+    scroll-snap-align: center;
+    aspect-ratio: 16/9;
+    @apply text-white h-full grid place-content-center; }
+  .content-slider::-webkit-scrollbar {
+    display: none; }
+
+.dots {
+  @apply w-full absolute bottom-5 flex flex-wrap justify-center mt-5; }
+  .dots .dot {
+    @apply inline-block rounded-full w-4 h-4 mx-1 bg-gray-500 bg-opacity-80 shadow-md cursor-pointer transition-all ease-in-out duration-400 transform scale-100; }
+    .dots .dot:hover, .dots .dot.active {
+      transform: scale(1.25);
+      @apply bg-secondary-700 scale-125; }
+
+.btn-slide {
+  @apply transform -translate-y-1/2 cursor-pointer bg-gray-500 bg-opacity-20 w-10 h-10 rounded-md transition-all duration-400 ease-in-out absolute top-1/2; }
+  .btn-slide:hover {
+    @apply bg-opacity-50; }
+  .btn-slide.prev {
+    @apply left-5; }
+  .btn-slide.next {
+    @apply right-5; }
+
+.content-carousel {
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  @apply flex overflow-x-auto w-full; }
+  .content-carousel .carousel-item {
+    scroll-snap-align: start;
+    @apply text-white h-32 grid place-content-center;
+    width: calc(25% - 10px);
+    flex: 0 0 calc(25% - 10px); }
+  .content-carousel::-webkit-scrollbar {
+    display: none; }
+
+.btn-carousel {
+  @apply transform -translate-y-1/2 cursor-pointer bg-gray-500 bg-opacity-20 w-10 h-10 rounded-md transition-all duration-400 ease-in-out absolute top-1/2; }
+  .btn-carousel:hover {
+    @apply bg-opacity-50; }
+  .btn-carousel.prev {
+    @apply left-5; }
+  .btn-carousel.next {
+    @apply right-5; }
+
+.footer {
+  @apply bg-white px-8 py-6; }
+  .footer .copyright {
+    @apply mb-0; }
+  .footer .footer-menu {
+    @apply space-x-2; }
+    .footer .footer-menu a {
+      @apply inline-block hover:text-primary-700 font-semibold transition-all duration-400 ease-in-out; }
+  .footer .social-media {
+    @apply flex space-x-2; }
+    .footer .social-media a {
+      @apply inline-block hover:text-primary-700 font-semibold transition-all duration-400 ease-in-out; }
+  .footer.has-menu, .footer.has-media, .footer.has-media-menu {
+    @apply flex flex-wrap justify-between; }
+
+.form {
+  @apply p-8 rounded bg-white; }
+
+.double-field {
+  @apply flex flex-wrap justify-between; }
+  .double-field .field {
+    width: calc(50% - 10px);
+    flex: 0 0 calc(50% - 10px); }
+
+.field:not(:last-child) {
+  @apply mb-4; }
+.field.field-button {
+  @apply mt-6; }
+
+.label {
+  @apply mb-1 block font-semibold; }
+
+.input, .textarea, .select-inner {
+  @apply w-full text-c-base px-5 py-2 rounded bg-gray-100 border border-gray-200 border-opacity-60 outline-none focus:border-primary-400; }
+
+.textarea {
+  @apply resize-y min-h-24 max-h-32; }
+
+.radio-group,
+.check-group {
+  @apply flex flex-wrap; }
+  .radio-group > *:not(:last-child),
+  .check-group > *:not(:last-child) {
+    @apply mr-3; }
+  .radio-group .checkbox,
+  .radio-group .radio,
+  .check-group .checkbox,
+  .check-group .radio {
+    @apply cursor-pointer; }
+  .radio-group .label,
+  .check-group .label {
+    @apply inline-block font-normal ml-2 cursor-pointer; }
+
+.has-icon .input-icon {
+  @apply relative; }
+  .has-icon .input-icon .icon {
+    @apply inline-block text-gray-500 w-6 h-6 absolute left-2 top-2; }
+  .has-icon .input-icon .input {
+    @apply pl-10; }
+
+.has-button .input-button {
+  @apply flex; }
+  .has-button .input-button .input {
+    @apply rounded-tr-none rounded-br-none; }
+  .has-button .input-button .button {
+    @apply rounded-tl-none rounded-bl-none; }
+
+.has-select .input-select {
+  @apply flex; }
+  .has-select .input-select .select-inner {
+    @apply rounded-tr-none rounded-br-none w-3/12 pl-2 pr-0 bg-white border-opacity-90; }
+  .has-select .input-select .input {
+    @apply rounded-tl-none rounded-bl-none; }
+
+.has-select-button .input-select-button {
+  @apply flex; }
+  .has-select-button .input-select-button .select-inner {
+    @apply rounded-tr-none rounded-br-none w-3/12 pl-2 pr-0 bg-white border-opacity-90; }
+  .has-select-button .input-select-button .input {
+    @apply rounded-none; }
+  .has-select-button .input-select-button .button {
+    @apply rounded-tl-none rounded-bl-none; }
+
+.image {
+  @apply overflow-hidden; }
+  .image.is-rounded {
+    @apply rounded; }
+  .image.is-circle {
+    @apply rounded-full; }
+  .image.is-shadow {
+    @apply shadow-md; }
+  .image figcaption {
+    @apply px-2 pt-1; }
+  .image.float-caption {
+    @apply relative; }
+    .image.float-caption figcaption {
+      @apply absolute left-0 right-0 bottom-0 z-10 p-4 bg-black bg-opacity-60 text-white; }
+
+.list {
+  @apply pl-4; }
+  .list.disordered {
+    @apply list-disc; }
+    .list.disordered ul {
+      @apply list-circle pl-6; }
+  .list.ordered {
+    @apply list-decimal; }
+    .list.ordered ol {
+      @apply list-decimal pl-6; }

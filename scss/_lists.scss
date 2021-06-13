@@ -1,0 +1,15 @@
+.list {
+  @apply pl-4;
+  &.disordered {
+    @apply list-disc;
+    ul {
+      @apply list-circle pl-6;
+    }
+  }
+  &.ordered {
+    @apply list-decimal;
+    ol {
+      @apply list-decimal pl-6;
+    }
+  }
+}
