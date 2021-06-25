@@ -22,7 +22,7 @@
 }
 
 .input, .textarea, .select-inner {
-  @apply w-full text-c-base px-5 py-2 rounded bg-gray-100 border border-gray-200 border-opacity-60 outline-none focus:border-primary-400;
+  @apply w-full text-c-base px-5 py-2 rounded bg-gray-100 border border-gray-200/60 outline-none focus:border-primary-400;
 }
 
 .textarea {
@@ -67,7 +67,7 @@
   .input-select {
     @apply flex;
     .select-inner {
-      @apply rounded-tr-none rounded-br-none w-3/12 pl-2 pr-0 bg-white border-opacity-90;
+      @apply rounded-tr-none rounded-br-none w-3/12 pl-2 pr-0 bg-white/90;
     }
     .input {
       @apply rounded-tl-none rounded-bl-none;
@@ -78,7 +78,7 @@
   .input-select-button {
     @apply flex;
     .select-inner {
-      @apply rounded-tr-none rounded-br-none w-3/12 pl-2 pr-0 bg-white border-opacity-90;
+      @apply rounded-tr-none rounded-br-none w-3/12 pl-2 pr-0 bg-white/90;
     }
     .input {
       @apply rounded-none;

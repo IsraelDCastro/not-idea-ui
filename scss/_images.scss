@@ -15,7 +15,7 @@
   &.float-caption {
     @apply relative;
     figcaption {
-      @apply absolute left-0 right-0 bottom-0 z-10 p-4 bg-black bg-opacity-60 text-white;
+      @apply absolute left-0 right-0 bottom-0 z-10 p-4 bg-black/60 text-white;
     }
   }
 }

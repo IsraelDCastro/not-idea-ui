@@ -1,0 +1,24 @@
+.comment {
+  @apply bg-white shadow rounded;
+  .comment-head {
+    @apply relative p-6 flex flex-wrap items-center;
+    .image {
+      @apply w-16 h-16 mr-2;
+    }
+    .name {
+      @apply font-semibold;
+    }
+    .profession {
+      @apply text-sm text-gray-500 mb-0 leading-none;
+    }
+    .date {
+      @apply absolute top-4 right-4 z-1 text-gray-400 text-sm;
+    }
+  }
+  .comment-content {
+    @apply p-6 border-t border-b border-gray-200/50;
+  }
+  .comment-footer {
+    @apply p-6 flex flex-wrap justify-end space-x-4;
+  }
+}

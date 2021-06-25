@@ -21,7 +21,7 @@
 .dots {
   @apply w-full absolute bottom-5 flex flex-wrap justify-center mt-5;
   .dot {
-    @apply inline-block rounded-full w-4 h-4 mx-1 bg-gray-500 bg-opacity-80 shadow-md cursor-pointer transition-all ease-in-out duration-400 transform scale-100;
+    @apply inline-block rounded-full w-4 h-4 mx-1 bg-gray-500/80 shadow-md cursor-pointer transition-all ease-in-out duration-400 transform scale-100;
     &:hover,
     &.active {
       transform: scale(1.25);

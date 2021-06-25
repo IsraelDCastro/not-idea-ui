@@ -1,7 +1,7 @@
 .accordion {
   @apply bg-white rounded-md overflow-hidden;
   .accordion-head {
-    @apply border-b border-gray-300 border-opacity-25 px-6 py-3 flex flex-wrap justify-between items-center;
+    @apply border-b border-gray-300/25 px-6 py-3 flex flex-wrap justify-between items-center;
     .open, .close {
       @apply transform px-2 cursor-pointer rounded transition-all duration-500 ease-in-out;
       &.rotate {
@@ -14,7 +14,7 @@
   }
   &.focused {
     .accordion-head:focus {
-      @apply bg-primary-50 bg-opacity-10;
+      @apply bg-primary-50/10;
       + .accordion-content {
         @apply opacity-100 h-full py-6 z-10;
       }
@@ -24,7 +24,7 @@
     }
   }
   .accordion-content {
-    @apply relative bg-gray-100 bg-opacity-50 px-6 py-0 opacity-0 border-l-4 border-primary-700 transition-all duration-500 ease-in-out;
+    @apply relative bg-gray-100/50 px-6 py-0 opacity-0 border-l-4 border-primary-700 transition-all duration-500 ease-in-out;
     z-index: -1;
     height: 0px;
     &.is-active {

@@ -1,7 +1,7 @@
 {
   "name": "not-idea-ui",
   "version": "1.0.0-alpha-1",
-  "description": "A Framework UI to start making beautiful things.",
+  "description": "A Framework UI to start making beautiful things. Based and created with TailwindCSS.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -17,7 +17,9 @@
     "tailwincss",
     "components",
     "ui",
-    "framework"
+    "framework",
+    "tailwind",
+    "tailwindcss"
   ],
   "author": {
     "name": "Israel De Castro Alfonso",
@@ -28,8 +30,5 @@
   "bugs": {
     "url": "https://github.com/IsraelDCastro/not-idea-ui/issues"
   },
-  "homepage": "https://github.com/IsraelDCastro/not-idea-ui#readme",
-  "dependencies": {
-    "user": "0.0.0"
-  }
+  "homepage": "https://not-idea-ui.netlify.app/"
 }
