@@ -1,4 +1,4 @@
-#### Docs [Español](https://stackedit.io/app#espanol) / [English](https://stackedit.io/app#english)
+#### Docs [Español](https://github.com/IsraelDCastro/not-idea-ui#espanol) / [English](https://github.com/IsraelDCastro/not-idea-ui#english)
 
 # [Not Idea UI](#espanol)
   
