@@ -15,13 +15,13 @@ Documentación [Ver componentes](#)
 
 ### CDN
 
-##### Directo en tu archivo CSS.
+#### Directo en tu archivo CSS.
 
 `@import "https://not-idea-ui.netlify.app/css/not-idea-ui.css"`
 
 `@import "https://not-idea-ui.netlify.app/css/not-idea-ui.min.css"`
 
-##### Directo en tu archivo html.
+#### Directo en tu archivo html.
 
 `<link rel="stylesheet" href="https://not-idea-ui.netlify.app/css/not-idea-ui.css">`
 
@@ -35,19 +35,19 @@ Debes instalarlo con `npm install not-idea-ui` o `yarn add not-idea-ui`. Luego d
 
 Puedes importarlo en tu CSS o en tu archivo SCSS, de las siguientes maneras.
 
-##### CSS
+#### CSS
 
 ![Alt Importarlo como CSS](https://not-idea-ui.netlify.app/images/css-min-not-idea-ui.webp)
 
-##### TailwindCSS para usar tus propios estilos (CSS)
+#### TailwindCSS para usar tus propios estilos (CSS)
 
 ![Alt Importarlo como CSS al estilo](https://not-idea-ui.netlify.app/images/css-tailwindcss-not-idea-ui.webp)
 
-##### TailwindCSS para usar tus propios estilos (SCSS)
+#### TailwindCSS para usar tus propios estilos (SCSS)
 
 ![Alt Importarlo como SCSS al estilo](https://not-idea-ui.netlify.app/images/scss-tailwindcss-not-idea-ui.webp)
 
-#### Nota importante
+## Nota importante
 
 Al utilizar la preferencia de TailwindCSS, necesitas agregar los siguientes estilos que he predifinido en tu tailwind.config.js, para evitar errores de que no existe cierta clase.
 
@@ -56,7 +56,7 @@ Puntos a tomar en cuenta:
 -   Tener al menos la versión "^2.2.2"
 -   Debes teneer mode: "jit" activado
 
-##### tailwind.config.js
+#### tailwind.config.js
 
 ```
 theme:  {
