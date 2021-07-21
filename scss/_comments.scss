@@ -21,4 +21,7 @@
   .comment-footer {
     @apply p-6 flex flex-wrap justify-end space-x-4;
   }
+  .comment-respond {
+    @apply ml-10 border-l border-gray-300/50 bg-gray-100;
+  }
 }

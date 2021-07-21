@@ -4,6 +4,12 @@
   &.button-primary {
     @apply bg-primary-700 border-primary-700 text-white;
     &:hover { @apply bg-primary-800 border-primary-800; }
+    &.semi-transparent {
+      @apply bg-primary-500 border-primary-300 bg-opacity-20 border-opacity-20 text-primary-700;
+      &:hover {
+        @apply bg-opacity-50 border-opacity-50;
+      }
+    }
   }
   &.button-primary-outline {
     @apply border-primary-700 text-primary-700 bg-transparent ;
@@ -12,6 +18,12 @@
   &.button-primary-flat {
     @apply bg-primary-700 border-primary-700 text-white rounded-none;
     &:hover { @apply bg-primary-700; }
+    &.semi-transparent {
+      @apply bg-primary-500 border-primary-300 bg-opacity-20 border-opacity-20 text-primary-700;
+      &:hover {
+        @apply bg-opacity-50 border-opacity-50;
+      }
+    }
   }
   &.button-primary-flat-outline {
     @apply border-primary-700 text-primary-700 bg-transparent rounded-none;
@@ -20,6 +32,12 @@
   &.button-primary-rounded {
     @apply bg-primary-700 border-primary-700 rounded-3xl text-white;
     &:hover { @apply bg-primary-800 border-primary-800; }
+    &.semi-transparent {
+      @apply bg-primary-500 border-primary-300 bg-opacity-20 border-opacity-20 text-primary-700;
+      &:hover {
+        @apply bg-opacity-50 border-opacity-50;
+      }
+    }
   }
   &.button-primary-rounded-outline {
     @apply border-primary-700 text-primary-700 bg-transparent rounded-3xl;
@@ -29,6 +47,12 @@
   &.button-secondary {
     @apply bg-secondary-700 border-secondary-700 text-white;
     &:hover { @apply bg-secondary-800 border-secondary-800; }
+    &.semi-transparent {
+      @apply bg-secondary-500 border-secondary-300 bg-opacity-20 border-opacity-20 text-secondary-700;
+      &:hover {
+        @apply bg-opacity-50 border-opacity-50;
+      }
+    }
   }
   &.button-secondary-outline {
     @apply border-secondary-700 text-secondary-700 bg-transparent ;
@@ -37,6 +61,12 @@
   &.button-secondary-flat {
     @apply bg-secondary-700 border-secondary-700 text-white rounded-none;
     &:hover { @apply bg-secondary-800 border-secondary-800; }
+    &.semi-transparent {
+      @apply bg-secondary-500 border-secondary-300 bg-opacity-20 border-opacity-20 text-secondary-700;
+      &:hover {
+        @apply bg-opacity-50 border-opacity-50;
+      }
+    }
   }
   &.button-secondary-flat-outline {
     @apply border-secondary-700 text-secondary-700 bg-transparent rounded-none;
@@ -45,6 +75,12 @@
   &.button-secondary-rounded {
     @apply bg-secondary-700 border-secondary-700 rounded-3xl text-white;
     &:hover { @apply bg-secondary-800 border-secondary-800; }
+    &.semi-transparent {
+      @apply bg-secondary-500 border-secondary-300 bg-opacity-20 border-opacity-20 text-secondary-700;
+      &:hover {
+        @apply bg-opacity-50 border-opacity-50;
+      }
+    }
   }
   &.button-secondary-rounded-outline {
     @apply border-secondary-700 text-secondary-700 bg-transparent rounded-3xl;
@@ -54,6 +90,12 @@
   &.button-tertiary {
     @apply bg-tertiary-700 border-tertiary-700 text-white;
     &:hover { @apply bg-tertiary-800 border-tertiary-800; }
+    &.semi-transparent {
+      @apply bg-tertiary-500 border-tertiary-300 bg-opacity-20 border-opacity-20 text-tertiary-700;
+      &:hover {
+        @apply bg-opacity-50 border-opacity-50;
+      }
+    }
   }
   &.button-tertiary-outline {
     @apply border-tertiary-700 text-tertiary-700 bg-transparent ;
@@ -62,6 +104,12 @@
   &.button-tertiary-flat {
     @apply bg-tertiary-700 border-tertiary-700 text-white rounded-none;
     &:hover { @apply bg-tertiary-800 border-tertiary-800; }
+    &.semi-transparent {
+      @apply bg-tertiary-500 border-tertiary-300 bg-opacity-20 border-opacity-20 text-tertiary-700;
+      &:hover {
+        @apply bg-opacity-50 border-opacity-50;
+      }
+    }
   }
   &.button-tertiary-flat-outline {
     @apply border-tertiary-700 text-tertiary-700 bg-transparent rounded-none;
@@ -70,6 +118,12 @@
   &.button-tertiary-rounded {
     @apply bg-tertiary-700 border-tertiary-700 rounded-3xl text-white;
     &:hover { @apply bg-tertiary-800 border-tertiary-800; }
+    &.semi-transparent {
+      @apply bg-tertiary-500 border-tertiary-300 bg-opacity-20 border-opacity-20 text-tertiary-700;
+      &:hover {
+        @apply bg-opacity-50 border-opacity-50;
+      }
+    }
   }
   &.button-tertiary-rounded-outline {
     @apply border-tertiary-700 text-tertiary-700 bg-transparent rounded-3xl;
@@ -79,6 +133,12 @@
   &.button-danger {
     @apply bg-red-500 border-red-500 text-white;
     &:hover { @apply bg-red-600 border-red-600; }
+    &.semi-transparent {
+      @apply bg-red-500 border-red-300 bg-opacity-20 border-opacity-20 text-red-700;
+      &:hover {
+        @apply bg-opacity-50 border-opacity-50;
+      }
+    }
   }
   &.button-danger-outline {
     @apply border-red-500 text-red-500 bg-transparent;
@@ -87,6 +147,12 @@
   &.button-danger-flat {
     @apply bg-red-500 border-red-500 text-white rounded-none;
     &:hover { @apply bg-red-600 border-red-600; }
+    &.semi-transparent {
+      @apply bg-red-500 border-red-300 bg-opacity-20 border-opacity-20 text-red-700;
+      &:hover {
+        @apply bg-opacity-50 border-opacity-50;
+      }
+    }
   }
   &.button-danger-flat-outline {
     @apply border-red-500 text-red-500 bg-transparent rounded-none;
@@ -95,6 +161,12 @@
   &.button-danger-rounded {
     @apply bg-red-500 border-red-500 rounded-3xl text-white;
     &:hover { @apply bg-red-600 border-red-600; }
+    &.semi-transparent {
+      @apply bg-red-500 border-red-300 bg-opacity-20 border-opacity-20 text-red-700;
+      &:hover {
+        @apply bg-opacity-50 border-opacity-50;
+      }
+    }
   }
   &.button-danger-rounded-outline {
     @apply border-red-500 text-red-500 bg-transparent rounded-3xl;
@@ -104,6 +176,12 @@
   &.button-warning {
     @apply bg-yellow-400 border-yellow-400 text-white;
     &:hover { @apply bg-yellow-500 border-yellow-500; }
+    &.semi-transparent {
+      @apply bg-yellow-500 border-yellow-300 bg-opacity-20 border-opacity-20 text-yellow-700;
+      &:hover {
+        @apply bg-opacity-50 border-opacity-50;
+      }
+    }
   }
   &.button-warning-outline {
     @apply border-yellow-400 text-yellow-400 bg-transparent;
@@ -112,6 +190,12 @@
   &.button-warning-flat {
     @apply bg-yellow-400 border-yellow-400 text-white rounded-none;
     &:hover { @apply bg-yellow-500 border-yellow-500; }
+    &.semi-transparent {
+      @apply bg-yellow-500 border-yellow-300 bg-opacity-20 border-opacity-20 text-yellow-700;
+      &:hover {
+        @apply bg-opacity-50 border-opacity-50;
+      }
+    }
   }
   &.button-warning-flat-outline {
     @apply border-yellow-400 text-yellow-400 bg-transparent rounded-none;
@@ -120,6 +204,12 @@
   &.button-warning-rounded {
     @apply bg-yellow-400 border-yellow-400 rounded-3xl text-white;
     &:hover { @apply bg-yellow-500 border-yellow-500; }
+    &.semi-transparent {
+      @apply bg-yellow-500 border-yellow-300 bg-opacity-20 border-opacity-20 text-yellow-700;
+      &:hover {
+        @apply bg-opacity-50 border-opacity-50;
+      }
+    }
   }
   &.button-warning-rounded-outline {
     @apply border-yellow-400 text-yellow-400 bg-transparent rounded-3xl;
@@ -129,6 +219,12 @@
   &.button-success {
     @apply bg-green-500 border-green-500 text-white;
     &:hover { @apply bg-green-600 border-green-600; }
+    &.semi-transparent {
+      @apply bg-green-500 border-green-300 bg-opacity-20 border-opacity-20 text-green-700;
+      &:hover {
+        @apply bg-opacity-50 border-opacity-50;
+      }
+    }
   }
   &.button-success-outline {
     @apply border-green-500 text-green-500 bg-transparent;
@@ -137,6 +233,12 @@
   &.button-success-flat {
     @apply bg-green-500 border-green-500 text-white rounded-none;
     &:hover { @apply bg-green-600 border-green-600; }
+    &.semi-transparent {
+      @apply bg-green-500 border-green-300 bg-opacity-20 border-opacity-20 text-green-700;
+      &:hover {
+        @apply bg-opacity-50 border-opacity-50;
+      }
+    }
   }
   &.button-success-flat-outline {
     @apply border-green-500 text-green-500 bg-transparent rounded-none;
@@ -145,6 +247,12 @@
   &.button-success-rounded {
     @apply bg-green-500 border-green-500 rounded-3xl text-white;
     &:hover { @apply bg-green-500 border-green-500; }
+    &.semi-transparent {
+      @apply bg-green-500 border-green-300 bg-opacity-20 border-opacity-20 text-green-700;
+      &:hover {
+        @apply bg-opacity-50 border-opacity-50;
+      }
+    }
   }
   &.button-success-rounded-outline {
     @apply border-green-500 text-green-500 bg-transparent rounded-3xl;
@@ -154,6 +262,12 @@
   &.button-info {
     @apply bg-blue-500 border-blue-500 text-white;
     &:hover { @apply bg-blue-600 border-blue-600; }
+    &.semi-transparent {
+      @apply bg-blue-500 border-blue-300 bg-opacity-20 border-opacity-20 text-blue-700;
+      &:hover {
+        @apply bg-opacity-50 border-opacity-50;
+      }
+    }
   }
   &.button-info-outline {
     @apply border-blue-500 text-blue-500 bg-transparent;
@@ -162,6 +276,12 @@
   &.button-info-flat {
     @apply bg-blue-500 border-blue-500 text-white rounded-none;
     &:hover { @apply bg-blue-600 border-blue-600; }
+    &.semi-transparent {
+      @apply bg-blue-500 border-blue-300 bg-opacity-20 border-opacity-20 text-blue-700;
+      &:hover {
+        @apply bg-opacity-50 border-opacity-50;
+      }
+    }
   }
   &.button-info-flat-outline {
     @apply border-blue-500 text-blue-500 bg-transparent rounded-none;
@@ -170,6 +290,12 @@
   &.button-info-rounded {
     @apply bg-blue-500 border-blue-500 rounded-3xl text-white;
     &:hover { @apply bg-blue-600 border-blue-600; }
+    &.semi-transparent {
+      @apply bg-blue-500 border-blue-300 bg-opacity-20 border-opacity-20 text-blue-700;
+      &:hover {
+        @apply bg-opacity-50 border-opacity-50;
+      }
+    }
   }
   &.button-info-rounded-outline {
     @apply border-blue-500 text-blue-500 bg-transparent rounded-3xl;
@@ -183,7 +309,26 @@
     @apply text-xl px-6 py-3;
   }
 
+  &.semi-transparent {
+  }
+
   &[disabled] {
     @apply opacity-80 cursor-not-allowed;
+  }
+}
+
+.link {
+  @apply inline-block text-blue-300 transition-all duration-400 ease-in-out;
+  &.info {
+    @apply text-primary-600;
+    &:hover {
+      @apply text-primary-700;
+    }
+  }
+  &.danger {
+    @apply text-red-400;
+    &:hover {
+      @apply text-red-500;
+    }
   }
 }

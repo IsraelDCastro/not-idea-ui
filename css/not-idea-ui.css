@@ -7,6 +7,7 @@
 
 .accordion .accordion-head {
   display: flex;
+  width: 100%;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
@@ -16,6 +17,8 @@
   padding-right: 1.5rem;
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
 }
 
 .accordion .accordion-head .open, .accordion .accordion-head .close {
@@ -363,6 +366,10 @@
   align-items: center;
 }
 
+.state.has-icon span {
+  display: flex;
+}
+
 .state .icon {
   margin-left: 0.25rem;
   height: 1.25rem;
@@ -418,6 +425,22 @@
   background-color: rgba(24, 95, 192, var(--tw-bg-opacity));
 }
 
+.button.button-primary.semi-transparent {
+  --tw-border-opacity: 1;
+  border-color: rgba(138, 181, 231, var(--tw-border-opacity));
+  --tw-border-opacity: 0.2;
+  --tw-bg-opacity: 1;
+  background-color: rgba(92, 147, 216, var(--tw-bg-opacity));
+  --tw-bg-opacity: 0.2;
+  --tw-text-opacity: 1;
+  color: rgba(47, 112, 200, var(--tw-text-opacity));
+}
+
+.button.button-primary.semi-transparent:hover {
+  --tw-border-opacity: 0.5;
+  --tw-bg-opacity: 0.5;
+}
+
 .button.button-primary-outline {
   --tw-border-opacity: 1;
   border-color: rgba(47, 112, 200, var(--tw-border-opacity));
@@ -446,6 +469,22 @@
 .button.button-primary-flat:hover {
   --tw-bg-opacity: 1;
   background-color: rgba(47, 112, 200, var(--tw-bg-opacity));
+}
+
+.button.button-primary-flat.semi-transparent {
+  --tw-border-opacity: 1;
+  border-color: rgba(138, 181, 231, var(--tw-border-opacity));
+  --tw-border-opacity: 0.2;
+  --tw-bg-opacity: 1;
+  background-color: rgba(92, 147, 216, var(--tw-bg-opacity));
+  --tw-bg-opacity: 0.2;
+  --tw-text-opacity: 1;
+  color: rgba(47, 112, 200, var(--tw-text-opacity));
+}
+
+.button.button-primary-flat.semi-transparent:hover {
+  --tw-border-opacity: 0.5;
+  --tw-bg-opacity: 0.5;
 }
 
 .button.button-primary-flat-outline {
@@ -479,6 +518,22 @@
   border-color: rgba(24, 95, 192, var(--tw-border-opacity));
   --tw-bg-opacity: 1;
   background-color: rgba(24, 95, 192, var(--tw-bg-opacity));
+}
+
+.button.button-primary-rounded.semi-transparent {
+  --tw-border-opacity: 1;
+  border-color: rgba(138, 181, 231, var(--tw-border-opacity));
+  --tw-border-opacity: 0.2;
+  --tw-bg-opacity: 1;
+  background-color: rgba(92, 147, 216, var(--tw-bg-opacity));
+  --tw-bg-opacity: 0.2;
+  --tw-text-opacity: 1;
+  color: rgba(47, 112, 200, var(--tw-text-opacity));
+}
+
+.button.button-primary-rounded.semi-transparent:hover {
+  --tw-border-opacity: 0.5;
+  --tw-bg-opacity: 0.5;
 }
 
 .button.button-primary-rounded-outline {
@@ -515,6 +570,22 @@
   background-color: rgba(255, 118, 27, var(--tw-bg-opacity));
 }
 
+.button.button-secondary.semi-transparent {
+  --tw-border-opacity: 1;
+  border-color: rgba(255, 200, 163, var(--tw-border-opacity));
+  --tw-border-opacity: 0.2;
+  --tw-bg-opacity: 1;
+  background-color: rgba(255, 167, 109, var(--tw-bg-opacity));
+  --tw-bg-opacity: 0.2;
+  --tw-text-opacity: 1;
+  color: rgba(255, 135, 54, var(--tw-text-opacity));
+}
+
+.button.button-secondary.semi-transparent:hover {
+  --tw-border-opacity: 0.5;
+  --tw-bg-opacity: 0.5;
+}
+
 .button.button-secondary-outline {
   --tw-border-opacity: 1;
   border-color: rgba(255, 135, 54, var(--tw-border-opacity));
@@ -545,6 +616,22 @@
   border-color: rgba(255, 118, 27, var(--tw-border-opacity));
   --tw-bg-opacity: 1;
   background-color: rgba(255, 118, 27, var(--tw-bg-opacity));
+}
+
+.button.button-secondary-flat.semi-transparent {
+  --tw-border-opacity: 1;
+  border-color: rgba(255, 200, 163, var(--tw-border-opacity));
+  --tw-border-opacity: 0.2;
+  --tw-bg-opacity: 1;
+  background-color: rgba(255, 167, 109, var(--tw-bg-opacity));
+  --tw-bg-opacity: 0.2;
+  --tw-text-opacity: 1;
+  color: rgba(255, 135, 54, var(--tw-text-opacity));
+}
+
+.button.button-secondary-flat.semi-transparent:hover {
+  --tw-border-opacity: 0.5;
+  --tw-bg-opacity: 0.5;
 }
 
 .button.button-secondary-flat-outline {
@@ -578,6 +665,22 @@
   border-color: rgba(255, 118, 27, var(--tw-border-opacity));
   --tw-bg-opacity: 1;
   background-color: rgba(255, 118, 27, var(--tw-bg-opacity));
+}
+
+.button.button-secondary-rounded.semi-transparent {
+  --tw-border-opacity: 1;
+  border-color: rgba(255, 200, 163, var(--tw-border-opacity));
+  --tw-border-opacity: 0.2;
+  --tw-bg-opacity: 1;
+  background-color: rgba(255, 167, 109, var(--tw-bg-opacity));
+  --tw-bg-opacity: 0.2;
+  --tw-text-opacity: 1;
+  color: rgba(255, 135, 54, var(--tw-text-opacity));
+}
+
+.button.button-secondary-rounded.semi-transparent:hover {
+  --tw-border-opacity: 0.5;
+  --tw-bg-opacity: 0.5;
 }
 
 .button.button-secondary-rounded-outline {
@@ -614,6 +717,22 @@
   background-color: rgba(93, 27, 133, var(--tw-bg-opacity));
 }
 
+.button.button-tertiary.semi-transparent {
+  --tw-border-opacity: 1;
+  border-color: rgba(191, 164, 209, var(--tw-border-opacity));
+  --tw-border-opacity: 0.2;
+  --tw-bg-opacity: 1;
+  background-color: rgba(152, 109, 178, var(--tw-bg-opacity));
+  --tw-bg-opacity: 0.2;
+  --tw-text-opacity: 1;
+  color: rgba(112, 55, 148, var(--tw-text-opacity));
+}
+
+.button.button-tertiary.semi-transparent:hover {
+  --tw-border-opacity: 0.5;
+  --tw-bg-opacity: 0.5;
+}
+
 .button.button-tertiary-outline {
   --tw-border-opacity: 1;
   border-color: rgba(112, 55, 148, var(--tw-border-opacity));
@@ -644,6 +763,22 @@
   border-color: rgba(93, 27, 133, var(--tw-border-opacity));
   --tw-bg-opacity: 1;
   background-color: rgba(93, 27, 133, var(--tw-bg-opacity));
+}
+
+.button.button-tertiary-flat.semi-transparent {
+  --tw-border-opacity: 1;
+  border-color: rgba(191, 164, 209, var(--tw-border-opacity));
+  --tw-border-opacity: 0.2;
+  --tw-bg-opacity: 1;
+  background-color: rgba(152, 109, 178, var(--tw-bg-opacity));
+  --tw-bg-opacity: 0.2;
+  --tw-text-opacity: 1;
+  color: rgba(112, 55, 148, var(--tw-text-opacity));
+}
+
+.button.button-tertiary-flat.semi-transparent:hover {
+  --tw-border-opacity: 0.5;
+  --tw-bg-opacity: 0.5;
 }
 
 .button.button-tertiary-flat-outline {
@@ -677,6 +812,22 @@
   border-color: rgba(93, 27, 133, var(--tw-border-opacity));
   --tw-bg-opacity: 1;
   background-color: rgba(93, 27, 133, var(--tw-bg-opacity));
+}
+
+.button.button-tertiary-rounded.semi-transparent {
+  --tw-border-opacity: 1;
+  border-color: rgba(191, 164, 209, var(--tw-border-opacity));
+  --tw-border-opacity: 0.2;
+  --tw-bg-opacity: 1;
+  background-color: rgba(152, 109, 178, var(--tw-bg-opacity));
+  --tw-bg-opacity: 0.2;
+  --tw-text-opacity: 1;
+  color: rgba(112, 55, 148, var(--tw-text-opacity));
+}
+
+.button.button-tertiary-rounded.semi-transparent:hover {
+  --tw-border-opacity: 0.5;
+  --tw-bg-opacity: 0.5;
 }
 
 .button.button-tertiary-rounded-outline {
@@ -713,6 +864,22 @@
   background-color: rgba(220, 38, 38, var(--tw-bg-opacity));
 }
 
+.button.button-danger.semi-transparent {
+  --tw-border-opacity: 1;
+  border-color: rgba(252, 165, 165, var(--tw-border-opacity));
+  --tw-border-opacity: 0.2;
+  --tw-bg-opacity: 1;
+  background-color: rgba(239, 68, 68, var(--tw-bg-opacity));
+  --tw-bg-opacity: 0.2;
+  --tw-text-opacity: 1;
+  color: rgba(185, 28, 28, var(--tw-text-opacity));
+}
+
+.button.button-danger.semi-transparent:hover {
+  --tw-border-opacity: 0.5;
+  --tw-bg-opacity: 0.5;
+}
+
 .button.button-danger-outline {
   --tw-border-opacity: 1;
   border-color: rgba(239, 68, 68, var(--tw-border-opacity));
@@ -743,6 +910,22 @@
   border-color: rgba(220, 38, 38, var(--tw-border-opacity));
   --tw-bg-opacity: 1;
   background-color: rgba(220, 38, 38, var(--tw-bg-opacity));
+}
+
+.button.button-danger-flat.semi-transparent {
+  --tw-border-opacity: 1;
+  border-color: rgba(252, 165, 165, var(--tw-border-opacity));
+  --tw-border-opacity: 0.2;
+  --tw-bg-opacity: 1;
+  background-color: rgba(239, 68, 68, var(--tw-bg-opacity));
+  --tw-bg-opacity: 0.2;
+  --tw-text-opacity: 1;
+  color: rgba(185, 28, 28, var(--tw-text-opacity));
+}
+
+.button.button-danger-flat.semi-transparent:hover {
+  --tw-border-opacity: 0.5;
+  --tw-bg-opacity: 0.5;
 }
 
 .button.button-danger-flat-outline {
@@ -776,6 +959,22 @@
   border-color: rgba(220, 38, 38, var(--tw-border-opacity));
   --tw-bg-opacity: 1;
   background-color: rgba(220, 38, 38, var(--tw-bg-opacity));
+}
+
+.button.button-danger-rounded.semi-transparent {
+  --tw-border-opacity: 1;
+  border-color: rgba(252, 165, 165, var(--tw-border-opacity));
+  --tw-border-opacity: 0.2;
+  --tw-bg-opacity: 1;
+  background-color: rgba(239, 68, 68, var(--tw-bg-opacity));
+  --tw-bg-opacity: 0.2;
+  --tw-text-opacity: 1;
+  color: rgba(185, 28, 28, var(--tw-text-opacity));
+}
+
+.button.button-danger-rounded.semi-transparent:hover {
+  --tw-border-opacity: 0.5;
+  --tw-bg-opacity: 0.5;
 }
 
 .button.button-danger-rounded-outline {
@@ -812,6 +1011,22 @@
   background-color: rgba(245, 158, 11, var(--tw-bg-opacity));
 }
 
+.button.button-warning.semi-transparent {
+  --tw-border-opacity: 1;
+  border-color: rgba(252, 211, 77, var(--tw-border-opacity));
+  --tw-border-opacity: 0.2;
+  --tw-bg-opacity: 1;
+  background-color: rgba(245, 158, 11, var(--tw-bg-opacity));
+  --tw-bg-opacity: 0.2;
+  --tw-text-opacity: 1;
+  color: rgba(180, 83, 9, var(--tw-text-opacity));
+}
+
+.button.button-warning.semi-transparent:hover {
+  --tw-border-opacity: 0.5;
+  --tw-bg-opacity: 0.5;
+}
+
 .button.button-warning-outline {
   --tw-border-opacity: 1;
   border-color: rgba(251, 191, 36, var(--tw-border-opacity));
@@ -842,6 +1057,22 @@
   border-color: rgba(245, 158, 11, var(--tw-border-opacity));
   --tw-bg-opacity: 1;
   background-color: rgba(245, 158, 11, var(--tw-bg-opacity));
+}
+
+.button.button-warning-flat.semi-transparent {
+  --tw-border-opacity: 1;
+  border-color: rgba(252, 211, 77, var(--tw-border-opacity));
+  --tw-border-opacity: 0.2;
+  --tw-bg-opacity: 1;
+  background-color: rgba(245, 158, 11, var(--tw-bg-opacity));
+  --tw-bg-opacity: 0.2;
+  --tw-text-opacity: 1;
+  color: rgba(180, 83, 9, var(--tw-text-opacity));
+}
+
+.button.button-warning-flat.semi-transparent:hover {
+  --tw-border-opacity: 0.5;
+  --tw-bg-opacity: 0.5;
 }
 
 .button.button-warning-flat-outline {
@@ -875,6 +1106,22 @@
   border-color: rgba(245, 158, 11, var(--tw-border-opacity));
   --tw-bg-opacity: 1;
   background-color: rgba(245, 158, 11, var(--tw-bg-opacity));
+}
+
+.button.button-warning-rounded.semi-transparent {
+  --tw-border-opacity: 1;
+  border-color: rgba(252, 211, 77, var(--tw-border-opacity));
+  --tw-border-opacity: 0.2;
+  --tw-bg-opacity: 1;
+  background-color: rgba(245, 158, 11, var(--tw-bg-opacity));
+  --tw-bg-opacity: 0.2;
+  --tw-text-opacity: 1;
+  color: rgba(180, 83, 9, var(--tw-text-opacity));
+}
+
+.button.button-warning-rounded.semi-transparent:hover {
+  --tw-border-opacity: 0.5;
+  --tw-bg-opacity: 0.5;
 }
 
 .button.button-warning-rounded-outline {
@@ -911,6 +1158,22 @@
   background-color: rgba(5, 150, 105, var(--tw-bg-opacity));
 }
 
+.button.button-success.semi-transparent {
+  --tw-border-opacity: 1;
+  border-color: rgba(110, 231, 183, var(--tw-border-opacity));
+  --tw-border-opacity: 0.2;
+  --tw-bg-opacity: 1;
+  background-color: rgba(16, 185, 129, var(--tw-bg-opacity));
+  --tw-bg-opacity: 0.2;
+  --tw-text-opacity: 1;
+  color: rgba(4, 120, 87, var(--tw-text-opacity));
+}
+
+.button.button-success.semi-transparent:hover {
+  --tw-border-opacity: 0.5;
+  --tw-bg-opacity: 0.5;
+}
+
 .button.button-success-outline {
   --tw-border-opacity: 1;
   border-color: rgba(16, 185, 129, var(--tw-border-opacity));
@@ -941,6 +1204,22 @@
   border-color: rgba(5, 150, 105, var(--tw-border-opacity));
   --tw-bg-opacity: 1;
   background-color: rgba(5, 150, 105, var(--tw-bg-opacity));
+}
+
+.button.button-success-flat.semi-transparent {
+  --tw-border-opacity: 1;
+  border-color: rgba(110, 231, 183, var(--tw-border-opacity));
+  --tw-border-opacity: 0.2;
+  --tw-bg-opacity: 1;
+  background-color: rgba(16, 185, 129, var(--tw-bg-opacity));
+  --tw-bg-opacity: 0.2;
+  --tw-text-opacity: 1;
+  color: rgba(4, 120, 87, var(--tw-text-opacity));
+}
+
+.button.button-success-flat.semi-transparent:hover {
+  --tw-border-opacity: 0.5;
+  --tw-bg-opacity: 0.5;
 }
 
 .button.button-success-flat-outline {
@@ -974,6 +1253,22 @@
   border-color: rgba(16, 185, 129, var(--tw-border-opacity));
   --tw-bg-opacity: 1;
   background-color: rgba(16, 185, 129, var(--tw-bg-opacity));
+}
+
+.button.button-success-rounded.semi-transparent {
+  --tw-border-opacity: 1;
+  border-color: rgba(110, 231, 183, var(--tw-border-opacity));
+  --tw-border-opacity: 0.2;
+  --tw-bg-opacity: 1;
+  background-color: rgba(16, 185, 129, var(--tw-bg-opacity));
+  --tw-bg-opacity: 0.2;
+  --tw-text-opacity: 1;
+  color: rgba(4, 120, 87, var(--tw-text-opacity));
+}
+
+.button.button-success-rounded.semi-transparent:hover {
+  --tw-border-opacity: 0.5;
+  --tw-bg-opacity: 0.5;
 }
 
 .button.button-success-rounded-outline {
@@ -1010,6 +1305,22 @@
   background-color: rgba(37, 99, 235, var(--tw-bg-opacity));
 }
 
+.button.button-info.semi-transparent {
+  --tw-border-opacity: 1;
+  border-color: rgba(147, 197, 253, var(--tw-border-opacity));
+  --tw-border-opacity: 0.2;
+  --tw-bg-opacity: 1;
+  background-color: rgba(59, 130, 246, var(--tw-bg-opacity));
+  --tw-bg-opacity: 0.2;
+  --tw-text-opacity: 1;
+  color: rgba(29, 78, 216, var(--tw-text-opacity));
+}
+
+.button.button-info.semi-transparent:hover {
+  --tw-border-opacity: 0.5;
+  --tw-bg-opacity: 0.5;
+}
+
 .button.button-info-outline {
   --tw-border-opacity: 1;
   border-color: rgba(59, 130, 246, var(--tw-border-opacity));
@@ -1040,6 +1351,22 @@
   border-color: rgba(37, 99, 235, var(--tw-border-opacity));
   --tw-bg-opacity: 1;
   background-color: rgba(37, 99, 235, var(--tw-bg-opacity));
+}
+
+.button.button-info-flat.semi-transparent {
+  --tw-border-opacity: 1;
+  border-color: rgba(147, 197, 253, var(--tw-border-opacity));
+  --tw-border-opacity: 0.2;
+  --tw-bg-opacity: 1;
+  background-color: rgba(59, 130, 246, var(--tw-bg-opacity));
+  --tw-bg-opacity: 0.2;
+  --tw-text-opacity: 1;
+  color: rgba(29, 78, 216, var(--tw-text-opacity));
+}
+
+.button.button-info-flat.semi-transparent:hover {
+  --tw-border-opacity: 0.5;
+  --tw-bg-opacity: 0.5;
 }
 
 .button.button-info-flat-outline {
@@ -1073,6 +1400,22 @@
   border-color: rgba(37, 99, 235, var(--tw-border-opacity));
   --tw-bg-opacity: 1;
   background-color: rgba(37, 99, 235, var(--tw-bg-opacity));
+}
+
+.button.button-info-rounded.semi-transparent {
+  --tw-border-opacity: 1;
+  border-color: rgba(147, 197, 253, var(--tw-border-opacity));
+  --tw-border-opacity: 0.2;
+  --tw-bg-opacity: 1;
+  background-color: rgba(59, 130, 246, var(--tw-bg-opacity));
+  --tw-bg-opacity: 0.2;
+  --tw-text-opacity: 1;
+  color: rgba(29, 78, 216, var(--tw-text-opacity));
+}
+
+.button.button-info-rounded.semi-transparent:hover {
+  --tw-border-opacity: 0.5;
+  --tw-bg-opacity: 0.5;
 }
 
 .button.button-info-rounded-outline {
@@ -1114,6 +1457,37 @@
 .button[disabled] {
   cursor: not-allowed;
   opacity: 0.8;
+}
+
+.link {
+  display: inline-block;
+  --tw-text-opacity: 1;
+  color: rgba(147, 197, 253, var(--tw-text-opacity));
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  transition-duration: 400ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.link.info {
+  --tw-text-opacity: 1;
+  color: rgba(69, 130, 208, var(--tw-text-opacity));
+}
+
+.link.info:hover {
+  --tw-text-opacity: 1;
+  color: rgba(47, 112, 200, var(--tw-text-opacity));
+}
+
+.link.danger {
+  --tw-text-opacity: 1;
+  color: rgba(248, 113, 113, var(--tw-text-opacity));
+}
+
+.link.danger:hover {
+  --tw-text-opacity: 1;
+  color: rgba(239, 68, 68, var(--tw-text-opacity));
 }
 
 .card {
@@ -1476,6 +1850,14 @@
 
 .comment .comment-footer {
   padding: 1.5rem;
+}
+
+.comment .comment-respond {
+  margin-left: 2.5rem;
+  border-left-width: 1px;
+  border-color: rgba(209, 213, 219, 0.5);
+  --tw-bg-opacity: 1;
+  background-color: rgba(243, 244, 246, var(--tw-bg-opacity));
 }
 
 .footer {
