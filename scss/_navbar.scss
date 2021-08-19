@@ -1,0 +1,51 @@
+.navbar {
+  @apply flex items-center justify-between w-full px-8 py-4 shadow bg-gray-50;
+  .logo {
+    @apply w-3/12;
+  }
+  .nav-menu {
+    .menu {
+      @apply flex items-center space-x-4;
+    }
+    .menu-icon {
+      @apply text-3xl text-dark-800 transition-all duration-400 ease-in-out;
+      &:hover {
+        @apply text-primary-500;
+      }
+    }
+  }
+
+  &.sticky-menu {
+
+  }
+  
+  .open-sidebar {
+    @apply cursor-pointer ml-auto mr-4 p-2 bg-primary-50 shadow rounded-md transition-all duration-400 ease-in-out;
+    span {
+      @apply block bg-primary-700 w-7 h-1 rounded-md transition-all duration-400 ease-in-out;
+      &:not(:last-child) { @apply mb-1; }
+    }
+    span:first-child, span:last-child {
+      @apply transform rotate-0;
+    }
+    &:hover, &.is-active {
+      @apply bg-primary-700;
+      span { @apply bg-white; }
+    }
+    &.is-active {
+      span:nth-child(2) { @apply opacity-0; }
+      span:first-child {
+        @apply rotate-45 translate-y-2;
+      }
+      span:last-child {
+        @apply -rotate-45 -translate-y-2;
+      }
+    }
+  }
+}
+
+@screen tablet {
+  .navbar {
+    .open-sidebar { @apply hidden; }
+  }
+}

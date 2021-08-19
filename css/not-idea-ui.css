@@ -8,6 +8,7 @@
 .accordion .accordion-head {
   display: flex;
   width: 100%;
+  cursor: pointer;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
@@ -407,6 +408,8 @@
 
 .button svg {
   display: inline-block;
+  height: auto;
+  width: auto;
 }
 
 .button.button-primary {
@@ -1542,6 +1545,7 @@
   position: absolute;
   left: 0px;
   bottom: 0px;
+  width: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   padding: 1rem;
   --tw-text-opacity: 1;
@@ -1951,13 +1955,13 @@
   margin-top: 1.5rem;
 }
 
-.label {
+.field .label {
   margin-bottom: 0.25rem;
   display: block;
   font-weight: 600;
 }
 
-.input, .textarea, .select-inner {
+.field .input, .field .textarea, .field .select-inner {
   width: 100%;
   border-radius: 0.25rem;
   border-width: 1px;
@@ -1972,33 +1976,38 @@
   color: rgba(34, 34, 34, var(--tw-text-opacity));
   outline: 2px solid transparent;
   outline-offset: 2px;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  transition-duration: 300ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.input:focus, .textarea:focus, .select-inner:focus {
+.field .input:focus, .field .textarea:focus, .field .select-inner:focus {
   --tw-border-opacity: 1;
   border-color: rgba(115, 164, 223, var(--tw-border-opacity));
 }
 
-.textarea {
+.field .textarea {
   max-height: 8rem;
   min-height: 6rem;
   resize: vertical;
 }
 
-.radio-group, .check-group {
+.field .radio-group, .field .check-group {
   display: flex;
   flex-wrap: wrap;
 }
 
-.radio-group > *:not(:last-child), .check-group > *:not(:last-child) {
+.field .radio-group > *:not(:last-child), .field .check-group > *:not(:last-child) {
   margin-right: 0.75rem;
 }
 
-.radio-group .checkbox, .radio-group .radio, .check-group .checkbox, .check-group .radio {
+.field .radio-group .checkbox, .field .radio-group .radio, .field .check-group .checkbox, .field .check-group .radio {
   cursor: pointer;
 }
 
-.radio-group .label, .check-group .label {
+.field .radio-group .label, .field .check-group .label {
   margin-left: 0.5rem;
   display: inline-block;
   cursor: pointer;

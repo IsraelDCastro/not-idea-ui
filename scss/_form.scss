@@ -15,28 +15,28 @@
   &.field-button {
     @apply mt-6;
   }
-}
-
-.label {
-  @apply mb-1 block font-semibold;
-}
-
-.input, .textarea, .select-inner {
-  @apply w-full text-c-base px-5 py-2 rounded bg-gray-100 border border-gray-200/60 outline-none focus:border-primary-400;
-}
-
-.textarea {
-  @apply resize-y min-h-24 max-h-32;
-}
-
-.radio-group,
-.check-group {
-  @apply flex flex-wrap;
-  > *:not(:last-child) { @apply mr-3; }
-  .checkbox,
-  .radio { @apply cursor-pointer; }
   .label {
-    @apply inline-block font-normal ml-2 cursor-pointer;
+    @apply mb-1 block font-semibold;
+  }
+  
+  .input,
+  .textarea,
+  .select-inner {
+    @apply w-full text-c-base px-5 py-2 rounded bg-gray-100 border border-gray-200/60 outline-none focus:border-primary-400 transition-all duration-300 ease-in-out;
+  }
+  
+  .textarea {
+    @apply resize-y min-h-24 max-h-32;
+  }
+  .radio-group,
+  .check-group {
+    @apply flex flex-wrap;
+    > *:not(:last-child) { @apply mr-3; }
+    .checkbox,
+    .radio { @apply cursor-pointer; }
+    .label {
+      @apply inline-block font-normal ml-2 cursor-pointer;
+    }
   }
 }
 

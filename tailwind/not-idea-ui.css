@@ -2,7 +2,7 @@
   @apply bg-white rounded-md overflow-hidden;
 }
 .accordion .accordion-head {
-  @apply w-full outline-none border-b border-gray-300/25 px-6 py-3 flex flex-wrap justify-between items-center;
+  @apply w-full outline-none border-b cursor-pointer border-gray-300/25 px-6 py-3 flex flex-wrap justify-between items-center;
 }
 .accordion .accordion-head .open, .accordion .accordion-head .close {
   @apply transform px-2 cursor-pointer rounded transition-all duration-500 ease-in-out;
@@ -157,7 +157,7 @@
   @apply bg-gray-200 hover:bg-gray-300 border-2 border-gray-200 hover:border-gray-300 rounded px-5 py-2 text-gray-700 inline-block cursor-pointer transition-all duration-400 ease-in-out;
 }
 .button svg {
-  @apply inline-block;
+  @apply inline-block w-auto h-auto;
 }
 .button.button-primary {
   @apply bg-primary-700 border-primary-700 text-white;
@@ -586,7 +586,7 @@
   @apply relative bg-cover bg-center bg-no-repeat h-48;
 }
 .card.card-image .card-content {
-  @apply absolute left-0 bottom-0 text-white p-4 bg-black/50;
+  @apply absolute left-0 bottom-0 w-full text-white p-4 bg-black/50;
 }
 .card.card-image .card-content .card-title {
   @apply text-white text-lg;
@@ -759,35 +759,33 @@
 .field.field-button {
   @apply mt-6;
 }
-
-.label {
+.field .label {
   @apply mb-1 block font-semibold;
 }
-
-.input, .textarea, .select-inner {
-  @apply w-full text-c-base px-5 py-2 rounded bg-gray-100 border border-gray-200/60 outline-none focus:border-primary-400;
+.field .input,
+.field .textarea,
+.field .select-inner {
+  @apply w-full text-c-base px-5 py-2 rounded bg-gray-100 border border-gray-200/60 outline-none focus:border-primary-400 transition-all duration-300 ease-in-out;
 }
-
-.textarea {
+.field .textarea {
   @apply resize-y min-h-24 max-h-32;
 }
-
-.radio-group,
-.check-group {
+.field .radio-group,
+.field .check-group {
   @apply flex flex-wrap;
 }
-.radio-group > *:not(:last-child),
-.check-group > *:not(:last-child) {
+.field .radio-group > *:not(:last-child),
+.field .check-group > *:not(:last-child) {
   @apply mr-3;
 }
-.radio-group .checkbox,
-.radio-group .radio,
-.check-group .checkbox,
-.check-group .radio {
+.field .radio-group .checkbox,
+.field .radio-group .radio,
+.field .check-group .checkbox,
+.field .check-group .radio {
   @apply cursor-pointer;
 }
-.radio-group .label,
-.check-group .label {
+.field .radio-group .label,
+.field .check-group .label {
   @apply inline-block font-normal ml-2 cursor-pointer;
 }
 

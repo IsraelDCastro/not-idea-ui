@@ -18,7 +18,7 @@
   &.card-image {
     @apply relative bg-cover bg-center bg-no-repeat h-48;
     .card-content {
-      @apply absolute left-0 bottom-0 text-white p-4 bg-black/50;
+      @apply absolute left-0 bottom-0 w-full text-white p-4 bg-black/50;
       .card-title { @apply text-white text-lg; }
       p { @apply mb-0 text-sm leading-none; }
     }
