@@ -32,7 +32,7 @@
 }
 
 .alert {
-  @apply rounded bg-gray-200 p-6 shadow-alert relative;
+  @apply rounded bg-gray-200 p-6 shadow-alert relative flex flex-wrap;
 }
 .alert p {
   @apply mb-0;
@@ -670,7 +670,7 @@
 }
 .content-carousel .carousel-item {
   scroll-snap-align: start;
-  @apply text-white h-32 grid place-content-center;
+  @apply text-white h-32 grid place-content-center mr-8;
   width: calc(25% - 10px);
   flex: 0 0 calc(25% - 10px);
 }
@@ -719,6 +719,54 @@
   @apply ml-10 border-l border-gray-300/50 bg-gray-100;
 }
 
+.navbar {
+  @apply flex items-center justify-between w-full px-8 py-4 shadow bg-gray-50;
+}
+.navbar .logo {
+  @apply w-3/12;
+}
+.navbar .nav-menu .menu {
+  @apply flex items-center space-x-4;
+}
+.navbar .nav-menu .menu-icon {
+  @apply text-3xl text-dark-800 transition-all duration-400 ease-in-out;
+}
+.navbar .nav-menu .menu-icon:hover {
+  @apply text-primary-500;
+}
+.navbar .open-sidebar {
+  @apply cursor-pointer ml-auto mr-4 p-2 bg-primary-50 shadow rounded-md transition-all duration-400 ease-in-out;
+}
+.navbar .open-sidebar span {
+  @apply block bg-primary-700 w-7 h-1 rounded-md transition-all duration-400 ease-in-out;
+}
+.navbar .open-sidebar span:not(:last-child) {
+  @apply mb-1;
+}
+.navbar .open-sidebar span:first-child, .navbar .open-sidebar span:last-child {
+  @apply transform rotate-0;
+}
+.navbar .open-sidebar:hover, .navbar .open-sidebar.is-active {
+  @apply bg-primary-700;
+}
+.navbar .open-sidebar:hover span, .navbar .open-sidebar.is-active span {
+  @apply bg-white;
+}
+.navbar .open-sidebar.is-active span:nth-child(2) {
+  @apply opacity-0;
+}
+.navbar .open-sidebar.is-active span:first-child {
+  @apply rotate-45 translate-y-2;
+}
+.navbar .open-sidebar.is-active span:last-child {
+  @apply -rotate-45 -translate-y-2;
+}
+
+@screen tablet {
+  .navbar .open-sidebar {
+    @apply hidden;
+  }
+}
 .footer {
   @apply bg-white px-8 py-6;
 }
@@ -778,14 +826,12 @@
 .field .check-group > *:not(:last-child) {
   @apply mr-3;
 }
-.field .radio-group .checkbox,
-.field .radio-group .radio,
-.field .check-group .checkbox,
-.field .check-group .radio {
+.field .checkbox,
+.field .radio {
   @apply cursor-pointer;
 }
-.field .radio-group .label,
-.field .check-group .label {
+.field .checkbox .label,
+.field .radio .label {
   @apply inline-block font-normal ml-2 cursor-pointer;
 }
 

@@ -32,8 +32,10 @@
   .check-group {
     @apply flex flex-wrap;
     > *:not(:last-child) { @apply mr-3; }
-    .checkbox,
-    .radio { @apply cursor-pointer; }
+  }
+  .checkbox,
+  .radio { 
+    @apply cursor-pointer;
     .label {
       @apply inline-block font-normal ml-2 cursor-pointer;
     }

@@ -1,5 +1,5 @@
 .alert {
-  @apply rounded bg-gray-200 p-6 shadow-alert relative;
+  @apply rounded bg-gray-200 p-6 shadow-alert relative flex flex-wrap;
   p { @apply mb-0; }
   &.primary { @apply bg-primary-700 text-white; }
   &.secondary { @apply bg-secondary-700 text-white; }

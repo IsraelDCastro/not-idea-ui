@@ -93,6 +93,8 @@
 
 .alert {
   position: relative;
+  display: flex;
+  flex-wrap: wrap;
   border-radius: 0.25rem;
   --tw-bg-opacity: 1;
   background-color: rgba(229, 231, 235, var(--tw-bg-opacity));
@@ -1742,6 +1744,7 @@
 
 .content-carousel .carousel-item {
   scroll-snap-align: start;
+  margin-right: 2rem;
   display: grid;
   height: 8rem;
   place-content: center;
@@ -1862,6 +1865,128 @@
   border-color: rgba(209, 213, 219, 0.5);
   --tw-bg-opacity: 1;
   background-color: rgba(243, 244, 246, var(--tw-bg-opacity));
+}
+
+.navbar {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  --tw-bg-opacity: 1;
+  background-color: rgba(249, 250, 251, var(--tw-bg-opacity));
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  --tw-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.navbar .logo {
+  width: 25%;
+}
+
+.navbar .nav-menu .menu {
+  display: flex;
+  align-items: center;
+}
+
+.navbar .nav-menu .menu > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(1rem * var(--tw-space-x-reverse));
+  margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.navbar .nav-menu .menu-icon {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  --tw-text-opacity: 1;
+  color: rgba(28, 28, 28, var(--tw-text-opacity));
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  transition-duration: 400ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.navbar .nav-menu .menu-icon:hover {
+  --tw-text-opacity: 1;
+  color: rgba(92, 147, 216, var(--tw-text-opacity));
+}
+
+.navbar .open-sidebar {
+  margin-left: auto;
+  margin-right: 1rem;
+  cursor: pointer;
+  border-radius: 0.375rem;
+  --tw-bg-opacity: 1;
+  background-color: rgba(206, 233, 255, var(--tw-bg-opacity));
+  padding: 0.5rem;
+  --tw-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  transition-duration: 400ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.navbar .open-sidebar span {
+  display: block;
+  height: 0.25rem;
+  width: 1.75rem;
+  border-radius: 0.375rem;
+  --tw-bg-opacity: 1;
+  background-color: rgba(47, 112, 200, var(--tw-bg-opacity));
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  transition-duration: 400ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.navbar .open-sidebar span:not(:last-child) {
+  margin-bottom: 0.25rem;
+}
+
+.navbar .open-sidebar span:first-child, .navbar .open-sidebar span:last-child {
+  --tw-rotate: 0deg;
+  transform: var(--tw-transform);
+  transform: var(--tw-transform);
+}
+
+.navbar .open-sidebar:hover, .navbar .open-sidebar.is-active {
+  --tw-bg-opacity: 1;
+  background-color: rgba(47, 112, 200, var(--tw-bg-opacity));
+}
+
+.navbar .open-sidebar:hover span, .navbar .open-sidebar.is-active span {
+  --tw-bg-opacity: 1;
+  background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
+}
+
+.navbar .open-sidebar.is-active span:nth-child(2) {
+  opacity: 0;
+}
+
+.navbar .open-sidebar.is-active span:first-child {
+  --tw-translate-y: 0.5rem;
+  transform: var(--tw-transform);
+  --tw-rotate: 45deg;
+  transform: var(--tw-transform);
+}
+
+.navbar .open-sidebar.is-active span:last-child {
+  --tw-translate-y: -0.5rem;
+  transform: var(--tw-transform);
+  --tw-rotate: -45deg;
+  transform: var(--tw-transform);
+}
+
+@media (min-width: 989px) {
+  .navbar .open-sidebar {
+    display: none;
+  }
 }
 
 .footer {
@@ -2003,11 +2128,11 @@
   margin-right: 0.75rem;
 }
 
-.field .radio-group .checkbox, .field .radio-group .radio, .field .check-group .checkbox, .field .check-group .radio {
+.field .checkbox, .field .radio {
   cursor: pointer;
 }
 
-.field .radio-group .label, .field .check-group .label {
+.field .checkbox .label, .field .radio .label {
   margin-left: 0.5rem;
   display: inline-block;
   cursor: pointer;
