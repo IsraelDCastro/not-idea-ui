@@ -783,54 +783,6 @@
   @apply ml-10 border-l border-gray-300/50 bg-gray-100;
 }
 
-.navbar {
-  @apply flex items-center justify-between w-full px-8 py-4 shadow bg-gray-50;
-}
-.navbar .logo {
-  @apply w-3/12;
-}
-.navbar .nav-menu .menu {
-  @apply flex items-center space-x-4;
-}
-.navbar .nav-menu .menu-icon {
-  @apply text-3xl text-dark-800 transition-all duration-400 ease-in-out;
-}
-.navbar .nav-menu .menu-icon:hover {
-  @apply text-primary-500;
-}
-.navbar .open-sidebar {
-  @apply cursor-pointer ml-auto mr-4 p-2 bg-primary-50 shadow rounded-md transition-all duration-400 ease-in-out;
-}
-.navbar .open-sidebar span {
-  @apply block bg-primary-700 w-7 h-1 rounded-md transition-all duration-400 ease-in-out;
-}
-.navbar .open-sidebar span:not(:last-child) {
-  @apply mb-1;
-}
-.navbar .open-sidebar span:first-child, .navbar .open-sidebar span:last-child {
-  @apply transform rotate-0;
-}
-.navbar .open-sidebar:hover, .navbar .open-sidebar.is-active {
-  @apply bg-primary-700;
-}
-.navbar .open-sidebar:hover span, .navbar .open-sidebar.is-active span {
-  @apply bg-white;
-}
-.navbar .open-sidebar.is-active span:nth-child(2) {
-  @apply opacity-0;
-}
-.navbar .open-sidebar.is-active span:first-child {
-  @apply rotate-45 translate-y-2;
-}
-.navbar .open-sidebar.is-active span:last-child {
-  @apply -rotate-45 -translate-y-2;
-}
-
-@screen tablet {
-  .navbar .open-sidebar {
-    @apply hidden;
-  }
-}
 .footer {
   @apply bg-white px-8 py-6;
 }
@@ -876,11 +828,18 @@
 }
 .field .input,
 .field .textarea,
-.field .select-inner {
+.field .select-inner,
+.field .input-file {
   @apply w-full text-c-base px-5 py-2 rounded bg-gray-100 border border-gray-200/60 outline-none focus:border-primary-400 transition-all duration-300 ease-in-out;
 }
 .field .textarea {
   @apply resize-y min-h-24 max-h-32;
+}
+.field .input-file {
+  @apply p-2 cursor-pointer;
+}
+.field .input-file:hover {
+  @apply bg-primary-500 text-white;
 }
 .field .radio-group,
 .field .check-group {
@@ -978,6 +937,134 @@
 }
 .list.ordered ol {
   @apply list-decimal pl-6;
+}
+
+.navbar {
+  @apply flex items-center justify-between w-full px-8 py-4 shadow bg-gray-50;
+}
+.navbar .logo {
+  @apply w-3/12;
+}
+.navbar .nav-menu .menu {
+  @apply flex items-center space-x-4;
+}
+.navbar .nav-menu .menu-icon {
+  @apply text-3xl text-dark-800 transition-all duration-400 ease-in-out;
+}
+.navbar .nav-menu .menu-icon:hover {
+  @apply text-primary-500;
+}
+.navbar .open-sidebar {
+  @apply cursor-pointer ml-auto mr-4 p-2 bg-primary-50 shadow rounded-md transition-all duration-400 ease-in-out;
+}
+.navbar .open-sidebar span {
+  @apply block bg-primary-700 w-7 h-1 rounded-md transition-all duration-400 ease-in-out;
+}
+.navbar .open-sidebar span:not(:last-child) {
+  @apply mb-1;
+}
+.navbar .open-sidebar span:first-child, .navbar .open-sidebar span:last-child {
+  @apply transform rotate-0;
+}
+.navbar .open-sidebar:hover, .navbar .open-sidebar.is-active {
+  @apply bg-primary-700;
+}
+.navbar .open-sidebar:hover span, .navbar .open-sidebar.is-active span {
+  @apply bg-white;
+}
+.navbar .open-sidebar.is-active span:nth-child(2) {
+  @apply opacity-0;
+}
+.navbar .open-sidebar.is-active span:first-child {
+  @apply rotate-45 translate-y-2;
+}
+.navbar .open-sidebar.is-active span:last-child {
+  @apply -rotate-45 -translate-y-2;
+}
+
+@screen tablet {
+  .navbar .open-sidebar {
+    @apply hidden;
+  }
+}
+.sidebar {
+  width: 20%;
+  @apply h-screen overflow-y-auto text-c-base bg-white shadow-base rounded-md overflow-hidden p-6 transition-all duration-500 ease-in-out;
+}
+.sidebar .sidebar-head {
+  @apply flex flex-wrap items-center justify-between;
+}
+.sidebar .sidebar-head h4 {
+  @apply font-semibold w-auto;
+}
+.sidebar .sidebar-head .close-sidebar {
+  @apply cursor-pointer transform transition-all duration-400 ease-in-out;
+}
+.sidebar .sidebar-head .close-sidebar:hover {
+  @apply text-primary-900;
+}
+.sidebar .sidebar-head .close-sidebar.close {
+  @apply rotate-180;
+}
+.sidebar h5 {
+  @apply mb-3;
+}
+.sidebar .sidebar-nav .sidebar-item {
+  @apply font-semibold bg-primary-50/20 px-5 py-2 mb-4 flex flex-wrap items-center rounded transition-all duration-400 ease-in-out;
+}
+.sidebar .sidebar-nav .sidebar-item .sidebar-icon {
+  @apply mr-2;
+}
+.sidebar .sidebar-nav .sidebar-item .sidebar-icon .tooltip {
+  @apply hidden;
+}
+.sidebar .sidebar-nav .sidebar-item:hover, .sidebar .sidebar-nav .sidebar-item.is-active {
+  @apply bg-primary-50 text-primary-900;
+}
+.sidebar .sidebar-nav .sidebar-item.is-active {
+  @apply border-l-6 border-primary-500;
+}
+.sidebar .sidebar-nav .sidebar-text {
+  @apply w-auto;
+}
+.sidebar .sidebar-divider {
+  @apply my-6 border-t border-dark-200/30;
+}
+
+@screen tablet {
+  .sidebar.is-closed {
+    width: 5%;
+    @apply px-2 py-6;
+  }
+  .sidebar.is-closed .sidebar-head {
+    @apply justify-center relative pt-2;
+  }
+  .sidebar.is-closed h4, .sidebar.is-closed h5 {
+    @apply w-0 opacity-0 absolute -z-1 transition-all duration-300 ease-in-out;
+  }
+  .sidebar.is-closed .sidebar-nav .sidebar-item {
+    @apply px-3 justify-center;
+  }
+  .sidebar.is-closed .sidebar-nav .sidebar-item .sidebar-text {
+    @apply w-0 opacity-0 absolute -z-1 transition-all duration-300 ease-in-out;
+  }
+  .sidebar.is-closed .sidebar-nav .sidebar-item .sidebar-icon {
+    @apply mr-0;
+  }
+  .sidebar.is-closed .sidebar-nav .sidebar-item .sidebar-icon .tooltip {
+    @apply inline-block;
+  }
+}
+@screen max-md {
+  .sidebar {
+    @apply absolute w-64 h-full top-0 z-20 -left-100 transition-all duration-500 ease-in-out;
+  }
+  .sidebar.is-sidebar-open {
+    @apply left-0;
+  }
+  .sidebar .close-sidebar {
+    @apply hidden;
+  }
 }
 
 /*# sourceMappingURL=not-idea-ui.css.map */

@@ -21,13 +21,22 @@
   
   .input,
   .textarea,
-  .select-inner {
+  .select-inner,
+  .input-file {
     @apply w-full text-c-base px-5 py-2 rounded bg-gray-100 border border-gray-200/60 outline-none focus:border-primary-400 transition-all duration-300 ease-in-out;
   }
   
   .textarea {
     @apply resize-y min-h-24 max-h-32;
   }
+
+  .input-file {
+    @apply p-2 cursor-pointer;
+    &:hover {
+      @apply bg-primary-500 text-white;
+    }
+  }
+
   .radio-group,
   .check-group {
     @apply flex flex-wrap;
