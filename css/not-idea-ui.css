@@ -1464,6 +1464,182 @@
   opacity: 0.8;
 }
 
+.dropdown {
+  position: relative;
+}
+
+.dropdown .dropdown-wrap {
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 0.125rem;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  transition-duration: 400ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.dropdown .dropdown-wrap:hover, .dropdown .dropdown-wrap:focus, .dropdown .dropdown-wrap:focus-within {
+  --tw-text-opacity: 1;
+  color: rgba(69, 130, 208, var(--tw-text-opacity));
+}
+
+.dropdown .dropdown-wrap .dropdown-wrap-icon {
+  display: inline-block;
+  transform: var(--tw-transform);
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  transition-duration: 300ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.dropdown .dropdown-content {
+  z-index: -1;
+  position: absolute;
+  right: 0px;
+  bottom: auto;
+  margin-top: 0.25rem;
+  width: 10rem;
+  list-style-type: none;
+  overflow: hidden;
+  border-radius: 0.375rem;
+  --tw-bg-opacity: 1;
+  background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
+  opacity: 0;
+  --tw-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  transition-duration: 500ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.dropdown .dropdown-content .dropdown-item {
+  display: block;
+  width: 100%;
+  background-color: transparent;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  text-align: left;
+  --tw-text-opacity: 1;
+  color: rgba(93, 27, 133, var(--tw-text-opacity));
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  transition-duration: 400ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.dropdown .dropdown-content .dropdown-item:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgba(92, 147, 216, var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgba(255, 255, 255, var(--tw-text-opacity));
+}
+
+.dropdown .dropdown-content .dropdown-divider {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  border-top-width: 2px;
+  --tw-border-opacity: 1;
+  border-color: rgba(211, 191, 224, var(--tw-border-opacity));
+}
+
+.dropdown .dropdown-content .dropdown-title {
+  margin-bottom: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  --tw-text-opacity: 1;
+  color: rgba(132, 82, 163, var(--tw-text-opacity));
+}
+
+.dropdown .dropdown-content.is-fade-up {
+  top: 200%;
+}
+
+.dropdown .user {
+  display: flex;
+  align-items: center;
+}
+
+.dropdown .user svg {
+  margin-left: 0.5rem;
+  --tw-text-opacity: 1;
+  color: rgba(255, 255, 255, var(--tw-text-opacity));
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  transition-duration: 400ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.dropdown.is-hovered:hover .dropdown-content {
+  z-index: 10;
+  opacity: 1;
+}
+
+.dropdown.is-hovered:hover .dropdown-content.is-fade-up {
+  top: 100%;
+}
+
+.dropdown.is-hovered:hover .user svg {
+  --tw-rotate: 180deg;
+  transform: var(--tw-transform);
+}
+
+.dropdown.has-large-text .dropdown-content {
+  width: auto;
+}
+
+.dropdown.has-large-text .dropdown-content .dropdown-item, .dropdown.has-large-text .dropdown-content button {
+  white-space: nowrap;
+}
+
+.avatar {
+  position: relative;
+  height: 3rem;
+  width: 3rem;
+  overflow: hidden;
+  border-radius: 9999px;
+}
+
+.avatar .initials {
+  display: flex;
+  height: 3rem;
+  min-height: 14px;
+  width: 3rem;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 9999px;
+  --tw-bg-opacity: 1;
+  background-color: rgba(59, 130, 246, var(--tw-bg-opacity));
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 600;
+  --tw-text-opacity: 1;
+  color: rgba(255, 255, 255, var(--tw-text-opacity));
+}
+
+.avatar-small {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  height: 1.25rem;
+  width: 1.25rem;
+  border-radius: 9999px;
+}
+
 .link {
   display: inline-block;
   --tw-text-opacity: 1;
