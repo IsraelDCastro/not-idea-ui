@@ -2167,6 +2167,24 @@
   border-color: rgba(115, 164, 223, var(--tw-border-opacity));
 }
 
+.field .input.error, .field .textarea.error, .field .select-inner.error, .field .input-file.error {
+  --tw-border-opacity: 1;
+  border-color: rgba(239, 68, 68, var(--tw-border-opacity));
+  background-color: rgba(239, 68, 68, 0.2);
+}
+
+.field .input.error::-moz-placeholder, .field .textarea.error::-moz-placeholder, .field .select-inner.error::-moz-placeholder, .field .input-file.error::-moz-placeholder {
+  color: rgba(239, 68, 68, 0.9);
+}
+
+.field .input.error:-ms-input-placeholder, .field .textarea.error:-ms-input-placeholder, .field .select-inner.error:-ms-input-placeholder, .field .input-file.error:-ms-input-placeholder {
+  color: rgba(239, 68, 68, 0.9);
+}
+
+.field .input.error::placeholder, .field .textarea.error::placeholder, .field .select-inner.error::placeholder, .field .input-file.error::placeholder {
+  color: rgba(239, 68, 68, 0.9);
+}
+
 .field .textarea {
   max-height: 8rem;
   min-height: 6rem;

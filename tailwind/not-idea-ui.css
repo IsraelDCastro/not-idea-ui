@@ -832,6 +832,18 @@
 .field .input-file {
   @apply w-full text-c-base px-5 py-2 rounded bg-gray-100 border border-gray-200/60 outline-none focus:border-primary-400 transition-all duration-300 ease-in-out;
 }
+.field .input.error,
+.field .textarea.error,
+.field .select-inner.error,
+.field .input-file.error {
+  @apply border-red-500 bg-red-500/20;
+}
+.field .input.error::placeholder,
+.field .textarea.error::placeholder,
+.field .select-inner.error::placeholder,
+.field .input-file.error::placeholder {
+  @apply text-red-500/90;
+}
 .field .textarea {
   @apply resize-y min-h-24 max-h-32;
 }

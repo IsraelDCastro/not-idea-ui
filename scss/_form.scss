@@ -24,6 +24,12 @@
   .select-inner,
   .input-file {
     @apply w-full text-c-base px-5 py-2 rounded bg-gray-100 border border-gray-200/60 outline-none focus:border-primary-400 transition-all duration-300 ease-in-out;
+    &.error {
+      @apply border-red-500 bg-red-500/20;
+      &::placeholder {
+        @apply text-red-500/90;
+      }
+    }
   }
   
   .textarea {
