@@ -30,6 +30,18 @@
         @apply text-red-500/90;
       }
     }
+    &.success {
+      @apply border-green-500 bg-green-500/20;
+      &::placeholder {
+        @apply text-green-500/90;
+      }
+    }
+    &.warning {
+      @apply border-yellow-500 bg-yellow-500/20;
+      &::placeholder {
+        @apply text-yellow-500/90;
+      }
+    }
   }
   
   .textarea {

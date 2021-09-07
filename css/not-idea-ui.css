@@ -1819,7 +1819,7 @@
   display: grid;
   width: 100%;
   grid-auto-flow: column;
-  overflow-x: auto;
+  overflow-x: scroll;
 }
 
 .content-slider .slide {
@@ -1920,7 +1920,6 @@
 
 .content-carousel .carousel-item {
   scroll-snap-align: start;
-  margin-right: 2rem;
   display: grid;
   height: 8rem;
   place-content: center;
@@ -2183,6 +2182,42 @@
 
 .field .input.error::placeholder, .field .textarea.error::placeholder, .field .select-inner.error::placeholder, .field .input-file.error::placeholder {
   color: rgba(239, 68, 68, 0.9);
+}
+
+.field .input.success, .field .textarea.success, .field .select-inner.success, .field .input-file.success {
+  --tw-border-opacity: 1;
+  border-color: rgba(16, 185, 129, var(--tw-border-opacity));
+  background-color: rgba(16, 185, 129, 0.2);
+}
+
+.field .input.success::-moz-placeholder, .field .textarea.success::-moz-placeholder, .field .select-inner.success::-moz-placeholder, .field .input-file.success::-moz-placeholder {
+  color: rgba(16, 185, 129, 0.9);
+}
+
+.field .input.success:-ms-input-placeholder, .field .textarea.success:-ms-input-placeholder, .field .select-inner.success:-ms-input-placeholder, .field .input-file.success:-ms-input-placeholder {
+  color: rgba(16, 185, 129, 0.9);
+}
+
+.field .input.success::placeholder, .field .textarea.success::placeholder, .field .select-inner.success::placeholder, .field .input-file.success::placeholder {
+  color: rgba(16, 185, 129, 0.9);
+}
+
+.field .input.warning, .field .textarea.warning, .field .select-inner.warning, .field .input-file.warning {
+  --tw-border-opacity: 1;
+  border-color: rgba(245, 158, 11, var(--tw-border-opacity));
+  background-color: rgba(245, 158, 11, 0.2);
+}
+
+.field .input.warning::-moz-placeholder, .field .textarea.warning::-moz-placeholder, .field .select-inner.warning::-moz-placeholder, .field .input-file.warning::-moz-placeholder {
+  color: rgba(245, 158, 11, 0.9);
+}
+
+.field .input.warning:-ms-input-placeholder, .field .textarea.warning:-ms-input-placeholder, .field .select-inner.warning:-ms-input-placeholder, .field .input-file.warning:-ms-input-placeholder {
+  color: rgba(245, 158, 11, 0.9);
+}
+
+.field .input.warning::placeholder, .field .textarea.warning::placeholder, .field .select-inner.warning::placeholder, .field .input-file.warning::placeholder {
+  color: rgba(245, 158, 11, 0.9);
 }
 
 .field .textarea {

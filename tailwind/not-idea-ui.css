@@ -692,7 +692,7 @@
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
   aspect-ratio: 16/9;
-  @apply grid grid-flow-col overflow-x-auto w-full;
+  @apply grid grid-flow-col overflow-x-scroll w-full;
 }
 .content-slider .slide {
   scroll-snap-align: center;
@@ -734,7 +734,7 @@
 }
 .content-carousel .carousel-item {
   scroll-snap-align: start;
-  @apply text-white h-32 grid place-content-center mr-8;
+  @apply text-white h-32 grid place-content-center;
   width: calc(25% - 10px);
   flex: 0 0 calc(25% - 10px);
 }
@@ -843,6 +843,30 @@
 .field .select-inner.error::placeholder,
 .field .input-file.error::placeholder {
   @apply text-red-500/90;
+}
+.field .input.success,
+.field .textarea.success,
+.field .select-inner.success,
+.field .input-file.success {
+  @apply border-green-500 bg-green-500/20;
+}
+.field .input.success::placeholder,
+.field .textarea.success::placeholder,
+.field .select-inner.success::placeholder,
+.field .input-file.success::placeholder {
+  @apply text-green-500/90;
+}
+.field .input.warning,
+.field .textarea.warning,
+.field .select-inner.warning,
+.field .input-file.warning {
+  @apply border-yellow-500 bg-yellow-500/20;
+}
+.field .input.warning::placeholder,
+.field .textarea.warning::placeholder,
+.field .select-inner.warning::placeholder,
+.field .input-file.warning::placeholder {
+  @apply text-yellow-500/90;
 }
 .field .textarea {
   @apply resize-y min-h-24 max-h-32;
