@@ -52,7 +52,7 @@ Al utilizar la preferencia de TailwindCSS, necesitas agregar los siguientes esti
 
 Puntos a tomar en cuenta:
 
--   Tener al menos la versión "^2.2.2"
+-   Tener al menos la versión "^2.2.11"
 -   Debes tener mode: "jit" activado
 
 #### tailwind.config.js
@@ -128,7 +128,8 @@ theme:  {
 			'6':  '6px',
 		},
 		boxShadow:  {
-			'alert':  '0 6px 26px rgba(0, 0, 0, 0.1)'
+			'alert':  '0 6px 26px rgba(0, 0, 0, 0.1)',
+			'base': '0 3px 20px rgba(0, 0, 0, 0.05)',
 		},
 		minHeight:  {
 			'24':  '6rem'
@@ -196,7 +197,7 @@ When using the TailwindCSS preference, you need to add the following styles that
 
 Points to consider:
 
-- Have at least the version "^2.2.2"
+- Have at least the version "^2.2.11"
 
 - You must have mode: "jit" activade
 
@@ -273,7 +274,8 @@ theme:  {
 			'6':  '6px',
 		},
 		boxShadow:  {
-			'alert':  '0 6px 26px rgba(0, 0, 0, 0.1)'
+			'alert':  '0 6px 26px rgba(0, 0, 0, 0.1)',
+			'base': '0 3px 20px rgba(0, 0, 0, 0.05)',
 		},
 		minHeight:  {
 			'24':  '6rem'
