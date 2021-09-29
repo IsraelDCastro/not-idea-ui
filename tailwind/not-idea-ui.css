@@ -692,7 +692,7 @@
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
   aspect-ratio: 16/9;
-  @apply grid grid-flow-col overflow-x-scroll w-full;
+  @apply flex overflow-x-scroll w-full;
 }
 .content-slider .slide {
   scroll-snap-align: center;

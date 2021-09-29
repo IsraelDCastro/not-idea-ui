@@ -1816,9 +1816,8 @@
       scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
   aspect-ratio: 16/9;
-  display: grid;
+  display: flex;
   width: 100%;
-  grid-auto-flow: column;
   overflow-x: scroll;
 }
 
