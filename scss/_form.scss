@@ -118,57 +118,57 @@
   }
 }
 
-// .field-select {
-//   position: relative;
-//   width: auto;
-//   display: inline-block;
-//   &::after {
-//     content: " ";
-//     display: block;
-//     position: absolute;
-//     top: 45%;
-//     right: 15px;
-//     z-index: 10;
-//     border-width: 6px;
-//     border-color: #CCC transparent transparent  transparent;
-//   }
-//   .select-items {
-//     padding: 16px;
-//     background-color: #FFF;
-//     border: 1px solid #CCC;
-//     border-radius: 5px;
-//     width: 100%;
-//     position: absolute;
-//     left: 0;
-//     z-index: -1;
-//     opacity: 0;
-//     transition: all .4s ease-in-out;
-//     min-height: 90px;
-//     max-height: 200px;
-//     overflow-y: scroll;
-//     li {
-//       padding: 5px 10px;
-//       cursor: pointer;
-//       transition: all .4s ease-in-out;
-//       &:hover {
-//         background-color: #EDEDED;
-//       }
-//       &:not(:last-child) {
-//         border-bottom: 1px solid #EEE;
-//       }
-//     }
-//   }
-// }
+.field-select {
+  position: relative;
+  width: auto;
+  display: inline-block;
+  &::after {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 45%;
+    right: 15px;
+    z-index: 10;
+    border-width: 6px;
+    border-color: #CCC transparent transparent  transparent;
+  }
+  .select-items {
+    padding: 16px;
+    background-color: #FFF;
+    border: 1px solid #CCC;
+    border-radius: 5px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    z-index: -1;
+    opacity: 0;
+    transition: all .4s ease-in-out;
+    min-height: 90px;
+    max-height: 200px;
+    overflow-y: scroll;
+    li {
+      padding: 5px 10px;
+      cursor: pointer;
+      transition: all .4s ease-in-out;
+      &:hover {
+        background-color: #EDEDED;
+      }
+      &:not(:last-child) {
+        border-bottom: 1px solid #EEE;
+      }
+    }
+  }
+}
 
-// .select-search {
-//   border-radius: 0.25rem;
-//   border: 1px solid rgba(229, 231, 235, 1);
-//   padding: .75rem 1.25rem;
-//   font-size: 1rem;
-//   line-height: 1.5rem;
-//   position: relative;
-//   &:focus + .select-items {
-//     z-index: 20;
-//     opacity: 1;
-//   }
-// }
+.select-search {
+  border-radius: 0.25rem;
+  border: 1px solid rgba(229, 231, 235, 1);
+  padding: .75rem 1.25rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  position: relative;
+  &:focus + .select-items {
+    z-index: 20;
+    opacity: 1;
+  }
+}

@@ -2,7 +2,7 @@
   overflow: hidden;
   border-radius: 0.375rem;
   --tw-bg-opacity: 1;
-  background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
 .accordion .accordion-head {
@@ -13,7 +13,7 @@
   align-items: center;
   justify-content: space-between;
   border-bottom-width: 1px;
-  border-color: rgba(209, 213, 219, 0.25);
+  border-color: rgb(209 213 219 / 0.25);
   padding-left: 1.5rem;
   padding-right: 1.5rem;
   padding-top: 0.75rem;
@@ -29,8 +29,6 @@
   padding-left: 0.5rem;
   padding-right: 0.5rem;
   transition-property: all;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
   transition-duration: 500ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -46,7 +44,7 @@
 }
 
 .accordion.focused .accordion-head:focus {
-  background-color: rgba(206, 233, 255, 0.1);
+  background-color: rgb(206 233 255 / 0.1);
 }
 
 .accordion.focused .accordion-head:focus + .accordion-content {
@@ -60,23 +58,20 @@
 .accordion.focused .accordion-head:focus .open {
   --tw-rotate: 180deg;
   transform: var(--tw-transform);
-  transform: var(--tw-transform);
 }
 
 .accordion .accordion-content {
   position: relative;
   border-left-width: 4px;
   --tw-border-opacity: 1;
-  border-color: rgba(47, 112, 200, var(--tw-border-opacity));
-  background-color: rgba(243, 244, 246, 0.5);
+  border-color: rgb(47 112 200 / var(--tw-border-opacity));
+  background-color: rgb(243 244 246 / 0.5);
   padding-left: 1.5rem;
   padding-right: 1.5rem;
   padding-top: 0px;
   padding-bottom: 0px;
   opacity: 0;
   transition-property: all;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
   transition-duration: 500ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   z-index: -1;
@@ -97,9 +92,10 @@
   flex-wrap: wrap;
   border-radius: 0.25rem;
   --tw-bg-opacity: 1;
-  background-color: rgba(229, 231, 235, var(--tw-bg-opacity));
+  background-color: rgb(229 231 235 / var(--tw-bg-opacity));
   padding: 1.5rem;
   --tw-shadow: 0 6px 26px rgba(0, 0, 0, 0.1);
+  --tw-shadow-colored: 0 6px 26px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
@@ -109,51 +105,51 @@
 
 .alert.primary {
   --tw-bg-opacity: 1;
-  background-color: rgba(47, 112, 200, var(--tw-bg-opacity));
+  background-color: rgb(47 112 200 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
-  color: rgba(255, 255, 255, var(--tw-text-opacity));
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .alert.secondary {
   --tw-bg-opacity: 1;
-  background-color: rgba(255, 135, 54, var(--tw-bg-opacity));
+  background-color: rgb(255 135 54 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
-  color: rgba(255, 255, 255, var(--tw-text-opacity));
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .alert.tertiary {
   --tw-bg-opacity: 1;
-  background-color: rgba(112, 55, 148, var(--tw-bg-opacity));
+  background-color: rgb(112 55 148 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
-  color: rgba(255, 255, 255, var(--tw-text-opacity));
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .alert.danger {
   --tw-bg-opacity: 1;
-  background-color: rgba(239, 68, 68, var(--tw-bg-opacity));
+  background-color: rgb(239 68 68 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
-  color: rgba(255, 255, 255, var(--tw-text-opacity));
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .alert.warning {
   --tw-bg-opacity: 1;
-  background-color: rgba(252, 211, 77, var(--tw-bg-opacity));
+  background-color: rgb(253 224 71 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
-  color: rgba(255, 255, 255, var(--tw-text-opacity));
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .alert.success {
   --tw-bg-opacity: 1;
-  background-color: rgba(52, 211, 153, var(--tw-bg-opacity));
+  background-color: rgb(74 222 128 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
-  color: rgba(255, 255, 255, var(--tw-text-opacity));
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .alert.info {
   --tw-bg-opacity: 1;
-  background-color: rgba(59, 130, 246, var(--tw-bg-opacity));
+  background-color: rgb(59 130 246 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
-  color: rgba(255, 255, 255, var(--tw-text-opacity));
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .alert.flat {
@@ -184,24 +180,22 @@
   border-radius: 0.25rem;
   padding: 0.25rem;
   transition-property: all;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
   transition-duration: 400ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .alert .close-alert:hover {
   --tw-bg-opacity: 1;
-  background-color: rgba(185, 28, 28, var(--tw-bg-opacity));
+  background-color: rgb(185 28 28 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
-  color: rgba(255, 255, 255, var(--tw-text-opacity));
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .state {
   display: inline-block;
   border-radius: 0.75rem;
   --tw-bg-opacity: 1;
-  background-color: rgba(229, 231, 235, var(--tw-bg-opacity));
+  background-color: rgb(229 231 235 / var(--tw-bg-opacity));
   padding-left: 1rem;
   padding-right: 1rem;
   padding-top: 0.25rem;
@@ -211,156 +205,156 @@
 
 .state.primary {
   --tw-bg-opacity: 1;
-  background-color: rgba(47, 112, 200, var(--tw-bg-opacity));
+  background-color: rgb(47 112 200 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
-  color: rgba(255, 255, 255, var(--tw-text-opacity));
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .state.secondary {
   --tw-bg-opacity: 1;
-  background-color: rgba(255, 135, 54, var(--tw-bg-opacity));
+  background-color: rgb(255 135 54 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
-  color: rgba(255, 255, 255, var(--tw-text-opacity));
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .state.tertiary {
   --tw-bg-opacity: 1;
-  background-color: rgba(112, 55, 148, var(--tw-bg-opacity));
+  background-color: rgb(112 55 148 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
-  color: rgba(255, 255, 255, var(--tw-text-opacity));
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .state.danger {
   --tw-bg-opacity: 1;
-  background-color: rgba(239, 68, 68, var(--tw-bg-opacity));
+  background-color: rgb(239 68 68 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
-  color: rgba(255, 255, 255, var(--tw-text-opacity));
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .state.warning {
   --tw-bg-opacity: 1;
-  background-color: rgba(251, 191, 36, var(--tw-bg-opacity));
+  background-color: rgb(250 204 21 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
-  color: rgba(255, 255, 255, var(--tw-text-opacity));
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .state.success {
   --tw-bg-opacity: 1;
-  background-color: rgba(16, 185, 129, var(--tw-bg-opacity));
+  background-color: rgb(34 197 94 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
-  color: rgba(255, 255, 255, var(--tw-text-opacity));
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .state.info {
   --tw-bg-opacity: 1;
-  background-color: rgba(59, 130, 246, var(--tw-bg-opacity));
+  background-color: rgb(59 130 246 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
-  color: rgba(255, 255, 255, var(--tw-text-opacity));
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .state.primary-outline {
   border-width: 2px;
   --tw-border-opacity: 1;
-  border-color: rgba(47, 112, 200, var(--tw-border-opacity));
+  border-color: rgb(47 112 200 / var(--tw-border-opacity));
   background-color: transparent;
   --tw-text-opacity: 1;
-  color: rgba(47, 112, 200, var(--tw-text-opacity));
+  color: rgb(47 112 200 / var(--tw-text-opacity));
 }
 
 .state.secondary-outline {
   border-width: 2px;
   --tw-border-opacity: 1;
-  border-color: rgba(255, 135, 54, var(--tw-border-opacity));
+  border-color: rgb(255 135 54 / var(--tw-border-opacity));
   background-color: transparent;
   --tw-text-opacity: 1;
-  color: rgba(255, 135, 54, var(--tw-text-opacity));
+  color: rgb(255 135 54 / var(--tw-text-opacity));
 }
 
 .state.tertiary-outline {
   border-width: 2px;
   --tw-border-opacity: 1;
-  border-color: rgba(112, 55, 148, var(--tw-border-opacity));
+  border-color: rgb(112 55 148 / var(--tw-border-opacity));
   background-color: transparent;
   --tw-text-opacity: 1;
-  color: rgba(112, 55, 148, var(--tw-text-opacity));
+  color: rgb(112 55 148 / var(--tw-text-opacity));
 }
 
 .state.danger-outline {
   border-width: 2px;
   --tw-border-opacity: 1;
-  border-color: rgba(239, 68, 68, var(--tw-border-opacity));
+  border-color: rgb(239 68 68 / var(--tw-border-opacity));
   background-color: transparent;
   --tw-text-opacity: 1;
-  color: rgba(239, 68, 68, var(--tw-text-opacity));
+  color: rgb(239 68 68 / var(--tw-text-opacity));
 }
 
 .state.warning-outline {
   border-width: 2px;
   --tw-border-opacity: 1;
-  border-color: rgba(251, 191, 36, var(--tw-border-opacity));
+  border-color: rgb(250 204 21 / var(--tw-border-opacity));
   background-color: transparent;
   --tw-text-opacity: 1;
-  color: rgba(251, 191, 36, var(--tw-text-opacity));
+  color: rgb(250 204 21 / var(--tw-text-opacity));
 }
 
 .state.success-outline {
   border-width: 2px;
   --tw-border-opacity: 1;
-  border-color: rgba(16, 185, 129, var(--tw-border-opacity));
+  border-color: rgb(34 197 94 / var(--tw-border-opacity));
   background-color: transparent;
   --tw-text-opacity: 1;
-  color: rgba(16, 185, 129, var(--tw-text-opacity));
+  color: rgb(34 197 94 / var(--tw-text-opacity));
 }
 
 .state.info-outline {
   border-width: 2px;
   --tw-border-opacity: 1;
-  border-color: rgba(59, 130, 246, var(--tw-border-opacity));
+  border-color: rgb(59 130 246 / var(--tw-border-opacity));
   background-color: transparent;
   --tw-text-opacity: 1;
-  color: rgba(59, 130, 246, var(--tw-text-opacity));
+  color: rgb(59 130 246 / var(--tw-text-opacity));
 }
 
 .state.semi-primary {
-  background-color: rgba(47, 112, 200, 0.3);
+  background-color: rgb(47 112 200 / 0.3);
   --tw-text-opacity: 1;
-  color: rgba(47, 112, 200, var(--tw-text-opacity));
+  color: rgb(47 112 200 / var(--tw-text-opacity));
 }
 
 .state.semi-secondary {
-  background-color: rgba(255, 135, 54, 0.3);
+  background-color: rgb(255 135 54 / 0.3);
   --tw-text-opacity: 1;
-  color: rgba(255, 118, 27, var(--tw-text-opacity));
+  color: rgb(255 118 27 / var(--tw-text-opacity));
 }
 
 .state.semi-tertiary {
-  background-color: rgba(112, 55, 148, 0.3);
+  background-color: rgb(112 55 148 / 0.3);
   --tw-text-opacity: 1;
-  color: rgba(112, 55, 148, var(--tw-text-opacity));
+  color: rgb(112 55 148 / var(--tw-text-opacity));
 }
 
 .state.semi-danger {
-  background-color: rgba(239, 68, 68, 0.3);
+  background-color: rgb(239 68 68 / 0.3);
   --tw-text-opacity: 1;
-  color: rgba(220, 38, 38, var(--tw-text-opacity));
+  color: rgb(220 38 38 / var(--tw-text-opacity));
 }
 
 .state.semi-warning {
-  background-color: rgba(251, 191, 36, 0.3);
+  background-color: rgb(250 204 21 / 0.3);
   --tw-text-opacity: 1;
-  color: rgba(217, 119, 6, var(--tw-text-opacity));
+  color: rgb(202 138 4 / var(--tw-text-opacity));
 }
 
 .state.semi-success {
-  background-color: rgba(16, 185, 129, 0.3);
+  background-color: rgb(34 197 94 / 0.3);
   --tw-text-opacity: 1;
-  color: rgba(5, 150, 105, var(--tw-text-opacity));
+  color: rgb(22 163 74 / var(--tw-text-opacity));
 }
 
 .state.semi-info {
-  background-color: rgba(59, 130, 246, 0.3);
+  background-color: rgb(59 130 246 / 0.3);
   --tw-text-opacity: 1;
-  color: rgba(37, 99, 235, var(--tw-text-opacity));
+  color: rgb(37 99 235 / var(--tw-text-opacity));
 }
 
 .state.has-icon {
@@ -385,27 +379,25 @@
   border-radius: 0.25rem;
   border-width: 2px;
   --tw-border-opacity: 1;
-  border-color: rgba(229, 231, 235, var(--tw-border-opacity));
+  border-color: rgb(229 231 235 / var(--tw-border-opacity));
   --tw-bg-opacity: 1;
-  background-color: rgba(229, 231, 235, var(--tw-bg-opacity));
+  background-color: rgb(229 231 235 / var(--tw-bg-opacity));
   padding-left: 1.25rem;
   padding-right: 1.25rem;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   --tw-text-opacity: 1;
-  color: rgba(55, 65, 81, var(--tw-text-opacity));
+  color: rgb(55 65 81 / var(--tw-text-opacity));
   transition-property: all;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
   transition-duration: 400ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button:hover {
   --tw-border-opacity: 1;
-  border-color: rgba(209, 213, 219, var(--tw-border-opacity));
+  border-color: rgb(209 213 219 / var(--tw-border-opacity));
   --tw-bg-opacity: 1;
-  background-color: rgba(209, 213, 219, var(--tw-bg-opacity));
+  background-color: rgb(209 213 219 / var(--tw-bg-opacity));
 }
 
 .button svg {
@@ -416,29 +408,27 @@
 
 .button.button-primary {
   --tw-border-opacity: 1;
-  border-color: rgba(47, 112, 200, var(--tw-border-opacity));
+  border-color: rgb(47 112 200 / var(--tw-border-opacity));
   --tw-bg-opacity: 1;
-  background-color: rgba(47, 112, 200, var(--tw-bg-opacity));
+  background-color: rgb(47 112 200 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
-  color: rgba(255, 255, 255, var(--tw-text-opacity));
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .button.button-primary:hover {
   --tw-border-opacity: 1;
-  border-color: rgba(24, 95, 192, var(--tw-border-opacity));
+  border-color: rgb(24 95 192 / var(--tw-border-opacity));
   --tw-bg-opacity: 1;
-  background-color: rgba(24, 95, 192, var(--tw-bg-opacity));
+  background-color: rgb(24 95 192 / var(--tw-bg-opacity));
 }
 
 .button.button-primary.semi-transparent {
-  --tw-border-opacity: 1;
-  border-color: rgba(138, 181, 231, var(--tw-border-opacity));
+  border-color: rgb(138 181 231 / var(--tw-border-opacity));
   --tw-border-opacity: 0.2;
-  --tw-bg-opacity: 1;
-  background-color: rgba(92, 147, 216, var(--tw-bg-opacity));
+  background-color: rgb(92 147 216 / var(--tw-bg-opacity));
   --tw-bg-opacity: 0.2;
   --tw-text-opacity: 1;
-  color: rgba(47, 112, 200, var(--tw-text-opacity));
+  color: rgb(47 112 200 / var(--tw-text-opacity));
 }
 
 .button.button-primary.semi-transparent:hover {
@@ -448,43 +438,41 @@
 
 .button.button-primary-outline {
   --tw-border-opacity: 1;
-  border-color: rgba(47, 112, 200, var(--tw-border-opacity));
+  border-color: rgb(47 112 200 / var(--tw-border-opacity));
   background-color: transparent;
   --tw-text-opacity: 1;
-  color: rgba(47, 112, 200, var(--tw-text-opacity));
+  color: rgb(47 112 200 / var(--tw-text-opacity));
 }
 
 .button.button-primary-outline:hover {
   --tw-bg-opacity: 1;
-  background-color: rgba(47, 112, 200, var(--tw-bg-opacity));
+  background-color: rgb(47 112 200 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
-  color: rgba(255, 255, 255, var(--tw-text-opacity));
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .button.button-primary-flat {
   border-radius: 0px;
   --tw-border-opacity: 1;
-  border-color: rgba(47, 112, 200, var(--tw-border-opacity));
+  border-color: rgb(47 112 200 / var(--tw-border-opacity));
   --tw-bg-opacity: 1;
-  background-color: rgba(47, 112, 200, var(--tw-bg-opacity));
+  background-color: rgb(47 112 200 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
-  color: rgba(255, 255, 255, var(--tw-text-opacity));
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .button.button-primary-flat:hover {
   --tw-bg-opacity: 1;
-  background-color: rgba(47, 112, 200, var(--tw-bg-opacity));
+  background-color: rgb(47 112 200 / var(--tw-bg-opacity));
 }
 
 .button.button-primary-flat.semi-transparent {
-  --tw-border-opacity: 1;
-  border-color: rgba(138, 181, 231, var(--tw-border-opacity));
+  border-color: rgb(138 181 231 / var(--tw-border-opacity));
   --tw-border-opacity: 0.2;
-  --tw-bg-opacity: 1;
-  background-color: rgba(92, 147, 216, var(--tw-bg-opacity));
+  background-color: rgb(92 147 216 / var(--tw-bg-opacity));
   --tw-bg-opacity: 0.2;
   --tw-text-opacity: 1;
-  color: rgba(47, 112, 200, var(--tw-text-opacity));
+  color: rgb(47 112 200 / var(--tw-text-opacity));
 }
 
 .button.button-primary-flat.semi-transparent:hover {
@@ -495,45 +483,43 @@
 .button.button-primary-flat-outline {
   border-radius: 0px;
   --tw-border-opacity: 1;
-  border-color: rgba(47, 112, 200, var(--tw-border-opacity));
+  border-color: rgb(47 112 200 / var(--tw-border-opacity));
   background-color: transparent;
   --tw-text-opacity: 1;
-  color: rgba(47, 112, 200, var(--tw-text-opacity));
+  color: rgb(47 112 200 / var(--tw-text-opacity));
 }
 
 .button.button-primary-flat-outline:hover {
   --tw-bg-opacity: 1;
-  background-color: rgba(47, 112, 200, var(--tw-bg-opacity));
+  background-color: rgb(47 112 200 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
-  color: rgba(255, 255, 255, var(--tw-text-opacity));
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .button.button-primary-rounded {
   border-radius: 1.5rem;
   --tw-border-opacity: 1;
-  border-color: rgba(47, 112, 200, var(--tw-border-opacity));
+  border-color: rgb(47 112 200 / var(--tw-border-opacity));
   --tw-bg-opacity: 1;
-  background-color: rgba(47, 112, 200, var(--tw-bg-opacity));
+  background-color: rgb(47 112 200 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
-  color: rgba(255, 255, 255, var(--tw-text-opacity));
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .button.button-primary-rounded:hover {
   --tw-border-opacity: 1;
-  border-color: rgba(24, 95, 192, var(--tw-border-opacity));
+  border-color: rgb(24 95 192 / var(--tw-border-opacity));
   --tw-bg-opacity: 1;
-  background-color: rgba(24, 95, 192, var(--tw-bg-opacity));
+  background-color: rgb(24 95 192 / var(--tw-bg-opacity));
 }
 
 .button.button-primary-rounded.semi-transparent {
-  --tw-border-opacity: 1;
-  border-color: rgba(138, 181, 231, var(--tw-border-opacity));
+  border-color: rgb(138 181 231 / var(--tw-border-opacity));
   --tw-border-opacity: 0.2;
-  --tw-bg-opacity: 1;
-  background-color: rgba(92, 147, 216, var(--tw-bg-opacity));
+  background-color: rgb(92 147 216 / var(--tw-bg-opacity));
   --tw-bg-opacity: 0.2;
   --tw-text-opacity: 1;
-  color: rgba(47, 112, 200, var(--tw-text-opacity));
+  color: rgb(47 112 200 / var(--tw-text-opacity));
 }
 
 .button.button-primary-rounded.semi-transparent:hover {
@@ -544,46 +530,44 @@
 .button.button-primary-rounded-outline {
   border-radius: 1.5rem;
   --tw-border-opacity: 1;
-  border-color: rgba(47, 112, 200, var(--tw-border-opacity));
+  border-color: rgb(47 112 200 / var(--tw-border-opacity));
   background-color: transparent;
   --tw-text-opacity: 1;
-  color: rgba(47, 112, 200, var(--tw-text-opacity));
+  color: rgb(47 112 200 / var(--tw-text-opacity));
 }
 
 .button.button-primary-rounded-outline:hover {
   --tw-border-opacity: 1;
-  border-color: rgba(47, 112, 200, var(--tw-border-opacity));
+  border-color: rgb(47 112 200 / var(--tw-border-opacity));
   --tw-bg-opacity: 1;
-  background-color: rgba(47, 112, 200, var(--tw-bg-opacity));
+  background-color: rgb(47 112 200 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
-  color: rgba(255, 255, 255, var(--tw-text-opacity));
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .button.button-secondary {
   --tw-border-opacity: 1;
-  border-color: rgba(255, 135, 54, var(--tw-border-opacity));
+  border-color: rgb(255 135 54 / var(--tw-border-opacity));
   --tw-bg-opacity: 1;
-  background-color: rgba(255, 135, 54, var(--tw-bg-opacity));
+  background-color: rgb(255 135 54 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
-  color: rgba(255, 255, 255, var(--tw-text-opacity));
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .button.button-secondary:hover {
   --tw-border-opacity: 1;
-  border-color: rgba(255, 118, 27, var(--tw-border-opacity));
+  border-color: rgb(255 118 27 / var(--tw-border-opacity));
   --tw-bg-opacity: 1;
-  background-color: rgba(255, 118, 27, var(--tw-bg-opacity));
+  background-color: rgb(255 118 27 / var(--tw-bg-opacity));
 }
 
 .button.button-secondary.semi-transparent {
-  --tw-border-opacity: 1;
-  border-color: rgba(255, 200, 163, var(--tw-border-opacity));
+  border-color: rgb(255 200 163 / var(--tw-border-opacity));
   --tw-border-opacity: 0.2;
-  --tw-bg-opacity: 1;
-  background-color: rgba(255, 167, 109, var(--tw-bg-opacity));
+  background-color: rgb(255 167 109 / var(--tw-bg-opacity));
   --tw-bg-opacity: 0.2;
   --tw-text-opacity: 1;
-  color: rgba(255, 135, 54, var(--tw-text-opacity));
+  color: rgb(255 135 54 / var(--tw-text-opacity));
 }
 
 .button.button-secondary.semi-transparent:hover {
@@ -593,45 +577,43 @@
 
 .button.button-secondary-outline {
   --tw-border-opacity: 1;
-  border-color: rgba(255, 135, 54, var(--tw-border-opacity));
+  border-color: rgb(255 135 54 / var(--tw-border-opacity));
   background-color: transparent;
   --tw-text-opacity: 1;
-  color: rgba(255, 135, 54, var(--tw-text-opacity));
+  color: rgb(255 135 54 / var(--tw-text-opacity));
 }
 
 .button.button-secondary-outline:hover {
   --tw-bg-opacity: 1;
-  background-color: rgba(255, 135, 54, var(--tw-bg-opacity));
+  background-color: rgb(255 135 54 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
-  color: rgba(255, 255, 255, var(--tw-text-opacity));
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .button.button-secondary-flat {
   border-radius: 0px;
   --tw-border-opacity: 1;
-  border-color: rgba(255, 135, 54, var(--tw-border-opacity));
+  border-color: rgb(255 135 54 / var(--tw-border-opacity));
   --tw-bg-opacity: 1;
-  background-color: rgba(255, 135, 54, var(--tw-bg-opacity));
+  background-color: rgb(255 135 54 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
-  color: rgba(255, 255, 255, var(--tw-text-opacity));
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .button.button-secondary-flat:hover {
   --tw-border-opacity: 1;
-  border-color: rgba(255, 118, 27, var(--tw-border-opacity));
+  border-color: rgb(255 118 27 / var(--tw-border-opacity));
   --tw-bg-opacity: 1;
-  background-color: rgba(255, 118, 27, var(--tw-bg-opacity));
+  background-color: rgb(255 118 27 / var(--tw-bg-opacity));
 }
 
 .button.button-secondary-flat.semi-transparent {
-  --tw-border-opacity: 1;
-  border-color: rgba(255, 200, 163, var(--tw-border-opacity));
+  border-color: rgb(255 200 163 / var(--tw-border-opacity));
   --tw-border-opacity: 0.2;
-  --tw-bg-opacity: 1;
-  background-color: rgba(255, 167, 109, var(--tw-bg-opacity));
+  background-color: rgb(255 167 109 / var(--tw-bg-opacity));
   --tw-bg-opacity: 0.2;
   --tw-text-opacity: 1;
-  color: rgba(255, 135, 54, var(--tw-text-opacity));
+  color: rgb(255 135 54 / var(--tw-text-opacity));
 }
 
 .button.button-secondary-flat.semi-transparent:hover {
@@ -642,45 +624,43 @@
 .button.button-secondary-flat-outline {
   border-radius: 0px;
   --tw-border-opacity: 1;
-  border-color: rgba(255, 135, 54, var(--tw-border-opacity));
+  border-color: rgb(255 135 54 / var(--tw-border-opacity));
   background-color: transparent;
   --tw-text-opacity: 1;
-  color: rgba(255, 135, 54, var(--tw-text-opacity));
+  color: rgb(255 135 54 / var(--tw-text-opacity));
 }
 
 .button.button-secondary-flat-outline:hover {
   --tw-bg-opacity: 1;
-  background-color: rgba(255, 135, 54, var(--tw-bg-opacity));
+  background-color: rgb(255 135 54 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
-  color: rgba(255, 255, 255, var(--tw-text-opacity));
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .button.button-secondary-rounded {
   border-radius: 1.5rem;
   --tw-border-opacity: 1;
-  border-color: rgba(255, 135, 54, var(--tw-border-opacity));
+  border-color: rgb(255 135 54 / var(--tw-border-opacity));
   --tw-bg-opacity: 1;
-  background-color: rgba(255, 135, 54, var(--tw-bg-opacity));
+  background-color: rgb(255 135 54 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
-  color: rgba(255, 255, 255, var(--tw-text-opacity));
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .button.button-secondary-rounded:hover {
   --tw-border-opacity: 1;
-  border-color: rgba(255, 118, 27, var(--tw-border-opacity));
+  border-color: rgb(255 118 27 / var(--tw-border-opacity));
   --tw-bg-opacity: 1;
-  background-color: rgba(255, 118, 27, var(--tw-bg-opacity));
+  background-color: rgb(255 118 27 / var(--tw-bg-opacity));
 }
 
 .button.button-secondary-rounded.semi-transparent {
-  --tw-border-opacity: 1;
-  border-color: rgba(255, 200, 163, var(--tw-border-opacity));
+  border-color: rgb(255 200 163 / var(--tw-border-opacity));
   --tw-border-opacity: 0.2;
-  --tw-bg-opacity: 1;
-  background-color: rgba(255, 167, 109, var(--tw-bg-opacity));
+  background-color: rgb(255 167 109 / var(--tw-bg-opacity));
   --tw-bg-opacity: 0.2;
   --tw-text-opacity: 1;
-  color: rgba(255, 135, 54, var(--tw-text-opacity));
+  color: rgb(255 135 54 / var(--tw-text-opacity));
 }
 
 .button.button-secondary-rounded.semi-transparent:hover {
@@ -691,46 +671,44 @@
 .button.button-secondary-rounded-outline {
   border-radius: 1.5rem;
   --tw-border-opacity: 1;
-  border-color: rgba(255, 135, 54, var(--tw-border-opacity));
+  border-color: rgb(255 135 54 / var(--tw-border-opacity));
   background-color: transparent;
   --tw-text-opacity: 1;
-  color: rgba(255, 135, 54, var(--tw-text-opacity));
+  color: rgb(255 135 54 / var(--tw-text-opacity));
 }
 
 .button.button-secondary-rounded-outline:hover {
   --tw-border-opacity: 1;
-  border-color: rgba(255, 135, 54, var(--tw-border-opacity));
+  border-color: rgb(255 135 54 / var(--tw-border-opacity));
   --tw-bg-opacity: 1;
-  background-color: rgba(255, 135, 54, var(--tw-bg-opacity));
+  background-color: rgb(255 135 54 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
-  color: rgba(255, 255, 255, var(--tw-text-opacity));
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .button.button-tertiary {
   --tw-border-opacity: 1;
-  border-color: rgba(112, 55, 148, var(--tw-border-opacity));
+  border-color: rgb(112 55 148 / var(--tw-border-opacity));
   --tw-bg-opacity: 1;
-  background-color: rgba(112, 55, 148, var(--tw-bg-opacity));
+  background-color: rgb(112 55 148 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
-  color: rgba(255, 255, 255, var(--tw-text-opacity));
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .button.button-tertiary:hover {
   --tw-border-opacity: 1;
-  border-color: rgba(93, 27, 133, var(--tw-border-opacity));
+  border-color: rgb(93 27 133 / var(--tw-border-opacity));
   --tw-bg-opacity: 1;
-  background-color: rgba(93, 27, 133, var(--tw-bg-opacity));
+  background-color: rgb(93 27 133 / var(--tw-bg-opacity));
 }
 
 .button.button-tertiary.semi-transparent {
-  --tw-border-opacity: 1;
-  border-color: rgba(191, 164, 209, var(--tw-border-opacity));
+  border-color: rgb(191 164 209 / var(--tw-border-opacity));
   --tw-border-opacity: 0.2;
-  --tw-bg-opacity: 1;
-  background-color: rgba(152, 109, 178, var(--tw-bg-opacity));
+  background-color: rgb(152 109 178 / var(--tw-bg-opacity));
   --tw-bg-opacity: 0.2;
   --tw-text-opacity: 1;
-  color: rgba(112, 55, 148, var(--tw-text-opacity));
+  color: rgb(112 55 148 / var(--tw-text-opacity));
 }
 
 .button.button-tertiary.semi-transparent:hover {
@@ -740,45 +718,43 @@
 
 .button.button-tertiary-outline {
   --tw-border-opacity: 1;
-  border-color: rgba(112, 55, 148, var(--tw-border-opacity));
+  border-color: rgb(112 55 148 / var(--tw-border-opacity));
   background-color: transparent;
   --tw-text-opacity: 1;
-  color: rgba(112, 55, 148, var(--tw-text-opacity));
+  color: rgb(112 55 148 / var(--tw-text-opacity));
 }
 
 .button.button-tertiary-outline:hover {
   --tw-bg-opacity: 1;
-  background-color: rgba(112, 55, 148, var(--tw-bg-opacity));
+  background-color: rgb(112 55 148 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
-  color: rgba(255, 255, 255, var(--tw-text-opacity));
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .button.button-tertiary-flat {
   border-radius: 0px;
   --tw-border-opacity: 1;
-  border-color: rgba(112, 55, 148, var(--tw-border-opacity));
+  border-color: rgb(112 55 148 / var(--tw-border-opacity));
   --tw-bg-opacity: 1;
-  background-color: rgba(112, 55, 148, var(--tw-bg-opacity));
+  background-color: rgb(112 55 148 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
-  color: rgba(255, 255, 255, var(--tw-text-opacity));
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .button.button-tertiary-flat:hover {
   --tw-border-opacity: 1;
-  border-color: rgba(93, 27, 133, var(--tw-border-opacity));
+  border-color: rgb(93 27 133 / var(--tw-border-opacity));
   --tw-bg-opacity: 1;
-  background-color: rgba(93, 27, 133, var(--tw-bg-opacity));
+  background-color: rgb(93 27 133 / var(--tw-bg-opacity));
 }
 
 .button.button-tertiary-flat.semi-transparent {
-  --tw-border-opacity: 1;
-  border-color: rgba(191, 164, 209, var(--tw-border-opacity));
+  border-color: rgb(191 164 209 / var(--tw-border-opacity));
   --tw-border-opacity: 0.2;
-  --tw-bg-opacity: 1;
-  background-color: rgba(152, 109, 178, var(--tw-bg-opacity));
+  background-color: rgb(152 109 178 / var(--tw-bg-opacity));
   --tw-bg-opacity: 0.2;
   --tw-text-opacity: 1;
-  color: rgba(112, 55, 148, var(--tw-text-opacity));
+  color: rgb(112 55 148 / var(--tw-text-opacity));
 }
 
 .button.button-tertiary-flat.semi-transparent:hover {
@@ -789,45 +765,43 @@
 .button.button-tertiary-flat-outline {
   border-radius: 0px;
   --tw-border-opacity: 1;
-  border-color: rgba(112, 55, 148, var(--tw-border-opacity));
+  border-color: rgb(112 55 148 / var(--tw-border-opacity));
   background-color: transparent;
   --tw-text-opacity: 1;
-  color: rgba(112, 55, 148, var(--tw-text-opacity));
+  color: rgb(112 55 148 / var(--tw-text-opacity));
 }
 
 .button.button-tertiary-flat-outline:hover {
   --tw-bg-opacity: 1;
-  background-color: rgba(112, 55, 148, var(--tw-bg-opacity));
+  background-color: rgb(112 55 148 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
-  color: rgba(255, 255, 255, var(--tw-text-opacity));
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .button.button-tertiary-rounded {
   border-radius: 1.5rem;
   --tw-border-opacity: 1;
-  border-color: rgba(112, 55, 148, var(--tw-border-opacity));
+  border-color: rgb(112 55 148 / var(--tw-border-opacity));
   --tw-bg-opacity: 1;
-  background-color: rgba(112, 55, 148, var(--tw-bg-opacity));
+  background-color: rgb(112 55 148 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
-  color: rgba(255, 255, 255, var(--tw-text-opacity));
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .button.button-tertiary-rounded:hover {
   --tw-border-opacity: 1;
-  border-color: rgba(93, 27, 133, var(--tw-border-opacity));
+  border-color: rgb(93 27 133 / var(--tw-border-opacity));
   --tw-bg-opacity: 1;
-  background-color: rgba(93, 27, 133, var(--tw-bg-opacity));
+  background-color: rgb(93 27 133 / var(--tw-bg-opacity));
 }
 
 .button.button-tertiary-rounded.semi-transparent {
-  --tw-border-opacity: 1;
-  border-color: rgba(191, 164, 209, var(--tw-border-opacity));
+  border-color: rgb(191 164 209 / var(--tw-border-opacity));
   --tw-border-opacity: 0.2;
-  --tw-bg-opacity: 1;
-  background-color: rgba(152, 109, 178, var(--tw-bg-opacity));
+  background-color: rgb(152 109 178 / var(--tw-bg-opacity));
   --tw-bg-opacity: 0.2;
   --tw-text-opacity: 1;
-  color: rgba(112, 55, 148, var(--tw-text-opacity));
+  color: rgb(112 55 148 / var(--tw-text-opacity));
 }
 
 .button.button-tertiary-rounded.semi-transparent:hover {
@@ -838,46 +812,44 @@
 .button.button-tertiary-rounded-outline {
   border-radius: 1.5rem;
   --tw-border-opacity: 1;
-  border-color: rgba(112, 55, 148, var(--tw-border-opacity));
+  border-color: rgb(112 55 148 / var(--tw-border-opacity));
   background-color: transparent;
   --tw-text-opacity: 1;
-  color: rgba(112, 55, 148, var(--tw-text-opacity));
+  color: rgb(112 55 148 / var(--tw-text-opacity));
 }
 
 .button.button-tertiary-rounded-outline:hover {
   --tw-border-opacity: 1;
-  border-color: rgba(112, 55, 148, var(--tw-border-opacity));
+  border-color: rgb(112 55 148 / var(--tw-border-opacity));
   --tw-bg-opacity: 1;
-  background-color: rgba(112, 55, 148, var(--tw-bg-opacity));
+  background-color: rgb(112 55 148 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
-  color: rgba(255, 255, 255, var(--tw-text-opacity));
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .button.button-danger {
   --tw-border-opacity: 1;
-  border-color: rgba(239, 68, 68, var(--tw-border-opacity));
+  border-color: rgb(239 68 68 / var(--tw-border-opacity));
   --tw-bg-opacity: 1;
-  background-color: rgba(239, 68, 68, var(--tw-bg-opacity));
+  background-color: rgb(239 68 68 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
-  color: rgba(255, 255, 255, var(--tw-text-opacity));
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .button.button-danger:hover {
   --tw-border-opacity: 1;
-  border-color: rgba(220, 38, 38, var(--tw-border-opacity));
+  border-color: rgb(220 38 38 / var(--tw-border-opacity));
   --tw-bg-opacity: 1;
-  background-color: rgba(220, 38, 38, var(--tw-bg-opacity));
+  background-color: rgb(220 38 38 / var(--tw-bg-opacity));
 }
 
 .button.button-danger.semi-transparent {
-  --tw-border-opacity: 1;
-  border-color: rgba(252, 165, 165, var(--tw-border-opacity));
+  border-color: rgb(252 165 165 / var(--tw-border-opacity));
   --tw-border-opacity: 0.2;
-  --tw-bg-opacity: 1;
-  background-color: rgba(239, 68, 68, var(--tw-bg-opacity));
+  background-color: rgb(239 68 68 / var(--tw-bg-opacity));
   --tw-bg-opacity: 0.2;
   --tw-text-opacity: 1;
-  color: rgba(185, 28, 28, var(--tw-text-opacity));
+  color: rgb(185 28 28 / var(--tw-text-opacity));
 }
 
 .button.button-danger.semi-transparent:hover {
@@ -887,45 +859,43 @@
 
 .button.button-danger-outline {
   --tw-border-opacity: 1;
-  border-color: rgba(239, 68, 68, var(--tw-border-opacity));
+  border-color: rgb(239 68 68 / var(--tw-border-opacity));
   background-color: transparent;
   --tw-text-opacity: 1;
-  color: rgba(239, 68, 68, var(--tw-text-opacity));
+  color: rgb(239 68 68 / var(--tw-text-opacity));
 }
 
 .button.button-danger-outline:hover {
   --tw-bg-opacity: 1;
-  background-color: rgba(239, 68, 68, var(--tw-bg-opacity));
+  background-color: rgb(239 68 68 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
-  color: rgba(255, 255, 255, var(--tw-text-opacity));
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .button.button-danger-flat {
   border-radius: 0px;
   --tw-border-opacity: 1;
-  border-color: rgba(239, 68, 68, var(--tw-border-opacity));
+  border-color: rgb(239 68 68 / var(--tw-border-opacity));
   --tw-bg-opacity: 1;
-  background-color: rgba(239, 68, 68, var(--tw-bg-opacity));
+  background-color: rgb(239 68 68 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
-  color: rgba(255, 255, 255, var(--tw-text-opacity));
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .button.button-danger-flat:hover {
   --tw-border-opacity: 1;
-  border-color: rgba(220, 38, 38, var(--tw-border-opacity));
+  border-color: rgb(220 38 38 / var(--tw-border-opacity));
   --tw-bg-opacity: 1;
-  background-color: rgba(220, 38, 38, var(--tw-bg-opacity));
+  background-color: rgb(220 38 38 / var(--tw-bg-opacity));
 }
 
 .button.button-danger-flat.semi-transparent {
-  --tw-border-opacity: 1;
-  border-color: rgba(252, 165, 165, var(--tw-border-opacity));
+  border-color: rgb(252 165 165 / var(--tw-border-opacity));
   --tw-border-opacity: 0.2;
-  --tw-bg-opacity: 1;
-  background-color: rgba(239, 68, 68, var(--tw-bg-opacity));
+  background-color: rgb(239 68 68 / var(--tw-bg-opacity));
   --tw-bg-opacity: 0.2;
   --tw-text-opacity: 1;
-  color: rgba(185, 28, 28, var(--tw-text-opacity));
+  color: rgb(185 28 28 / var(--tw-text-opacity));
 }
 
 .button.button-danger-flat.semi-transparent:hover {
@@ -936,45 +906,43 @@
 .button.button-danger-flat-outline {
   border-radius: 0px;
   --tw-border-opacity: 1;
-  border-color: rgba(239, 68, 68, var(--tw-border-opacity));
+  border-color: rgb(239 68 68 / var(--tw-border-opacity));
   background-color: transparent;
   --tw-text-opacity: 1;
-  color: rgba(239, 68, 68, var(--tw-text-opacity));
+  color: rgb(239 68 68 / var(--tw-text-opacity));
 }
 
 .button.button-danger-flat-outline:hover {
   --tw-bg-opacity: 1;
-  background-color: rgba(239, 68, 68, var(--tw-bg-opacity));
+  background-color: rgb(239 68 68 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
-  color: rgba(255, 255, 255, var(--tw-text-opacity));
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .button.button-danger-rounded {
   border-radius: 1.5rem;
   --tw-border-opacity: 1;
-  border-color: rgba(239, 68, 68, var(--tw-border-opacity));
+  border-color: rgb(239 68 68 / var(--tw-border-opacity));
   --tw-bg-opacity: 1;
-  background-color: rgba(239, 68, 68, var(--tw-bg-opacity));
+  background-color: rgb(239 68 68 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
-  color: rgba(255, 255, 255, var(--tw-text-opacity));
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .button.button-danger-rounded:hover {
   --tw-border-opacity: 1;
-  border-color: rgba(220, 38, 38, var(--tw-border-opacity));
+  border-color: rgb(220 38 38 / var(--tw-border-opacity));
   --tw-bg-opacity: 1;
-  background-color: rgba(220, 38, 38, var(--tw-bg-opacity));
+  background-color: rgb(220 38 38 / var(--tw-bg-opacity));
 }
 
 .button.button-danger-rounded.semi-transparent {
-  --tw-border-opacity: 1;
-  border-color: rgba(252, 165, 165, var(--tw-border-opacity));
+  border-color: rgb(252 165 165 / var(--tw-border-opacity));
   --tw-border-opacity: 0.2;
-  --tw-bg-opacity: 1;
-  background-color: rgba(239, 68, 68, var(--tw-bg-opacity));
+  background-color: rgb(239 68 68 / var(--tw-bg-opacity));
   --tw-bg-opacity: 0.2;
   --tw-text-opacity: 1;
-  color: rgba(185, 28, 28, var(--tw-text-opacity));
+  color: rgb(185 28 28 / var(--tw-text-opacity));
 }
 
 .button.button-danger-rounded.semi-transparent:hover {
@@ -985,46 +953,44 @@
 .button.button-danger-rounded-outline {
   border-radius: 1.5rem;
   --tw-border-opacity: 1;
-  border-color: rgba(239, 68, 68, var(--tw-border-opacity));
+  border-color: rgb(239 68 68 / var(--tw-border-opacity));
   background-color: transparent;
   --tw-text-opacity: 1;
-  color: rgba(239, 68, 68, var(--tw-text-opacity));
+  color: rgb(239 68 68 / var(--tw-text-opacity));
 }
 
 .button.button-danger-rounded-outline:hover {
   --tw-border-opacity: 1;
-  border-color: rgba(239, 68, 68, var(--tw-border-opacity));
+  border-color: rgb(239 68 68 / var(--tw-border-opacity));
   --tw-bg-opacity: 1;
-  background-color: rgba(239, 68, 68, var(--tw-bg-opacity));
+  background-color: rgb(239 68 68 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
-  color: rgba(255, 255, 255, var(--tw-text-opacity));
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .button.button-warning {
   --tw-border-opacity: 1;
-  border-color: rgba(251, 191, 36, var(--tw-border-opacity));
+  border-color: rgb(250 204 21 / var(--tw-border-opacity));
   --tw-bg-opacity: 1;
-  background-color: rgba(251, 191, 36, var(--tw-bg-opacity));
+  background-color: rgb(250 204 21 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
-  color: rgba(255, 255, 255, var(--tw-text-opacity));
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .button.button-warning:hover {
   --tw-border-opacity: 1;
-  border-color: rgba(245, 158, 11, var(--tw-border-opacity));
+  border-color: rgb(234 179 8 / var(--tw-border-opacity));
   --tw-bg-opacity: 1;
-  background-color: rgba(245, 158, 11, var(--tw-bg-opacity));
+  background-color: rgb(234 179 8 / var(--tw-bg-opacity));
 }
 
 .button.button-warning.semi-transparent {
-  --tw-border-opacity: 1;
-  border-color: rgba(252, 211, 77, var(--tw-border-opacity));
+  border-color: rgb(253 224 71 / var(--tw-border-opacity));
   --tw-border-opacity: 0.2;
-  --tw-bg-opacity: 1;
-  background-color: rgba(245, 158, 11, var(--tw-bg-opacity));
+  background-color: rgb(234 179 8 / var(--tw-bg-opacity));
   --tw-bg-opacity: 0.2;
   --tw-text-opacity: 1;
-  color: rgba(180, 83, 9, var(--tw-text-opacity));
+  color: rgb(161 98 7 / var(--tw-text-opacity));
 }
 
 .button.button-warning.semi-transparent:hover {
@@ -1034,45 +1000,43 @@
 
 .button.button-warning-outline {
   --tw-border-opacity: 1;
-  border-color: rgba(251, 191, 36, var(--tw-border-opacity));
+  border-color: rgb(250 204 21 / var(--tw-border-opacity));
   background-color: transparent;
   --tw-text-opacity: 1;
-  color: rgba(251, 191, 36, var(--tw-text-opacity));
+  color: rgb(250 204 21 / var(--tw-text-opacity));
 }
 
 .button.button-warning-outline:hover {
   --tw-bg-opacity: 1;
-  background-color: rgba(251, 191, 36, var(--tw-bg-opacity));
+  background-color: rgb(250 204 21 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
-  color: rgba(255, 255, 255, var(--tw-text-opacity));
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .button.button-warning-flat {
   border-radius: 0px;
   --tw-border-opacity: 1;
-  border-color: rgba(251, 191, 36, var(--tw-border-opacity));
+  border-color: rgb(250 204 21 / var(--tw-border-opacity));
   --tw-bg-opacity: 1;
-  background-color: rgba(251, 191, 36, var(--tw-bg-opacity));
+  background-color: rgb(250 204 21 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
-  color: rgba(255, 255, 255, var(--tw-text-opacity));
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .button.button-warning-flat:hover {
   --tw-border-opacity: 1;
-  border-color: rgba(245, 158, 11, var(--tw-border-opacity));
+  border-color: rgb(234 179 8 / var(--tw-border-opacity));
   --tw-bg-opacity: 1;
-  background-color: rgba(245, 158, 11, var(--tw-bg-opacity));
+  background-color: rgb(234 179 8 / var(--tw-bg-opacity));
 }
 
 .button.button-warning-flat.semi-transparent {
-  --tw-border-opacity: 1;
-  border-color: rgba(252, 211, 77, var(--tw-border-opacity));
+  border-color: rgb(253 224 71 / var(--tw-border-opacity));
   --tw-border-opacity: 0.2;
-  --tw-bg-opacity: 1;
-  background-color: rgba(245, 158, 11, var(--tw-bg-opacity));
+  background-color: rgb(234 179 8 / var(--tw-bg-opacity));
   --tw-bg-opacity: 0.2;
   --tw-text-opacity: 1;
-  color: rgba(180, 83, 9, var(--tw-text-opacity));
+  color: rgb(161 98 7 / var(--tw-text-opacity));
 }
 
 .button.button-warning-flat.semi-transparent:hover {
@@ -1083,45 +1047,43 @@
 .button.button-warning-flat-outline {
   border-radius: 0px;
   --tw-border-opacity: 1;
-  border-color: rgba(251, 191, 36, var(--tw-border-opacity));
+  border-color: rgb(250 204 21 / var(--tw-border-opacity));
   background-color: transparent;
   --tw-text-opacity: 1;
-  color: rgba(251, 191, 36, var(--tw-text-opacity));
+  color: rgb(250 204 21 / var(--tw-text-opacity));
 }
 
 .button.button-warning-flat-outline:hover {
   --tw-bg-opacity: 1;
-  background-color: rgba(251, 191, 36, var(--tw-bg-opacity));
+  background-color: rgb(250 204 21 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
-  color: rgba(255, 255, 255, var(--tw-text-opacity));
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .button.button-warning-rounded {
   border-radius: 1.5rem;
   --tw-border-opacity: 1;
-  border-color: rgba(251, 191, 36, var(--tw-border-opacity));
+  border-color: rgb(250 204 21 / var(--tw-border-opacity));
   --tw-bg-opacity: 1;
-  background-color: rgba(251, 191, 36, var(--tw-bg-opacity));
+  background-color: rgb(250 204 21 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
-  color: rgba(255, 255, 255, var(--tw-text-opacity));
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .button.button-warning-rounded:hover {
   --tw-border-opacity: 1;
-  border-color: rgba(245, 158, 11, var(--tw-border-opacity));
+  border-color: rgb(234 179 8 / var(--tw-border-opacity));
   --tw-bg-opacity: 1;
-  background-color: rgba(245, 158, 11, var(--tw-bg-opacity));
+  background-color: rgb(234 179 8 / var(--tw-bg-opacity));
 }
 
 .button.button-warning-rounded.semi-transparent {
-  --tw-border-opacity: 1;
-  border-color: rgba(252, 211, 77, var(--tw-border-opacity));
+  border-color: rgb(253 224 71 / var(--tw-border-opacity));
   --tw-border-opacity: 0.2;
-  --tw-bg-opacity: 1;
-  background-color: rgba(245, 158, 11, var(--tw-bg-opacity));
+  background-color: rgb(234 179 8 / var(--tw-bg-opacity));
   --tw-bg-opacity: 0.2;
   --tw-text-opacity: 1;
-  color: rgba(180, 83, 9, var(--tw-text-opacity));
+  color: rgb(161 98 7 / var(--tw-text-opacity));
 }
 
 .button.button-warning-rounded.semi-transparent:hover {
@@ -1132,46 +1094,44 @@
 .button.button-warning-rounded-outline {
   border-radius: 1.5rem;
   --tw-border-opacity: 1;
-  border-color: rgba(251, 191, 36, var(--tw-border-opacity));
+  border-color: rgb(250 204 21 / var(--tw-border-opacity));
   background-color: transparent;
   --tw-text-opacity: 1;
-  color: rgba(251, 191, 36, var(--tw-text-opacity));
+  color: rgb(250 204 21 / var(--tw-text-opacity));
 }
 
 .button.button-warning-rounded-outline:hover {
   --tw-border-opacity: 1;
-  border-color: rgba(251, 191, 36, var(--tw-border-opacity));
+  border-color: rgb(250 204 21 / var(--tw-border-opacity));
   --tw-bg-opacity: 1;
-  background-color: rgba(251, 191, 36, var(--tw-bg-opacity));
+  background-color: rgb(250 204 21 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
-  color: rgba(255, 255, 255, var(--tw-text-opacity));
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .button.button-success {
   --tw-border-opacity: 1;
-  border-color: rgba(16, 185, 129, var(--tw-border-opacity));
+  border-color: rgb(34 197 94 / var(--tw-border-opacity));
   --tw-bg-opacity: 1;
-  background-color: rgba(16, 185, 129, var(--tw-bg-opacity));
+  background-color: rgb(34 197 94 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
-  color: rgba(255, 255, 255, var(--tw-text-opacity));
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .button.button-success:hover {
   --tw-border-opacity: 1;
-  border-color: rgba(5, 150, 105, var(--tw-border-opacity));
+  border-color: rgb(22 163 74 / var(--tw-border-opacity));
   --tw-bg-opacity: 1;
-  background-color: rgba(5, 150, 105, var(--tw-bg-opacity));
+  background-color: rgb(22 163 74 / var(--tw-bg-opacity));
 }
 
 .button.button-success.semi-transparent {
-  --tw-border-opacity: 1;
-  border-color: rgba(110, 231, 183, var(--tw-border-opacity));
+  border-color: rgb(134 239 172 / var(--tw-border-opacity));
   --tw-border-opacity: 0.2;
-  --tw-bg-opacity: 1;
-  background-color: rgba(16, 185, 129, var(--tw-bg-opacity));
+  background-color: rgb(34 197 94 / var(--tw-bg-opacity));
   --tw-bg-opacity: 0.2;
   --tw-text-opacity: 1;
-  color: rgba(4, 120, 87, var(--tw-text-opacity));
+  color: rgb(21 128 61 / var(--tw-text-opacity));
 }
 
 .button.button-success.semi-transparent:hover {
@@ -1181,45 +1141,43 @@
 
 .button.button-success-outline {
   --tw-border-opacity: 1;
-  border-color: rgba(16, 185, 129, var(--tw-border-opacity));
+  border-color: rgb(34 197 94 / var(--tw-border-opacity));
   background-color: transparent;
   --tw-text-opacity: 1;
-  color: rgba(16, 185, 129, var(--tw-text-opacity));
+  color: rgb(34 197 94 / var(--tw-text-opacity));
 }
 
 .button.button-success-outline:hover {
   --tw-bg-opacity: 1;
-  background-color: rgba(16, 185, 129, var(--tw-bg-opacity));
+  background-color: rgb(34 197 94 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
-  color: rgba(255, 255, 255, var(--tw-text-opacity));
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .button.button-success-flat {
   border-radius: 0px;
   --tw-border-opacity: 1;
-  border-color: rgba(16, 185, 129, var(--tw-border-opacity));
+  border-color: rgb(34 197 94 / var(--tw-border-opacity));
   --tw-bg-opacity: 1;
-  background-color: rgba(16, 185, 129, var(--tw-bg-opacity));
+  background-color: rgb(34 197 94 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
-  color: rgba(255, 255, 255, var(--tw-text-opacity));
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .button.button-success-flat:hover {
   --tw-border-opacity: 1;
-  border-color: rgba(5, 150, 105, var(--tw-border-opacity));
+  border-color: rgb(22 163 74 / var(--tw-border-opacity));
   --tw-bg-opacity: 1;
-  background-color: rgba(5, 150, 105, var(--tw-bg-opacity));
+  background-color: rgb(22 163 74 / var(--tw-bg-opacity));
 }
 
 .button.button-success-flat.semi-transparent {
-  --tw-border-opacity: 1;
-  border-color: rgba(110, 231, 183, var(--tw-border-opacity));
+  border-color: rgb(134 239 172 / var(--tw-border-opacity));
   --tw-border-opacity: 0.2;
-  --tw-bg-opacity: 1;
-  background-color: rgba(16, 185, 129, var(--tw-bg-opacity));
+  background-color: rgb(34 197 94 / var(--tw-bg-opacity));
   --tw-bg-opacity: 0.2;
   --tw-text-opacity: 1;
-  color: rgba(4, 120, 87, var(--tw-text-opacity));
+  color: rgb(21 128 61 / var(--tw-text-opacity));
 }
 
 .button.button-success-flat.semi-transparent:hover {
@@ -1230,45 +1188,43 @@
 .button.button-success-flat-outline {
   border-radius: 0px;
   --tw-border-opacity: 1;
-  border-color: rgba(16, 185, 129, var(--tw-border-opacity));
+  border-color: rgb(34 197 94 / var(--tw-border-opacity));
   background-color: transparent;
   --tw-text-opacity: 1;
-  color: rgba(16, 185, 129, var(--tw-text-opacity));
+  color: rgb(34 197 94 / var(--tw-text-opacity));
 }
 
 .button.button-success-flat-outline:hover {
   --tw-bg-opacity: 1;
-  background-color: rgba(16, 185, 129, var(--tw-bg-opacity));
+  background-color: rgb(34 197 94 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
-  color: rgba(255, 255, 255, var(--tw-text-opacity));
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .button.button-success-rounded {
   border-radius: 1.5rem;
   --tw-border-opacity: 1;
-  border-color: rgba(16, 185, 129, var(--tw-border-opacity));
+  border-color: rgb(34 197 94 / var(--tw-border-opacity));
   --tw-bg-opacity: 1;
-  background-color: rgba(16, 185, 129, var(--tw-bg-opacity));
+  background-color: rgb(34 197 94 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
-  color: rgba(255, 255, 255, var(--tw-text-opacity));
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .button.button-success-rounded:hover {
   --tw-border-opacity: 1;
-  border-color: rgba(16, 185, 129, var(--tw-border-opacity));
+  border-color: rgb(34 197 94 / var(--tw-border-opacity));
   --tw-bg-opacity: 1;
-  background-color: rgba(16, 185, 129, var(--tw-bg-opacity));
+  background-color: rgb(34 197 94 / var(--tw-bg-opacity));
 }
 
 .button.button-success-rounded.semi-transparent {
-  --tw-border-opacity: 1;
-  border-color: rgba(110, 231, 183, var(--tw-border-opacity));
+  border-color: rgb(134 239 172 / var(--tw-border-opacity));
   --tw-border-opacity: 0.2;
-  --tw-bg-opacity: 1;
-  background-color: rgba(16, 185, 129, var(--tw-bg-opacity));
+  background-color: rgb(34 197 94 / var(--tw-bg-opacity));
   --tw-bg-opacity: 0.2;
   --tw-text-opacity: 1;
-  color: rgba(4, 120, 87, var(--tw-text-opacity));
+  color: rgb(21 128 61 / var(--tw-text-opacity));
 }
 
 .button.button-success-rounded.semi-transparent:hover {
@@ -1279,46 +1235,44 @@
 .button.button-success-rounded-outline {
   border-radius: 1.5rem;
   --tw-border-opacity: 1;
-  border-color: rgba(16, 185, 129, var(--tw-border-opacity));
+  border-color: rgb(34 197 94 / var(--tw-border-opacity));
   background-color: transparent;
   --tw-text-opacity: 1;
-  color: rgba(16, 185, 129, var(--tw-text-opacity));
+  color: rgb(34 197 94 / var(--tw-text-opacity));
 }
 
 .button.button-success-rounded-outline:hover {
   --tw-border-opacity: 1;
-  border-color: rgba(16, 185, 129, var(--tw-border-opacity));
+  border-color: rgb(34 197 94 / var(--tw-border-opacity));
   --tw-bg-opacity: 1;
-  background-color: rgba(16, 185, 129, var(--tw-bg-opacity));
+  background-color: rgb(34 197 94 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
-  color: rgba(255, 255, 255, var(--tw-text-opacity));
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .button.button-info {
   --tw-border-opacity: 1;
-  border-color: rgba(59, 130, 246, var(--tw-border-opacity));
+  border-color: rgb(59 130 246 / var(--tw-border-opacity));
   --tw-bg-opacity: 1;
-  background-color: rgba(59, 130, 246, var(--tw-bg-opacity));
+  background-color: rgb(59 130 246 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
-  color: rgba(255, 255, 255, var(--tw-text-opacity));
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .button.button-info:hover {
   --tw-border-opacity: 1;
-  border-color: rgba(37, 99, 235, var(--tw-border-opacity));
+  border-color: rgb(37 99 235 / var(--tw-border-opacity));
   --tw-bg-opacity: 1;
-  background-color: rgba(37, 99, 235, var(--tw-bg-opacity));
+  background-color: rgb(37 99 235 / var(--tw-bg-opacity));
 }
 
 .button.button-info.semi-transparent {
-  --tw-border-opacity: 1;
-  border-color: rgba(147, 197, 253, var(--tw-border-opacity));
+  border-color: rgb(147 197 253 / var(--tw-border-opacity));
   --tw-border-opacity: 0.2;
-  --tw-bg-opacity: 1;
-  background-color: rgba(59, 130, 246, var(--tw-bg-opacity));
+  background-color: rgb(59 130 246 / var(--tw-bg-opacity));
   --tw-bg-opacity: 0.2;
   --tw-text-opacity: 1;
-  color: rgba(29, 78, 216, var(--tw-text-opacity));
+  color: rgb(29 78 216 / var(--tw-text-opacity));
 }
 
 .button.button-info.semi-transparent:hover {
@@ -1328,45 +1282,43 @@
 
 .button.button-info-outline {
   --tw-border-opacity: 1;
-  border-color: rgba(59, 130, 246, var(--tw-border-opacity));
+  border-color: rgb(59 130 246 / var(--tw-border-opacity));
   background-color: transparent;
   --tw-text-opacity: 1;
-  color: rgba(59, 130, 246, var(--tw-text-opacity));
+  color: rgb(59 130 246 / var(--tw-text-opacity));
 }
 
 .button.button-info-outline:hover {
   --tw-bg-opacity: 1;
-  background-color: rgba(59, 130, 246, var(--tw-bg-opacity));
+  background-color: rgb(59 130 246 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
-  color: rgba(255, 255, 255, var(--tw-text-opacity));
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .button.button-info-flat {
   border-radius: 0px;
   --tw-border-opacity: 1;
-  border-color: rgba(59, 130, 246, var(--tw-border-opacity));
+  border-color: rgb(59 130 246 / var(--tw-border-opacity));
   --tw-bg-opacity: 1;
-  background-color: rgba(59, 130, 246, var(--tw-bg-opacity));
+  background-color: rgb(59 130 246 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
-  color: rgba(255, 255, 255, var(--tw-text-opacity));
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .button.button-info-flat:hover {
   --tw-border-opacity: 1;
-  border-color: rgba(37, 99, 235, var(--tw-border-opacity));
+  border-color: rgb(37 99 235 / var(--tw-border-opacity));
   --tw-bg-opacity: 1;
-  background-color: rgba(37, 99, 235, var(--tw-bg-opacity));
+  background-color: rgb(37 99 235 / var(--tw-bg-opacity));
 }
 
 .button.button-info-flat.semi-transparent {
-  --tw-border-opacity: 1;
-  border-color: rgba(147, 197, 253, var(--tw-border-opacity));
+  border-color: rgb(147 197 253 / var(--tw-border-opacity));
   --tw-border-opacity: 0.2;
-  --tw-bg-opacity: 1;
-  background-color: rgba(59, 130, 246, var(--tw-bg-opacity));
+  background-color: rgb(59 130 246 / var(--tw-bg-opacity));
   --tw-bg-opacity: 0.2;
   --tw-text-opacity: 1;
-  color: rgba(29, 78, 216, var(--tw-text-opacity));
+  color: rgb(29 78 216 / var(--tw-text-opacity));
 }
 
 .button.button-info-flat.semi-transparent:hover {
@@ -1377,45 +1329,43 @@
 .button.button-info-flat-outline {
   border-radius: 0px;
   --tw-border-opacity: 1;
-  border-color: rgba(59, 130, 246, var(--tw-border-opacity));
+  border-color: rgb(59 130 246 / var(--tw-border-opacity));
   background-color: transparent;
   --tw-text-opacity: 1;
-  color: rgba(59, 130, 246, var(--tw-text-opacity));
+  color: rgb(59 130 246 / var(--tw-text-opacity));
 }
 
 .button.button-info-flat-outline:hover {
   --tw-bg-opacity: 1;
-  background-color: rgba(59, 130, 246, var(--tw-bg-opacity));
+  background-color: rgb(59 130 246 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
-  color: rgba(255, 255, 255, var(--tw-text-opacity));
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .button.button-info-rounded {
   border-radius: 1.5rem;
   --tw-border-opacity: 1;
-  border-color: rgba(59, 130, 246, var(--tw-border-opacity));
+  border-color: rgb(59 130 246 / var(--tw-border-opacity));
   --tw-bg-opacity: 1;
-  background-color: rgba(59, 130, 246, var(--tw-bg-opacity));
+  background-color: rgb(59 130 246 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
-  color: rgba(255, 255, 255, var(--tw-text-opacity));
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .button.button-info-rounded:hover {
   --tw-border-opacity: 1;
-  border-color: rgba(37, 99, 235, var(--tw-border-opacity));
+  border-color: rgb(37 99 235 / var(--tw-border-opacity));
   --tw-bg-opacity: 1;
-  background-color: rgba(37, 99, 235, var(--tw-bg-opacity));
+  background-color: rgb(37 99 235 / var(--tw-bg-opacity));
 }
 
 .button.button-info-rounded.semi-transparent {
-  --tw-border-opacity: 1;
-  border-color: rgba(147, 197, 253, var(--tw-border-opacity));
+  border-color: rgb(147 197 253 / var(--tw-border-opacity));
   --tw-border-opacity: 0.2;
-  --tw-bg-opacity: 1;
-  background-color: rgba(59, 130, 246, var(--tw-bg-opacity));
+  background-color: rgb(59 130 246 / var(--tw-bg-opacity));
   --tw-bg-opacity: 0.2;
   --tw-text-opacity: 1;
-  color: rgba(29, 78, 216, var(--tw-text-opacity));
+  color: rgb(29 78 216 / var(--tw-text-opacity));
 }
 
 .button.button-info-rounded.semi-transparent:hover {
@@ -1426,19 +1376,19 @@
 .button.button-info-rounded-outline {
   border-radius: 1.5rem;
   --tw-border-opacity: 1;
-  border-color: rgba(59, 130, 246, var(--tw-border-opacity));
+  border-color: rgb(59 130 246 / var(--tw-border-opacity));
   background-color: transparent;
   --tw-text-opacity: 1;
-  color: rgba(59, 130, 246, var(--tw-text-opacity));
+  color: rgb(59 130 246 / var(--tw-text-opacity));
 }
 
 .button.button-info-rounded-outline:hover {
   --tw-border-opacity: 1;
-  border-color: rgba(59, 130, 246, var(--tw-border-opacity));
+  border-color: rgb(59 130 246 / var(--tw-border-opacity));
   --tw-bg-opacity: 1;
-  background-color: rgba(59, 130, 246, var(--tw-bg-opacity));
+  background-color: rgb(59 130 246 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
-  color: rgba(255, 255, 255, var(--tw-text-opacity));
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .button.is-small {
@@ -1473,23 +1423,19 @@
   cursor: pointer;
   border-radius: 0.125rem;
   transition-property: all;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
   transition-duration: 400ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .dropdown .dropdown-wrap:hover, .dropdown .dropdown-wrap:focus, .dropdown .dropdown-wrap:focus-within {
   --tw-text-opacity: 1;
-  color: rgba(69, 130, 208, var(--tw-text-opacity));
+  color: rgb(69 130 208 / var(--tw-text-opacity));
 }
 
 .dropdown .dropdown-wrap .dropdown-wrap-icon {
   display: inline-block;
   transform: var(--tw-transform);
   transition-property: all;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
   transition-duration: 300ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -1505,13 +1451,12 @@
   overflow: hidden;
   border-radius: 0.375rem;
   --tw-bg-opacity: 1;
-  background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
   opacity: 0;
-  --tw-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
   transition-property: all;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
   transition-duration: 500ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -1526,19 +1471,17 @@
   padding-bottom: 0.5rem;
   text-align: left;
   --tw-text-opacity: 1;
-  color: rgba(93, 27, 133, var(--tw-text-opacity));
+  color: rgb(93 27 133 / var(--tw-text-opacity));
   transition-property: all;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
   transition-duration: 400ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .dropdown .dropdown-content .dropdown-item:hover {
   --tw-bg-opacity: 1;
-  background-color: rgba(92, 147, 216, var(--tw-bg-opacity));
+  background-color: rgb(92 147 216 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
-  color: rgba(255, 255, 255, var(--tw-text-opacity));
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .dropdown .dropdown-content .dropdown-divider {
@@ -1548,7 +1491,7 @@
   margin-right: 1.5rem;
   border-top-width: 2px;
   --tw-border-opacity: 1;
-  border-color: rgba(211, 191, 224, var(--tw-border-opacity));
+  border-color: rgb(211 191 224 / var(--tw-border-opacity));
 }
 
 .dropdown .dropdown-content .dropdown-title {
@@ -1560,7 +1503,7 @@
   font-weight: 600;
   text-transform: uppercase;
   --tw-text-opacity: 1;
-  color: rgba(132, 82, 163, var(--tw-text-opacity));
+  color: rgb(132 82 163 / var(--tw-text-opacity));
 }
 
 .dropdown .dropdown-content.is-fade-up {
@@ -1575,10 +1518,8 @@
 .dropdown .user svg {
   margin-left: 0.5rem;
   --tw-text-opacity: 1;
-  color: rgba(255, 255, 255, var(--tw-text-opacity));
+  color: rgb(255 255 255 / var(--tw-text-opacity));
   transition-property: all;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
   transition-duration: 400ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -1623,12 +1564,12 @@
   overflow: hidden;
   border-radius: 9999px;
   --tw-bg-opacity: 1;
-  background-color: rgba(59, 130, 246, var(--tw-bg-opacity));
+  background-color: rgb(59 130 246 / var(--tw-bg-opacity));
   font-size: 0.875rem;
   line-height: 1.25rem;
   font-weight: 600;
   --tw-text-opacity: 1;
-  color: rgba(255, 255, 255, var(--tw-text-opacity));
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .avatar-small {
@@ -1643,40 +1584,39 @@
 .link {
   display: inline-block;
   --tw-text-opacity: 1;
-  color: rgba(147, 197, 253, var(--tw-text-opacity));
+  color: rgb(147 197 253 / var(--tw-text-opacity));
   transition-property: all;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
   transition-duration: 400ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link.info {
   --tw-text-opacity: 1;
-  color: rgba(69, 130, 208, var(--tw-text-opacity));
+  color: rgb(69 130 208 / var(--tw-text-opacity));
 }
 
 .link.info:hover {
   --tw-text-opacity: 1;
-  color: rgba(47, 112, 200, var(--tw-text-opacity));
+  color: rgb(47 112 200 / var(--tw-text-opacity));
 }
 
 .link.danger {
   --tw-text-opacity: 1;
-  color: rgba(248, 113, 113, var(--tw-text-opacity));
+  color: rgb(248 113 113 / var(--tw-text-opacity));
 }
 
 .link.danger:hover {
   --tw-text-opacity: 1;
-  color: rgba(239, 68, 68, var(--tw-text-opacity));
+  color: rgb(239 68 68 / var(--tw-text-opacity));
 }
 
 .card {
   overflow: hidden;
   border-radius: 0.25rem;
   --tw-bg-opacity: 1;
-  background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
-  --tw-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
@@ -1695,7 +1635,7 @@
   line-height: 2rem;
   font-weight: 600;
   --tw-text-opacity: 1;
-  color: rgba(47, 112, 200, var(--tw-text-opacity));
+  color: rgb(47 112 200 / var(--tw-text-opacity));
 }
 
 .card .card-content p:not(:last-child) {
@@ -1707,7 +1647,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
   border-top-width: 1px;
-  border-color: rgba(229, 231, 235, 0.5);
+  border-color: rgb(229 231 235 / 0.5);
   padding: 1.5rem;
 }
 
@@ -1724,23 +1664,22 @@
   left: 0px;
   bottom: 0px;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgb(0 0 0 / 0.5);
   padding: 1rem;
   --tw-text-opacity: 1;
-  color: rgba(255, 255, 255, var(--tw-text-opacity));
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .card.card-image .card-content .card-title {
   font-size: 1.125rem;
   line-height: 1.75rem;
   --tw-text-opacity: 1;
-  color: rgba(255, 255, 255, var(--tw-text-opacity));
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .card.card-image .card-content p {
   margin-bottom: 0px;
   font-size: 0.875rem;
-  line-height: 1.25rem;
   line-height: 1;
 }
 
@@ -1750,7 +1689,7 @@
   top: 0.5rem;
   border-radius: 1.5rem;
   --tw-bg-opacity: 1;
-  background-color: rgba(47, 112, 200, var(--tw-bg-opacity));
+  background-color: rgb(47 112 200 / var(--tw-bg-opacity));
   padding-left: 1rem;
   padding-right: 1rem;
   padding-top: 0.25rem;
@@ -1758,7 +1697,7 @@
   font-size: 0.875rem;
   line-height: 1.25rem;
   --tw-text-opacity: 1;
-  color: rgba(255, 255, 255, var(--tw-text-opacity));
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .card.card-user {
@@ -1773,14 +1712,14 @@
 .card.card-user .card-head h5 {
   font-weight: 600;
   --tw-text-opacity: 1;
-  color: rgba(1, 78, 184, var(--tw-text-opacity));
+  color: rgb(1 78 184 / var(--tw-text-opacity));
 }
 
 .card.card-user .card-head p {
   font-size: 0.875rem;
   line-height: 1.25rem;
   --tw-text-opacity: 1;
-  color: rgba(107, 114, 128, var(--tw-text-opacity));
+  color: rgb(107 114 128 / var(--tw-text-opacity));
 }
 
 .card.card-user .card-head .user-profile {
@@ -1789,7 +1728,8 @@
   width: 2.5rem;
   overflow: hidden;
   border-radius: 9999px;
-  --tw-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
@@ -1828,7 +1768,7 @@
   height: 100%;
   place-content: center;
   --tw-text-opacity: 1;
-  color: rgba(255, 255, 255, var(--tw-text-opacity));
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .content-slider::-webkit-scrollbar {
@@ -1854,26 +1794,23 @@
   --tw-scale-x: 1;
   --tw-scale-y: 1;
   transform: var(--tw-transform);
-  transform: var(--tw-transform);
   cursor: pointer;
   border-radius: 9999px;
-  background-color: rgba(107, 114, 128, 0.8);
-  --tw-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  background-color: rgb(107 114 128 / 0.8);
+  --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
   transition-property: all;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
   transition-duration: 400ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .dots .dot:hover, .dots .dot.active {
-  transform: scale(1.25);
   --tw-scale-x: 1.25;
   --tw-scale-y: 1.25;
   transform: var(--tw-transform);
   --tw-bg-opacity: 1;
-  background-color: rgba(255, 135, 54, var(--tw-bg-opacity));
+  background-color: rgb(255 135 54 / var(--tw-bg-opacity));
 }
 
 .btn-slide {
@@ -1883,15 +1820,11 @@
   width: 2.5rem;
   --tw-translate-y: -50%;
   transform: var(--tw-transform);
-  transform: var(--tw-transform);
   cursor: pointer;
   border-radius: 0.375rem;
-  --tw-bg-opacity: 1;
-  background-color: rgba(107, 114, 128, var(--tw-bg-opacity));
+  background-color: rgb(107 114 128 / var(--tw-bg-opacity));
   --tw-bg-opacity: 0.2;
   transition-property: all;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
   transition-duration: 400ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -1923,7 +1856,7 @@
   height: 8rem;
   place-content: center;
   --tw-text-opacity: 1;
-  color: rgba(255, 255, 255, var(--tw-text-opacity));
+  color: rgb(255 255 255 / var(--tw-text-opacity));
   width: calc(25% - 10px);
   flex: 0 0 calc(25% - 10px);
 }
@@ -1939,15 +1872,11 @@
   width: 2.5rem;
   --tw-translate-y: -50%;
   transform: var(--tw-transform);
-  transform: var(--tw-transform);
   cursor: pointer;
   border-radius: 0.375rem;
-  --tw-bg-opacity: 1;
-  background-color: rgba(107, 114, 128, var(--tw-bg-opacity));
+  background-color: rgb(107 114 128 / var(--tw-bg-opacity));
   --tw-bg-opacity: 0.2;
   transition-property: all;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
   transition-duration: 400ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -1967,8 +1896,9 @@
 .comment {
   border-radius: 0.25rem;
   --tw-bg-opacity: 1;
-  background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
-  --tw-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
@@ -1993,10 +1923,9 @@
 .comment .comment-head .profession {
   margin-bottom: 0px;
   font-size: 0.875rem;
-  line-height: 1.25rem;
   line-height: 1;
   --tw-text-opacity: 1;
-  color: rgba(107, 114, 128, var(--tw-text-opacity));
+  color: rgb(107 114 128 / var(--tw-text-opacity));
 }
 
 .comment .comment-head .date {
@@ -2007,13 +1936,13 @@
   font-size: 0.875rem;
   line-height: 1.25rem;
   --tw-text-opacity: 1;
-  color: rgba(156, 163, 175, var(--tw-text-opacity));
+  color: rgb(156 163 175 / var(--tw-text-opacity));
 }
 
 .comment .comment-content {
   border-top-width: 1px;
   border-bottom-width: 1px;
-  border-color: rgba(229, 231, 235, 0.5);
+  border-color: rgb(229 231 235 / 0.5);
   padding: 1.5rem;
 }
 
@@ -2036,14 +1965,14 @@
 .comment .comment-respond {
   margin-left: 2.5rem;
   border-left-width: 1px;
-  border-color: rgba(209, 213, 219, 0.5);
+  border-color: rgb(209 213 219 / 0.5);
   --tw-bg-opacity: 1;
-  background-color: rgba(243, 244, 246, var(--tw-bg-opacity));
+  background-color: rgb(243 244 246 / var(--tw-bg-opacity));
 }
 
 .footer {
   --tw-bg-opacity: 1;
-  background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
   padding-left: 2rem;
   padding-right: 2rem;
   padding-top: 1.5rem;
@@ -2064,15 +1993,13 @@
   display: inline-block;
   font-weight: 600;
   transition-property: all;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
   transition-duration: 400ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer .footer-menu a:hover {
   --tw-text-opacity: 1;
-  color: rgba(47, 112, 200, var(--tw-text-opacity));
+  color: rgb(47 112 200 / var(--tw-text-opacity));
 }
 
 .footer .social-media {
@@ -2089,15 +2016,13 @@
   display: inline-block;
   font-weight: 600;
   transition-property: all;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
   transition-duration: 400ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer .social-media a:hover {
   --tw-text-opacity: 1;
-  color: rgba(47, 112, 200, var(--tw-text-opacity));
+  color: rgb(47 112 200 / var(--tw-text-opacity));
 }
 
 .footer.has-menu, .footer.has-media, .footer.has-media-menu {
@@ -2109,7 +2034,7 @@
 .form {
   border-radius: 0.25rem;
   --tw-bg-opacity: 1;
-  background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
   padding: 2rem;
 }
 
@@ -2142,81 +2067,79 @@
   width: 100%;
   border-radius: 0.25rem;
   border-width: 1px;
-  border-color: rgba(229, 231, 235, 0.6);
+  border-color: rgb(229 231 235 / 0.6);
   --tw-bg-opacity: 1;
-  background-color: rgba(243, 244, 246, var(--tw-bg-opacity));
+  background-color: rgb(243 244 246 / var(--tw-bg-opacity));
   padding-left: 1.25rem;
   padding-right: 1.25rem;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   --tw-text-opacity: 1;
-  color: rgba(34, 34, 34, var(--tw-text-opacity));
+  color: rgb(34 34 34 / var(--tw-text-opacity));
   outline: 2px solid transparent;
   outline-offset: 2px;
   transition-property: all;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
   transition-duration: 300ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .field .input:focus, .field .textarea:focus, .field .select-inner:focus, .field .input-file:focus {
   --tw-border-opacity: 1;
-  border-color: rgba(115, 164, 223, var(--tw-border-opacity));
+  border-color: rgb(115 164 223 / var(--tw-border-opacity));
 }
 
 .field .input.error, .field .textarea.error, .field .select-inner.error, .field .input-file.error {
   --tw-border-opacity: 1;
-  border-color: rgba(239, 68, 68, var(--tw-border-opacity));
-  background-color: rgba(239, 68, 68, 0.2);
+  border-color: rgb(239 68 68 / var(--tw-border-opacity));
+  background-color: rgb(239 68 68 / 0.2);
 }
 
 .field .input.error::-moz-placeholder, .field .textarea.error::-moz-placeholder, .field .select-inner.error::-moz-placeholder, .field .input-file.error::-moz-placeholder {
-  color: rgba(239, 68, 68, 0.9);
+  color: rgb(239 68 68 / 0.9);
 }
 
 .field .input.error:-ms-input-placeholder, .field .textarea.error:-ms-input-placeholder, .field .select-inner.error:-ms-input-placeholder, .field .input-file.error:-ms-input-placeholder {
-  color: rgba(239, 68, 68, 0.9);
+  color: rgb(239 68 68 / 0.9);
 }
 
 .field .input.error::placeholder, .field .textarea.error::placeholder, .field .select-inner.error::placeholder, .field .input-file.error::placeholder {
-  color: rgba(239, 68, 68, 0.9);
+  color: rgb(239 68 68 / 0.9);
 }
 
 .field .input.success, .field .textarea.success, .field .select-inner.success, .field .input-file.success {
   --tw-border-opacity: 1;
-  border-color: rgba(16, 185, 129, var(--tw-border-opacity));
-  background-color: rgba(16, 185, 129, 0.2);
+  border-color: rgb(34 197 94 / var(--tw-border-opacity));
+  background-color: rgb(34 197 94 / 0.2);
 }
 
 .field .input.success::-moz-placeholder, .field .textarea.success::-moz-placeholder, .field .select-inner.success::-moz-placeholder, .field .input-file.success::-moz-placeholder {
-  color: rgba(16, 185, 129, 0.9);
+  color: rgb(34 197 94 / 0.9);
 }
 
 .field .input.success:-ms-input-placeholder, .field .textarea.success:-ms-input-placeholder, .field .select-inner.success:-ms-input-placeholder, .field .input-file.success:-ms-input-placeholder {
-  color: rgba(16, 185, 129, 0.9);
+  color: rgb(34 197 94 / 0.9);
 }
 
 .field .input.success::placeholder, .field .textarea.success::placeholder, .field .select-inner.success::placeholder, .field .input-file.success::placeholder {
-  color: rgba(16, 185, 129, 0.9);
+  color: rgb(34 197 94 / 0.9);
 }
 
 .field .input.warning, .field .textarea.warning, .field .select-inner.warning, .field .input-file.warning {
   --tw-border-opacity: 1;
-  border-color: rgba(245, 158, 11, var(--tw-border-opacity));
-  background-color: rgba(245, 158, 11, 0.2);
+  border-color: rgb(234 179 8 / var(--tw-border-opacity));
+  background-color: rgb(234 179 8 / 0.2);
 }
 
 .field .input.warning::-moz-placeholder, .field .textarea.warning::-moz-placeholder, .field .select-inner.warning::-moz-placeholder, .field .input-file.warning::-moz-placeholder {
-  color: rgba(245, 158, 11, 0.9);
+  color: rgb(234 179 8 / 0.9);
 }
 
 .field .input.warning:-ms-input-placeholder, .field .textarea.warning:-ms-input-placeholder, .field .select-inner.warning:-ms-input-placeholder, .field .input-file.warning:-ms-input-placeholder {
-  color: rgba(245, 158, 11, 0.9);
+  color: rgb(234 179 8 / 0.9);
 }
 
 .field .input.warning::placeholder, .field .textarea.warning::placeholder, .field .select-inner.warning::placeholder, .field .input-file.warning::placeholder {
-  color: rgba(245, 158, 11, 0.9);
+  color: rgb(234 179 8 / 0.9);
 }
 
 .field .textarea {
@@ -2232,9 +2155,9 @@
 
 .field .input-file:hover {
   --tw-bg-opacity: 1;
-  background-color: rgba(92, 147, 216, var(--tw-bg-opacity));
+  background-color: rgb(92 147 216 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
-  color: rgba(255, 255, 255, var(--tw-text-opacity));
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .field .radio-group, .field .check-group {
@@ -2269,7 +2192,7 @@
   height: 1.5rem;
   width: 1.5rem;
   --tw-text-opacity: 1;
-  color: rgba(107, 114, 128, var(--tw-text-opacity));
+  color: rgb(107 114 128 / var(--tw-text-opacity));
 }
 
 .has-icon .input-icon .input {
@@ -2298,7 +2221,7 @@
   width: 25%;
   border-top-right-radius: 0px;
   border-bottom-right-radius: 0px;
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: rgb(255 255 255 / 0.9);
   padding-left: 0.5rem;
   padding-right: 0px;
 }
@@ -2316,7 +2239,7 @@
   width: 25%;
   border-top-right-radius: 0px;
   border-bottom-right-radius: 0px;
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: rgb(255 255 255 / 0.9);
   padding-left: 0.5rem;
   padding-right: 0px;
 }
@@ -2328,6 +2251,67 @@
 .has-select-button .input-select-button .button {
   border-top-left-radius: 0px;
   border-bottom-left-radius: 0px;
+}
+
+.field-select {
+  position: relative;
+  width: auto;
+  display: inline-block;
+}
+
+.field-select::after {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 45%;
+  right: 15px;
+  z-index: 10;
+  border-width: 6px;
+  border-color: #CCC transparent transparent transparent;
+}
+
+.field-select .select-items {
+  padding: 16px;
+  background-color: #FFF;
+  border: 1px solid #CCC;
+  border-radius: 5px;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  z-index: -1;
+  opacity: 0;
+  transition: all 0.4s ease-in-out;
+  min-height: 90px;
+  max-height: 200px;
+  overflow-y: scroll;
+}
+
+.field-select .select-items li {
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+}
+
+.field-select .select-items li:hover {
+  background-color: #EDEDED;
+}
+
+.field-select .select-items li:not(:last-child) {
+  border-bottom: 1px solid #EEE;
+}
+
+.select-search {
+  border-radius: 0.25rem;
+  border: 1px solid #e5e7eb;
+  padding: 0.75rem 1.25rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  position: relative;
+}
+
+.select-search:focus + .select-items {
+  z-index: 20;
+  opacity: 1;
 }
 
 .image {
@@ -2343,7 +2327,8 @@
 }
 
 .image.is-shadow {
-  --tw-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
@@ -2363,10 +2348,10 @@
   right: 0px;
   bottom: 0px;
   z-index: 10;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgb(0 0 0 / 0.6);
   padding: 1rem;
   --tw-text-opacity: 1;
-  color: rgba(255, 255, 255, var(--tw-text-opacity));
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .list {
@@ -2397,12 +2382,13 @@
   align-items: center;
   justify-content: space-between;
   --tw-bg-opacity: 1;
-  background-color: rgba(249, 250, 251, var(--tw-bg-opacity));
+  background-color: rgb(249 250 251 / var(--tw-bg-opacity));
   padding-left: 2rem;
   padding-right: 2rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
-  --tw-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
@@ -2425,17 +2411,15 @@
   font-size: 1.875rem;
   line-height: 2.25rem;
   --tw-text-opacity: 1;
-  color: rgba(28, 28, 28, var(--tw-text-opacity));
+  color: rgb(28 28 28 / var(--tw-text-opacity));
   transition-property: all;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
   transition-duration: 400ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .navbar .nav-menu .menu-icon:hover {
   --tw-text-opacity: 1;
-  color: rgba(92, 147, 216, var(--tw-text-opacity));
+  color: rgb(92 147 216 / var(--tw-text-opacity));
 }
 
 .navbar .open-sidebar {
@@ -2444,13 +2428,12 @@
   cursor: pointer;
   border-radius: 0.375rem;
   --tw-bg-opacity: 1;
-  background-color: rgba(206, 233, 255, var(--tw-bg-opacity));
+  background-color: rgb(206 233 255 / var(--tw-bg-opacity));
   padding: 0.5rem;
-  --tw-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
   transition-property: all;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
   transition-duration: 400ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -2461,10 +2444,8 @@
   width: 1.75rem;
   border-radius: 0.375rem;
   --tw-bg-opacity: 1;
-  background-color: rgba(47, 112, 200, var(--tw-bg-opacity));
+  background-color: rgb(47 112 200 / var(--tw-bg-opacity));
   transition-property: all;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
   transition-duration: 400ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -2476,17 +2457,16 @@
 .navbar .open-sidebar span:first-child, .navbar .open-sidebar span:last-child {
   --tw-rotate: 0deg;
   transform: var(--tw-transform);
-  transform: var(--tw-transform);
 }
 
 .navbar .open-sidebar:hover, .navbar .open-sidebar.is-active {
   --tw-bg-opacity: 1;
-  background-color: rgba(47, 112, 200, var(--tw-bg-opacity));
+  background-color: rgb(47 112 200 / var(--tw-bg-opacity));
 }
 
 .navbar .open-sidebar:hover span, .navbar .open-sidebar.is-active span {
   --tw-bg-opacity: 1;
-  background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
 .navbar .open-sidebar.is-active span:nth-child(2) {
@@ -2495,14 +2475,12 @@
 
 .navbar .open-sidebar.is-active span:first-child {
   --tw-translate-y: 0.5rem;
-  transform: var(--tw-transform);
   --tw-rotate: 45deg;
   transform: var(--tw-transform);
 }
 
 .navbar .open-sidebar.is-active span:last-child {
   --tw-translate-y: -0.5rem;
-  transform: var(--tw-transform);
   --tw-rotate: -45deg;
   transform: var(--tw-transform);
 }
@@ -2520,15 +2498,14 @@
   overflow-y: auto;
   border-radius: 0.375rem;
   --tw-bg-opacity: 1;
-  background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
   padding: 1.5rem;
   --tw-text-opacity: 1;
-  color: rgba(34, 34, 34, var(--tw-text-opacity));
+  color: rgb(34 34 34 / var(--tw-text-opacity));
   --tw-shadow: 0 3px 20px rgba(0, 0, 0, 0.05);
+  --tw-shadow-colored: 0 3px 20px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
   transition-property: all;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
   transition-duration: 500ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -2549,15 +2526,13 @@
   transform: var(--tw-transform);
   cursor: pointer;
   transition-property: all;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
   transition-duration: 400ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .sidebar .sidebar-head .close-sidebar:hover {
   --tw-text-opacity: 1;
-  color: rgba(1, 78, 184, var(--tw-text-opacity));
+  color: rgb(1 78 184 / var(--tw-text-opacity));
 }
 
 .sidebar .sidebar-head .close-sidebar.close {
@@ -2575,15 +2550,13 @@
   flex-wrap: wrap;
   align-items: center;
   border-radius: 0.25rem;
-  background-color: rgba(206, 233, 255, 0.2);
+  background-color: rgb(206 233 255 / 0.2);
   padding-left: 1.25rem;
   padding-right: 1.25rem;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   font-weight: 600;
   transition-property: all;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
   transition-duration: 400ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -2598,15 +2571,15 @@
 
 .sidebar .sidebar-nav .sidebar-item:hover, .sidebar .sidebar-nav .sidebar-item.is-active {
   --tw-bg-opacity: 1;
-  background-color: rgba(206, 233, 255, var(--tw-bg-opacity));
+  background-color: rgb(206 233 255 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
-  color: rgba(1, 78, 184, var(--tw-text-opacity));
+  color: rgb(1 78 184 / var(--tw-text-opacity));
 }
 
 .sidebar .sidebar-nav .sidebar-item.is-active {
   border-left-width: 6px;
   --tw-border-opacity: 1;
-  border-color: rgba(92, 147, 216, var(--tw-border-opacity));
+  border-color: rgb(92 147 216 / var(--tw-border-opacity));
 }
 
 .sidebar .sidebar-nav .sidebar-text {
@@ -2617,7 +2590,7 @@
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
   border-top-width: 1px;
-  border-color: rgba(194, 194, 194, 0.3);
+  border-color: rgb(194 194 194 / 0.3);
 }
 
 @media (min-width: 989px) {
@@ -2772,5 +2745,3 @@
     display: none;
   }
 }
-
-/*# sourceMappingURL=not-idea-ui.css.map */
