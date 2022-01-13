@@ -52,7 +52,7 @@ Al utilizar la preferencia de TailwindCSS, necesitas agregar los siguientes esti
 
 Puntos a tomar en cuenta:
 
--   Tener al menos la versión "^2.2.11"
+-   Tener al menos la versión "^3.0.0"
 -   Debes tener mode: "jit" activado
 
 #### tailwind.config.js
@@ -197,7 +197,7 @@ When using the TailwindCSS preference, you need to add the following styles that
 
 Points to consider:
 
-- Have at least the version "^2.2.11"
+- Have at least the version "^3.0.0"
 
 - You must have mode: "jit" activade
 
