@@ -1,6 +1,6 @@
 .sidebar {
 	width: 20%;
-	@apply h-screen overflow-y-auto text-c-base bg-white shadow-base rounded-md overflow-hidden p-6 transition-all duration-500 ease-in-out;
+	@apply h-screen overflow-y-auto text-c-base bg-white shadow-base overflow-hidden p-6 transition-all duration-500 ease-in-out;
   
   .sidebar-head {
     @apply flex flex-wrap items-center justify-between;
