@@ -8,7 +8,7 @@ Not Idea UI es un framework CSS Open Source basado en TailwindCSS, con component
 
 Con una facilidad de varias paletas de colores, incluso puedes llegar a usas las propias paletas de colores de TailwindCSS y las tuyas.
 
-Documentación [Ver componentes](#)
+Documentación [Ver componentes](https://not-idea-ui.netlify.app/)
 
 ## ¿Cómo instalarlo?
 
