@@ -1051,6 +1051,18 @@
 .navbar .menu.is-opened {
   @apply z-1 top-full opacity-100;
 }
+.navbar .menu.enter-left {
+  @apply top-full w-6/12 -left-full;
+}
+.navbar .menu.enter-left.is-opened {
+  @apply z-1 left-0 opacity-100;
+}
+.navbar .menu.enter-right {
+  @apply top-full w-6/12 -right-full left-[initial];
+}
+.navbar .menu.enter-right.is-opened {
+  @apply z-1 right-0 opacity-100;
+}
 .navbar .menu-icon {
   @apply text-3xl text-dark-800 transition-all duration-400 ease-in-out;
 }
@@ -1095,6 +1107,9 @@
   .navbar .menu .nav-link {
     @apply text-lg;
   }
+  .navbar .menu.enter-left, .navbar .menu.enter-right {
+    @apply relative inset-0 w-auto;
+  }
   .navbar .burger-menu {
     @apply hidden;
   }
@@ -1103,6 +1118,20 @@
   }
   .navbar.is-filled .menu .nav-link:hover, .navbar.is-filled .menu .nav-link.is-active {
     @apply bg-primary-500 text-white;
+  }
+  .navbar.is-underline .menu .nav-link {
+    @apply relative;
+  }
+  .navbar.is-underline .menu .nav-link::after {
+    content: " ";
+    width: calc(100% - 10px);
+    @apply -translate-x-1/2 left-1/2 rounded block absolute bottom-0 h-1 bg-transparent transition-all duration-400 ease-in-out;
+  }
+  .navbar.is-underline .menu .nav-link:hover, .navbar.is-underline .menu .nav-link.is-active {
+    @apply text-primary-800;
+  }
+  .navbar.is-underline .menu .nav-link:hover::after, .navbar.is-underline .menu .nav-link.is-active::after {
+    @apply bg-primary-800;
   }
 }
 @screen tablet {
