@@ -1,12 +1,14 @@
 #### Docs [Español](https://github.com/IsraelDCastro/not-idea-ui#espanol) / [English](https://github.com/IsraelDCastro/not-idea-ui#english)
 
-#  [Not Idea UI](#espanol)
+# <a name="espanol"></a>[Not Idea UI](#espanol)
 
 #### Un framework CSS para iniciar a construir cosas bonitas. Basado y creado con TailwindCSS.
 
-Not Idea UI es un framework CSS Open Source basado en TailwindCSS, con componentes creados para usarse en cualquier lugar, de manera fácil y sencilla. Componentes responsivos, con varios estilos y formas de uso.
+Not Idea UI es un framework CSS Open Source basado en TailwindCSS, con componentes creados para usarse en cualquier
+lugar, de manera fácil y sencilla. Componentes responsivos, con varios estilos y formas de uso.
 
-Con una facilidad de varias paletas de colores, incluso puedes llegar a usas las propias paletas de colores de TailwindCSS y las tuyas.
+Con una facilidad de varias paletas de colores, incluso puedes llegar a usas las propias paletas de colores de
+TailwindCSS y las tuyas.
 
 Documentación [Ver componentes](https://not-idea-ui.netlify.app/)
 
@@ -30,7 +32,8 @@ Documentación [Ver componentes](https://not-idea-ui.netlify.app/)
 
 Si lo que quieres es usarlo con TailwindCSS añadiendo tus propios estilos y paletas de colores.
 
-Debes instalarlo con `npm install not-idea-ui` o `yarn add not-idea-ui`. Luego debes proceder a importarlo en tu proyecto.
+Debes instalarlo con `npm install not-idea-ui` o `yarn add not-idea-ui`. Luego debes proceder a importarlo en tu
+proyecto.
 
 Puedes importarlo en tu CSS o en tu archivo SCSS, de las siguientes maneras.
 
@@ -48,12 +51,13 @@ Puedes importarlo en tu CSS o en tu archivo SCSS, de las siguientes maneras.
 
 ## Nota importante
 
-Al utilizar la preferencia de TailwindCSS, necesitas agregar los siguientes estilos que he predifinido en tu tailwind.config.js, para evitar errores de que no existe cierta clase.
+Al utilizar la preferencia de TailwindCSS, necesitas agregar los siguientes estilos que he predifinido en tu
+tailwind.config.js, para evitar errores de que no existe cierta clase.
 
 Puntos a tomar en cuenta:
 
--   Tener al menos la versión "^3.0.0"
--   Debes tener mode: "jit" activado
+- Tener al menos la versión "^3.0.0"
+- Debes tener mode: "jit" activado
 
 #### tailwind.config.js
 
@@ -111,45 +115,52 @@ theme:  {
 				900: '#000000',
 			},
 		},
-		transitionDuration:  {
-			'0':  '0ms',
-			'400':  '400ms',
-			'600':  '600ms'
-		},
-		zIndex:  {
-			'-1':  -1,
-			'1':  1,
-			'5':  5,
-		},
-		inset:  {
-			'-100':  '-100%'
-		},
-		borderWidth:  {
-			'6':  '6px',
-		},
-		boxShadow:  {
-			'alert':  '0 6px 26px rgba(0, 0, 0, 0.1)',
-			'base': '0 3px 20px rgba(0, 0, 0, 0.05)',
-		},
-		minHeight:  {
-			'24':  '6rem'
-		},
-		listStyleType:  {
-			'circle':  'circle'
-		},
-	},
-	fontFamily:  {
-		sans:  [ "Tu/s fuente/s primaris/s", ],
-		body:  [ "Tu/s fuente/s secundaria/s", ]
-	},
+		transitionDuration: {
+        '0': '0ms',
+        '400': '400ms',
+        '600': '600ms'
+      },
+      zIndex: {
+        '-1': -1,
+        '1': 1,
+        '5': 5,
+      },
+      inset: {
+        '-100': '-100%'
+      },
+      screens: {
+        'tablet': '989px',
+        'max-md': {'max': '988px' },
+        'mb': { 'max': '500px' }
+      },
+      borderWidth: {
+        '6': '6px',
+      },
+      boxShadow: {
+        'alert': '0 6px 26px rgba(0, 0, 0, 0.1)',
+        'base': '0 3px 20px rgba(0, 0, 0, 0.05)',
+      },
+      minHeight: {
+        '24': '6rem',
+        '3-5': '14px'
+      },
+      listStyleType: {
+        'circle': 'circle'
+      },
+    },
+    fontFamily:  {
+        sans:  [ "Tu/s fuente/s primaris/s", ],
+        body:  [ "Tu/s fuente/s secundaria/s", ]
+    },
 },
 ```
 
-#  [Not Idea UI](#english)
+# <a name="english"></a>[Not Idea UI](#english)
 
 #### A CSS framework to start building nice things. Based and created with TailwindCSS.
 
-Not Idea UI is an Open Source CSS framework based on TailwindCSS, with components created to be used anywhere, easily and simply. Responsive components, with various styles and forms of use.
+Not Idea UI is an Open Source CSS framework based on TailwindCSS, with components created to be used anywhere, easily
+and simply. Responsive components, with various styles and forms of use.
 
 With a multi-color palette facility, you can even get to use TailwindCSS's own color palettes and your own.
 
@@ -175,7 +186,8 @@ Documentation [See components] (#)
 
 If you want to use it with TailwindCSS adding your own styles and color palettes.
 
-You must install it with `npm install not-idea-ui` or` yarn add not-idea-ui`. Then you must proceed to import it into your project.
+You must install it with `npm install not-idea-ui` or` yarn add not-idea-ui`. Then you must proceed to import it into
+your project.
 
 You can import it into your CSS or your SCSS file, in the following ways.
 
@@ -193,7 +205,8 @@ You can import it into your CSS or your SCSS file, in the following ways.
 
 ## Important note
 
-When using the TailwindCSS preference, you need to add the following styles that I have predefined in your tailwind.config.js, to avoid errors that a certain class does not exist.
+When using the TailwindCSS preference, you need to add the following styles that I have predefined in your
+tailwind.config.js, to avoid errors that a certain class does not exist.
 
 Points to consider:
 
