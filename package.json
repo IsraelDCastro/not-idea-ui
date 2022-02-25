@@ -31,5 +31,8 @@
     "url": "https://github.com/IsraelDCastro/not-idea-ui/issues"
   },
   "homepage": "https://not-idea-ui.netlify.app/",
-  "dependencies": {}
+  "dependencies": {
+    "postcss": "^8.4.7",
+    "tailwindcss": "^3.0.23"
+  }
 }
