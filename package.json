@@ -1,6 +1,6 @@
 {
   "name": "not-idea-ui",
-  "version": "1.2.2-beta-2",
+  "version": "1.2.3-beta-2",
   "description": "A Framework UI to start making beautiful things. Based and created with TailwindCSS.",
   "main": "tailwind.config.js",
   "scripts": {
@@ -30,5 +30,9 @@
   "bugs": {
     "url": "https://github.com/IsraelDCastro/not-idea-ui/issues"
   },
-  "homepage": "https://not-idea-ui.netlify.app/"
+  "homepage": "https://not-idea-ui.netlify.app/",
+  "dependencies": {
+    "postcss": "^8.4.7",
+    "tailwindcss": "^3.0.23"
+  }
 }
