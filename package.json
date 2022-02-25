@@ -2,7 +2,7 @@
   "name": "not-idea-ui",
   "version": "1.2.1-beta-2",
   "description": "A Framework UI to start making beautiful things. Based and created with TailwindCSS.",
-  "main": "index.js",
+  "main": "tailwind.config.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
