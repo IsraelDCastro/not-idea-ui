@@ -1139,6 +1139,76 @@
     @apply hidden;
   }
 }
+.pagination,
+.pages-list,
+.page-prev,
+.page-next {
+  @apply flex flex-wrap justify-center items-center;
+}
+
+.pagination.is-rounded .page-prev,
+.pagination.is-rounded .page-next,
+.pagination.is-rounded .page-link {
+  @apply rounded;
+}
+.pagination.is-circle .page-prev,
+.pagination.is-circle .page-next,
+.pagination.is-circle .page-link {
+  @apply rounded-full;
+}
+.pagination.is-group .pages-list {
+  @apply space-x-0 divide-x-[1px] divide-gray-200;
+}
+.pagination.is-group .page-prev,
+.pagination.is-group .page-next {
+  @apply mx-0;
+}
+.pagination.is-group .page-prev {
+  @apply border-r-[1px] border-gray-200 rounded-bl rounded-tl;
+}
+.pagination.is-group .page-next {
+  @apply border-l-[1px] border-gray-200 rounded-br rounded-tr;
+}
+
+.page-prev,
+.page-next,
+.page-link {
+  @apply bg-white px-4 cursor-pointer py-2 shadow-sm transition-all duration-400 ease-in-out;
+}
+.page-prev:hover, .page-prev.is-active,
+.page-next:hover,
+.page-next.is-active,
+.page-link:hover,
+.page-link.is-active {
+  @apply bg-primary-700 text-white;
+}
+.page-prev.is-disabled,
+.page-next.is-disabled,
+.page-link.is-disabled {
+  @apply bg-gray-100 cursor-not-allowed text-gray-500;
+}
+.page-prev.is-active.is-disabled,
+.page-next.is-active.is-disabled,
+.page-link.is-active.is-disabled {
+  @apply bg-primary-700 text-white;
+}
+
+.pages-list {
+  @apply space-x-2;
+}
+
+.page-link {
+  @apply inline-block;
+}
+
+.page-prev {
+  @apply mr-4;
+}
+
+.page-next {
+  @apply ml-4;
+}
+
 .sidebar {
   width: 20%;
   @apply h-screen overflow-y-auto text-c-base bg-white shadow-base overflow-hidden p-6 transition-all duration-500 ease-in-out;

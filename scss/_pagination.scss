@@ -1,0 +1,71 @@
+.pagination,
+.pages-list,
+.page-prev,
+.page-next {
+  @apply flex flex-wrap justify-center items-center;
+}
+
+.pagination {
+  &.is-rounded {
+    .page-prev,
+    .page-next,
+    .page-link {
+      @apply rounded;
+    }
+  }
+  &.is-circle {
+    .page-prev,
+    .page-next,
+    .page-link {
+      @apply rounded-full;
+    }
+  }
+  &.is-group {
+    .pages-list {
+      @apply space-x-0 divide-x-[1px] divide-gray-200;
+    }
+    .page-prev,
+    .page-next {
+      @apply mx-0;
+    }
+    .page-prev {
+      @apply border-r-[1px] border-gray-200 rounded-bl rounded-tl;
+    }
+    .page-next {
+      @apply border-l-[1px] border-gray-200 rounded-br rounded-tr;
+    }
+  }
+}
+
+.page-prev,
+.page-next,
+.page-link {
+  @apply bg-white px-4 cursor-pointer py-2 shadow-sm transition-all duration-400 ease-in-out;
+  &:hover,
+  &.is-active {
+    @apply bg-primary-700 text-white;
+  }
+  &.is-disabled {
+    @apply bg-gray-100 cursor-not-allowed text-gray-500;
+  }
+  &.is-active.is-disabled {
+    @apply bg-primary-700 text-white;
+  }
+}
+
+.pages-list {
+  @apply space-x-2;
+}
+
+.page-link {
+  @apply inline-block;
+}
+
+
+.page-prev {
+  @apply mr-4;
+}
+
+.page-next {
+  @apply ml-4;
+}
