@@ -1250,7 +1250,7 @@
   @apply w-auto;
 }
 .sidebar .sidebar-divider {
-  @apply my-6 border-t border-dark-200/30;
+  @apply my-6 border-t border-slate-200/30;
 }
 
 @screen tablet {
