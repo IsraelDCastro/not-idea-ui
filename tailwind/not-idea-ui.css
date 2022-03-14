@@ -1097,7 +1097,7 @@
   @apply -rotate-45 -translate-y-2;
 }
 
-@screen md {
+@screen lg {
   .navbar .logo {
     @apply w-3/12;
   }
