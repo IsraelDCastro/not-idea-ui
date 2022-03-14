@@ -2500,7 +2500,7 @@
   font-size: 1.875rem;
   line-height: 2.25rem;
   --tw-text-opacity: 1;
-  color: rgb(28 28 28 / var(--tw-text-opacity));
+  color: rgb(31 41 55 / var(--tw-text-opacity));
   transition-property: all;
   transition-duration: 400ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -3123,5 +3123,35 @@
 
   .sidebar .close-sidebar {
     display: none;
+  }
+}
+
+.box-content-tabs .tabs-lists {
+  list-style-type: none;
+}
+
+.box-content-tabs .tab-a {
+  margin-right: 0.75rem;
+  display: inline-block;
+  cursor: pointer;
+  padding: 0.5rem;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  transition-property: all;
+  transition-duration: 500ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.box-content-tabs.is-underline .tab-a.is-active, .box-content-tabs.is-underline .tab-a:hover {
+  border-bottom-width: 4px;
+  --tw-border-opacity: 1;
+  border-color: rgb(47 112 200 / var(--tw-border-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(47 112 200 / var(--tw-text-opacity));
+}
+
+@media only screen and (max-width: 575px) {
+  .box-content-tabs .tabs-lists {
+    overflow: auto;
   }
 }

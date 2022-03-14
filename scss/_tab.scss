@@ -1,0 +1,24 @@
+.box-content-tabs {
+  .tabs-lists {
+    @apply list-none;
+  }
+  .tab-a {
+    @apply inline-block text-lg p-2 mr-3 cursor-pointer transition-all duration-500 ease-in-out;
+  }
+  &.is-underline {
+    .tab-a {
+      &.is-active,
+      &:hover {
+        @apply text-primary-700 border-b-4 border-primary-700;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .box-content-tabs {
+    .tabs-lists {
+      @apply overflow-auto;
+    }
+  }
+}

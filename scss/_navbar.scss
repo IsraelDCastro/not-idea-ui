@@ -32,7 +32,7 @@
     }
   }
   .menu-icon {
-    @apply text-3xl text-dark-800 transition-all duration-400 ease-in-out;
+    @apply text-3xl text-gray-800 transition-all duration-400 ease-in-out;
     &:hover {
       @apply text-primary-500;
     }
