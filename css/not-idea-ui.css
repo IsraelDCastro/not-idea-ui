@@ -1976,14 +1976,67 @@
 .footer {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.footer .footer-top, .footer .footer-bottom {
   padding-left: 2rem;
   padding-right: 2rem;
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
 }
 
+.footer .footer-top {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  row-gap: 2rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(100 116 139 / var(--tw-bg-opacity));
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+@media (min-width: 1024px) {
+  .footer .footer-top {
+    gap: 0px;
+  }
+}
+
+.footer .footer-top .footer-item {
+  width: 100%;
+  flex-basis: 100%;
+}
+
+@media (min-width: 768px) {
+  .footer .footer-top .footer-item {
+    width: calc(50% - 20px);
+  }
+
+  .footer .footer-top .footer-item {
+    flex-basis: calc(50% - 20px);
+  }
+}
+
+@media (min-width: 1024px) {
+  .footer .footer-top .footer-item {
+    width: calc(25% - 20px);
+  }
+
+  .footer .footer-top .footer-item {
+    flex-basis: calc(25% - 20px);
+  }
+}
+
+.footer .footer-bottom {
+  --tw-bg-opacity: 1;
+  background-color: rgb(30 41 59 / var(--tw-bg-opacity));
+}
+
 .footer .copyright {
   margin-bottom: 0px;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .footer .footer-menu > :not([hidden]) ~ :not([hidden]) {
@@ -1995,6 +2048,8 @@
 .footer .footer-menu a {
   display: inline-block;
   font-weight: 600;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
   transition-property: all;
   transition-duration: 400ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -2002,7 +2057,7 @@
 
 .footer .footer-menu a:hover {
   --tw-text-opacity: 1;
-  color: rgb(47 112 200 / var(--tw-text-opacity));
+  color: rgb(234 179 8 / var(--tw-text-opacity));
 }
 
 .footer .social-media {
@@ -2018,6 +2073,8 @@
 .footer .social-media a {
   display: inline-block;
   font-weight: 600;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
   transition-property: all;
   transition-duration: 400ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -2025,10 +2082,10 @@
 
 .footer .social-media a:hover {
   --tw-text-opacity: 1;
-  color: rgb(47 112 200 / var(--tw-text-opacity));
+  color: rgb(234 179 8 / var(--tw-text-opacity));
 }
 
-.footer.has-menu, .footer.has-media, .footer.has-media-menu {
+.footer .has-menu, .footer .has-media, .footer .has-media-menu {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
