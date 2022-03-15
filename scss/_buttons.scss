@@ -1,6 +1,6 @@
 .button {
   @apply bg-gray-200 hover:bg-gray-300 border-2 border-gray-200 hover:border-gray-300 rounded px-5 py-2 text-gray-700 inline-block cursor-pointer transition-all duration-400 ease-in-out;
-  svg { @apply inline-block w-auto h-auto; }
+
   &.button-primary {
     @apply bg-primary-700 border-primary-700 text-white;
     &:hover { @apply bg-primary-800 border-primary-800; }
@@ -309,6 +309,11 @@
     @apply text-xl px-6 py-3;
   }
 
+  &.has-icon {
+    svg {
+      @apply w-5 h-5 inline-block;
+    }
+  }
   &.semi-transparent {
   }
 

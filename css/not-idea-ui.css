@@ -400,12 +400,6 @@
   background-color: rgb(209 213 219 / var(--tw-bg-opacity));
 }
 
-.button svg {
-  display: inline-block;
-  height: auto;
-  width: auto;
-}
-
 .button.button-primary {
   --tw-border-opacity: 1;
   border-color: rgb(47 112 200 / var(--tw-border-opacity));
@@ -1407,6 +1401,12 @@
   padding-bottom: 0.75rem;
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+
+.button.has-icon svg {
+  display: inline-block;
+  height: 1.25rem;
+  width: 1.25rem;
 }
 
 .button[disabled] {
