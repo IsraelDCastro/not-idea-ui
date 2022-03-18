@@ -3,6 +3,12 @@
   .card-header {
     aspect-ratio: 16/9;
     @apply overflow-hidden;
+    &.has-category {
+      @apply relative;
+      .card-category {
+        @apply absolute z-1 top-4 right-4 bg-primary-700 rounded-xl px-6 py-1 text-white text-sm;
+      }
+    }
   }
   .card-content {
     @apply p-6;

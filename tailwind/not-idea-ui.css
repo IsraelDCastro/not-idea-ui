@@ -634,6 +634,12 @@
   aspect-ratio: 16/9;
   @apply overflow-hidden;
 }
+.card .card-header.has-category {
+  @apply relative;
+}
+.card .card-header.has-category .card-category {
+  @apply absolute z-1 top-4 right-4 bg-primary-700 rounded-xl px-6 py-1 text-white text-sm;
+}
 .card .card-content {
   @apply p-6;
 }
@@ -1303,18 +1309,33 @@
     @apply hidden;
   }
 }
-.box-content-tabs .tabs-lists {
-  @apply list-none;
+.tabs-wrapper .tabs-lists {
+  @apply list-none flex flex-wrap flex-col md:flex-row;
 }
-.box-content-tabs .tab-a {
-  @apply inline-block text-lg p-2 mr-3 cursor-pointer transition-all duration-500 ease-in-out;
+.tabs-wrapper .tab-link {
+  @apply inline-block w-full text-lg px-4 py-2 cursor-pointer transition-all duration-500 ease-in-out bg-slate-200/50;
 }
-.box-content-tabs.is-underline .tab-a.is-active, .box-content-tabs.is-underline .tab-a:hover {
-  @apply text-primary-700 border-b-4 border-primary-700;
+.tabs-wrapper .tab-link.is-active, .tabs-wrapper .tab-link:hover {
+  @apply bg-primary-700 text-white;
+}
+.tabs-wrapper.is-underline .tab-link {
+  @apply border-b-4 border-gray-100 bg-transparent;
+}
+.tabs-wrapper.is-underline .tab-link.is-active, .tabs-wrapper.is-underline .tab-link:hover {
+  @apply text-primary-700 border-primary-700;
+}
+.tabs-wrapper.is-left-border .tab-link {
+  @apply border-l-4 border-gray-100 bg-transparent;
+}
+.tabs-wrapper.is-left-border .tab-link.is-active, .tabs-wrapper.is-left-border .tab-link:hover {
+  @apply text-primary-700 border-primary-700;
+}
+.tabs-wrapper .tabs-content .tab-content {
+  @apply p-6 bg-gray-100;
 }
 
 @media only screen and (max-width: 575px) {
-  .box-content-tabs .tabs-lists {
+  .tabs-wrapper .tabs-lists {
     @apply overflow-auto;
   }
 }
