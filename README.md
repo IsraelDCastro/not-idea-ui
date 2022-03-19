@@ -65,7 +65,6 @@ Puntos a tomar en cuenta:
 theme:  {
 	extend:  {
 		colors:  {
-			'c-base':  '...',
 			'primary':  {
 				50: '...',
 				100: '...',
@@ -208,7 +207,6 @@ Points to consider:
 theme:  {
 	extend:  {
 		colors:  {
-			'c-base':  '...',
 			'primary':  {
 				50: '...',
 				100: '...',

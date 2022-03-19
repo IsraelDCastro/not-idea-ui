@@ -2157,7 +2157,7 @@
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   --tw-text-opacity: 1;
-  color: rgb(34 34 34 / var(--tw-text-opacity));
+  color: rgb(31 41 55 / var(--tw-text-opacity));
   outline: 2px solid transparent;
   outline-offset: 2px;
   transition-property: all;
@@ -2960,7 +2960,7 @@
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
   padding: 1.5rem;
   --tw-text-opacity: 1;
-  color: rgb(34 34 34 / var(--tw-text-opacity));
+  color: rgb(31 41 55 / var(--tw-text-opacity));
   --tw-shadow: 0 3px 20px rgba(0, 0, 0, 0.05);
   --tw-shadow-colored: 0 3px 20px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
