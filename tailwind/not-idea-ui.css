@@ -1123,7 +1123,7 @@
     @apply w-3/12;
   }
   .navbar .menu {
-    @apply z-1 relative opacity-100 w-auto flex flex-row items-center text-right rounded-none shadow-none space-x-4 space-y-0 mt-0 divide-y-0;
+    @apply z-1 relative top-0 opacity-100 w-auto flex flex-row items-center text-right rounded-none shadow-none space-x-4 space-y-0 mt-0 divide-y-0;
   }
   .navbar .menu .nav-link {
     @apply text-lg;

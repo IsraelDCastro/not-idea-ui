@@ -2663,6 +2663,10 @@
   }
 
   .navbar .menu {
+    top: 0px;
+  }
+
+  .navbar .menu {
     z-index: 1;
   }
 
