@@ -1069,6 +1069,15 @@
 .navbar .menu .nav-link:hover, .navbar .menu .nav-link.is-active {
   @apply text-primary-700;
 }
+.navbar .menu .has-submenu .submenu {
+  @apply bg-slate-50 px-4 divide-y;
+}
+.navbar .menu .has-submenu .submenu .nav-link {
+  @apply text-base font-medium px-6 py-2;
+}
+.navbar .menu .has-submenu:hover .submenu {
+  @apply z-1 opacity-100;
+}
 .navbar .menu.is-opened {
   @apply z-1 top-full opacity-100;
 }
@@ -1123,10 +1132,22 @@
     @apply w-3/12;
   }
   .navbar .menu {
-    @apply z-1 relative top-0 opacity-100 w-auto flex flex-row items-center text-right rounded-none shadow-none space-x-4 space-y-0 mt-0 divide-y-0;
+    @apply z-auto relative top-0 opacity-100 w-auto flex flex-row items-center text-right rounded-none shadow-none space-x-4 space-y-0 mt-0 divide-y-0;
   }
   .navbar .menu .nav-link {
     @apply text-lg;
+  }
+  .navbar .menu .has-submenu {
+    @apply relative;
+  }
+  .navbar .menu .has-submenu .submenu {
+    @apply shadow-md bg-white divide-y divide-slate-100 absolute -z-1 opacity-0 top-full left-1/2 -translate-x-1/2 text-left transition-all duration-300 ease-in-out;
+  }
+  .navbar .menu .has-submenu .submenu .nav-link {
+    @apply text-base font-medium px-6 py-2;
+  }
+  .navbar .menu .has-submenu:hover .submenu {
+    @apply z-1 opacity-100;
   }
   .navbar .menu.enter-left, .navbar .menu.enter-right {
     @apply relative inset-0 w-auto;
