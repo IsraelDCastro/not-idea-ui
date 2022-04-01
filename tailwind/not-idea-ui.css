@@ -1161,6 +1161,9 @@
   .navbar.is-filled .menu .nav-link:hover, .navbar.is-filled .menu .nav-link.is-active {
     @apply bg-primary-500 text-white;
   }
+  .navbar.is-filled .menu .has-submenu .submenu {
+    @apply my-2 space-y-2;
+  }
   .navbar.is-underline .menu .nav-link {
     @apply relative;
   }
@@ -1174,6 +1177,9 @@
   }
   .navbar.is-underline .menu .nav-link:hover::after, .navbar.is-underline .menu .nav-link.is-active::after {
     @apply bg-primary-800;
+  }
+  .navbar.is-underline .menu .has-submenu .submenu li:last-child {
+    @apply mb-2;
   }
 }
 @screen tablet {

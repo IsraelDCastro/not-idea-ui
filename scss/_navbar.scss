@@ -118,6 +118,11 @@
             @apply bg-primary-500 text-white;
           }
         }
+        .has-submenu {
+          .submenu {
+            @apply my-2 space-y-2;
+          }
+        }
       }
     }
     &.is-underline {
@@ -135,6 +140,11 @@
             &::after {
               @apply bg-primary-800;
             }
+          }
+        }
+        .has-submenu {
+          .submenu {
+            li:last-child { @apply mb-2; }
           }
         }
       }

@@ -2903,6 +2903,17 @@
     color: rgb(255 255 255 / var(--tw-text-opacity));
   }
 
+  .navbar.is-filled .menu .has-submenu .submenu {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .navbar.is-filled .menu .has-submenu .submenu > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-y-reverse: 0;
+    margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
+  }
+
   .navbar.is-underline .menu .nav-link {
     position: relative;
   }
@@ -2967,6 +2978,10 @@
   .navbar.is-underline .menu .nav-link:hover::after, .navbar.is-underline .menu .nav-link.is-active::after {
     --tw-bg-opacity: 1;
     background-color: rgb(24 95 192 / var(--tw-bg-opacity));
+  }
+
+  .navbar.is-underline .menu .has-submenu .submenu li:last-child {
+    margin-bottom: 0.5rem;
   }
 }
 
