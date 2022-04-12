@@ -1,0 +1,81 @@
+.table-container {
+  -webkit-overflow-scrolling: touch;
+  @apply max-w-full overflow-auto overflow-y-hidden rounded-md;
+  &.table-shadow {
+    @apply rounded shadow-base;
+  }
+
+  &::-webkit-scrollbar {
+    @apply h-2;
+  }
+
+  &::-webkit-scrollbar-track {
+    @apply bg-slate-100;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    @apply rounded bg-slate-500;
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    @apply bg-slate-700;
+  }
+}
+
+/***** Table *****/
+
+table,
+.table {
+  @apply w-full max-w-full overflow-hidden;
+  thead {
+    @apply bg-gray-200 text-left text-lg;
+
+    &.has-background {
+      @apply bg-primary-700;
+      th {
+        @apply text-white;
+      }
+    }
+  }
+  tbody {
+    &.tbody {
+      tr {
+        @apply bg-primary-100 bg-opacity-30;
+        &:nth-child(even) {
+          @apply bg-primary-200 bg-opacity-30;
+        }
+        &.tr-link {
+          @apply cursor-pointer transition-all duration-400 ease-in-out;
+          &:hover { @apply bg-opacity-60; }
+        }
+      }
+    }
+  }
+  &.is-bordered {
+    @apply border border-gray-400;
+    thead {
+      @apply border-b border-gray-400;
+    }
+    tr:not(:last-child) {
+      @apply border-b border-gray-400;
+    }
+    td, th {
+      &:not(:last-child) {
+        @apply border-r border-gray-400;
+      }
+    }
+  }
+  &.is-bottom-bordered {
+    thead,
+    tr:not(:last-child) {
+      @apply border-b border-gray-400;
+    }
+  }
+
+  tr {
+    @apply outline-none;
+  }
+  td, th {
+    @apply px-5 py-2 whitespace-nowrap;
+  }
+}

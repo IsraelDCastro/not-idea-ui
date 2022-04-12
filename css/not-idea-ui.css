@@ -3423,3 +3423,128 @@
     overflow: auto;
   }
 }
+
+.table-container {
+  -webkit-overflow-scrolling: touch;
+  max-width: 100%;
+  overflow: auto;
+  overflow-y: hidden;
+  border-radius: 0.375rem;
+}
+
+.table-container.table-shadow {
+  border-radius: 0.25rem;
+  --tw-shadow: 0 3px 20px rgba(0, 0, 0, 0.05);
+  --tw-shadow-colored: 0 3px 20px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.table-container::-webkit-scrollbar {
+  height: 0.5rem;
+}
+
+.table-container::-webkit-scrollbar-track {
+  --tw-bg-opacity: 1;
+  background-color: rgb(241 245 249 / var(--tw-bg-opacity));
+}
+
+.table-container::-webkit-scrollbar-thumb {
+  border-radius: 0.25rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(100 116 139 / var(--tw-bg-opacity));
+}
+
+.table-container::-webkit-scrollbar-thumb:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(51 65 85 / var(--tw-bg-opacity));
+}
+
+/***** Table *****/
+
+table, .table {
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+table thead, .table thead {
+  --tw-bg-opacity: 1;
+  background-color: rgb(229 231 235 / var(--tw-bg-opacity));
+  text-align: left;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+table thead.has-background, .table thead.has-background {
+  --tw-bg-opacity: 1;
+  background-color: rgb(47 112 200 / var(--tw-bg-opacity));
+}
+
+table thead.has-background th, .table thead.has-background th {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+table tbody.tbody tr, .table tbody.tbody tr {
+  background-color: rgb(183 216 247 / var(--tw-bg-opacity));
+  --tw-bg-opacity: 0.3;
+}
+
+table tbody.tbody tr:nth-child(even), .table tbody.tbody tr:nth-child(even) {
+  background-color: rgb(160 199 239 / var(--tw-bg-opacity));
+  --tw-bg-opacity: 0.3;
+}
+
+table tbody.tbody tr.tr-link, .table tbody.tbody tr.tr-link {
+  cursor: pointer;
+  transition-property: all;
+  transition-duration: 400ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+table tbody.tbody tr.tr-link:hover, .table tbody.tbody tr.tr-link:hover {
+  --tw-bg-opacity: 0.6;
+}
+
+table.is-bordered, .table.is-bordered {
+  border-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(156 163 175 / var(--tw-border-opacity));
+}
+
+table.is-bordered thead, .table.is-bordered thead {
+  border-bottom-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(156 163 175 / var(--tw-border-opacity));
+}
+
+table.is-bordered tr:not(:last-child), .table.is-bordered tr:not(:last-child) {
+  border-bottom-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(156 163 175 / var(--tw-border-opacity));
+}
+
+table.is-bordered td:not(:last-child), table.is-bordered th:not(:last-child), .table.is-bordered td:not(:last-child), .table.is-bordered th:not(:last-child) {
+  border-right-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(156 163 175 / var(--tw-border-opacity));
+}
+
+table.is-bottom-bordered thead, table.is-bottom-bordered tr:not(:last-child), .table.is-bottom-bordered thead, .table.is-bottom-bordered tr:not(:last-child) {
+  border-bottom-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(156 163 175 / var(--tw-border-opacity));
+}
+
+table tr, .table tr {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+table td, table th, .table td, .table th {
+  white-space: nowrap;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}

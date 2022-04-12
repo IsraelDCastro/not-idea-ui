@@ -1366,3 +1366,88 @@
     @apply overflow-auto;
   }
 }
+.table-container {
+  -webkit-overflow-scrolling: touch;
+  @apply max-w-full overflow-auto overflow-y-hidden rounded-md;
+}
+.table-container.table-shadow {
+  @apply rounded shadow-base;
+}
+.table-container::-webkit-scrollbar {
+  @apply h-2;
+}
+.table-container::-webkit-scrollbar-track {
+  @apply bg-slate-100;
+}
+.table-container::-webkit-scrollbar-thumb {
+  @apply rounded bg-slate-500;
+}
+.table-container::-webkit-scrollbar-thumb:hover {
+  @apply bg-slate-700;
+}
+
+/***** Table *****/
+table,
+.table {
+  @apply w-full max-w-full overflow-hidden;
+}
+table thead,
+.table thead {
+  @apply bg-gray-200 text-left text-lg;
+}
+table thead.has-background,
+.table thead.has-background {
+  @apply bg-primary-700;
+}
+table thead.has-background th,
+.table thead.has-background th {
+  @apply text-white;
+}
+table tbody.tbody tr,
+.table tbody.tbody tr {
+  @apply bg-primary-100 bg-opacity-30;
+}
+table tbody.tbody tr:nth-child(even),
+.table tbody.tbody tr:nth-child(even) {
+  @apply bg-primary-200 bg-opacity-30;
+}
+table tbody.tbody tr.tr-link,
+.table tbody.tbody tr.tr-link {
+  @apply cursor-pointer transition-all duration-400 ease-in-out;
+}
+table tbody.tbody tr.tr-link:hover,
+.table tbody.tbody tr.tr-link:hover {
+  @apply bg-opacity-60;
+}
+table.is-bordered,
+.table.is-bordered {
+  @apply border border-gray-400;
+}
+table.is-bordered thead,
+.table.is-bordered thead {
+  @apply border-b border-gray-400;
+}
+table.is-bordered tr:not(:last-child),
+.table.is-bordered tr:not(:last-child) {
+  @apply border-b border-gray-400;
+}
+table.is-bordered td:not(:last-child), table.is-bordered th:not(:last-child),
+.table.is-bordered td:not(:last-child),
+.table.is-bordered th:not(:last-child) {
+  @apply border-r border-gray-400;
+}
+table.is-bottom-bordered thead,
+table.is-bottom-bordered tr:not(:last-child),
+.table.is-bottom-bordered thead,
+.table.is-bottom-bordered tr:not(:last-child) {
+  @apply border-b border-gray-400;
+}
+table tr,
+.table tr {
+  @apply outline-none;
+}
+table td, table th,
+.table td,
+.table th {
+  @apply px-5 py-2 whitespace-nowrap;
+}
