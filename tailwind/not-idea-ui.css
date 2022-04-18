@@ -949,7 +949,7 @@
   @apply flex;
 }
 .has-select-button .input-select-button .select-inner {
-  @apply rounded-tr-none rounded-br-none w-3/12 pl-2 pr-0 bg-white/90;
+  @apply rounded-tr-none rounded-br-none w-auto flex-1 pl-2 pr-0 bg-white/90;
 }
 .has-select-button .input-select-button .input {
   @apply rounded-none;
@@ -1002,7 +1002,7 @@
 
 .select-search {
   border-radius: 0.25rem;
-  border: 1px solid #e5e7eb;
+  border: 1px solid rgb(229, 231, 235);
   padding: 0.75rem 1.25rem;
   font-size: 1rem;
   line-height: 1.5rem;
@@ -1258,8 +1258,7 @@
 }
 
 .sidebar {
-  width: 20%;
-  @apply h-screen overflow-y-auto text-gray-800 bg-white shadow-base overflow-hidden p-6 transition-all duration-500 ease-in-out;
+  @apply w-3/12 basis-3/12 h-auto overflow-y-auto text-gray-800 bg-white shadow-base overflow-hidden p-6 transition-all duration-500 ease-in-out;
 }
 .sidebar .sidebar-head {
   @apply flex flex-wrap items-center justify-between;

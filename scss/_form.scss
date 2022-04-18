@@ -107,7 +107,7 @@
   .input-select-button {
     @apply flex;
     .select-inner {
-      @apply rounded-tr-none rounded-br-none w-3/12 pl-2 pr-0 bg-white/90;
+      @apply rounded-tr-none rounded-br-none w-auto flex-1 pl-2 pr-0 bg-white/90;
     }
     .input {
       @apply rounded-none;
