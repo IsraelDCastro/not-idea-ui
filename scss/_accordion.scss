@@ -1,3 +1,23 @@
+.question {
+  @apply bg-white overflow-hidden rounded;
+  summary {
+    @apply text-xl font-medium flex items-center justify-between px-10 py-6 shadow-sm cursor-pointer hover:bg-primary-700/5 transition duration-400 ease-in-out list-none;
+    i, svg {
+      @apply h-6 w-6 transform transition duration-[400] ease-in-out;
+    }
+  }
+  .summary {
+    @apply border-l-4 border-primary-700 p-8 bg-slate-100/70 text-gray-700;
+  }
+  &[open] {
+    summary {
+      i, svg {
+        @apply rotate-180;
+      }
+    }
+  }
+}
+
 .accordion {
   @apply bg-white rounded-md overflow-hidden;
   .accordion-head {
