@@ -229,6 +229,10 @@
   border-radius: 1rem;
 }
 
+.alert.semi-transparent {
+  --tw-bg-opacity: 0.8;
+}
+
 .alert .close-alert {
   position: absolute;
   right: 1rem;
@@ -2186,6 +2190,18 @@
   flex: 0 0 calc(50% - 10px);
 }
 
+.is-primary {
+  accent-color: #2F70C8;
+}
+
+.is-secondary {
+  accent-color: #FF8736;
+}
+
+.is-tertiary {
+  accent-color: #703794;
+}
+
 .field:not(:last-child) {
   margin-bottom: 1rem;
 }
@@ -2223,6 +2239,10 @@
 .field .input:focus, .field .textarea:focus, .field .select-inner:focus, .field .input-file:focus {
   --tw-border-opacity: 1;
   border-color: rgb(115 164 223 / var(--tw-border-opacity));
+}
+
+.field .input[disabled], .field .textarea[disabled], .field .select-inner[disabled], .field .input-file[disabled] {
+  cursor: not-allowed;
 }
 
 .field .input.error, .field .textarea.error, .field .select-inner.error, .field .input-file.error {
@@ -2292,7 +2312,7 @@
 
 .field .input-file:hover {
   --tw-bg-opacity: 1;
-  background-color: rgb(92 147 216 / var(--tw-bg-opacity));
+  background-color: rgb(69 130 208 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
@@ -2315,6 +2335,24 @@
   display: inline-block;
   cursor: pointer;
   font-weight: 400;
+}
+
+.field .error-message, .field .success-message, .field .warning-message {
+  margin-top: 0.25rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.field .error-message {
+  color: rgb(239 68 68 / 0.9);
+}
+
+.field .success-message {
+  color: rgb(34 197 94 / 0.9);
+}
+
+.field .warning-message {
+  color: rgb(234 179 8 / 0.9);
 }
 
 .has-icon .input-icon {

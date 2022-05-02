@@ -16,6 +16,9 @@
     @apply rounded-2xl;
     .close-alert { @apply rounded-2xl;  }
   }
+  &.semi-transparent {
+    @apply bg-opacity-80;
+  }
   .close-alert {
     @apply inline-block w-6 h-6 cursor-pointer rounded p-1 absolute right-4 top-4 z-10 transition-all duration-400 ease-in-out;
     &:hover { @apply bg-red-700 text-white; }
