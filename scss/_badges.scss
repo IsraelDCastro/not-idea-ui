@@ -8,6 +8,7 @@
   &.success { @apply bg-green-500 text-white; }
   &.info { @apply bg-blue-500 text-white; }
 
+  &.outlined { @apply bg-transparent text-gray-600 border-2 border-gray-600; }
   &.primary-outline { @apply text-primary-700 border-2 border-primary-700 bg-transparent; }
   &.secondary-outline { @apply text-secondary-700 border-2 border-secondary-700 bg-transparent; }
   &.tertiary-outline { @apply text-tertiary-700 border-2 border-tertiary-700 bg-transparent; }
@@ -16,6 +17,7 @@
   &.success-outline { @apply text-green-500 border-2 border-green-500 bg-transparent; }
   &.info-outline { @apply text-blue-500 border-2 border-blue-500 bg-transparent; }
 
+  &.sem-default { @apply bg-gray-600/30 text-gray-600; }
   &.semi-primary { @apply bg-primary-700/30 text-primary-700; }
   &.semi-secondary { @apply bg-secondary-700/30 text-secondary-800; }
   &.semi-tertiary { @apply bg-tertiary-700/30 text-tertiary-700; }

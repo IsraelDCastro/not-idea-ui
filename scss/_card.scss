@@ -3,6 +3,9 @@
   .card-header {
     aspect-ratio: 16/9;
     @apply overflow-hidden;
+    img {
+      @apply object-center object-cover w-full h-full;
+    }
     &.has-category {
       @apply relative;
       .card-category {
@@ -15,7 +18,10 @@
     .card-title {
       @apply text-2xl text-primary-700 font-semibold mb-2;
     }
-    p:not(:last-child) { @apply mb-5; }
+    p {
+      @apply break-words;
+      &:not(:last-child) { @apply mb-5; }
+    }
   }
   .card-footer {
     @apply flex flex-wrap justify-between border-t border-gray-200/50 p-6;
