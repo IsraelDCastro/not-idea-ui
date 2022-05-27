@@ -1711,6 +1711,120 @@
   padding-bottom: 0px;
 }
 
+.card.card-profile {
+  position: relative;
+}
+
+.card.card-profile .card-head {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  padding-top: 1.25rem;
+  padding-bottom: 0.5rem;
+}
+
+.card.card-profile .card-head .card-name {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 700;
+}
+
+.card.card-profile .card-head .card-name small {
+  display: block;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 400;
+  --tw-text-opacity: 1;
+  color: rgb(75 85 99 / var(--tw-text-opacity));
+}
+
+.card.card-profile .card-content {
+  position: relative;
+  z-index: 5;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  padding-top: 0.25rem;
+  padding-bottom: 1.25rem;
+}
+
+.card.card-profile .card-content p {
+  margin-bottom: 0.5rem;
+  --tw-text-opacity: 1;
+  color: rgb(107 114 128 / var(--tw-text-opacity));
+}
+
+.card.card-profile::after {
+  position: absolute;
+  top: -3.5rem;
+  right: -3.5rem;
+  z-index: 1;
+  display: block;
+  height: 14rem;
+  width: 14rem;
+  border-bottom-left-radius: 9999px;
+  background-image: linear-gradient(to top right, var(--tw-gradient-stops));
+  --tw-gradient-from: #FFD8BF;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(255 216 191 / 0));
+  --tw-gradient-to: #FF8736;
+  --tw-content: "";
+  content: var(--tw-content);
+}
+
+.card.card-team {
+  position: relative;
+}
+
+.card.card-team .card-header {
+  aspect-ratio: auto;
+  height: auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 1.5rem;
+}
+
+.card.card-team .card-header .card-image {
+  text-align: center;
+}
+
+.card.card-team .card-header .card-image .card-inner-image {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1rem;
+  height: 10rem;
+  width: 10rem;
+  overflow: hidden;
+  border-radius: 9999px;
+}
+
+.card.card-team .card-header .card-image figcaption {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 700;
+}
+
+.card.card-team .card-header::before {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  display: block;
+  height: 7.25rem;
+  background-image: linear-gradient(to top, var(--tw-gradient-stops));
+  --tw-gradient-from: #5C93D8;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(92 147 216 / 0));
+  --tw-gradient-to: #185FC0;
+  --tw-content: "";
+  content: var(--tw-content);
+}
+
+.card.card-team .card-content {
+  --tw-text-opacity: 1;
+  color: rgb(75 85 99 / var(--tw-text-opacity));
+}
+
+.card.card-team .card-content p {
+  margin-bottom: 0.5rem;
+}
+
 .slider, .carousel {
   position: relative;
 }

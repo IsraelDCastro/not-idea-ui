@@ -664,6 +664,51 @@
 .card.card-user .card-footer {
   @apply pt-4 pb-0 px-0;
 }
+.card.card-profile {
+  @apply relative;
+}
+.card.card-profile .card-head {
+  @apply px-5 pt-5 pb-2;
+}
+.card.card-profile .card-head .card-name {
+  @apply text-2xl font-bold;
+}
+.card.card-profile .card-head .card-name small {
+  @apply text-base font-normal block text-gray-600;
+}
+.card.card-profile .card-content {
+  @apply px-5 pt-1 pb-5 z-5 relative;
+}
+.card.card-profile .card-content p {
+  @apply text-gray-500 mb-2;
+}
+.card.card-profile::after {
+  @apply content-[""] absolute -top-14 -right-14 z-1 block w-56 h-56 rounded-bl-full bg-gradient-to-tr from-secondary-200 to-secondary-700;
+}
+.card.card-team {
+  @apply relative;
+}
+.card.card-team .card-header {
+  @apply aspect-auto h-auto px-6 pt-6;
+}
+.card.card-team .card-header .card-image {
+  @apply text-center;
+}
+.card.card-team .card-header .card-image .card-inner-image {
+  @apply mx-auto mb-4 w-40 h-40 rounded-full overflow-hidden;
+}
+.card.card-team .card-header .card-image figcaption {
+  @apply text-xl font-bold;
+}
+.card.card-team .card-header::before {
+  @apply content-[""] block absolute top-0 left-0 right-0 h-[7.25rem] bg-gradient-to-t from-primary-500 to-primary-800;
+}
+.card.card-team .card-content {
+  @apply text-gray-600;
+}
+.card.card-team .card-content p {
+  @apply mb-2;
+}
 
 .slider,
 .carousel {
