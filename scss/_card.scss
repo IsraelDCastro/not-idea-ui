@@ -24,7 +24,7 @@
     }
   }
   .card-footer {
-    @apply flex flex-wrap justify-between border-t border-gray-200/50 p-6;
+    @apply flex flex-wrap items-center justify-between border-t border-gray-200/50 p-6;
   }
 
   &.card-image {
@@ -102,6 +102,41 @@
       p {
         @apply mb-2;
       }
+    }
+  }
+
+  &.card-hover {
+    @apply relative;
+    .card-image {
+      @apply h-60 overflow-hidden;
+      img {
+        @apply h-4/6 absolute inset-0 w-full object-cover object-center transition-all duration-300 ease-in-out;
+      }
+    }
+    .card-content {
+      @apply z-1 relative transition-all duration-300 ease-in-out;
+    }
+    &:hover {
+      img {
+        @apply h-full;
+      }
+      .card-content {
+        @apply  bg-white/50 backdrop-blur-sm;
+      }
+    }
+  }
+  &.card-product {
+    .card-image {
+      @apply relative;
+      .price {
+        @apply absolute right-0 bottom-0 z-1 px-4 py-2 bg-primary-500 text-white rounded-tl;
+      }
+      .like {
+        @apply absolute right-2 top-2 z-1 p-1 bg-black/30 hover:bg-black/50 w-12 h-12 backdrop-blur text-white grid place-content-center text-xl rounded-full cursor-pointer transition duration-300 ease-in-out;
+      }
+    }
+    .price {
+      @apply font-bold text-xl text-primary-600;
     }
   }
 }

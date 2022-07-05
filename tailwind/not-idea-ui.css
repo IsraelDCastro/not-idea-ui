@@ -626,7 +626,7 @@
   @apply mb-5;
 }
 .card .card-footer {
-  @apply flex flex-wrap justify-between border-t border-gray-200/50 p-6;
+  @apply flex flex-wrap items-center justify-between border-t border-gray-200/50 p-6;
 }
 .card.card-image {
   @apply relative bg-cover bg-center bg-no-repeat h-48;
@@ -708,6 +708,36 @@
 }
 .card.card-team .card-content p {
   @apply mb-2;
+}
+.card.card-hover {
+  @apply relative;
+}
+.card.card-hover .card-image {
+  @apply h-60 overflow-hidden;
+}
+.card.card-hover .card-image img {
+  @apply h-4/6 absolute inset-0 w-full object-cover object-center transition-all duration-300 ease-in-out;
+}
+.card.card-hover .card-content {
+  @apply z-1 relative transition-all duration-300 ease-in-out;
+}
+.card.card-hover:hover img {
+  @apply h-full;
+}
+.card.card-hover:hover .card-content {
+  @apply bg-white/50 backdrop-blur-sm;
+}
+.card.card-product .card-image {
+  @apply relative;
+}
+.card.card-product .card-image .price {
+  @apply absolute right-0 bottom-0 z-1 px-4 py-2 bg-primary-500 text-white rounded-tl;
+}
+.card.card-product .card-image .like {
+  @apply absolute right-2 top-2 z-1 p-1 bg-black/30 hover:bg-black/50 w-12 h-12 backdrop-blur text-white grid place-content-center text-xl rounded-full cursor-pointer transition duration-300 ease-in-out;
+}
+.card.card-product .price {
+  @apply font-bold text-xl text-primary-600;
 }
 
 .slider,
