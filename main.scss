@@ -1,16 +1,21 @@
-@import "./scss/accordion";
-@import "./scss/alerts";
-@import "./scss/badges";
-@import "./scss/buttons";
-@import "./scss/card";
-@import "./scss/carousel";
-@import "./scss/comments";
-@import "./scss/footer";
-@import "./scss/form";
-@import "./scss/images";
-@import "./scss/lists";
-@import "./scss/navbar";
-@import "./scss/pagination";
-@import "./scss/sidebar";
-@import "./scss/tab";
-@import "./scss/table";
+@tailwind utilities;
+
+@layer utilities {
+  @import "./scss/accordion";
+  @import "./scss/alerts";
+  @import "./scss/badges";
+  @import "./scss/buttons";
+  @import "./scss/card";
+  @import "./scss/carousel";
+  @import "./scss/comments";
+  @import "./scss/footer";
+  @import "./scss/form";
+  @import "./scss/images";
+  @import "./scss/lists";
+  @import "./scss/navbar";
+  @import "./scss/pagination";
+  @import "./scss/sidebar";
+  @import "./scss/tab";
+  @import "./scss/table";
+}
+
