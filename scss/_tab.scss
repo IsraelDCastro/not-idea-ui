@@ -27,6 +27,27 @@
       }
     }
   }
+  &.is-semi-transparent {
+    .tab-link {
+      @apply bg-gray-100 text-gray-700;
+      &.is-active,
+      &:hover {
+        @apply bg-primary-300/40 text-primary-800;
+      }
+    }
+  }
+  &.is-rounded {
+    .tabs-lists {
+      @apply space-x-2 mb-1;
+    }
+    .tab-link {
+      @apply bg-gray-100 text-gray-700 rounded-xl;
+      &.is-active,
+      &:hover {
+        @apply bg-primary-300/40 text-primary-800;
+      }
+    }
+  }
   .tabs-content {
     .tab-content {
       @apply p-6 bg-gray-100;

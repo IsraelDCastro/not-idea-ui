@@ -28,7 +28,7 @@ table,
 .table {
   @apply w-full max-w-full overflow-hidden;
   thead {
-    @apply bg-gray-200 text-left text-lg;
+    @apply bg-gray-200/70 text-left;
 
     &.has-background {
       @apply bg-primary-700;
@@ -52,23 +52,34 @@ table,
     }
   }
   &.is-bordered {
-    @apply border border-gray-400;
+    @apply border border-gray-200;
     thead {
-      @apply border-b border-gray-400;
+      @apply border-b border-gray-200;
     }
     tr:not(:last-child) {
-      @apply border-b border-gray-400;
+      @apply border-b border-gray-200;
     }
     td, th {
       &:not(:last-child) {
-        @apply border-r border-gray-400;
+        @apply border-r border-gray-200;
       }
     }
   }
   &.is-bottom-bordered {
     thead,
     tr:not(:last-child) {
-      @apply border-b border-gray-400;
+      @apply border-b border-gray-200;
+    }
+  }
+
+  &.is-smooth {
+    @apply bg-slate-50;
+    thead {
+      @apply bg-sky-100;
+    }
+    thead,
+    tr:not(:last-child) {
+      @apply border-b border-slate-200/50;
     }
   }
 

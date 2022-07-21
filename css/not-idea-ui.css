@@ -59,6 +59,10 @@
   margin-top: 0.5rem;
 }
 
+.ml-2 {
+  margin-left: 0.5rem;
+}
+
 .mt-4 {
   margin-top: 1rem;
 }
@@ -327,6 +331,10 @@
 
 .text-center {
   text-align: center;
+}
+
+.align-super {
+  vertical-align: super;
 }
 
 .text-4xl {
@@ -672,7 +680,7 @@
   padding-right: 1rem;
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
-  font-weight: 600;
+  font-weight: 400;
 }
 
 .\!state {
@@ -684,7 +692,7 @@
   padding-right: 1rem;
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
-  font-weight: 600;
+  font-weight: 400;
 }
 
 .state.primary {
@@ -3073,6 +3081,100 @@
   font-weight: 400;
 }
 
+.field .checkbox.is-toggle, 
+.field .radio.is-toggle {
+  cursor: auto;
+}
+
+.field .checkbox.is-toggle input, 
+.field .radio.is-toggle input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.field .checkbox.is-toggle label, 
+.field .radio.is-toggle label {
+  position: relative;
+  margin: 0px;
+  height: 2rem;
+  width: 4.5rem;
+  border-radius: 1rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(243 244 246 / var(--tw-bg-opacity));
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  transition-property: all;
+  transition-duration: 300ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.field .checkbox.is-toggle label::before, 
+.field .radio.is-toggle label::before {
+  position: absolute;
+  left: 0.5rem;
+  z-index: 1;
+  display: block;
+  height: 1.5rem;
+  width: 1.5rem;
+  border-radius: 9999px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(156 163 175 / var(--tw-bg-opacity));
+  transition-property: all;
+  transition-duration: 300ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  --tw-content: "";
+  content: var(--tw-content);
+}
+
+.field .checkbox.is-toggle input:checked + label, 
+.field .radio.is-toggle input:checked + label {
+  background-color: rgb(138 181 231 / 0.4);
+}
+
+.field .checkbox.is-toggle input:checked + label::before, 
+.field .radio.is-toggle input:checked + label::before {
+  left: 2.5rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(69 130 208 / var(--tw-bg-opacity));
+}
+
+.field .checkbox.is-toggle input:disabled + label, 
+.field .radio.is-toggle input:disabled + label {
+  cursor: not-allowed;
+  background-color: rgb(243 244 246 / 0.7);
+}
+
+.field .checkbox.is-toggle input:disabled + label::before, 
+.field .radio.is-toggle input:disabled + label::before {
+  cursor: not-allowed;
+  background-color: rgb(156 163 175 / 0.5);
+}
+
+.field .checkbox.is-toggle.is-secondary input:checked + label, 
+.field .radio.is-toggle.is-secondary input:checked + label {
+  background-color: rgb(255 200 163 / 0.4);
+}
+
+.field .checkbox.is-toggle.is-secondary input:checked + label::before, 
+.field .radio.is-toggle.is-secondary input:checked + label::before {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 151 82 / var(--tw-bg-opacity));
+}
+
+.field .checkbox.is-toggle.is-tertiary input:checked + label, 
+.field .radio.is-toggle.is-tertiary input:checked + label {
+  background-color: rgb(191 164 209 / 0.4);
+}
+
+.field .checkbox.is-toggle.is-tertiary input:checked + label::before, 
+.field .radio.is-toggle.is-tertiary input:checked + label::before {
+  --tw-bg-opacity: 1;
+  background-color: rgb(132 82 163 / var(--tw-bg-opacity));
+}
+
 .field .error-message, 
 .field .success-message, 
 .field .warning-message {
@@ -3451,6 +3553,61 @@
   --tw-translate-y: -0.5rem;
   --tw-rotate: -45deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.topbar {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  --tw-bg-opacity: 1;
+  background-color: rgb(30 41 59 / var(--tw-bg-opacity));
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+@media (min-width: 1024px) {
+  .topbar {
+    flex-direction: row;
+  }
+}
+
+.topbar .slogan-topbar {
+  margin-bottom: 0px;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.topbar .topbar-menu {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.topbar .topbar-menu > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(1rem * var(--tw-space-x-reverse));
+  margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.topbar .topbar-menu .topbar-link {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 500;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+  transition-property: all;
+  transition-duration: 400ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.topbar .topbar-menu .topbar-link:hover {
+  --tw-text-opacity: 1;
+  color: rgb(255 135 54 / var(--tw-text-opacity));
 }
 
 @media (min-width: 1024px) {
@@ -4063,6 +4220,43 @@
   color: rgb(47 112 200 / var(--tw-text-opacity));
 }
 
+.tabs-wrapper.is-semi-transparent .tab-link {
+  --tw-bg-opacity: 1;
+  background-color: rgb(243 244 246 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(55 65 81 / var(--tw-text-opacity));
+}
+
+.tabs-wrapper.is-semi-transparent .tab-link.is-active,  .tabs-wrapper.is-semi-transparent .tab-link:hover {
+  background-color: rgb(138 181 231 / 0.4);
+  --tw-text-opacity: 1;
+  color: rgb(24 95 192 / var(--tw-text-opacity));
+}
+
+.tabs-wrapper.is-rounded .tabs-lists {
+  margin-bottom: 0.25rem;
+}
+
+.tabs-wrapper.is-rounded .tabs-lists > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(0.5rem * var(--tw-space-x-reverse));
+  margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.tabs-wrapper.is-rounded .tab-link {
+  border-radius: 0.75rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(243 244 246 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(55 65 81 / var(--tw-text-opacity));
+}
+
+.tabs-wrapper.is-rounded .tab-link.is-active,  .tabs-wrapper.is-rounded .tab-link:hover {
+  background-color: rgb(138 181 231 / 0.4);
+  --tw-text-opacity: 1;
+  color: rgb(24 95 192 / var(--tw-text-opacity));
+}
+
 .tabs-wrapper .tabs-content .tab-content {
   --tw-bg-opacity: 1;
   background-color: rgb(243 244 246 / var(--tw-bg-opacity));
@@ -4121,11 +4315,8 @@ table,
 
 table thead, 
 .table thead {
-  --tw-bg-opacity: 1;
-  background-color: rgb(229 231 235 / var(--tw-bg-opacity));
+  background-color: rgb(229 231 235 / 0.7);
   text-align: left;
-  font-size: 1.125rem;
-  line-height: 1.75rem;
 }
 
 table thead.has-background, 
@@ -4169,21 +4360,21 @@ table.is-bordered,
 .table.is-bordered {
   border-width: 1px;
   --tw-border-opacity: 1;
-  border-color: rgb(156 163 175 / var(--tw-border-opacity));
+  border-color: rgb(229 231 235 / var(--tw-border-opacity));
 }
 
 table.is-bordered thead, 
 .table.is-bordered thead {
   border-bottom-width: 1px;
   --tw-border-opacity: 1;
-  border-color: rgb(156 163 175 / var(--tw-border-opacity));
+  border-color: rgb(229 231 235 / var(--tw-border-opacity));
 }
 
 table.is-bordered tr:not(:last-child), 
 .table.is-bordered tr:not(:last-child) {
   border-bottom-width: 1px;
   --tw-border-opacity: 1;
-  border-color: rgb(156 163 175 / var(--tw-border-opacity));
+  border-color: rgb(229 231 235 / var(--tw-border-opacity));
 }
 
 table.is-bordered td:not(:last-child),  table.is-bordered th:not(:last-child), 
@@ -4191,7 +4382,7 @@ table.is-bordered td:not(:last-child),  table.is-bordered th:not(:last-child),
 .table.is-bordered th:not(:last-child) {
   border-right-width: 1px;
   --tw-border-opacity: 1;
-  border-color: rgb(156 163 175 / var(--tw-border-opacity));
+  border-color: rgb(229 231 235 / var(--tw-border-opacity));
 }
 
 table.is-bottom-bordered thead, 
@@ -4200,7 +4391,27 @@ table.is-bottom-bordered tr:not(:last-child),
 .table.is-bottom-bordered tr:not(:last-child) {
   border-bottom-width: 1px;
   --tw-border-opacity: 1;
-  border-color: rgb(156 163 175 / var(--tw-border-opacity));
+  border-color: rgb(229 231 235 / var(--tw-border-opacity));
+}
+
+table.is-smooth, 
+.table.is-smooth {
+  --tw-bg-opacity: 1;
+  background-color: rgb(248 250 252 / var(--tw-bg-opacity));
+}
+
+table.is-smooth thead, 
+.table.is-smooth thead {
+  --tw-bg-opacity: 1;
+  background-color: rgb(224 242 254 / var(--tw-bg-opacity));
+}
+
+table.is-smooth thead, 
+table.is-smooth tr:not(:last-child), 
+.table.is-smooth thead, 
+.table.is-smooth tr:not(:last-child) {
+  border-bottom-width: 1px;
+  border-color: rgb(226 232 240 / 0.5);
 }
 
 table tr, 

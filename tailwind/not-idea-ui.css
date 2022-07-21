@@ -96,7 +96,7 @@
     @apply bg-red-700 text-white;
   }
   .state {
-    @apply inline-block px-4 py-1 font-semibold bg-gray-200 rounded-xl;
+    @apply inline-block px-4 py-1 font-normal bg-gray-200 rounded-xl;
   }
   .state.primary {
     @apply bg-primary-700 text-white;
@@ -965,6 +965,54 @@
 .field .radio .label {
     @apply inline-block font-normal ml-2 cursor-pointer;
   }
+  .field .checkbox.is-toggle,
+.field .radio.is-toggle {
+    @apply cursor-auto;
+  }
+  .field .checkbox.is-toggle input,
+.field .radio.is-toggle input {
+    @apply absolute -z-[1] opacity-0;
+  }
+  .field .checkbox.is-toggle label,
+.field .radio.is-toggle label {
+    @apply relative w-[4.5rem] h-8 m-0 px-2 py-1 bg-gray-100 rounded-2xl transition-all duration-300 ease-in-out;
+  }
+  .field .checkbox.is-toggle label::before,
+.field .radio.is-toggle label::before {
+    @apply absolute z-1 left-2 content-[""] block h-6 w-6 bg-gray-400 rounded-full transition-all duration-300 ease-in-out;
+  }
+  .field .checkbox.is-toggle input:checked + label,
+.field .radio.is-toggle input:checked + label {
+    @apply bg-primary-300/40;
+  }
+  .field .checkbox.is-toggle input:checked + label::before,
+.field .radio.is-toggle input:checked + label::before {
+    @apply left-10 bg-primary-600;
+  }
+  .field .checkbox.is-toggle input:disabled + label,
+.field .radio.is-toggle input:disabled + label {
+    @apply bg-gray-100/70 cursor-not-allowed;
+  }
+  .field .checkbox.is-toggle input:disabled + label::before,
+.field .radio.is-toggle input:disabled + label::before {
+    @apply bg-gray-400/50 cursor-not-allowed;
+  }
+  .field .checkbox.is-toggle.is-secondary input:checked + label,
+.field .radio.is-toggle.is-secondary input:checked + label {
+    @apply bg-secondary-300/40;
+  }
+  .field .checkbox.is-toggle.is-secondary input:checked + label::before,
+.field .radio.is-toggle.is-secondary input:checked + label::before {
+    @apply bg-secondary-600;
+  }
+  .field .checkbox.is-toggle.is-tertiary input:checked + label,
+.field .radio.is-toggle.is-tertiary input:checked + label {
+    @apply bg-tertiary-300/40;
+  }
+  .field .checkbox.is-toggle.is-tertiary input:checked + label::before,
+.field .radio.is-toggle.is-tertiary input:checked + label::before {
+    @apply bg-tertiary-600;
+  }
   .field .error-message,
 .field .success-message,
 .field .warning-message {
@@ -1181,6 +1229,21 @@
   }
   .navbar .burger-menu.is-active span:last-child {
     @apply -rotate-45 -translate-y-2;
+  }
+  .topbar {
+    @apply px-8 py-2 bg-slate-800 flex flex-col flex-wrap lg:flex-row items-center justify-between;
+  }
+  .topbar .slogan-topbar {
+    @apply mb-0 text-sm text-white;
+  }
+  .topbar .topbar-menu {
+    @apply space-x-4 flex flex-wrap;
+  }
+  .topbar .topbar-menu .topbar-link {
+    @apply text-white text-sm font-medium transition-all duration-400 ease-in-out;
+  }
+  .topbar .topbar-menu .topbar-link:hover {
+    @apply text-secondary-700;
   }
   @screen lg {
     .navbar .logo {
@@ -1437,6 +1500,21 @@
   .tabs-wrapper.is-left-border .tab-link.is-active, .tabs-wrapper.is-left-border .tab-link:hover {
     @apply text-primary-700 border-primary-700;
   }
+  .tabs-wrapper.is-semi-transparent .tab-link {
+    @apply bg-gray-100 text-gray-700;
+  }
+  .tabs-wrapper.is-semi-transparent .tab-link.is-active, .tabs-wrapper.is-semi-transparent .tab-link:hover {
+    @apply bg-primary-300/40 text-primary-800;
+  }
+  .tabs-wrapper.is-rounded .tabs-lists {
+    @apply space-x-2 mb-1;
+  }
+  .tabs-wrapper.is-rounded .tab-link {
+    @apply bg-gray-100 text-gray-700 rounded-xl;
+  }
+  .tabs-wrapper.is-rounded .tab-link.is-active, .tabs-wrapper.is-rounded .tab-link:hover {
+    @apply bg-primary-300/40 text-primary-800;
+  }
   .tabs-wrapper .tabs-content .tab-content {
     @apply p-6 bg-gray-100;
   }
@@ -1471,7 +1549,7 @@
   }
   table thead,
 .table thead {
-    @apply bg-gray-200 text-left text-lg;
+    @apply bg-gray-200/70 text-left;
   }
   table thead.has-background,
 .table thead.has-background {
@@ -1499,26 +1577,40 @@
   }
   table.is-bordered,
 .table.is-bordered {
-    @apply border border-gray-400;
+    @apply border border-gray-200;
   }
   table.is-bordered thead,
 .table.is-bordered thead {
-    @apply border-b border-gray-400;
+    @apply border-b border-gray-200;
   }
   table.is-bordered tr:not(:last-child),
 .table.is-bordered tr:not(:last-child) {
-    @apply border-b border-gray-400;
+    @apply border-b border-gray-200;
   }
   table.is-bordered td:not(:last-child), table.is-bordered th:not(:last-child),
 .table.is-bordered td:not(:last-child),
 .table.is-bordered th:not(:last-child) {
-    @apply border-r border-gray-400;
+    @apply border-r border-gray-200;
   }
   table.is-bottom-bordered thead,
 table.is-bottom-bordered tr:not(:last-child),
 .table.is-bottom-bordered thead,
 .table.is-bottom-bordered tr:not(:last-child) {
-    @apply border-b border-gray-400;
+    @apply border-b border-gray-200;
+  }
+  table.is-smooth,
+.table.is-smooth {
+    @apply bg-slate-50;
+  }
+  table.is-smooth thead,
+.table.is-smooth thead {
+    @apply bg-sky-100;
+  }
+  table.is-smooth thead,
+table.is-smooth tr:not(:last-child),
+.table.is-smooth thead,
+.table.is-smooth tr:not(:last-child) {
+    @apply border-b border-slate-200/50;
   }
   table tr,
 .table tr {

@@ -76,6 +76,22 @@
   }
 }
 
+.topbar {
+  @apply px-8 py-2 bg-slate-800 flex flex-col flex-wrap lg:flex-row items-center justify-between;
+  .slogan-topbar {
+    @apply mb-0 text-sm text-white;
+  }
+  .topbar-menu {
+    @apply space-x-4 flex flex-wrap;
+    .topbar-link {
+      @apply text-white text-sm font-medium transition-all duration-400 ease-in-out;
+      &:hover {
+        @apply text-secondary-700;
+      }
+    }
+  }
+}
+
 @screen lg {
   .navbar {
     .logo {
