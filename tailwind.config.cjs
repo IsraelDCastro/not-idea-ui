@@ -84,10 +84,7 @@ module.exports = {
       },
       listStyleType: {
         circle: "circle"
-      },
-      backgroundImage: (theme) => ({
-        "card-image": "url('/images/galaxy.webp')"
-      })
+      }
     },
   },
   variants: {
