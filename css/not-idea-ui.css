@@ -311,7 +311,7 @@
   background-color: rgb(226 232 240 / var(--tw-bg-opacity));
 }
 
-.bg-card-image {
+.bg-\[url\(\'\/images\/galaxy\.webp\'\)\] {
   background-image: url('/images/galaxy.webp');
 }
 
