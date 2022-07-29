@@ -1,4 +1,17 @@
 module.exports = {
+  content: [
+    "./index.html",
+    "./src/**/*.{vue,js,ts,jsx,tsx}",
+    "./pages/**/*.{js,ts,jsx,tsx}",
+    "./layouts/**/*.{js,ts,jsx,tsx}",
+    "./components/**/*.{js,ts,jsx,tsx}",
+    "./docs/**/*.{js,ts,jsx,tsx}",
+    "./globals/**/*.{js,ts,jsx,tsx}",
+    './app/views/**/*.erb',
+    './app/views/**/*.haml',
+    './app/views/**/*.html.erb',
+    './app/javascript/**/*.{vue,js,ts,jsx,tsx}'
+  ],
   theme: {
     extend: {
       colors: {
