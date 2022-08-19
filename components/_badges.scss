@@ -28,7 +28,7 @@
 
   &.has-icon {
     @apply inline-flex flex-wrap items-center;
-    span { @apply flex; }
+    span { @apply flex items-center; }
   }
   .icon { @apply ml-1 w-5 h-5; }
 }

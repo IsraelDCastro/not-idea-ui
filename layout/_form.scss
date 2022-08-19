@@ -40,19 +40,19 @@
       @apply cursor-not-allowed;
     }
     &.error {
-      @apply border-red-500 bg-red-500/20;
+      @apply border-red-500 text-red-500/90 bg-red-500/20;
       &::placeholder {
         @apply text-red-500/90;
       }
     }
     &.success {
-      @apply border-green-500 bg-green-500/20;
+      @apply text-green-600/90 border-green-500 bg-green-500/20;
       &::placeholder {
         @apply text-green-500/90;
       }
     }
     &.warning {
-      @apply border-yellow-500 bg-yellow-500/20;
+      @apply text-yellow-500/90 border-yellow-500 bg-yellow-500/10;
       &::placeholder {
         @apply text-yellow-500/90;
       }
@@ -144,11 +144,14 @@
     .icon {
       @apply inline-block text-gray-500 w-6 h-6 absolute left-2 top-2;
     }
-    .input {
-      @apply pl-10;
-    }
+    .input { @apply pl-10; }
+  }
+  &.to-right {
+    .icon { @apply left-auto right-2; }
+    .input { @apply pl-5 pr-10; }
   }
 }
+
 .has-button {
   .input-button {
     @apply flex;
@@ -161,6 +164,7 @@
     }
   }
 }
+
 .has-select {
   .input-select {
     @apply flex;
@@ -172,6 +176,7 @@
     }
   }
 }
+
 .has-select-button {
   .input-select-button {
     @apply flex;
@@ -188,56 +193,21 @@
 }
 
 .field-select {
-  position: relative;
-  width: auto;
-  display: inline-block;
-  &::after {
-    content: " ";
-    display: block;
-    position: absolute;
-    top: 45%;
-    right: 15px;
-    z-index: 10;
-    border-width: 6px;
-    border-color: #CCC transparent transparent  transparent;
-  }
+  @apply relative inline-block w-auto;
+
   .select-items {
-    padding: 16px;
-    background-color: #FFF;
-    border: 1px solid #CCC;
-    border-radius: 5px;
-    width: 100%;
-    position: absolute;
-    left: 0;
-    z-index: -1;
-    opacity: 0;
-    transition: all .4s ease-in-out;
-    min-height: 90px;
-    max-height: 200px;
-    overflow-y: scroll;
+    @apply p-4 bg-white/40 backdrop-blur-sm border border-slate-50 rounded w-full absolute left-0 -z-1 opacity-0 min-h-[90px] max-h-[200px] overflow-y-scroll transition-all duration-300 ease-in-out;
     li {
-      padding: 5px 10px;
-      cursor: pointer;
-      transition: all .4s ease-in-out;
-      &:hover {
-        background-color: #EDEDED;
-      }
+      @apply p-2 cursor-pointer transition-all duration-300 ease-in-out hover:bg-slate-100/70;
       &:not(:last-child) {
-        border-bottom: 1px solid #EEE;
+        @apply border-b border-slate-200;
       }
+    }
+  }
+  .select-search {
+    &:focus ~ .select-items {
+      @apply z-20 opacity-100;
     }
   }
 }
 
-.select-search {
-  border-radius: 0.25rem;
-  border: 1px solid rgba(229, 231, 235, 1);
-  padding: .75rem 1.25rem;
-  font-size: 1rem;
-  line-height: 1.5rem;
-  position: relative;
-  &:focus + .select-items {
-    z-index: 20;
-    opacity: 1;
-  }
-}

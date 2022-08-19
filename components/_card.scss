@@ -85,7 +85,7 @@
     .card-header {
       @apply aspect-auto h-auto px-6 pt-6;
       .card-image {
-        @apply text-center;
+        @apply text-center relative z-1;
         .card-inner-image {
           @apply mx-auto mb-4 w-40 h-40 rounded-full overflow-hidden;
         }

@@ -1,0 +1,27 @@
+.alert {
+  @apply rounded bg-gray-200 p-6 shadow-alert relative flex flex-wrap;
+  p { @apply mb-0; }
+  &.is-primary { @apply bg-primary-700 text-white; }
+  &.is-secondary { @apply bg-secondary-700 text-white; }
+  &.is-tertiary { @apply bg-tertiary-700 text-white; }
+  &.is-danger { @apply bg-red-500 text-white; }
+  &.is-warning { @apply bg-yellow-300 text-white; }
+  &.is-success { @apply bg-green-400 text-white; }
+  &.is-info { @apply bg-blue-500 text-white; }
+  &.is-flat {
+    @apply rounded-none;
+    .close-alert { @apply rounded-none;  }
+  }
+  &.is-full-rounded {
+    @apply rounded-2xl;
+    .close-alert { @apply rounded-2xl;  }
+  }
+  &.is-semi-transparent {
+    @apply bg-opacity-80;
+  }
+  .close-alert {
+    @apply inline-block w-6 h-6 cursor-pointer rounded p-1 absolute right-4 top-4 z-10 transition-all duration-400 ease-in-out;
+    svg { @apply block; }
+    &:hover { @apply bg-red-700 text-white; }
+  }
+}
