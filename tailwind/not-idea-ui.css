@@ -265,40 +265,40 @@
   .navbar .logo a {
     @apply text-2xl font-bold hover:text-primary-700 transition-all duration-400 ease-in-out;
   }
-  .navbar .menu {
+  .navbar > .menu {
     @apply absolute -z-1 -top-full bg-gray-50 md:bg-transparent opacity-0 left-0 w-full rounded shadow flex-col list-none divide-y-2 divide-slate-100 transition-all duration-500 ease-in-out;
   }
-  .navbar .menu .nav-link {
+  .navbar > .menu .nav-link {
     @apply no-underline cursor-pointer p-2 block text-gray-700 font-semibold transition-all duration-400 ease-in-out;
   }
-  .navbar .menu .nav-link:hover, .navbar .menu .nav-link.is-active {
+  .navbar > .menu .nav-link:hover, .navbar > .menu .nav-link.is-active {
     @apply text-primary-700;
   }
-  .navbar .menu .has-submenu .submenu {
+  .navbar > .menu .has-submenu .submenu {
     @apply bg-slate-100 px-4 divide-y;
   }
-  .navbar .menu .has-submenu .submenu .nav-link {
+  .navbar > .menu .has-submenu .submenu .nav-link {
     @apply text-base font-medium px-6 py-2;
   }
-  .navbar .menu .has-submenu:hover .submenu {
+  .navbar > .menu .has-submenu:hover .submenu {
     @apply z-1 opacity-100;
   }
-  .navbar .menu.is-opened {
+  .navbar > .menu.is-opened {
     @apply z-1 top-full opacity-100;
   }
-  .navbar .menu.enter-left {
+  .navbar > .menu.enter-left {
     @apply top-full w-6/12 -left-full;
   }
-  .navbar .menu.enter-left.is-opened {
+  .navbar > .menu.enter-left.is-opened {
     @apply z-1 left-0 opacity-100;
   }
-  .navbar .menu.enter-right {
+  .navbar > .menu.enter-right {
     @apply top-full w-6/12 -right-full left-[initial];
   }
-  .navbar .menu.enter-right.is-opened {
+  .navbar > .menu.enter-right.is-opened {
     @apply z-1 right-0 opacity-100;
   }
-  .navbar .menu ul {
+  .navbar > .menu ul {
     @apply list-none;
   }
   .navbar .menu-icon {
@@ -691,13 +691,13 @@ table.is-smooth tr:not(:last-child),
     @apply bg-red-500 text-white;
   }
   .alert.is-warning {
-    @apply bg-yellow-300 text-white;
+    @apply bg-yellow-400 text-gray-700;
   }
   .alert.is-success {
-    @apply bg-green-400 text-white;
+    @apply bg-green-500 text-white;
   }
   .alert.is-info {
-    @apply bg-blue-500 text-white;
+    @apply bg-sky-500 text-white;
   }
   .alert.is-flat {
     @apply rounded-none;
@@ -1859,13 +1859,13 @@ table.is-smooth tr:not(:last-child),
     @apply h-6;
   }
   .tabs-wrapper .tabs-lists {
-    @apply list-none flex flex-wrap flex-col md:flex-row;
+    @apply p-0 list-none flex flex-wrap flex-col md:flex-row;
   }
   .tabs-wrapper .tab-link {
-    @apply inline-block w-full text-lg px-4 py-2 cursor-pointer transition-all duration-500 ease-in-out bg-slate-200/50;
+    @apply inline-block w-full text-lg px-4 py-2 cursor-pointer transition-all duration-500 ease-in-out bg-slate-100;
   }
   .tabs-wrapper .tab-link.is-active, .tabs-wrapper .tab-link:hover {
-    @apply bg-primary-700 text-white;
+    @apply no-underline bg-primary-700 text-white;
   }
   .tabs-wrapper.is-underline .tab-link {
     @apply border-b-4 border-gray-100 bg-transparent;
@@ -1880,7 +1880,7 @@ table.is-smooth tr:not(:last-child),
     @apply text-primary-700 border-primary-700;
   }
   .tabs-wrapper.is-semi-transparent .tab-link {
-    @apply bg-gray-100 text-gray-700;
+    @apply bg-slate-100 text-gray-700;
   }
   .tabs-wrapper.is-semi-transparent .tab-link.is-active, .tabs-wrapper.is-semi-transparent .tab-link:hover {
     @apply bg-primary-300/40 text-primary-800;
@@ -1889,7 +1889,7 @@ table.is-smooth tr:not(:last-child),
     @apply space-x-2 mb-1;
   }
   .tabs-wrapper.is-rounded .tab-link {
-    @apply bg-gray-100 text-gray-700 rounded-xl;
+    @apply bg-slate-100 text-gray-700 rounded-xl;
   }
   .tabs-wrapper.is-rounded .tab-link.is-active, .tabs-wrapper.is-rounded .tab-link:hover {
     @apply bg-primary-300/40 text-primary-800;

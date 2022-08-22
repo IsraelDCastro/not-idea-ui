@@ -5,9 +5,9 @@
   &.is-secondary { @apply bg-secondary-700 text-white; }
   &.is-tertiary { @apply bg-tertiary-700 text-white; }
   &.is-danger { @apply bg-red-500 text-white; }
-  &.is-warning { @apply bg-yellow-300 text-white; }
-  &.is-success { @apply bg-green-400 text-white; }
-  &.is-info { @apply bg-blue-500 text-white; }
+  &.is-warning { @apply bg-yellow-400 text-gray-700; }
+  &.is-success { @apply bg-green-500 text-white; }
+  &.is-info { @apply bg-sky-500 text-white; }
   &.is-flat {
     @apply rounded-none;
     .close-alert { @apply rounded-none;  }
