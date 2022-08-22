@@ -26,10 +26,9 @@
 
 table,
 .table {
-  @apply w-full max-w-full overflow-hidden;
+  @apply bg-gray-100 w-full max-w-full overflow-hidden;
   thead {
     @apply bg-gray-200/70 text-left;
-
     &.has-background {
       @apply bg-primary-700;
       th {
@@ -84,9 +83,10 @@ table,
   }
 
   tr {
-    @apply outline-none;
+    @apply outline-none border-0;
+    &:nth-child(2n) { @apply bg-transparent; }
   }
   td, th {
-    @apply px-5 py-2 whitespace-nowrap;
+    @apply px-5 py-2 whitespace-nowrap border-0;
   }
 }

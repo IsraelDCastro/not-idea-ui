@@ -1,12 +1,12 @@
 .tabs-wrapper {
   .tabs-lists {
-    @apply list-none flex flex-wrap flex-col md:flex-row;
+    @apply p-0 list-none flex flex-wrap flex-col md:flex-row;
   }
   .tab-link {
-    @apply inline-block w-full text-lg px-4 py-2 cursor-pointer transition-all duration-500 ease-in-out bg-slate-200/50;
+    @apply inline-block w-full text-lg px-4 py-2 cursor-pointer transition-all duration-500 ease-in-out bg-slate-100;
     &.is-active,
     &:hover {
-      @apply bg-primary-700 text-white;
+      @apply no-underline bg-primary-700 text-white;
     }
   }
   &.is-underline {
@@ -29,7 +29,7 @@
   }
   &.is-semi-transparent {
     .tab-link {
-      @apply bg-gray-100 text-gray-700;
+      @apply bg-slate-100 text-gray-700;
       &.is-active,
       &:hover {
         @apply bg-primary-300/40 text-primary-800;
@@ -41,7 +41,7 @@
       @apply space-x-2 mb-1;
     }
     .tab-link {
-      @apply bg-gray-100 text-gray-700 rounded-xl;
+      @apply bg-slate-100 text-gray-700 rounded-xl;
       &.is-active,
       &:hover {
         @apply bg-primary-300/40 text-primary-800;

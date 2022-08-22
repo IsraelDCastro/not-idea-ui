@@ -1,21 +1,25 @@
 @tailwind utilities;
 
 @layer utilities {
-  @import "./scss/accordion";
-  @import "./scss/alerts";
-  @import "./scss/badges";
-  @import "./scss/buttons";
-  @import "./scss/card";
-  @import "./scss/carousel";
-  @import "./scss/comments";
-  @import "./scss/footer";
-  @import "./scss/form";
-  @import "./scss/images";
-  @import "./scss/lists";
-  @import "./scss/navbar";
-  @import "./scss/pagination";
-  @import "./scss/sidebar";
-  @import "./scss/tab";
-  @import "./scss/table";
+  @import "layout/footer";
+  @import "layout/form";
+  @import "layout/navbar";
+  @import "layout/sidebar";
+  @import "layout/table";
+
+  @import "components/accordion";
+  @import "components/alerts";
+  @import "components/badges";
+  @import "components/breadcrumb";
+  @import "components/buttons";
+  @import "components/card";
+  @import "components/carousel";
+  @import "components/comments";
+  @import "components/images";
+  @import "components/lists";
+  @import "components/modal";
+  @import "components/pagination";
+  @import "components/progress";
+  @import "components/tab";
 }
 

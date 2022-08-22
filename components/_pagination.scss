@@ -54,13 +54,12 @@
 }
 
 .pages-list {
-  @apply space-x-2;
+  @apply space-x-2 p-0 list-none;
 }
 
 .page-link {
   @apply inline-block;
 }
-
 
 .page-prev {
   @apply mr-4;

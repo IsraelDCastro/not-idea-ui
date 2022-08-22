@@ -1,310 +1,597 @@
 .button {
-  @apply bg-gray-200 hover:bg-gray-300 border-2 border-gray-200 hover:border-gray-300 rounded px-5 py-2 text-gray-700 inline-block cursor-pointer transition-all duration-400 ease-in-out;
-
+  @apply bg-gray-200 hover:bg-gray-300 border-2 border-gray-200 border-solid hover:border-gray-300 rounded px-5 py-2 text-gray-700 inline-block cursor-pointer transition-all duration-400 ease-in-out;
   &.button-primary {
     @apply bg-primary-700 border-primary-700 text-white;
-    &:hover { @apply bg-primary-800 border-primary-800; }
+    &:hover {
+      @apply bg-primary-800 border-primary-800;
+    }
+
     &.semi-transparent {
       @apply bg-primary-500 border-primary-300 bg-opacity-20 border-opacity-20 text-primary-700;
       &:hover {
         @apply bg-opacity-50 border-opacity-50;
       }
     }
+
+    &.link {
+      @apply bg-transparent border-transparent text-primary-700;
+      &:hover {
+        @apply bg-primary-700 border-primary-700 text-white;
+      }
+    }
   }
+
   &.button-primary-outline {
     @apply border-primary-700 text-primary-700 bg-transparent ;
-    &:hover { @apply bg-primary-700 text-white; }
+    &:hover {
+      @apply bg-primary-700 text-white;
+    }
   }
+
   &.button-primary-flat {
     @apply bg-primary-700 border-primary-700 text-white rounded-none;
-    &:hover { @apply bg-primary-700; }
+    &:hover {
+      @apply bg-primary-700;
+    }
+
     &.semi-transparent {
       @apply bg-primary-500 border-primary-300 bg-opacity-20 border-opacity-20 text-primary-700;
       &:hover {
         @apply bg-opacity-50 border-opacity-50;
       }
     }
+
+    &.link {
+      @apply bg-transparent border-transparent text-primary-700;
+      &:hover {
+        @apply bg-primary-700 border-primary-700 text-white;
+      }
+    }
   }
+
   &.button-primary-flat-outline {
     @apply border-primary-700 text-primary-700 bg-transparent rounded-none;
-    &:hover { @apply bg-primary-700 text-white; }
+    &:hover {
+      @apply bg-primary-700 text-white;
+    }
   }
+
   &.button-primary-rounded {
     @apply bg-primary-700 border-primary-700 rounded-3xl text-white;
-    &:hover { @apply bg-primary-800 border-primary-800; }
+    &:hover {
+      @apply bg-primary-800 border-primary-800;
+    }
+
     &.semi-transparent {
       @apply bg-primary-500 border-primary-300 bg-opacity-20 border-opacity-20 text-primary-700;
       &:hover {
         @apply bg-opacity-50 border-opacity-50;
       }
     }
+
+    &.link {
+      @apply bg-transparent border-transparent text-primary-700;
+      &:hover {
+        @apply bg-primary-700 border-primary-700 text-white;
+      }
+    }
   }
+
   &.button-primary-rounded-outline {
     @apply border-primary-700 text-primary-700 bg-transparent rounded-3xl;
-    &:hover { @apply bg-primary-700 border-primary-700 text-white; }
+    &:hover {
+      @apply bg-primary-700 border-primary-700 text-white;
+    }
   }
 
   &.button-secondary {
     @apply bg-secondary-700 border-secondary-700 text-white;
-    &:hover { @apply bg-secondary-800 border-secondary-800; }
+    &:hover {
+      @apply bg-secondary-800 border-secondary-800;
+    }
+
     &.semi-transparent {
       @apply bg-secondary-500 border-secondary-300 bg-opacity-20 border-opacity-20 text-secondary-700;
       &:hover {
         @apply bg-opacity-50 border-opacity-50;
       }
     }
+
+    &.link {
+      @apply bg-transparent border-transparent text-secondary-700;
+      &:hover {
+        @apply bg-secondary-700 border-secondary-700 text-white;
+      }
+    }
   }
+
   &.button-secondary-outline {
     @apply border-secondary-700 text-secondary-700 bg-transparent ;
-    &:hover { @apply bg-secondary-700 text-white; }
+    &:hover {
+      @apply bg-secondary-700 text-white;
+    }
   }
+
   &.button-secondary-flat {
     @apply bg-secondary-700 border-secondary-700 text-white rounded-none;
-    &:hover { @apply bg-secondary-800 border-secondary-800; }
+    &:hover {
+      @apply bg-secondary-800 border-secondary-800;
+    }
+
     &.semi-transparent {
       @apply bg-secondary-500 border-secondary-300 bg-opacity-20 border-opacity-20 text-secondary-700;
       &:hover {
         @apply bg-opacity-50 border-opacity-50;
       }
     }
+
+    &.link {
+      @apply bg-transparent border-transparent text-secondary-700;
+      &:hover {
+        @apply bg-secondary-700 border-secondary-700 text-white;
+      }
+    }
   }
+
   &.button-secondary-flat-outline {
     @apply border-secondary-700 text-secondary-700 bg-transparent rounded-none;
-    &:hover { @apply bg-secondary-700 text-white; }
+    &:hover {
+      @apply bg-secondary-700 text-white;
+    }
   }
+
   &.button-secondary-rounded {
     @apply bg-secondary-700 border-secondary-700 rounded-3xl text-white;
-    &:hover { @apply bg-secondary-800 border-secondary-800; }
+    &:hover {
+      @apply bg-secondary-800 border-secondary-800;
+    }
+
     &.semi-transparent {
       @apply bg-secondary-500 border-secondary-300 bg-opacity-20 border-opacity-20 text-secondary-700;
       &:hover {
         @apply bg-opacity-50 border-opacity-50;
       }
     }
+
+    &.link {
+      @apply bg-transparent border-transparent text-secondary-700;
+      &:hover {
+        @apply bg-secondary-700 border-secondary-700 text-white;
+      }
+    }
   }
+
   &.button-secondary-rounded-outline {
     @apply border-secondary-700 text-secondary-700 bg-transparent rounded-3xl;
-    &:hover { @apply bg-secondary-700 border-secondary-700 text-white; }
+    &:hover {
+      @apply bg-secondary-700 border-secondary-700 text-white;
+    }
   }
 
   &.button-tertiary {
     @apply bg-tertiary-700 border-tertiary-700 text-white;
-    &:hover { @apply bg-tertiary-800 border-tertiary-800; }
+    &:hover {
+      @apply bg-tertiary-800 border-tertiary-800;
+    }
+
     &.semi-transparent {
       @apply bg-tertiary-500 border-tertiary-300 bg-opacity-20 border-opacity-20 text-tertiary-700;
       &:hover {
         @apply bg-opacity-50 border-opacity-50;
       }
     }
+
+    &.link {
+      @apply bg-transparent border-transparent text-tertiary-700;
+      &:hover {
+        @apply bg-tertiary-700 border-tertiary-700 text-white;
+      }
+    }
   }
+
   &.button-tertiary-outline {
     @apply border-tertiary-700 text-tertiary-700 bg-transparent ;
-    &:hover { @apply bg-tertiary-700 text-white; }
+    &:hover {
+      @apply bg-tertiary-700 text-white;
+    }
   }
+
   &.button-tertiary-flat {
     @apply bg-tertiary-700 border-tertiary-700 text-white rounded-none;
-    &:hover { @apply bg-tertiary-800 border-tertiary-800; }
+    &:hover {
+      @apply bg-tertiary-800 border-tertiary-800;
+    }
+
     &.semi-transparent {
       @apply bg-tertiary-500 border-tertiary-300 bg-opacity-20 border-opacity-20 text-tertiary-700;
       &:hover {
         @apply bg-opacity-50 border-opacity-50;
       }
     }
+
+    &.link {
+      @apply bg-transparent border-transparent text-tertiary-700;
+      &:hover {
+        @apply bg-tertiary-700 border-tertiary-700 text-white;
+      }
+    }
   }
+
   &.button-tertiary-flat-outline {
     @apply border-tertiary-700 text-tertiary-700 bg-transparent rounded-none;
-    &:hover { @apply bg-tertiary-700 text-white; }
+    &:hover {
+      @apply bg-tertiary-700 text-white;
+    }
   }
+
   &.button-tertiary-rounded {
     @apply bg-tertiary-700 border-tertiary-700 rounded-3xl text-white;
-    &:hover { @apply bg-tertiary-800 border-tertiary-800; }
+    &:hover {
+      @apply bg-tertiary-800 border-tertiary-800;
+    }
+
     &.semi-transparent {
       @apply bg-tertiary-500 border-tertiary-300 bg-opacity-20 border-opacity-20 text-tertiary-700;
       &:hover {
         @apply bg-opacity-50 border-opacity-50;
       }
     }
+
+    &.link {
+      @apply bg-transparent border-transparent text-tertiary-700;
+      &:hover {
+        @apply bg-tertiary-700 border-tertiary-700 text-white;
+      }
+    }
   }
+
   &.button-tertiary-rounded-outline {
     @apply border-tertiary-700 text-tertiary-700 bg-transparent rounded-3xl;
-    &:hover { @apply bg-tertiary-700 border-tertiary-700 text-white; }
+    &:hover {
+      @apply bg-tertiary-700 border-tertiary-700 text-white;
+    }
   }
 
   &.button-danger {
     @apply bg-red-500 border-red-500 text-white;
-    &:hover { @apply bg-red-600 border-red-600; }
+    &:hover {
+      @apply bg-red-600 border-red-600;
+    }
+
     &.semi-transparent {
       @apply bg-red-500 border-red-300 bg-opacity-20 border-opacity-20 text-red-700;
       &:hover {
         @apply bg-opacity-50 border-opacity-50;
       }
     }
+
+    &.link {
+      @apply bg-transparent border-transparent text-red-500;
+      &:hover {
+        @apply bg-red-500 border-red-500 text-white;
+      }
+    }
   }
+
   &.button-danger-outline {
     @apply border-red-500 text-red-500 bg-transparent;
-    &:hover { @apply bg-red-500 text-white; }
+    &:hover {
+      @apply bg-red-500 text-white;
+    }
   }
+
   &.button-danger-flat {
     @apply bg-red-500 border-red-500 text-white rounded-none;
-    &:hover { @apply bg-red-600 border-red-600; }
+    &:hover {
+      @apply bg-red-600 border-red-600;
+    }
+
     &.semi-transparent {
       @apply bg-red-500 border-red-300 bg-opacity-20 border-opacity-20 text-red-700;
       &:hover {
         @apply bg-opacity-50 border-opacity-50;
       }
     }
+
+    &.link {
+      @apply bg-transparent border-transparent text-red-500;
+      &:hover {
+        @apply bg-red-500 border-red-500 text-white;
+      }
+    }
   }
+
   &.button-danger-flat-outline {
     @apply border-red-500 text-red-500 bg-transparent rounded-none;
-    &:hover { @apply bg-red-500 text-white; }
+    &:hover {
+      @apply bg-red-500 text-white;
+    }
   }
+
   &.button-danger-rounded {
     @apply bg-red-500 border-red-500 rounded-3xl text-white;
-    &:hover { @apply bg-red-600 border-red-600; }
+    &:hover {
+      @apply bg-red-600 border-red-600;
+    }
+
     &.semi-transparent {
       @apply bg-red-500 border-red-300 bg-opacity-20 border-opacity-20 text-red-700;
       &:hover {
         @apply bg-opacity-50 border-opacity-50;
       }
     }
+
+    &.link {
+      @apply bg-transparent border-transparent text-red-500;
+      &:hover {
+        @apply bg-red-500 border-red-500 text-white;
+      }
+    }
   }
+
   &.button-danger-rounded-outline {
     @apply border-red-500 text-red-500 bg-transparent rounded-3xl;
-    &:hover { @apply bg-red-500 border-red-500 text-white; }
+    &:hover {
+      @apply bg-red-500 border-red-500 text-white;
+    }
   }
 
   &.button-warning {
     @apply bg-yellow-400 border-yellow-400 text-white;
-    &:hover { @apply bg-yellow-500 border-yellow-500; }
+    &:hover {
+      @apply bg-yellow-500 border-yellow-500;
+    }
+
     &.semi-transparent {
       @apply bg-yellow-500 border-yellow-300 bg-opacity-20 border-opacity-20 text-yellow-700;
       &:hover {
         @apply bg-opacity-50 border-opacity-50;
       }
     }
+
+    &.link {
+      @apply bg-transparent border-transparent text-yellow-500;
+      &:hover {
+        @apply bg-yellow-500 border-yellow-500 text-white;
+      }
+    }
   }
+
   &.button-warning-outline {
     @apply border-yellow-400 text-yellow-400 bg-transparent;
-    &:hover { @apply bg-yellow-400 text-white; }
+    &:hover {
+      @apply bg-yellow-400 text-white;
+    }
   }
+
   &.button-warning-flat {
     @apply bg-yellow-400 border-yellow-400 text-white rounded-none;
-    &:hover { @apply bg-yellow-500 border-yellow-500; }
+    &:hover {
+      @apply bg-yellow-500 border-yellow-500;
+    }
+
     &.semi-transparent {
       @apply bg-yellow-500 border-yellow-300 bg-opacity-20 border-opacity-20 text-yellow-700;
       &:hover {
         @apply bg-opacity-50 border-opacity-50;
       }
     }
+
+    &.link {
+      @apply bg-transparent border-transparent text-yellow-500;
+      &:hover {
+        @apply bg-yellow-500 border-yellow-500 text-white;
+      }
+    }
   }
+
   &.button-warning-flat-outline {
     @apply border-yellow-400 text-yellow-400 bg-transparent rounded-none;
-    &:hover { @apply bg-yellow-400 text-white; }
+    &:hover {
+      @apply bg-yellow-400 text-white;
+    }
   }
+
   &.button-warning-rounded {
     @apply bg-yellow-400 border-yellow-400 rounded-3xl text-white;
-    &:hover { @apply bg-yellow-500 border-yellow-500; }
+    &:hover {
+      @apply bg-yellow-500 border-yellow-500;
+    }
+
     &.semi-transparent {
       @apply bg-yellow-500 border-yellow-300 bg-opacity-20 border-opacity-20 text-yellow-700;
       &:hover {
         @apply bg-opacity-50 border-opacity-50;
       }
     }
+
+    &.link {
+      @apply bg-transparent border-transparent text-yellow-500;
+      &:hover {
+        @apply bg-yellow-500 border-yellow-500 text-white;
+      }
+    }
   }
+
   &.button-warning-rounded-outline {
     @apply border-yellow-400 text-yellow-400 bg-transparent rounded-3xl;
-    &:hover { @apply bg-yellow-400 border-yellow-400 text-white; }
+    &:hover {
+      @apply bg-yellow-400 border-yellow-400 text-white;
+    }
   }
 
   &.button-success {
     @apply bg-green-500 border-green-500 text-white;
-    &:hover { @apply bg-green-600 border-green-600; }
+    &:hover {
+      @apply bg-green-600 border-green-600;
+    }
+
     &.semi-transparent {
       @apply bg-green-500 border-green-300 bg-opacity-20 border-opacity-20 text-green-700;
       &:hover {
         @apply bg-opacity-50 border-opacity-50;
       }
     }
+
+    &.link {
+      @apply bg-transparent border-transparent text-green-500;
+      &:hover {
+        @apply bg-green-500 border-green-500 text-white;
+      }
+    }
   }
+
   &.button-success-outline {
     @apply border-green-500 text-green-500 bg-transparent;
-    &:hover { @apply bg-green-500 text-white; }
+    &:hover {
+      @apply bg-green-500 text-white;
+    }
   }
+
   &.button-success-flat {
     @apply bg-green-500 border-green-500 text-white rounded-none;
-    &:hover { @apply bg-green-600 border-green-600; }
+    &:hover {
+      @apply bg-green-600 border-green-600;
+    }
+
     &.semi-transparent {
       @apply bg-green-500 border-green-300 bg-opacity-20 border-opacity-20 text-green-700;
       &:hover {
         @apply bg-opacity-50 border-opacity-50;
       }
     }
+
+    &.link {
+      @apply bg-transparent border-transparent text-green-500;
+      &:hover {
+        @apply bg-green-500 border-green-500 text-white;
+      }
+    }
   }
+
   &.button-success-flat-outline {
     @apply border-green-500 text-green-500 bg-transparent rounded-none;
-    &:hover { @apply bg-green-500 text-white; }
+    &:hover {
+      @apply bg-green-500 text-white;
+    }
   }
+
   &.button-success-rounded {
     @apply bg-green-500 border-green-500 rounded-3xl text-white;
-    &:hover { @apply bg-green-500 border-green-500; }
+    &:hover {
+      @apply bg-green-500 border-green-500;
+    }
+
     &.semi-transparent {
       @apply bg-green-500 border-green-300 bg-opacity-20 border-opacity-20 text-green-700;
       &:hover {
         @apply bg-opacity-50 border-opacity-50;
       }
     }
+
+    &.link {
+      @apply bg-transparent border-transparent text-green-500;
+      &:hover {
+        @apply bg-green-500 border-green-500 text-white;
+      }
+    }
   }
+
   &.button-success-rounded-outline {
     @apply border-green-500 text-green-500 bg-transparent rounded-3xl;
-    &:hover { @apply bg-green-500 border-green-500 text-white; }
+    &:hover {
+      @apply bg-green-500 border-green-500 text-white;
+    }
   }
 
   &.button-info {
     @apply bg-blue-500 border-blue-500 text-white;
-    &:hover { @apply bg-blue-600 border-blue-600; }
+    &:hover {
+      @apply bg-blue-600 border-blue-600;
+    }
+
     &.semi-transparent {
       @apply bg-blue-500 border-blue-300 bg-opacity-20 border-opacity-20 text-blue-700;
       &:hover {
         @apply bg-opacity-50 border-opacity-50;
       }
     }
+
+    &.link {
+      @apply bg-transparent border-transparent text-blue-500;
+      &:hover {
+        @apply bg-blue-500 border-blue-500 text-white;
+      }
+    }
   }
+
   &.button-info-outline {
     @apply border-blue-500 text-blue-500 bg-transparent;
-    &:hover { @apply bg-blue-500 text-white; }
+    &:hover {
+      @apply bg-blue-500 text-white;
+    }
   }
+
   &.button-info-flat {
     @apply bg-blue-500 border-blue-500 text-white rounded-none;
-    &:hover { @apply bg-blue-600 border-blue-600; }
+    &:hover {
+      @apply bg-blue-600 border-blue-600;
+    }
+
     &.semi-transparent {
       @apply bg-blue-500 border-blue-300 bg-opacity-20 border-opacity-20 text-blue-700;
       &:hover {
         @apply bg-opacity-50 border-opacity-50;
       }
     }
+
+    &.link {
+      @apply bg-transparent border-transparent text-blue-500;
+      &:hover {
+        @apply bg-blue-500 border-blue-500 text-white;
+      }
+    }
   }
+
   &.button-info-flat-outline {
     @apply border-blue-500 text-blue-500 bg-transparent rounded-none;
-    &:hover { @apply bg-blue-500 text-white; }
+    &:hover {
+      @apply bg-blue-500 text-white;
+    }
   }
+
   &.button-info-rounded {
     @apply bg-blue-500 border-blue-500 rounded-3xl text-white;
-    &:hover { @apply bg-blue-600 border-blue-600; }
+    &:hover {
+      @apply bg-blue-600 border-blue-600;
+    }
+
     &.semi-transparent {
       @apply bg-blue-500 border-blue-300 bg-opacity-20 border-opacity-20 text-blue-700;
       &:hover {
         @apply bg-opacity-50 border-opacity-50;
       }
     }
+
+    &.link {
+      @apply bg-transparent border-transparent text-blue-500;
+      &:hover {
+        @apply bg-blue-500 border-blue-500 text-white;
+      }
+    }
   }
+
   &.button-info-rounded-outline {
     @apply border-blue-500 text-blue-500 bg-transparent rounded-3xl;
-    &:hover { @apply bg-blue-500 border-blue-500 text-white; }
+    &:hover {
+      @apply bg-blue-500 border-blue-500 text-white;
+    }
   }
 
   &.is-small {
     @apply text-sm px-3 py-1;
   }
+
   &.is-large {
     @apply text-xl px-6 py-3;
   }
@@ -323,22 +610,37 @@
   }
 
   &[disabled] {
-    @apply opacity-80 cursor-not-allowed;
+    @apply pointer-events-auto opacity-70 cursor-not-allowed hover:bg-opacity-70 hover:border-opacity-70;
   }
 }
 
 .link {
-  @apply inline-block text-blue-300 transition-all duration-400 ease-in-out;
+  @apply no-underline inline-block text-blue-300 transition-all duration-400 ease-in-out;
   &.info {
-    @apply text-primary-600;
+    @apply text-blue-400;
     &:hover {
-      @apply text-primary-700;
+      @apply text-blue-500;
     }
   }
+
   &.danger {
     @apply text-red-400;
     &:hover {
       @apply text-red-500;
+    }
+  }
+
+  &.warning {
+    @apply text-yellow-400;
+    &:hover {
+      @apply text-yellow-500;
+    }
+  }
+
+  &.success {
+    @apply text-green-400;
+    &:hover {
+      @apply text-green-500;
     }
   }
 

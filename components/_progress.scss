@@ -1,0 +1,72 @@
+.progress {
+  @apply relative bg-slate-200 border-0 block h-4 rounded-full overflow-hidden w-full transition-all duration-300 ease-in-out;
+
+  .inner-progress {
+    @apply text-sm leading-tight text-right text-white pr-2 rounded-full absolute top-0 bottom-0 left-0 z-1 bg-slate-400 transition-all duration-300 ease-in-out;
+  }
+
+  &::-webkit-progress-bar {
+    @apply bg-slate-300;
+  }
+  &::-webkit-progress-value {
+    @apply bg-slate-600 rounded-full;
+  }
+  &.is-primary {
+    @apply bg-primary-100;
+    .inner-progress {
+      @apply bg-primary-700;
+    }
+    &::-webkit-progress-bar { @apply bg-primary-100; }
+    &::-webkit-progress-value { @apply bg-primary-700; }
+  }
+  &.is-secondary {
+    @apply bg-secondary-100;
+    .inner-progress {
+      @apply bg-secondary-700;
+    }
+    &::-webkit-progress-bar { @apply bg-secondary-100; }
+    &::-webkit-progress-value { @apply bg-secondary-700; }
+  }
+  &.is-tertiary {
+    @apply bg-tertiary-100;
+    .inner-progress {
+      @apply bg-tertiary-700;
+    }
+    &::-webkit-progress-bar { @apply bg-tertiary-100; }
+    &::-webkit-progress-value { @apply bg-tertiary-600; }
+  }
+  &.is-danger {
+    @apply bg-red-100;
+    .inner-progress {
+      @apply bg-red-500;
+    }
+    &::-webkit-progress-bar { @apply bg-red-100; }
+    &::-webkit-progress-value { @apply bg-red-500; }
+  }
+  &.is-warning {
+    @apply bg-yellow-100;
+    .inner-progress {
+      @apply bg-yellow-500;
+    }
+    &::-webkit-progress-bar { @apply bg-yellow-100; }
+    &::-webkit-progress-value { @apply bg-yellow-500; }
+  }
+  &.is-success {
+    @apply bg-green-100;
+    .inner-progress {
+      @apply bg-green-500;
+    }
+    &::-webkit-progress-bar { @apply bg-green-100; }
+    &::-webkit-progress-value { @apply bg-green-500; }
+  }
+  &.is-info {
+    @apply bg-sky-100;
+    .inner-progress {
+      @apply bg-sky-500;
+    }
+    &::-webkit-progress-bar { @apply bg-sky-100; }
+    &::-webkit-progress-value { @apply bg-sky-500; }
+  }
+  &.is-small { @apply h-2; }
+  &.is-large { @apply h-6; }
+}

@@ -52,14 +52,14 @@ Puedes importarlo en tu CSS o en tu archivo SCSS, de las siguientes maneras.
 ## Nota importante
 
 Al utilizar la preferencia de TailwindCSS, necesitas agregar los siguientes estilos que he predifinido en tu
-tailwind.config.js, para evitar errores de que no existe cierta clase.
+tailwind.config.cjs, para evitar errores de que no existe cierta clase.
 
 Puntos a tomar en cuenta:
 
 - Tener al menos la versión "^3.0.0"
 - Debes tener mode: "jit" activado
 
-#### tailwind.config.js
+#### tailwind.config.cjs
 
 ```
 theme:  {
@@ -193,7 +193,7 @@ You can import it into your CSS or your SCSS file, in the following ways.
 ## Important note
 
 When using the TailwindCSS preference, you need to add the following styles that I have predefined in your
-tailwind.config.js, to avoid errors that a certain class does not exist.
+tailwind.config.cjs, to avoid errors that a certain class does not exist.
 
 Points to consider:
 
@@ -201,7 +201,7 @@ Points to consider:
 
 - You must have mode: "jit" activade
 
-#### tailwind.config.js
+#### tailwind.config.cjs
 
 ```
 theme:  {
