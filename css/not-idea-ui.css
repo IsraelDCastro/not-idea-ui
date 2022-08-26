@@ -1,3 +1,7 @@
+/*!
+ * Not Idea UI 2.0.0-beta-1 (https://not-idea-ui.netlify.app/)
+*/
+
 .sr-only {
   position: absolute;
   width: 1px;
@@ -4800,7 +4804,7 @@ table td,  table th,
 }
 
 .modal-wrap.is-opened {
-  z-index: 10;
+  z-index: 201;
 }
 
 .modal-wrap.is-opened .backdrop,  .modal-wrap.is-opened .modal {

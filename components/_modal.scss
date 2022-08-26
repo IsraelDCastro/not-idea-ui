@@ -5,7 +5,7 @@
 .modal-wrap {
   @apply fixed inset-0 flex items-center justify-center -z-1 h-screen overflow-hidden transition-all duration-200 ease-in-out;
   &.is-opened {
-    @apply z-10;
+    @apply z-[201];
     .backdrop, .modal {
       @apply z-10 opacity-100;
     }

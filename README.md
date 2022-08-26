@@ -1,291 +1,328 @@
 #### Docs [Español](https://github.com/IsraelDCastro/not-idea-ui#espanol) / [English](https://github.com/IsraelDCastro/not-idea-ui#english)
+# <a name="english"></a>[Instalación](#espanol)
 
-# <a name="espanol"></a>[Not Idea UI](#espanol)
+Tienes diferentes opciones para instalarlo con **npm o yarn**.
 
-#### Un framework CSS para iniciar a construir cosas bonitas. Basado y creado con TailwindCSS.
-
-Not Idea UI es un framework CSS Open Source basado en TailwindCSS, con componentes creados para usarse en cualquier
-lugar, de manera fácil y sencilla. Componentes responsivos, con varios estilos y formas de uso.
-
-Con una facilidad de varias paletas de colores, incluso puedes llegar a usas las propias paletas de colores de
-TailwindCSS y las tuyas.
-
-Documentación [Ver componentes](https://not-idea-ui.netlify.app/)
-
-## ¿Cómo instalarlo?
-
-### CDN
-
-#### Directo en tu archivo CSS.
-
-`@import "https://not-idea-ui.netlify.app/css/not-idea-ui.css"`
-
-`@import "https://not-idea-ui.netlify.app/css/not-idea-ui.min.css"`
-
-#### Directo en tu archivo html.
-
-`<link rel="stylesheet" href="https://not-idea-ui.netlify.app/css/not-idea-ui.css">`
-
-`<link rel="stylesheet" href="https://not-idea-ui.netlify.app/css/not-idea-ui.min.css">`
+## Empezando
 
 ### Como dependencia
 
-Si lo que quieres es usarlo con TailwindCSS añadiendo tus propios estilos y paletas de colores.
+Si quieres usarlo con TailwindCSS agregando tus propios estilos y paletas de colores.
 
-Debes instalarlo con `npm install not-idea-ui` o `yarn add not-idea-ui`. Luego debes proceder a importarlo en tu
-proyecto.
+Tienes que instalarlo con `npm install not-idea-ui` o `yarn add not-idea-ui`. Después, puedes agregarlo a tu proyecto de diferentes maneras:
 
-Puedes importarlo en tu CSS o en tu archivo SCSS, de las siguientes maneras.
+###### CSS
+```css title="yourmain.css"
+@import 'not-idea-ui/css/not-idea-ui.css';
 
-#### CSS
+/* o */
 
-![Alt Importarlo como CSS](https://not-idea-ui.netlify.app/images/css-min-not-idea-ui.webp)
-
-#### TailwindCSS para usar tus propios estilos (CSS)
-
-![Alt Importarlo como CSS al estilo](https://not-idea-ui.netlify.app/images/css-tailwindcss-not-idea-ui.webp)
-
-#### TailwindCSS para usar tus propios estilos (SCSS)
-
-![Alt Importarlo como SCSS al estilo](https://not-idea-ui.netlify.app/images/scss-tailwindcss-not-idea-ui.webp)
-
-## Nota importante
-
-Al utilizar la preferencia de TailwindCSS, necesitas agregar los siguientes estilos que he predifinido en tu
-tailwind.config.cjs, para evitar errores de que no existe cierta clase.
-
-Puntos a tomar en cuenta:
-
-- Tener al menos la versión "^3.0.0"
-- Debes tener mode: "jit" activado
-
-#### tailwind.config.cjs
-
+@import 'not-idea-ui/css/not-idea-ui.min.css';
 ```
-theme:  {
-	extend:  {
-		colors:  {
-			'primary':  {
-				50: '...',
-				100: '...',
-				200: '...',
-				300: '...',
-				400: '...',
-				500: '...',
-				600: '...',
-				700: '...',
-				800: '...',
-				900: '...',
-			},
-			'secondary':  {
-				50: '...',
-				100: '...',
-				200: '...',
-				300: '...',
-				400: '...',
-				500: '...',
-				600: '...',
-				700: '...',
-				800: '...',
-				900: '...',
-			},
-			'tertiary':  {
-				50: '...',
-				100: '...',
-				200: '...',
-				300: '...',
-				400: '...',
-				500: '...',
-				600: '...',
-				700: '...',
-				800: '...',
-				900: '...',
-			}
-		},
-		transitionDuration: {
-        '0': '0ms',
-        '400': '400ms',
-        '600': '600ms'
+
+###### TailwindCSS para usar estilos propios/personalizados (CSS)
+```css title="yourmain.css"
+@import 'not-idea-ui/tailwind/not-idea-ui.css';
+```
+
+###### TailwindCSS para usar estilos propios/personalizados (SCSS)
+```css title="yourmain.scss"
+@import 'not-idea-ui/main.scss';
+```
+> :warning: **Nota importante**: Al usar la preferencia TailwindCSS, debe agregar los siguientes estilos que he predefinido en su tailwind.config.js, para evitar errores de que cierta clase no existe.
+
+###### Puntos a considerar:
+
+- Tener al menos la versión "^3.1.0"
+- En caso de querer usarlo con SCSS. Debe instalar la dependencia de sass en caso de que use ViteJS. Si usa Webpack, necesita instalar las dependencias de sass y sass-loader.
+- Si desea utilizar estilos y colores predeterminados, siga estos pasos: [postcss.config.js](#postcssconfigjs)
+- Si desea utilizar sus propios estilos y colores, siga estos pasos: [tailwind.config.js](#tailwindconfigjs)
+
+### Tailwind.config.js predeterminado
+
+Para usar la configuración predeterminada del proyecto, debe crear un `postcss.config.cjs`. Si ya tiene este archivo, simplemente cambie la extensión del archivo de `.js` a `.cjs` para evitar el siguiente error.
+
+<span class="text-red-500 text-sm mb-4 inline-block">TypeError: Cannot read properties of undefined (reading 'config')</code></span>
+
+Agregue esta línea <span class="text-sky-500">`const defaultConfig = "./node_modules/not-idea-ui/tailwind.config.cjs"`</span> a su `postcss.config.cjs`
+
+Debe ser visto:
+
+```js title="postcss.config.cjs" theme="dark"
+const defaultConfig = "./node_modules/not-idea-ui/tailwind.config.cjs"
+
+module.exports = {
+  plugins: {
+    tailwindcss: {
+      config: defaultConfig
+    },
+    // ...
+  },
+}
+```
+
+Y eso es todo, ahora debería estar funcionando sin problema. :estrella:
+
+### Tailwind.config.js personalizado
+
+Para usar su `tailwind.config.js` personalizado, debe eliminar la configuración predeterminada de su `postcss.config.js` y dejarla en blanco, como puede ver a continuación:
+
+```js title="postcss.config.cjs" theme="dark"
+module.exports = {
+  plugins: {
+    tailwindcss: {},
+    // ...
+  },
+}
+```
+
+Después de eso, ejecuta `tailwindcss init` para crear `tailwind.config.js` en blanco. Ahora debe completar la configuración de viento de cola con sus colores 'primario, secundario y terciario' y algunas clases personalizadas para evitar algunos errores.
+
+Vea el código y el ejemplo a continuación, asegúrese de copiar cada clase y color. ([Para cualquier referencia, puede ver la configuración predeterminada] (https://github.com/IsraelDCastro/not-idea-ui))
+
+```js title="tailwind.config.cjs" theme="dark"
+module.exports = {
+  // ...
+  theme: {
+    extend: {
+      colors: {
+        primary: {
+          50: "...",
+          100: "...",
+          200: "...",
+          300: "...",
+          400: "...",
+          500: "...",
+          600: "...",
+          700: "...",
+          800: "...",
+          900: "..."
+        },
+        secondary: {
+          50: "...",
+          100: "...",
+          200: "...",
+          300: "...",
+          400: "...",
+          500: "...",
+          600: "...",
+          700: "...",
+          800: "...",
+          900: "..."
+        },
+        tertiary: {
+          50: "...",
+          100: "...",
+          200: "...",
+          300: "...",
+          400: "...",
+          500: "...",
+          600: "...",
+          700: "...",
+          800: "...",
+          900: "..."
+        }
+      },
+      transitionDuration: {
+        0: "0ms",
+        400: "400ms",
+        600: "600ms"
       },
       zIndex: {
-        '-1': -1,
-        '1': 1,
-        '5': 5,
+        "-1": -1,
+        1: 1,
+        5: 5
       },
       inset: {
-        '-100': '-100%'
+        "-100": "-100%"
       },
       screens: {
-        'tablet': '989px',
-        'max-md': {'max': '988px' },
-        'mb': { 'max': '500px' }
+        tablet: "989px",
+        "max-md": { max: "988px" },
+        mb: { max: "500px" }
       },
       borderWidth: {
-        '6': '6px',
+        6: "6px"
       },
       boxShadow: {
-        'alert': '0 6px 26px rgba(0, 0, 0, 0.1)',
-        'base': '0 3px 20px rgba(0, 0, 0, 0.05)',
+        alert: "0 6px 26px rgba(0, 0, 0, 0.1)",
+        base: "0 3px 20px rgba(0, 0, 0, 0.05)"
       },
       minHeight: {
-        '24': '6rem',
-        '3-5': '14px'
+        24: "6rem",
+        "3-5": "14px"
       },
       listStyleType: {
-        'circle': 'circle'
-      },
-    },
-    fontFamily:  {
-        sans:  [ "Tu/s fuente/s primaris/s", ],
-        body:  [ "Tu/s fuente/s secundaria/s", ]
-    },
-},
+        circle: "circle"
+      }
+    }
+  },
+  // ...
+}
 ```
 
-# <a name="english"></a>[Not Idea UI](#english)
+Y eso es todo, ahora debería estar funcionando sin problema. :start:
 
-#### A CSS framework to start building nice things. Based and created with TailwindCSS.
+# <a name="english"></a>[Installation](#english)
 
-Not Idea UI is an Open Source CSS framework based on TailwindCSS, with components created to be used anywhere, easily
-and simply. Responsive components, with various styles and forms of use.
+You have different options to install it with **npm or yarn**.
 
-With a multi-color palette facility, you can even get to use TailwindCSS's own color palettes and your own.
-
-Documentation [See components] (#)
-
-## How to install it?
-
-### CDN
-
-#### Direct in your CSS file.
-
-`@import "https://not-idea-ui.netlify.app/css/not-idea-ui.css"`
-
-`@import "https://not-idea-ui.netlify.app/css/not-idea-ui.min.css"`
-
-#### Direct in your HMTL file.
-
-`<link rel="stylesheet" href="https://not-idea-ui.netlify.app/css/not-idea-ui.css">`
-
-`<link rel="stylesheet" href="https://not-idea-ui.netlify.app/css/not-idea-ui.min.css">`
+## Getting Started
 
 ### As dependency
 
 If you want to use it with TailwindCSS adding your own styles and color palettes.
 
-You must install it with `npm install not-idea-ui` or` yarn add not-idea-ui`. Then you must proceed to import it into
-your project.
+You have to install it with `npm install not-idea-ui` or `yarn add not-idea-ui`. After, you can add it to your proyect in differents ways:
 
-You can import it into your CSS or your SCSS file, in the following ways.
+###### CSS
+```css title="yourmain.css"
+@import 'not-idea-ui/css/not-idea-ui.css';
 
-#### CSS
+/* or */
 
-![Alt Import it as CSS](https://not-idea-ui.netlify.app/images/css-min-not-idea-ui.webp)
-
-#### TailwindCSS to use your own styles (CSS)
-
-![Alt Import it as CSS in the style of TailwindCSS](https://not-idea-ui.netlify.app/images/css-tailwindcss-not-idea-ui.webp)
-
-#### TailwindCSS to use your own styles (SCSS)
-
-![Alt Import it as SCSS in the style of TailwindCSS](https://not-idea-ui.netlify.app/images/scss-tailwindcss-not-idea-ui.webp)
-
-## Important note
-
-When using the TailwindCSS preference, you need to add the following styles that I have predefined in your
-tailwind.config.cjs, to avoid errors that a certain class does not exist.
-
-Points to consider:
-
-- Have at least the version "^3.0.0"
-
-- You must have mode: "jit" activade
-
-#### tailwind.config.cjs
-
+@import 'not-idea-ui/css/not-idea-ui.min.css';
 ```
-theme:  {
-	extend:  {
-		colors:  {
-			'primary':  {
-				50: '...',
-				100: '...',
-				200: '...',
-				300: '...',
-				400: '...',
-				500: '...',
-				600: '...',
-				700: '...',
-				800: '...',
-				900: '...',
-			},
-			'secondary':  {
-				50: '...',
-				100: '...',
-				200: '...',
-				300: '...',
-				400: '...',
-				500: '...',
-				600: '...',
-				700: '...',
-				800: '...',
-				900: '...',
-			},
-			'tertiary':  {
-				50: '...',
-				100: '...',
-				200: '...',
-				300: '...',
-				400: '...',
-				500: '...',
-				600: '...',
-				700: '...',
-				800: '...',
-				900: '...',
-			},
-			'dark':  {
-				50: '#FAFAFA',
-				100: '#DEDEDE',
-				200: '#C2C2C2',
-				300: '#A7A7A7',
-				400: '#8B8B8B',
-				500: '#6F6F6F',
-				600: '#535353',
-				700: '#383838',
-				800: '#1C1C1C',
-				900: '#000000',
-			},
-		},
-		transitionDuration:  {
-			'0':  '0ms',
-			'400':  '400ms',
-			'600':  '600ms'
-		},
-		zIndex:  {
-			'-1':  -1,
-			'1':  1,
-			'5':  5,
-		},
-		inset:  {
-			'-100':  '-100%'
-		},
-		borderWidth:  {
-			'6':  '6px',
-		},
-		boxShadow:  {
-			'alert':  '0 6px 26px rgba(0, 0, 0, 0.1)',
-			'base': '0 3px 20px rgba(0, 0, 0, 0.05)',
-		},
-		minHeight:  {
-			'24':  '6rem'
-		},
-		listStyleType:  {
-			'circle':  'circle'
-		},
-	},
-	fontFamily:  {
-		sans:  [ "Your primary fonts", ],
-		body:  [ "Your secondary fonts", ]
-	},
-},
+
+###### TailwindCSS in order to use your own/customs styles (CSS)
+```css title="yourmain.css"
+@import 'not-idea-ui/tailwind/not-idea-ui.css';
 ```
+
+###### TailwindCSS in order to use your own/customs styles (SCSS)
+```css title="yourmain.scss"
+@import 'not-idea-ui/main.scss';
+```
+
+> :warning: **Important note**: When using the TailwindCSS preference, you need to add the following styles that I have predefined in your tailwind.config.js, to avoid errors that a certain class does not exist.
+
+###### Points to consider:
+
+- Have at least the version "^3.1.0"
+- In case you want to use it with SCSS. You need to install sass dependency in case you use ViteJS. If you use Webpack you need to install sass and sass-loader dependencies.
+- If you want to use default styles and colors, follow this steps: [postcss.config.js](#postcssconfigjs)
+- If you want to use your own styles and colors, follow this steps: [tailwind.config.js](#tailwindconfigjs)
+
+### Default tailwind.config.js
+
+To use the default config from the project you have to create a `postcss.config.cjs`. If you have already this file, just change the file extension from `.js` to `.cjs` in order the avoid the next error.
+
+<span class="text-red-500 text-sm mb-4 inline-block"><code>TypeError: Cannot read properties of undefined (reading 'config')</code></span>
+
+Add this line <span class="text-sky-500">`const defaultConfig = "./node_modules/not-idea-ui/tailwind.config.cjs"`</span> to your `postcss.config.cjs`
+
+Should be seen:
+
+```js title="postcss.config.cjs" theme="dark"
+const defaultConfig = "./node_modules/not-idea-ui/tailwind.config.cjs"
+
+module.exports = {
+  plugins: {
+    tailwindcss: {
+      config: defaultConfig
+    },
+    // ...
+  },
+}
+```
+
+And that is all, now it should be working without problem. :star:
+
+### Custom tailwind.config.js
+
+To use your custom `tailwind.config.js` you have to remove the default config from your `postcss.config.js` and leave it blank, as you can see below:
+
+```js title="postcss.config.cjs" theme="dark"
+module.exports = {
+  plugins: {
+    tailwindcss: {},
+    // ...
+  },
+}
+```
+
+After that, run `tailwindcss init` to create blank `tailwind.config.js`. Now you have to fill the tailwind config with your `primary, secondary, and tertiary` colors and some custom classes to avoid some errors.
+
+See the code and example below, be sure to copy every class and color. ([For any reference you can see the default config](https://github.com/IsraelDCastro/not-idea-ui))
+
+```js title="tailwind.config.cjs" theme="dark"
+module.exports = {
+  // ...
+  theme: {
+    extend: {
+      colors: {
+        primary: {
+          50: "...",
+          100: "...",
+          200: "...",
+          300: "...",
+          400: "...",
+          500: "...",
+          600: "...",
+          700: "...",
+          800: "...",
+          900: "..."
+        },
+        secondary: {
+          50: "...",
+          100: "...",
+          200: "...",
+          300: "...",
+          400: "...",
+          500: "...",
+          600: "...",
+          700: "...",
+          800: "...",
+          900: "..."
+        },
+        tertiary: {
+          50: "...",
+          100: "...",
+          200: "...",
+          300: "...",
+          400: "...",
+          500: "...",
+          600: "...",
+          700: "...",
+          800: "...",
+          900: "..."
+        }
+      },
+      transitionDuration: {
+        0: "0ms",
+        400: "400ms",
+        600: "600ms"
+      },
+      zIndex: {
+        "-1": -1,
+        1: 1,
+        5: 5
+      },
+      inset: {
+        "-100": "-100%"
+      },
+      screens: {
+        tablet: "989px",
+        "max-md": { max: "988px" },
+        mb: { max: "500px" }
+      },
+      borderWidth: {
+        6: "6px"
+      },
+      boxShadow: {
+        alert: "0 6px 26px rgba(0, 0, 0, 0.1)",
+        base: "0 3px 20px rgba(0, 0, 0, 0.05)"
+      },
+      minHeight: {
+        24: "6rem",
+        "3-5": "14px"
+      },
+      listStyleType: {
+        circle: "circle"
+      }
+    }
+  },
+  // ...
+}
+```
+And that is all, now it should be working without problem. :star:
