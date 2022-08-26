@@ -1,5 +1,5 @@
-#### Docs [Español](https://github.com/IsraelDCastro/not-idea-ui#espanol) / [English](https://github.com/IsraelDCastro/not-idea-ui#english)
-# <a name="english"></a>[Instalación](#espanol)
+#### Docs [Español](https://github.com/IsraelDCastro/not-idea-ui#instalación) / [English](https://github.com/IsraelDCastro/not-idea-ui#installation)
+# <a name="instalación"></a>[Instalación](#instalación)
 
 Tienes diferentes opciones para instalarlo con **npm o yarn**.
 
@@ -163,7 +163,7 @@ module.exports = {
 
 Y eso es todo, ahora debería estar funcionando sin problema. :start:
 
-# <a name="english"></a>[Installation](#english)
+# <a name="installation"></a>[Installation](#installation)
 
 You have different options to install it with **npm or yarn**.
 
