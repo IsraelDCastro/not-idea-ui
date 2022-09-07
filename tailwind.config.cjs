@@ -10,7 +10,8 @@ module.exports = {
     './app/views/**/*.erb',
     './app/views/**/*.haml',
     './app/views/**/*.html.erb',
-    './app/javascript/**/*.{vue,js,ts,jsx,tsx}'
+    './app/javascript/**/*.{vue,js,ts,jsx,tsx}',
+    './app/frontend/**/*.{vue,js,ts,jsx,tsx}',
   ],
   theme: {
     extend: {
