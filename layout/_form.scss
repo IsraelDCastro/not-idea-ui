@@ -57,10 +57,28 @@
         @apply text-yellow-500/90;
       }
     }
+
+    &.is-flat {
+      @apply rounded-none;
+    }
+    &.is-full-rounded {
+      @apply rounded-full;
+    }
+
+    &.is-small {
+      @apply text-sm py-1 px-3;
+    }
+    &.is-large {
+      @apply text-xl py-3 px-6;
+    }
+
   }
 
   .textarea {
     @apply resize-y min-h-24 max-h-32;
+    &.is-full-rounded {
+      @apply rounded-3xl;
+    }
   }
 
   .input-file {

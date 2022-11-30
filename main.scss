@@ -1,10 +1,10 @@
 /*!
- * Not Idea UI 2.0.3-beta-1 (https://not-idea-ui.netlify.app/)
+ * Not Idea UI 2.0.0 (https://not-idea-ui.netlify.app/)
 */
 
-@tailwind utilities;
+@tailwind components;
 
-@layer utilities {
+@layer components {
   @import "layout/footer";
   @import "layout/form";
   @import "layout/navbar";
@@ -19,6 +19,7 @@
   @import "components/card";
   @import "components/carousel";
   @import "components/comments";
+  @import "components/dropdown";
   @import "components/images";
   @import "components/lists";
   @import "components/modal";

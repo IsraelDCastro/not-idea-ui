@@ -125,18 +125,69 @@
       }
     }
   }
+  &.card-image-hover {
+    @apply relative h-[35rem];
+    .card-image {
+      @apply transition-all duration-400 ease-in-out;
+    }
+    .card-content {
+      @apply absolute left-0 -bottom-32 bg-black/20 text-white backdrop-blur transition-all duration-400 ease-in-out;
+      .card-title {
+        @apply mb-5 text-white;
+      }
+      p, a {
+        @apply opacity-0 transition-all duration-400 ease-in-out;
+      }
+    }
+    &:hover {
+      .card-image {
+        @apply scale-150 rotate-12;
+      }
+      .card-content {
+        @apply bottom-0;
+        p, a { @apply opacity-100; }
+      }
+    }
+  }
   &.card-product {
+    @apply relative;
     .card-image {
       @apply relative;
       .price {
         @apply absolute right-0 bottom-0 z-1 px-4 py-2 bg-primary-500 text-white rounded-tl;
       }
       .like {
-        @apply absolute right-2 top-2 z-1 p-1 bg-black/30 hover:bg-black/50 w-12 h-12 backdrop-blur text-white grid place-content-center text-xl rounded-full cursor-pointer transition duration-300 ease-in-out;
+        @apply absolute right-2 top-2 z-1 p-1 bg-black/30 hover:bg-black/50 w-12 h-12 backdrop-blur text-white grid place-content-center text-xl rounded-full cursor-pointer transition-all duration-300 ease-in-out;
       }
     }
     .price {
       @apply font-bold text-xl text-primary-600;
+    }
+    .hover-buttons {
+      @apply absolute z-10 flex flex-col -right-full top-0 bg-black/20 backdrop-blur-sm py-4 px-2 rounded-bl space-y-2 transition-all duration-300 ease-in-out;
+      a {
+        @apply text-white p-2 rounded transition-all duration-300 ease-in-out leading-none;
+      }
+      .add-to-bag {
+        @apply hover:bg-primary-500;
+      }
+      .see-details {
+        @apply hover:bg-secondary-500;
+      }
+      .like {
+        @apply hover:bg-red-500;
+      }
+      svg,
+      i {
+        @apply text-xl leading-none
+      }
+    }
+    &:has(.hover-buttons) {
+      &:hover {
+        .hover-buttons {
+          @apply right-0;
+        }
+      }
     }
   }
 }

@@ -1,10 +1,10 @@
 /*!
- * Not Idea UI 2.0.3-beta-1 (https://not-idea-ui.netlify.app/)
+ * Not Idea UI 2.0.0 (https://not-idea-ui.netlify.app/)
 */
-@tailwind utilities;
-@layer utilities {
+@tailwind components;
+@layer components {
   .footer .footer-top,
-.footer .footer-bottom {
+  .footer .footer-bottom {
     @apply px-8 py-6;
   }
   .footer .footer-top {
@@ -32,8 +32,8 @@
     @apply inline-block text-white hover:text-yellow-500 font-semibold transition-all duration-400 ease-in-out;
   }
   .footer .has-menu,
-.footer .has-media,
-.footer .has-media-menu {
+  .footer .has-media,
+  .footer .has-media-menu {
     @apply flex flex-wrap justify-between;
   }
   .form {
@@ -65,55 +65,82 @@
     @apply mb-1 block font-semibold;
   }
   .field .input,
-.field .textarea,
-.field .select-inner,
-.field .input-file {
+  .field .textarea,
+  .field .select-inner,
+  .field .input-file {
     @apply w-full text-gray-800 px-5 py-2 rounded bg-gray-100 border border-gray-200/60 outline-none focus:border-primary-400 transition-all duration-300 ease-in-out;
   }
   .field .input[disabled],
-.field .textarea[disabled],
-.field .select-inner[disabled],
-.field .input-file[disabled] {
+  .field .textarea[disabled],
+  .field .select-inner[disabled],
+  .field .input-file[disabled] {
     @apply cursor-not-allowed;
   }
   .field .input.error,
-.field .textarea.error,
-.field .select-inner.error,
-.field .input-file.error {
+  .field .textarea.error,
+  .field .select-inner.error,
+  .field .input-file.error {
     @apply border-red-500 text-red-500/90 bg-red-500/20;
   }
   .field .input.error::placeholder,
-.field .textarea.error::placeholder,
-.field .select-inner.error::placeholder,
-.field .input-file.error::placeholder {
+  .field .textarea.error::placeholder,
+  .field .select-inner.error::placeholder,
+  .field .input-file.error::placeholder {
     @apply text-red-500/90;
   }
   .field .input.success,
-.field .textarea.success,
-.field .select-inner.success,
-.field .input-file.success {
+  .field .textarea.success,
+  .field .select-inner.success,
+  .field .input-file.success {
     @apply text-green-600/90 border-green-500 bg-green-500/20;
   }
   .field .input.success::placeholder,
-.field .textarea.success::placeholder,
-.field .select-inner.success::placeholder,
-.field .input-file.success::placeholder {
+  .field .textarea.success::placeholder,
+  .field .select-inner.success::placeholder,
+  .field .input-file.success::placeholder {
     @apply text-green-500/90;
   }
   .field .input.warning,
-.field .textarea.warning,
-.field .select-inner.warning,
-.field .input-file.warning {
+  .field .textarea.warning,
+  .field .select-inner.warning,
+  .field .input-file.warning {
     @apply text-yellow-500/90 border-yellow-500 bg-yellow-500/10;
   }
   .field .input.warning::placeholder,
-.field .textarea.warning::placeholder,
-.field .select-inner.warning::placeholder,
-.field .input-file.warning::placeholder {
+  .field .textarea.warning::placeholder,
+  .field .select-inner.warning::placeholder,
+  .field .input-file.warning::placeholder {
     @apply text-yellow-500/90;
+  }
+  .field .input.is-flat,
+  .field .textarea.is-flat,
+  .field .select-inner.is-flat,
+  .field .input-file.is-flat {
+    @apply rounded-none;
+  }
+  .field .input.is-full-rounded,
+  .field .textarea.is-full-rounded,
+  .field .select-inner.is-full-rounded,
+  .field .input-file.is-full-rounded {
+    @apply rounded-full;
+  }
+  .field .input.is-small,
+  .field .textarea.is-small,
+  .field .select-inner.is-small,
+  .field .input-file.is-small {
+    @apply text-sm py-1 px-3;
+  }
+  .field .input.is-large,
+  .field .textarea.is-large,
+  .field .select-inner.is-large,
+  .field .input-file.is-large {
+    @apply text-xl py-3 px-6;
   }
   .field .textarea {
     @apply resize-y min-h-24 max-h-32;
+  }
+  .field .textarea.is-full-rounded {
+    @apply rounded-3xl;
   }
   .field .input-file {
     @apply p-2 cursor-pointer;
@@ -122,72 +149,72 @@
     @apply bg-primary-600 text-white;
   }
   .field .radio-group,
-.field .check-group {
+  .field .check-group {
     @apply flex flex-wrap;
   }
   .field .radio-group > *:not(:last-child),
-.field .check-group > *:not(:last-child) {
+  .field .check-group > *:not(:last-child) {
     @apply mr-3;
   }
   .field .checkbox,
-.field .radio {
+  .field .radio {
     @apply cursor-pointer;
   }
   .field .checkbox .label,
-.field .radio .label {
+  .field .radio .label {
     @apply inline-block font-normal ml-2 cursor-pointer;
   }
   .field .checkbox.is-toggle,
-.field .radio.is-toggle {
+  .field .radio.is-toggle {
     @apply cursor-auto;
   }
   .field .checkbox.is-toggle input,
-.field .radio.is-toggle input {
+  .field .radio.is-toggle input {
     @apply absolute -z-[1] opacity-0;
   }
   .field .checkbox.is-toggle label,
-.field .radio.is-toggle label {
+  .field .radio.is-toggle label {
     @apply relative w-[4.5rem] h-8 m-0 px-2 py-1 bg-gray-100 rounded-2xl transition-all duration-300 ease-in-out;
   }
   .field .checkbox.is-toggle label::before,
-.field .radio.is-toggle label::before {
+  .field .radio.is-toggle label::before {
     @apply absolute z-1 left-2 content-[""] block h-6 w-6 bg-gray-400 rounded-full transition-all duration-300 ease-in-out;
   }
   .field .checkbox.is-toggle input:checked + label,
-.field .radio.is-toggle input:checked + label {
+  .field .radio.is-toggle input:checked + label {
     @apply bg-primary-300/40;
   }
   .field .checkbox.is-toggle input:checked + label::before,
-.field .radio.is-toggle input:checked + label::before {
+  .field .radio.is-toggle input:checked + label::before {
     @apply left-10 bg-primary-600;
   }
   .field .checkbox.is-toggle input:disabled + label,
-.field .radio.is-toggle input:disabled + label {
+  .field .radio.is-toggle input:disabled + label {
     @apply bg-gray-100/70 cursor-not-allowed;
   }
   .field .checkbox.is-toggle input:disabled + label::before,
-.field .radio.is-toggle input:disabled + label::before {
+  .field .radio.is-toggle input:disabled + label::before {
     @apply bg-gray-400/50 cursor-not-allowed;
   }
   .field .checkbox.is-toggle.is-secondary input:checked + label,
-.field .radio.is-toggle.is-secondary input:checked + label {
+  .field .radio.is-toggle.is-secondary input:checked + label {
     @apply bg-secondary-300/40;
   }
   .field .checkbox.is-toggle.is-secondary input:checked + label::before,
-.field .radio.is-toggle.is-secondary input:checked + label::before {
+  .field .radio.is-toggle.is-secondary input:checked + label::before {
     @apply bg-secondary-600;
   }
   .field .checkbox.is-toggle.is-tertiary input:checked + label,
-.field .radio.is-toggle.is-tertiary input:checked + label {
+  .field .radio.is-toggle.is-tertiary input:checked + label {
     @apply bg-tertiary-300/40;
   }
   .field .checkbox.is-toggle.is-tertiary input:checked + label::before,
-.field .radio.is-toggle.is-tertiary input:checked + label::before {
+  .field .radio.is-toggle.is-tertiary input:checked + label::before {
     @apply bg-tertiary-600;
   }
   .field .error-message,
-.field .success-message,
-.field .warning-message {
+  .field .success-message,
+  .field .warning-message {
     @apply text-sm mt-1;
   }
   .field .error-message {
@@ -461,7 +488,7 @@
     @apply mb-0;
   }
   .sidebar .sidebar-nav .has-submenu .sidebar-item:focus + .sidebar-submenu,
-.sidebar .sidebar-nav .has-submenu .sidebar-item.is-active + .sidebar-submenu {
+  .sidebar .sidebar-nav .has-submenu .sidebar-item.is-active + .sidebar-submenu {
     @apply scale-100 h-auto z-1 opacity-100;
   }
   .sidebar .sidebar-nav.semi-transparent .sidebar-item {
@@ -547,85 +574,85 @@
   }
   /***** Table *****/
   table,
-.table {
+  .table {
     @apply bg-gray-100 w-full max-w-full overflow-hidden;
   }
   table thead,
-.table thead {
+  .table thead {
     @apply bg-gray-200/70 text-left;
   }
   table thead.has-background,
-.table thead.has-background {
+  .table thead.has-background {
     @apply bg-primary-700;
   }
   table thead.has-background th,
-.table thead.has-background th {
+  .table thead.has-background th {
     @apply text-white;
   }
   table tbody.tbody tr,
-.table tbody.tbody tr {
+  .table tbody.tbody tr {
     @apply bg-primary-100 bg-opacity-30;
   }
   table tbody.tbody tr:nth-child(even),
-.table tbody.tbody tr:nth-child(even) {
+  .table tbody.tbody tr:nth-child(even) {
     @apply bg-primary-200 bg-opacity-30;
   }
   table tbody.tbody tr.tr-link,
-.table tbody.tbody tr.tr-link {
+  .table tbody.tbody tr.tr-link {
     @apply cursor-pointer transition-all duration-400 ease-in-out;
   }
   table tbody.tbody tr.tr-link:hover,
-.table tbody.tbody tr.tr-link:hover {
+  .table tbody.tbody tr.tr-link:hover {
     @apply bg-opacity-60;
   }
   table.is-bordered,
-.table.is-bordered {
+  .table.is-bordered {
     @apply border border-gray-200;
   }
   table.is-bordered thead,
-.table.is-bordered thead {
+  .table.is-bordered thead {
     @apply border-b border-gray-200;
   }
   table.is-bordered tr:not(:last-child),
-.table.is-bordered tr:not(:last-child) {
+  .table.is-bordered tr:not(:last-child) {
     @apply border-b border-gray-200;
   }
   table.is-bordered td:not(:last-child), table.is-bordered th:not(:last-child),
-.table.is-bordered td:not(:last-child),
-.table.is-bordered th:not(:last-child) {
+  .table.is-bordered td:not(:last-child),
+  .table.is-bordered th:not(:last-child) {
     @apply border-r border-gray-200;
   }
   table.is-bottom-bordered thead,
-table.is-bottom-bordered tr:not(:last-child),
-.table.is-bottom-bordered thead,
-.table.is-bottom-bordered tr:not(:last-child) {
+  table.is-bottom-bordered tr:not(:last-child),
+  .table.is-bottom-bordered thead,
+  .table.is-bottom-bordered tr:not(:last-child) {
     @apply border-b border-gray-200;
   }
   table.is-smooth,
-.table.is-smooth {
+  .table.is-smooth {
     @apply bg-slate-50;
   }
   table.is-smooth thead,
-.table.is-smooth thead {
+  .table.is-smooth thead {
     @apply bg-sky-100;
   }
   table.is-smooth thead,
-table.is-smooth tr:not(:last-child),
-.table.is-smooth thead,
-.table.is-smooth tr:not(:last-child) {
+  table.is-smooth tr:not(:last-child),
+  .table.is-smooth thead,
+  .table.is-smooth tr:not(:last-child) {
     @apply border-b border-slate-200/50;
   }
   table tr,
-.table tr {
+  .table tr {
     @apply outline-none border-0;
   }
   table tr:nth-child(2n),
-.table tr:nth-child(2n) {
+  .table tr:nth-child(2n) {
     @apply bg-transparent;
   }
   table td, table th,
-.table td,
-.table th {
+  .table td,
+  .table th {
     @apply px-5 py-2 whitespace-nowrap border-0;
   }
   .question {
@@ -642,6 +669,57 @@ table.is-smooth tr:not(:last-child),
   }
   .question[open] summary i, .question[open] summary svg {
     @apply rotate-180;
+  }
+  .accordions.simple-accordions {
+    @apply divide-slate-100 divide-y-2;
+  }
+  .accordions.simple-accordions .accordion {
+    @apply bg-transparent rounded-none;
+  }
+  .accordions.simple-accordions .accordion .accordion-head {
+    @apply border-0 transition-all duration-300 ease-in-out;
+  }
+  .accordions.simple-accordions .accordion .accordion-head:focus, .accordions.simple-accordions .accordion .accordion-head:hover {
+    @apply bg-white;
+  }
+  .accordions.simple-accordions .accordion .accordion-content {
+    @apply border-0 bg-slate-50;
+  }
+  .accordions.light-accordions {
+    @apply divide-y;
+  }
+  .accordions.light-accordions .accordion {
+    @apply bg-transparent rounded-none;
+  }
+  .accordions.light-accordions .accordion .accordion-head {
+    @apply border-0 justify-start space-x-2;
+  }
+  .accordions.light-accordions .accordion .accordion-head .open {
+    @apply flex justify-center items-center p-0 w-8 h-8 rounded-full;
+  }
+  .accordions.light-accordions .accordion .accordion-head:focus, .accordions.light-accordions .accordion .accordion-head:hover {
+    @apply bg-transparent;
+  }
+  .accordions.light-accordions .accordion .accordion-head:focus .open, .accordions.light-accordions .accordion .accordion-head:hover .open {
+    @apply bg-white;
+  }
+  .accordions.light-accordions .accordion .accordion-content {
+    @apply border-0 bg-transparent;
+  }
+  .accordions.rounded-accordions {
+    @apply space-y-2;
+  }
+  .accordions.rounded-accordions .accordion {
+    @apply bg-transparent;
+  }
+  .accordions.rounded-accordions .accordion .accordion-head {
+    @apply border-0 bg-white rounded-full;
+  }
+  .accordions.rounded-accordions .accordion .accordion-head:focus, .accordions.rounded-accordions .accordion .accordion-head:hover {
+    @apply bg-slate-50;
+  }
+  .accordions.rounded-accordions .accordion .accordion-content {
+    @apply bg-gray-50 rounded;
   }
   .accordion {
     @apply bg-white rounded-md overflow-hidden;
@@ -668,7 +746,7 @@ table.is-smooth tr:not(:last-child),
     @apply transform rotate-180;
   }
   .accordion .accordion-content {
-    @apply relative bg-gray-100/50 px-6 py-0 opacity-0 border-l-4 border-primary-700 transition-all duration-500 ease-in-out;
+    @apply relative bg-gray-100/50 px-6 py-0 opacity-0 border-l-4 border-primary-700 transition-all duration-300 ease-in-out;
     z-index: -1;
     height: 0px;
   }
@@ -676,19 +754,22 @@ table.is-smooth tr:not(:last-child),
     @apply opacity-100 h-full py-6 z-10;
   }
   .alert {
-    @apply rounded bg-gray-200 p-6 shadow-alert relative flex flex-wrap;
+    @apply overflow-hidden rounded bg-gray-200 p-5 shadow-alert relative flex;
+  }
+  .alert .icon {
+    @apply w-8 md:w-12 basis-8 md:basis-12;
   }
   .alert p {
-    @apply mb-0;
+    @apply mb-0 ml-2;
   }
   .alert.is-primary {
-    @apply bg-primary-700 text-white;
+    @apply bg-primary-600 text-white;
   }
   .alert.is-secondary {
-    @apply bg-secondary-700 text-white;
+    @apply bg-secondary-600 text-white;
   }
   .alert.is-tertiary {
-    @apply bg-tertiary-700 text-white;
+    @apply bg-tertiary-600 text-white;
   }
   .alert.is-danger {
     @apply bg-red-500 text-white;
@@ -717,6 +798,30 @@ table.is-smooth tr:not(:last-child),
   .alert.is-semi-transparent {
     @apply bg-opacity-80;
   }
+  .alert.has-left-border {
+    @apply border-l-4 border-gray-400;
+  }
+  .alert.has-left-border.is-primary {
+    @apply border-primary-700;
+  }
+  .alert.has-left-border.is-secondary {
+    @apply border-secondary-700;
+  }
+  .alert.has-left-border.is-tertiary {
+    @apply border-tertiary-700;
+  }
+  .alert.has-left-border.is-danger {
+    @apply border-red-700;
+  }
+  .alert.has-left-border.is-warning {
+    @apply border-yellow-600;
+  }
+  .alert.has-left-border.is-success {
+    @apply border-green-700;
+  }
+  .alert.has-left-border.is-info {
+    @apply border-sky-700;
+  }
   .alert .close-alert {
     @apply inline-block w-6 h-6 cursor-pointer rounded p-1 absolute right-4 top-4 z-10 transition-all duration-400 ease-in-out;
   }
@@ -726,77 +831,102 @@ table.is-smooth tr:not(:last-child),
   .alert .close-alert:hover {
     @apply bg-red-700 text-white;
   }
-  .state {
-    @apply inline-block px-4 py-1 font-normal bg-gray-200 rounded-xl;
+  .alert .close-button {
+    @apply flex items-center justify-center w-10 bg-gray-300 hover:bg-gray-400 text-gray-600 ml-auto -my-5 -mr-5 transition-all duration-200 ease-in-out;
   }
-  .state.primary {
+  .alert .close-button svg,
+  .alert .close-button i {
+    @apply w-6 h-6;
+  }
+  .alert.is-primary .close-button {
+    @apply bg-primary-700 hover:bg-primary-800 text-white;
+  }
+  .alert.is-secondary .close-button {
+    @apply bg-secondary-700 hover:bg-secondary-800 text-white;
+  }
+  .alert.is-tertiary .close-button {
+    @apply bg-tertiary-700 hover:bg-tertiary-800 text-white;
+  }
+  .alert.is-danger .close-button {
+    @apply bg-red-600 hover:bg-red-700 text-white;
+  }
+  .alert.is-warning .close-button {
+    @apply bg-yellow-500 hover:bg-yellow-600 text-white;
+  }
+  .alert.is-success .close-button {
+    @apply bg-green-600 hover:bg-green-700 text-white;
+  }
+  .alert.is-info .close-button {
+    @apply bg-sky-600 hover:bg-sky-700 text-white;
+  }
+  .state {
+    @apply inline-block px-4 py-1 font-normal bg-gray-200 rounded;
+  }
+  .state.is-primary {
     @apply bg-primary-700 text-white;
   }
-  .state.secondary {
+  .state.is-primary.semi-transparent {
+    @apply bg-opacity-30 text-primary-700;
+  }
+  .state.is-secondary {
     @apply bg-secondary-700 text-white;
   }
-  .state.tertiary {
+  .state.is-secondary.semi-transparent {
+    @apply bg-opacity-30 text-secondary-700;
+  }
+  .state.is-tertiary {
     @apply bg-tertiary-700 text-white;
   }
-  .state.danger {
+  .state.is-tertiary.semi-transparent {
+    @apply bg-opacity-30 text-tertiary-700;
+  }
+  .state.is-danger {
     @apply bg-red-500 text-white;
   }
-  .state.warning {
+  .state.is-danger.semi-transparent {
+    @apply bg-opacity-30 text-red-600;
+  }
+  .state.is-warning {
     @apply bg-yellow-400 text-white;
   }
-  .state.success {
+  .state.is-warning.semi-transparent {
+    @apply bg-opacity-30 text-yellow-600;
+  }
+  .state.is-success {
     @apply bg-green-500 text-white;
   }
-  .state.info {
-    @apply bg-blue-500 text-white;
+  .state.is-success.semi-transparent {
+    @apply bg-opacity-30 text-green-600;
   }
-  .state.outlined {
+  .state.is-info {
+    @apply bg-sky-500 text-white;
+  }
+  .state.is-info.semi-transparent {
+    @apply bg-opacity-30 text-sky-600;
+  }
+  .state.is-outlined {
     @apply bg-transparent text-gray-600 border-2 border-gray-600;
   }
-  .state.primary-outline {
+  .state.is-primary-outline {
     @apply text-primary-700 border-2 border-primary-700 bg-transparent;
   }
-  .state.secondary-outline {
+  .state.is-secondary-outline {
     @apply text-secondary-700 border-2 border-secondary-700 bg-transparent;
   }
-  .state.tertiary-outline {
+  .state.is-tertiary-outline {
     @apply text-tertiary-700 border-2 border-tertiary-700 bg-transparent;
   }
-  .state.danger-outline {
+  .state.is-danger-outline {
     @apply text-red-500 border-2 border-red-500 bg-transparent;
   }
-  .state.warning-outline {
+  .state.is-warning-outline {
     @apply text-yellow-400 border-2 border-yellow-400 bg-transparent;
   }
-  .state.success-outline {
+  .state.is-success-outline {
     @apply text-green-500 border-2 border-green-500 bg-transparent;
   }
-  .state.info-outline {
-    @apply text-blue-500 border-2 border-blue-500 bg-transparent;
-  }
-  .state.sem-default {
-    @apply bg-gray-600/30 text-gray-600;
-  }
-  .state.semi-primary {
-    @apply bg-primary-700/30 text-primary-700;
-  }
-  .state.semi-secondary {
-    @apply bg-secondary-700/30 text-secondary-800;
-  }
-  .state.semi-tertiary {
-    @apply bg-tertiary-700/30 text-tertiary-700;
-  }
-  .state.semi-danger {
-    @apply bg-red-500/30 text-red-600;
-  }
-  .state.semi-warning {
-    @apply bg-yellow-400/30 text-yellow-600;
-  }
-  .state.semi-success {
-    @apply bg-green-500/30 text-green-600;
-  }
-  .state.semi-info {
-    @apply bg-blue-500/30 text-blue-600;
+  .state.is-info-outline {
+    @apply text-sky-500 border-2 border-sky-500 bg-transparent;
   }
   .state.has-icon {
     @apply inline-flex flex-wrap items-center;
@@ -806,6 +936,12 @@ table.is-smooth tr:not(:last-child),
   }
   .state .icon {
     @apply ml-1 w-5 h-5;
+  }
+  .state.is-flat {
+    @apply rounded-none;
+  }
+  .state.is-circle {
+    @apply rounded-full;
   }
   .breadcrumb {
     @apply w-fit;
@@ -1393,7 +1529,7 @@ table.is-smooth tr:not(:last-child),
     @apply text-white;
   }
   .link.white:hover {
-    @apply text-secondary-100;
+    @apply text-gray-200;
   }
   .card {
     @apply bg-white shadow rounded overflow-hidden;
@@ -1525,6 +1661,33 @@ table.is-smooth tr:not(:last-child),
   .card.card-hover:hover .card-content {
     @apply bg-white/50 backdrop-blur-sm;
   }
+  .card.card-image-hover {
+    @apply relative h-[35rem];
+  }
+  .card.card-image-hover .card-image {
+    @apply transition-all duration-400 ease-in-out;
+  }
+  .card.card-image-hover .card-content {
+    @apply absolute left-0 -bottom-32 bg-black/20 text-white backdrop-blur transition-all duration-400 ease-in-out;
+  }
+  .card.card-image-hover .card-content .card-title {
+    @apply mb-5 text-white;
+  }
+  .card.card-image-hover .card-content p, .card.card-image-hover .card-content a {
+    @apply opacity-0 transition-all duration-400 ease-in-out;
+  }
+  .card.card-image-hover:hover .card-image {
+    @apply scale-150 rotate-12;
+  }
+  .card.card-image-hover:hover .card-content {
+    @apply bottom-0;
+  }
+  .card.card-image-hover:hover .card-content p, .card.card-image-hover:hover .card-content a {
+    @apply opacity-100;
+  }
+  .card.card-product {
+    @apply relative;
+  }
   .card.card-product .card-image {
     @apply relative;
   }
@@ -1532,13 +1695,35 @@ table.is-smooth tr:not(:last-child),
     @apply absolute right-0 bottom-0 z-1 px-4 py-2 bg-primary-500 text-white rounded-tl;
   }
   .card.card-product .card-image .like {
-    @apply absolute right-2 top-2 z-1 p-1 bg-black/30 hover:bg-black/50 w-12 h-12 backdrop-blur text-white grid place-content-center text-xl rounded-full cursor-pointer transition duration-300 ease-in-out;
+    @apply absolute right-2 top-2 z-1 p-1 bg-black/30 hover:bg-black/50 w-12 h-12 backdrop-blur text-white grid place-content-center text-xl rounded-full cursor-pointer transition-all duration-300 ease-in-out;
   }
   .card.card-product .price {
     @apply font-bold text-xl text-primary-600;
   }
+  .card.card-product .hover-buttons {
+    @apply absolute z-10 flex flex-col -right-full top-0 bg-black/20 backdrop-blur-sm py-4 px-2 rounded-bl space-y-2 transition-all duration-300 ease-in-out;
+  }
+  .card.card-product .hover-buttons a {
+    @apply text-white p-2 rounded transition-all duration-300 ease-in-out leading-none;
+  }
+  .card.card-product .hover-buttons .add-to-bag {
+    @apply hover:bg-primary-500;
+  }
+  .card.card-product .hover-buttons .see-details {
+    @apply hover:bg-secondary-500;
+  }
+  .card.card-product .hover-buttons .like {
+    @apply hover:bg-red-500;
+  }
+  .card.card-product .hover-buttons svg,
+  .card.card-product .hover-buttons i {
+    @apply text-xl leading-none;
+  }
+  .card.card-product:has(.hover-buttons):hover .hover-buttons {
+    @apply right-0;
+  }
   .slider,
-.carousel {
+  .carousel {
     @apply relative;
   }
   .content-slider {
@@ -1630,6 +1815,67 @@ table.is-smooth tr:not(:last-child),
   .comment .comment-respond {
     @apply ml-10 border-l border-gray-300/50 bg-gray-100;
   }
+  .dropdown {
+    @apply relative bg-white rounded-sm shadow-sm cursor-pointer;
+  }
+  .dropdown .dropdown-wrap {
+    @apply p-2 inline-block w-full;
+  }
+  .dropdown .dropdown-wrap .dropdown-text {
+    @apply text-white;
+  }
+  .dropdown .dropdown-wrap .dropdown-text:hover, .dropdown .dropdown-wrap .dropdown-text:focus, .dropdown .dropdown-wrap .dropdown-text:focus-within {
+    @apply text-secondary-600;
+  }
+  .dropdown .dropdown-wrap .dropdown-wrap-icon {
+    @apply inline-block transform transition-all duration-300 ease-in-out;
+  }
+  .dropdown .dropdown-content {
+    z-index: -1;
+    @apply bg-white w-40 overflow-hidden absolute right-0 bottom-auto mt-1 rounded-md shadow-lg opacity-0 transition-all duration-500 ease-in-out list-none;
+  }
+  .dropdown .dropdown-content .dropdown-item {
+    @apply bg-transparent block text-left text-gray-700 px-4 py-2 transition-all duration-400 ease-in-out w-full;
+  }
+  .dropdown .dropdown-content .dropdown-item:hover {
+    @apply bg-primary-500 text-white;
+  }
+  .dropdown .dropdown-content .dropdown-divider {
+    @apply my-2 mx-6 border-t-2 border-gray-200;
+  }
+  .dropdown .dropdown-content .dropdown-title {
+    @apply font-semibold px-4 mb-2 text-xs text-gray-600/50 uppercase;
+  }
+  .dropdown .dropdown-content.is-fade-up {
+    top: 200%;
+  }
+  .dropdown .user-dropdown,
+  .dropdown .wrap-text {
+    @apply flex items-center justify-between w-full;
+  }
+  .dropdown svg {
+    @apply ml-2 transition-all duration-200 ease-in-out;
+  }
+  .dropdown.is-focused:focus .dropdown-content, .dropdown.is-hovered:hover .dropdown-content {
+    @apply opacity-100 z-10;
+  }
+  .dropdown.is-focused:focus .dropdown-content.is-fade-up, .dropdown.is-hovered:hover .dropdown-content.is-fade-up {
+    top: 100%;
+  }
+  .dropdown.is-focused:focus svg,
+  .dropdown.is-focused:focus .user-dropdown svg, .dropdown.is-hovered:hover svg,
+  .dropdown.is-hovered:hover .user-dropdown svg {
+    @apply rotate-180;
+  }
+  .dropdown.is-focused:focus {
+    @apply outline-1 outline-blue-500 outline;
+  }
+  .dropdown.has-large-text .dropdown-content {
+    @apply w-auto;
+  }
+  .dropdown.has-large-text .dropdown-content .dropdown-item, .dropdown.has-large-text .dropdown-content button {
+    @apply whitespace-nowrap;
+  }
   .image {
     @apply overflow-hidden;
   }
@@ -1678,6 +1924,45 @@ table.is-smooth tr:not(:last-child),
   .modal-wrap.is-opened .backdrop, .modal-wrap.is-opened .modal {
     @apply z-10 opacity-100;
   }
+  .modal-wrap:is(.modal-right) {
+    @apply justify-end;
+  }
+  .modal-wrap:is(.modal-right) .modal {
+    @apply flex flex-col relative -right-full m-0 h-full w-10/12 sm:w-8/12 md:w-6/12 lg:w-5/12 duration-400;
+  }
+  .modal-wrap:is(.modal-right) .modal .modal-footer {
+    @apply mt-auto;
+  }
+  .modal-wrap:is(.modal-right).is-opened .modal {
+    @apply z-10 right-0 opacity-100;
+  }
+  .modal-wrap:is(.modal-left) {
+    @apply justify-start;
+  }
+  .modal-wrap:is(.modal-left) .modal {
+    @apply flex flex-col relative -left-full m-0 h-full w-10/12 sm:w-8/12 md:w-6/12 lg:w-5/12 duration-400;
+  }
+  .modal-wrap:is(.modal-left) .modal .modal-footer {
+    @apply mt-auto;
+  }
+  .modal-wrap:is(.modal-left).is-opened .modal {
+    @apply z-10 left-0 opacity-100;
+  }
+  .modal-wrap:is(.modal-cta) .modal {
+    @apply overflow-hidden rounded-lg shadow-2xl p-0 flex flex-wrap m-4 h-[30rem] w-11/12 sm:w-10/12 md:w-8/12;
+  }
+  .modal-wrap:is(.modal-cta) .modal .modal-image {
+    @apply basis-4/12 w-4/12 hidden sm:inline-block object-cover object-center;
+  }
+  .modal-wrap:is(.modal-cta) .modal .modal-image img {
+    @apply h-full;
+  }
+  .modal-wrap:is(.modal-cta) .modal .modal-content {
+    @apply flex-1 p-8 relative;
+  }
+  .modal-wrap:is(.modal-cta) .modal .modal-close {
+    @apply absolute right-2 top-2 z-10 rounded-full p-1 text-gray-600 hover:text-white hover:bg-red-500 inline-block transition-all duration-300 ease-in-out;
+  }
   .modal {
     @apply my-10 w-10/12 sm:w-8/12 md:w-6/12 lg:w-4/12 relative z-20 bg-white rounded p-8 opacity-0 transition-all duration-200 ease-in-out;
   }
@@ -1697,26 +1982,26 @@ table.is-smooth tr:not(:last-child),
     @apply w-full relative z-1 p-8 shadow-base;
   }
   .pagination,
-.pages-list,
-.page-prev,
-.page-next {
+  .pages-list,
+  .page-prev,
+  .page-next {
     @apply flex flex-wrap justify-center items-center;
   }
   .pagination.is-rounded .page-prev,
-.pagination.is-rounded .page-next,
-.pagination.is-rounded .page-link {
+  .pagination.is-rounded .page-next,
+  .pagination.is-rounded .page-link {
     @apply rounded;
   }
   .pagination.is-circle .page-prev,
-.pagination.is-circle .page-next,
-.pagination.is-circle .page-link {
+  .pagination.is-circle .page-next,
+  .pagination.is-circle .page-link {
     @apply rounded-full;
   }
   .pagination.is-group .pages-list {
     @apply space-x-0 divide-x-[1px] divide-gray-200;
   }
   .pagination.is-group .page-prev,
-.pagination.is-group .page-next {
+  .pagination.is-group .page-next {
     @apply mx-0;
   }
   .pagination.is-group .page-prev {
@@ -1726,25 +2011,25 @@ table.is-smooth tr:not(:last-child),
     @apply border-l-[1px] border-gray-200 rounded-br rounded-tr;
   }
   .page-prev,
-.page-next,
-.page-link {
+  .page-next,
+  .page-link {
     @apply bg-white px-4 cursor-pointer py-2 shadow-sm transition-all duration-400 ease-in-out;
   }
   .page-prev:hover, .page-prev.is-active,
-.page-next:hover,
-.page-next.is-active,
-.page-link:hover,
-.page-link.is-active {
+  .page-next:hover,
+  .page-next.is-active,
+  .page-link:hover,
+  .page-link.is-active {
     @apply bg-primary-700 text-white;
   }
   .page-prev.is-disabled,
-.page-next.is-disabled,
-.page-link.is-disabled {
+  .page-next.is-disabled,
+  .page-link.is-disabled {
     @apply bg-gray-100 cursor-not-allowed text-gray-500;
   }
   .page-prev.is-active.is-disabled,
-.page-next.is-active.is-disabled,
-.page-link.is-active.is-disabled {
+  .page-next.is-active.is-disabled,
+  .page-link.is-active.is-disabled {
     @apply bg-primary-700 text-white;
   }
   .pages-list {
@@ -1896,6 +2181,21 @@ table.is-smooth tr:not(:last-child),
   }
   .tabs-wrapper.is-rounded .tab-link.is-active, .tabs-wrapper.is-rounded .tab-link:hover {
     @apply bg-primary-300/40 text-primary-800;
+  }
+  .tabs-wrapper.is-transparent .tab-link {
+    @apply bg-transparent relative;
+  }
+  .tabs-wrapper.is-transparent .tab-link::after {
+    @apply block content-[""] absolute bottom-0 left-0 right-0 h-1 rounded opacity-0 transition-all duration-300 ease-in-out;
+  }
+  .tabs-wrapper.is-transparent .tab-link:hover {
+    @apply text-primary-700;
+  }
+  .tabs-wrapper.is-transparent .tab-link.is-active {
+    @apply text-primary-700 bg-primary-300/10;
+  }
+  .tabs-wrapper.is-transparent .tab-link.is-active::after {
+    @apply bg-primary-700 opacity-100;
   }
   .tabs-wrapper .tabs-content .tab-content {
     @apply p-6 bg-gray-100;

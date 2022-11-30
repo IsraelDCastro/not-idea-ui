@@ -1,9 +1,12 @@
 .alert {
-  @apply rounded bg-gray-200 p-6 shadow-alert relative flex flex-wrap;
-  p { @apply mb-0; }
-  &.is-primary { @apply bg-primary-700 text-white; }
-  &.is-secondary { @apply bg-secondary-700 text-white; }
-  &.is-tertiary { @apply bg-tertiary-700 text-white; }
+  @apply overflow-hidden rounded bg-gray-200 p-5 shadow-alert relative flex;
+  .icon {
+    @apply w-8 md:w-12 basis-8 md:basis-12;
+  }
+  p { @apply mb-0 ml-2; }
+  &.is-primary { @apply bg-primary-600 text-white; }
+  &.is-secondary { @apply bg-secondary-600 text-white; }
+  &.is-tertiary { @apply bg-tertiary-600 text-white; }
   &.is-danger { @apply bg-red-500 text-white; }
   &.is-warning { @apply bg-yellow-400 text-gray-700; }
   &.is-success { @apply bg-green-500 text-white; }
@@ -19,9 +22,63 @@
   &.is-semi-transparent {
     @apply bg-opacity-80;
   }
+  &.has-left-border {
+    @apply border-l-4 border-gray-400;
+    &.is-primary { @apply border-primary-700; }
+    &.is-secondary { @apply border-secondary-700; }
+    &.is-tertiary { @apply border-tertiary-700; }
+    &.is-danger { @apply border-red-700; }
+    &.is-warning { @apply border-yellow-600; }
+    &.is-success { @apply border-green-700; }
+    &.is-info { @apply border-sky-700; }
+  }
   .close-alert {
     @apply inline-block w-6 h-6 cursor-pointer rounded p-1 absolute right-4 top-4 z-10 transition-all duration-400 ease-in-out;
     svg { @apply block; }
     &:hover { @apply bg-red-700 text-white; }
+  }
+
+  .close-button {
+    @apply flex items-center justify-center w-10 bg-gray-300 hover:bg-gray-400 text-gray-600 ml-auto -my-5 -mr-5 transition-all duration-200 ease-in-out;
+    svg,
+    i {
+      @apply w-6 h-6;
+    }
+  }
+
+  &.is-primary { 
+    .close-button {
+      @apply bg-primary-700 hover:bg-primary-800 text-white;
+    }
+  }
+  &.is-secondary { 
+    .close-button {
+      @apply bg-secondary-700 hover:bg-secondary-800 text-white;
+    }
+  }
+  &.is-tertiary { 
+    .close-button {
+      @apply bg-tertiary-700 hover:bg-tertiary-800 text-white;
+    }
+  }
+  &.is-danger { 
+    .close-button {
+      @apply bg-red-600 hover:bg-red-700 text-white;
+    }
+  }
+  &.is-warning { 
+    .close-button {
+      @apply bg-yellow-500 hover:bg-yellow-600 text-white;
+    }
+  }
+  &.is-success { 
+    .close-button {
+      @apply bg-green-600 hover:bg-green-700 text-white;
+    }
+  }
+  &.is-info { 
+    .close-button {
+      @apply bg-sky-600 hover:bg-sky-700 text-white;
+    }
   }
 }

@@ -14,6 +14,7 @@ module.exports = {
     './app/views/**/*.html.erb',
     './app/javascript/**/*.{vue,js,ts,jsx,tsx}',
     './app/frontend/**/*.{vue,js,ts,jsx,tsx}',
+    './output.css'
   ],
   theme: {
     extend: {

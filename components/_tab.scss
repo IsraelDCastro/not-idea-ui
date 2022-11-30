@@ -48,6 +48,23 @@
       }
     }
   }
+  &.is-transparent {
+    .tab-link {
+      @apply bg-transparent relative;
+      &::after {
+        @apply block content-[""] absolute bottom-0 left-0 right-0 h-1 rounded opacity-0 transition-all duration-300 ease-in-out;
+      }
+      &:hover {
+        @apply text-primary-700;
+      }
+      &.is-active {
+        @apply text-primary-700 bg-primary-300/10;
+        &::after {
+          @apply bg-primary-700 opacity-100;
+        }
+      }
+    }
+  }
   .tabs-content {
     .tab-content {
       @apply p-6 bg-gray-100;
