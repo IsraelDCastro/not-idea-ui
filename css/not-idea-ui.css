@@ -1,46 +1,6 @@
 /*!
- * Not Idea UI 2.0.0 (https://not-idea-ui.netlify.app/)
+ * Not Idea UI 2.1.0 (https://not-idea-ui.netlify.app/)
 */
-
-.container {
-  width: 100%;
-}
-
-@media (min-width: 640px) {
-  .container {
-    max-width: 640px;
-  }
-}
-
-@media (min-width: 768px) {
-  .container {
-    max-width: 768px;
-  }
-}
-
-@media (min-width: 989px) {
-  .container {
-    max-width: 989px;
-  }
-}
-
-@media (min-width: 1024px) {
-  .container {
-    max-width: 1024px;
-  }
-}
-
-@media (min-width: 1280px) {
-  .container {
-    max-width: 1280px;
-  }
-}
-
-@media (min-width: 1536px) {
-  .container {
-    max-width: 1536px;
-  }
-}
 
 .footer .footer-top,
   .footer .footer-bottom {
