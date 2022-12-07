@@ -1,0 +1,28 @@
+.gallery {
+  @apply grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-5;
+  &.is-squared {
+    > .image-gallery {
+      @apply aspect-square;
+      img {
+        @apply w-full h-full object-center object-cover
+      }
+    }
+  }
+}
+
+.masonry-gallery {
+  @apply space-y-5 gap-x-5
+}
+
+.gallery,
+.masonry-gallery {
+  .image-gallery {
+    @apply h-fit;
+    &.is-rounded {
+      @apply rounded overflow-hidden shadow;
+    }
+    &.is-large-rounded {
+      @apply rounded-2xl overflow-hidden shadow;
+    }
+  }
+}

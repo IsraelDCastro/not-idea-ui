@@ -1835,7 +1835,7 @@
     @apply bg-white w-40 overflow-hidden absolute right-0 bottom-auto mt-1 rounded-md shadow-lg opacity-0 transition-all duration-500 ease-in-out list-none;
   }
   .dropdown .dropdown-content .dropdown-item {
-    @apply bg-transparent block text-left text-gray-700 px-4 py-2 transition-all duration-400 ease-in-out w-full;
+    @apply no-underline bg-transparent block text-left text-gray-700 px-4 py-2 transition-all duration-400 ease-in-out w-full;
   }
   .dropdown .dropdown-content .dropdown-item:hover {
     @apply bg-primary-500 text-white;
@@ -1875,6 +1875,30 @@
   }
   .dropdown.has-large-text .dropdown-content .dropdown-item, .dropdown.has-large-text .dropdown-content button {
     @apply whitespace-nowrap;
+  }
+  .gallery {
+    @apply grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-5;
+  }
+  .gallery.is-squared > .image-gallery {
+    @apply aspect-square;
+  }
+  .gallery.is-squared > .image-gallery img {
+    @apply w-full h-full object-center object-cover;
+  }
+  .masonry-gallery {
+    @apply space-y-5 gap-x-5;
+  }
+  .gallery .image-gallery,
+  .masonry-gallery .image-gallery {
+    @apply h-fit;
+  }
+  .gallery .image-gallery.is-rounded,
+  .masonry-gallery .image-gallery.is-rounded {
+    @apply rounded overflow-hidden shadow;
+  }
+  .gallery .image-gallery.is-large-rounded,
+  .masonry-gallery .image-gallery.is-large-rounded {
+    @apply rounded-2xl overflow-hidden shadow;
   }
   .image {
     @apply overflow-hidden;

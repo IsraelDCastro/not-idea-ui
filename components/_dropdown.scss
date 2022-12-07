@@ -19,7 +19,7 @@
     z-index: -1;
     @apply bg-white w-40 overflow-hidden absolute right-0 bottom-auto mt-1 rounded-md shadow-lg opacity-0 transition-all duration-500 ease-in-out list-none;
     .dropdown-item {
-      @apply bg-transparent block text-left text-gray-700 px-4 py-2 transition-all duration-400 ease-in-out w-full;
+      @apply no-underline bg-transparent block text-left text-gray-700 px-4 py-2 transition-all duration-400 ease-in-out w-full;
       &:hover {
         @apply bg-primary-500 text-white;
       }
