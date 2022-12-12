@@ -1,5 +1,5 @@
 /*!
- * Not Idea UI 2.1.0 (https://not-idea-ui.netlify.app/)
+ * Not Idea UI 2.1.1 (https://not-idea-ui.netlify.app/)
 */
 @tailwind components;
 @layer components {
@@ -725,10 +725,13 @@
     @apply bg-white rounded-md overflow-hidden;
   }
   .accordion .accordion-head {
-    @apply w-full outline-none border-b cursor-pointer border-gray-300/25 px-6 py-3 flex flex-wrap justify-between items-center;
+    @apply gap-x-1 w-full outline-none border-b cursor-pointer border-gray-300/25 px-6 py-3 flex flex-wrap justify-between items-center;
+  }
+  .accordion .accordion-head .title {
+    @apply text-left font-semibold basis-10/12 w-10/12;
   }
   .accordion .accordion-head .open, .accordion .accordion-head .close {
-    @apply transform px-2 cursor-pointer rounded transition-all duration-500 ease-in-out;
+    @apply basis-1/12  w-1/12 transform px-2 cursor-pointer rounded transition-all duration-500 ease-in-out;
   }
   .accordion .accordion-head .open.rotate, .accordion .accordion-head .close.rotate {
     @apply rotate-180;
@@ -1831,8 +1834,7 @@
     @apply inline-block transform transition-all duration-300 ease-in-out;
   }
   .dropdown .dropdown-content {
-    z-index: -1;
-    @apply bg-white w-40 overflow-hidden absolute right-0 bottom-auto mt-1 rounded-md shadow-lg opacity-0 transition-all duration-500 ease-in-out list-none;
+    @apply -z-1 bg-white w-40 overflow-hidden absolute left-0 md:left-[initial] right-0 bottom-auto mt-1 rounded-md shadow-lg opacity-0 transition-all duration-500 ease-in-out list-none;
   }
   .dropdown .dropdown-content .dropdown-item {
     @apply no-underline bg-transparent block text-left text-gray-700 px-4 py-2 transition-all duration-400 ease-in-out w-full;
@@ -1973,7 +1975,7 @@
     @apply z-10 left-0 opacity-100;
   }
   .modal-wrap:is(.modal-cta) .modal {
-    @apply overflow-hidden rounded-lg shadow-2xl p-0 flex flex-wrap m-4 h-[30rem] w-11/12 sm:w-10/12 md:w-8/12;
+    @apply overflow-hidden rounded-lg shadow-2xl p-0 flex flex-wrap m-4 h-fit md:h-[30rem] w-11/12 sm:w-10/12 md:w-8/12;
   }
   .modal-wrap:is(.modal-cta) .modal .modal-image {
     @apply basis-4/12 w-4/12 hidden sm:inline-block object-cover object-center;
@@ -2198,28 +2200,13 @@
     @apply bg-primary-300/40 text-primary-800;
   }
   .tabs-wrapper.is-rounded .tabs-lists {
-    @apply space-x-2 mb-1;
+    @apply space-y-2 md:space-y-0 md:space-x-2 mb-1;
   }
   .tabs-wrapper.is-rounded .tab-link {
     @apply bg-slate-100 text-gray-700 rounded-xl;
   }
   .tabs-wrapper.is-rounded .tab-link.is-active, .tabs-wrapper.is-rounded .tab-link:hover {
     @apply bg-primary-300/40 text-primary-800;
-  }
-  .tabs-wrapper.is-transparent .tab-link {
-    @apply bg-transparent relative;
-  }
-  .tabs-wrapper.is-transparent .tab-link::after {
-    @apply block content-[""] absolute bottom-0 left-0 right-0 h-1 rounded opacity-0 transition-all duration-300 ease-in-out;
-  }
-  .tabs-wrapper.is-transparent .tab-link:hover {
-    @apply text-primary-700;
-  }
-  .tabs-wrapper.is-transparent .tab-link.is-active {
-    @apply text-primary-700 bg-primary-300/10;
-  }
-  .tabs-wrapper.is-transparent .tab-link.is-active::after {
-    @apply bg-primary-700 opacity-100;
   }
   .tabs-wrapper .tabs-content .tab-content {
     @apply p-6 bg-gray-100;

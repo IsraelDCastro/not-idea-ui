@@ -78,9 +78,12 @@
 .accordion {
   @apply bg-white rounded-md overflow-hidden;
   .accordion-head {
-    @apply w-full outline-none border-b cursor-pointer border-gray-300/25 px-6 py-3 flex flex-wrap justify-between items-center;
+    @apply gap-x-1 w-full outline-none border-b cursor-pointer border-gray-300/25 px-6 py-3 flex flex-wrap justify-between items-center;
+    .title {
+      @apply text-left font-semibold basis-10/12 w-10/12;
+    }
     .open, .close {
-      @apply transform px-2 cursor-pointer rounded transition-all duration-500 ease-in-out;
+      @apply basis-1/12  w-1/12 transform px-2 cursor-pointer rounded transition-all duration-500 ease-in-out;
       &.rotate {
         @apply rotate-180;
       }

@@ -1,6 +1,46 @@
 /*!
- * Not Idea UI 2.1.0 (https://not-idea-ui.netlify.app/)
+ * Not Idea UI 2.1.1 (https://not-idea-ui.netlify.app/)
 */
+
+.container {
+  width: 100%;
+}
+
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 989px) {
+  .container {
+    max-width: 989px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1536px;
+  }
+}
 
 .footer .footer-top,
   .footer .footer-bottom {
@@ -1669,6 +1709,8 @@ table td, table th,
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
+  -moz-column-gap: 0.25rem;
+       column-gap: 0.25rem;
   border-bottom-width: 1px;
   border-color: rgb(209 213 219 / 0.25);
   padding-left: 1.5rem;
@@ -1679,7 +1721,16 @@ table td, table th,
   outline-offset: 2px;
 }
 
+.accordion .accordion-head .title {
+  width: 83.333333%;
+  flex-basis: 83.333333%;
+  text-align: left;
+  font-weight: 600;
+}
+
 .accordion .accordion-head .open, .accordion .accordion-head .close {
+  width: 8.333333%;
+  flex-basis: 8.333333%;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   cursor: pointer;
   border-radius: 0.25rem;
@@ -4734,10 +4785,11 @@ table td, table th,
 }
 
 .dropdown .dropdown-content {
-  z-index: -1;
   position: absolute;
+  left: 0px;
   right: 0px;
   bottom: auto;
+  z-index: -1;
   margin-top: 0.25rem;
   width: 10rem;
   list-style-type: none;
@@ -4752,6 +4804,12 @@ table td, table th,
   transition-property: all;
   transition-duration: 500ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media (min-width: 768px) {
+  .dropdown .dropdown-content {
+    left: initial;
+  }
 }
 
 .dropdown .dropdown-content .dropdown-item {
@@ -5112,7 +5170,8 @@ table td, table th,
 .modal-wrap:is(.modal-cta) .modal {
   margin: 1rem;
   display: flex;
-  height: 30rem;
+  height: -moz-fit-content;
+  height: fit-content;
   width: 91.666667%;
   flex-wrap: wrap;
   overflow: hidden;
@@ -5131,6 +5190,7 @@ table td, table th,
 
 @media (min-width: 768px) {
   .modal-wrap:is(.modal-cta) .modal {
+    height: 30rem;
     width: 66.666667%;
   }
 }
@@ -5677,9 +5737,20 @@ table td, table th,
 }
 
 .tabs-wrapper.is-rounded .tabs-lists > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-x-reverse: 0;
-  margin-right: calc(0.5rem * var(--tw-space-x-reverse));
-  margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));
+  --tw-space-y-reverse: 0;
+  margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
+}
+
+@media (min-width: 768px) {
+  .tabs-wrapper.is-rounded .tabs-lists > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-y-reverse: 0;
+    margin-top: calc(0px * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(0px * var(--tw-space-y-reverse));
+    --tw-space-x-reverse: 0;
+    margin-right: calc(0.5rem * var(--tw-space-x-reverse));
+    margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));
+  }
 }
 
 .tabs-wrapper.is-rounded .tab-link {
@@ -5694,44 +5765,6 @@ table td, table th,
   background-color: rgb(138 181 231 / 0.4);
   --tw-text-opacity: 1;
   color: rgb(24 95 192 / var(--tw-text-opacity));
-}
-
-.tabs-wrapper.is-transparent .tab-link {
-  position: relative;
-  background-color: transparent;
-}
-
-.tabs-wrapper.is-transparent .tab-link::after {
-  position: absolute;
-  bottom: 0px;
-  left: 0px;
-  right: 0px;
-  display: block;
-  height: 0.25rem;
-  border-radius: 0.25rem;
-  opacity: 0;
-  transition-property: all;
-  transition-duration: 300ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  --tw-content: "";
-  content: var(--tw-content);
-}
-
-.tabs-wrapper.is-transparent .tab-link:hover {
-  --tw-text-opacity: 1;
-  color: rgb(47 112 200 / var(--tw-text-opacity));
-}
-
-.tabs-wrapper.is-transparent .tab-link.is-active {
-  background-color: rgb(138 181 231 / 0.1);
-  --tw-text-opacity: 1;
-  color: rgb(47 112 200 / var(--tw-text-opacity));
-}
-
-.tabs-wrapper.is-transparent .tab-link.is-active::after {
-  --tw-bg-opacity: 1;
-  background-color: rgb(47 112 200 / var(--tw-bg-opacity));
-  opacity: 1;
 }
 
 .tabs-wrapper .tabs-content .tab-content {

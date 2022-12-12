@@ -2,6 +2,10 @@
 
 ---
 
+### Version 2.1.1
+
+Some errors fixed on small screens in these components: **Galleries, Dropdown, Modal, Tabs, and Accordions**.
+
 ### Version 2.1.0
 
 #### New components

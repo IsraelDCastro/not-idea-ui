@@ -40,7 +40,7 @@
   }
   &:is(.modal-cta) {
     .modal {
-      @apply overflow-hidden rounded-lg shadow-2xl p-0 flex flex-wrap m-4 h-[30rem] w-11/12 sm:w-10/12 md:w-8/12;
+      @apply overflow-hidden rounded-lg shadow-2xl p-0 flex flex-wrap m-4 h-fit md:h-[30rem] w-11/12 sm:w-10/12 md:w-8/12;
       .modal-image {
         @apply basis-4/12 w-4/12 hidden sm:inline-block object-cover object-center;
         img { @apply h-full; }
