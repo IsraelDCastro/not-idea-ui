@@ -1,5 +1,5 @@
 /*!
- * Not Idea UI 2.1.1 (https://not-idea-ui.netlify.app/)
+ * Not Idea UI 2.1.2 (https://not-idea-ui.netlify.app/)
 */
 
 .container {
@@ -3931,8 +3931,32 @@ table td, table th,
 }
 
 .button.is-button-icon {
+  display: flex;
+  height: 2rem;
+  width: 2rem;
+  align-items: center;
+  justify-content: center;
   border-radius: 9999px;
-  padding: 0.5rem;
+  padding: 0.25rem;
+  line-height: 1;
+}
+
+.button.is-button-icon.is-small {
+  height: 1.5rem;
+  width: 1.5rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.button.is-button-icon.is-large {
+  height: 2.5rem;
+  width: 2.5rem;
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.button.is-button-icon i, .button.is-button-icon span {
+  line-height: 1;
 }
 
 .button[disabled] {

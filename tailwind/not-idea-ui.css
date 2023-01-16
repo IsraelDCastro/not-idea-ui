@@ -1,5 +1,5 @@
 /*!
- * Not Idea UI 2.1.1 (https://not-idea-ui.netlify.app/)
+ * Not Idea UI 2.1.2 (https://not-idea-ui.netlify.app/)
 */
 @tailwind components;
 @layer components {
@@ -1496,7 +1496,16 @@
     @apply w-5 h-5 inline-block;
   }
   .button.is-button-icon {
-    @apply p-2 rounded-full;
+    @apply flex items-center justify-center p-1 w-8 h-8 rounded-full leading-none;
+  }
+  .button.is-button-icon.is-small {
+    @apply w-6 h-6 text-sm;
+  }
+  .button.is-button-icon.is-large {
+    @apply w-10 h-10 text-2xl;
+  }
+  .button.is-button-icon i, .button.is-button-icon span {
+    @apply leading-none;
   }
   .button[disabled] {
     @apply pointer-events-auto opacity-70 cursor-not-allowed hover:bg-opacity-70 hover:border-opacity-70;

@@ -2,6 +2,10 @@
 
 ---
 
+### Version 2.1.2
+
+- Buttons icons were fixed and add to the [documentation](https://not-idea-ui.netlify.app/docs/components/accordions).
+
 ### Version 2.1.1
 
 Some errors fixed on small screens in these components: **Galleries, Dropdown, Modal, Tabs, and Accordions**.
