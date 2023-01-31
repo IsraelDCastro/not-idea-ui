@@ -1701,7 +1701,10 @@
     @apply relative;
   }
   .card.card-product .card-image {
-    @apply relative;
+    @apply relative h-72 md:h-96 overflow-hidden;
+  }
+  .card.card-product .card-image img {
+    @apply w-full h-full object-cover object-center;
   }
   .card.card-product .card-image .price {
     @apply absolute right-0 bottom-0 z-1 px-4 py-2 bg-primary-500 text-white rounded-tl;

@@ -4427,6 +4427,23 @@ table td, table th,
 
 .card.card-product .card-image {
   position: relative;
+  height: 18rem;
+  overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  .card.card-product .card-image {
+    height: 24rem;
+  }
+}
+
+.card.card-product .card-image img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
 }
 
 .card.card-product .card-image .price {

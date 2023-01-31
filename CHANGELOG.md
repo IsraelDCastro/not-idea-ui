@@ -1,6 +1,9 @@
 # Not Idea UI Changelog
 
 ---
+### Version 2.1.3
+
+- The image size in the product card was fixed. It was set up a default size for every image.
 
 ### Version 2.1.2
 
