@@ -1,11 +1,29 @@
 {
   "name": "not-idea-ui",
-  "version": "2.1.3",
+  "version": "2.1.5",
   "description": "A Framework UI to start making beautiful things. Based and created with TailwindCSS.",
-  "main": "tailwind.config.js",
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "main": "./main.scss",
+  "exports": {
+    ".": {
+      "import": "./css/main.scss",
+      "require": "./css/main.scss"
+    },
+    "./tailwind/not-idea-ui.css": {
+      "import": "./tailwind/not-idea-ui.css",
+      "require": "./tailwind/not-idea-ui.css"
+    },
+    "./css/not-idea-ui.css": {
+      "import": "./css/not-idea-ui.css",
+      "require": "./css/not-idea-ui.css"
+    },
+    "./css/not-idea-ui.min.css": {
+      "import": "./css/not-idea-ui.min.css",
+      "require": "./css/not-idea-ui.min.css"
+    }
   },
   "repository": {
     "type": "git",

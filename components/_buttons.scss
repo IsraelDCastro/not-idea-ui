@@ -604,7 +604,7 @@
   }
 
   &.is-button-icon {
-    @apply flex items-center justify-center p-1 w-8 h-8 rounded-full leading-none;
+    @apply inline-flex items-center justify-center p-1 w-8 h-8 rounded-full leading-none;
     &.is-small {
       @apply w-6 h-6 text-sm;
     }

@@ -142,8 +142,12 @@
   }
   .error-message,
   .success-message,
-  .warning-message {
+  .warning-message,
+  .desc {
     @apply text-sm mt-1;
+  }
+  .desc {
+    @apply text-gray-500 font-normal;
   }
   .error-message {
     @apply text-red-500/90;

@@ -15,6 +15,10 @@
         @apply text-primary-700;
       }
     }
+    button:not(.is-button-icon), .button:not(.is-button-icon),
+    .field {
+      @apply w-[-moz-available] w-[-webkit-fill-available] block m-1;
+    }
     .has-submenu {
       .submenu {
         @apply bg-slate-100 px-4 divide-y;
@@ -27,6 +31,9 @@
           @apply z-1 opacity-100;
         }
       }
+    }
+    &.menu-icons {
+      @apply left-auto right-0 w-auto space-y-4 p-2;
     }
     &.is-opened {
       @apply z-1 top-full opacity-100;
@@ -43,6 +50,8 @@
         @apply z-1 right-0 opacity-100;
       }
     }
+    .dropdown,
+    .dropdown-wrap { @apply w-auto; }
 
     ul { @apply list-none; }
   }

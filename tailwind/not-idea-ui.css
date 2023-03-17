@@ -1,5 +1,5 @@
 /*!
- * Not Idea UI 2.1.2 (https://not-idea-ui.netlify.app/)
+ * Not Idea UI 2.1.5 (https://not-idea-ui.netlify.app/)
 */
 @tailwind components;
 @layer components {
@@ -214,8 +214,12 @@
   }
   .field .error-message,
   .field .success-message,
-  .field .warning-message {
+  .field .warning-message,
+  .field .desc {
     @apply text-sm mt-1;
+  }
+  .field .desc {
+    @apply text-gray-500 font-normal;
   }
   .field .error-message {
     @apply text-red-500/90;
@@ -304,6 +308,10 @@
   .navbar > .menu .nav-link:hover, .navbar > .menu .nav-link.is-active {
     @apply text-primary-700;
   }
+  .navbar > .menu button:not(.is-button-icon), .navbar > .menu .button:not(.is-button-icon),
+  .navbar > .menu .field {
+    @apply w-[-moz-available] w-[-webkit-fill-available] block m-1;
+  }
   .navbar > .menu .has-submenu .submenu {
     @apply bg-slate-100 px-4 divide-y;
   }
@@ -312,6 +320,9 @@
   }
   .navbar > .menu .has-submenu:hover .submenu {
     @apply z-1 opacity-100;
+  }
+  .navbar > .menu.menu-icons {
+    @apply left-auto right-0 w-auto space-y-4 p-2;
   }
   .navbar > .menu.is-opened {
     @apply z-1 top-full opacity-100;
@@ -327,6 +338,10 @@
   }
   .navbar > .menu.enter-right.is-opened {
     @apply z-1 right-0 opacity-100;
+  }
+  .navbar > .menu .dropdown,
+  .navbar > .menu .dropdown-wrap {
+    @apply w-auto;
   }
   .navbar > .menu ul {
     @apply list-none;
@@ -1496,7 +1511,7 @@
     @apply w-5 h-5 inline-block;
   }
   .button.is-button-icon {
-    @apply flex items-center justify-center p-1 w-8 h-8 rounded-full leading-none;
+    @apply inline-flex items-center justify-center p-1 w-8 h-8 rounded-full leading-none;
   }
   .button.is-button-icon.is-small {
     @apply w-6 h-6 text-sm;
