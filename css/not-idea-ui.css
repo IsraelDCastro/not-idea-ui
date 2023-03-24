@@ -4598,6 +4598,68 @@ table td, table th,
   line-height: 1;
 }
 
+.card.card-product.clean-card {
+  background-color: transparent;
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.card.card-product.clean-card .card-image {
+  margin-bottom: 1rem;
+  border-radius: 0.5rem;
+}
+
+.card.card-product.clean-card .card-content {
+  padding: 0px;
+}
+
+.card.card-product.clean-card .card-content .top-header {
+  margin-bottom: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.card.card-product.clean-card .card-content .top-header .info {
+  --tw-text-opacity: 1;
+  color: rgb(156 163 175 / var(--tw-text-opacity));
+}
+
+.card.card-product.clean-card .card-content .top-header .price {
+  font-weight: 700;
+}
+
+.card.card-product.clean-card .card-content .card-title {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  --tw-text-opacity: 1;
+  color: rgb(55 65 81 / var(--tw-text-opacity));
+}
+
+.card.card-product.clean-card .card-content .card-title:has(a) {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.card.card-product.clean-card .card-content .card-title:has(a):hover {
+  --tw-text-opacity: 1;
+  color: rgb(69 130 208 / var(--tw-text-opacity));
+}
+
+.card.card-product.clean-card .card-content p {
+  margin-bottom: 2rem;
+  --tw-text-opacity: 1;
+  color: rgb(156 163 175 / var(--tw-text-opacity));
+}
+
+.card.card-product.clean-card .card-footer {
+  border-width: 0px;
+  padding: 0px;
+}
+
 .card.card-product:has(.hover-buttons):hover .hover-buttons {
   right: 0px;
 }

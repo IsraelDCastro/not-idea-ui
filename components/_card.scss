@@ -185,6 +185,36 @@
         @apply text-xl leading-none
       }
     }
+    &.clean-card {
+      @apply shadow-none bg-transparent;
+      .card-image {
+        @apply rounded-lg mb-4;
+      }
+      .card-content {
+        @apply p-0;
+        .top-header {
+          @apply flex flex-wrap gap-4 justify-between mb-4;
+          .info {
+            @apply text-gray-400;
+          }
+          .price {
+            @apply font-bold;
+          }
+        }
+        .card-title {
+          @apply text-3xl text-gray-700;
+          &:has(a) {
+            @apply hover:text-primary-600 transition-all;
+          }
+        }
+        p {
+          @apply text-gray-400 mb-8;
+        }
+      }
+      .card-footer {
+        @apply border-0 p-0;
+      }
+    }
     &:has(.hover-buttons) {
       &:hover {
         .hover-buttons {

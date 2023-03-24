@@ -1749,6 +1749,36 @@
   .card.card-product .hover-buttons i {
     @apply text-xl leading-none;
   }
+  .card.card-product.clean-card {
+    @apply shadow-none bg-transparent;
+  }
+  .card.card-product.clean-card .card-image {
+    @apply rounded-lg mb-4;
+  }
+  .card.card-product.clean-card .card-content {
+    @apply p-0;
+  }
+  .card.card-product.clean-card .card-content .top-header {
+    @apply flex flex-wrap gap-4 justify-between mb-4;
+  }
+  .card.card-product.clean-card .card-content .top-header .info {
+    @apply text-gray-400;
+  }
+  .card.card-product.clean-card .card-content .top-header .price {
+    @apply font-bold;
+  }
+  .card.card-product.clean-card .card-content .card-title {
+    @apply text-3xl text-gray-700;
+  }
+  .card.card-product.clean-card .card-content .card-title:has(a) {
+    @apply hover:text-primary-600 transition-all;
+  }
+  .card.card-product.clean-card .card-content p {
+    @apply text-gray-400 mb-8;
+  }
+  .card.card-product.clean-card .card-footer {
+    @apply border-0 p-0;
+  }
   .card.card-product:has(.hover-buttons):hover .hover-buttons {
     @apply right-0;
   }
