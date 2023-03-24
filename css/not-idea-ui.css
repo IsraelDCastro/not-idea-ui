@@ -1,5 +1,5 @@
 /*!
- * Not Idea UI 2.1.5 (https://not-idea-ui.netlify.app/)
+ * Not Idea UI 2.1.8 (https://not-idea-ui.netlify.app/)
 */
 
 .container {
@@ -4462,15 +4462,9 @@ table td, table th,
 }
 
 .card.card-product .card-image {
+  aspect-ratio: 16/9;
   position: relative;
-  height: 18rem;
   overflow: hidden;
-}
-
-@media (min-width: 768px) {
-  .card.card-product .card-image {
-    height: 24rem;
-  }
 }
 
 .card.card-product .card-image img {

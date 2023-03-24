@@ -152,7 +152,8 @@
   &.card-product {
     @apply relative;
     .card-image {
-      @apply relative h-72 md:h-96 overflow-hidden;
+      aspect-ratio: 16/9;
+      @apply relative overflow-hidden;
       img {
         @apply w-full h-full object-cover object-center;
       }
