@@ -1716,8 +1716,7 @@
     @apply relative;
   }
   .card.card-product .card-image {
-    aspect-ratio: 16/9;
-    @apply relative overflow-hidden;
+    @apply relative h-72 md:h-96 overflow-hidden;
   }
   .card.card-product .card-image img {
     @apply w-full h-full object-cover object-center;
@@ -1753,7 +1752,7 @@
   .card.card-product.clean-card {
     @apply shadow-none bg-transparent;
   }
-  .card.card-product.clean-card .card-image {
+  .card.card-product.clean-card .card-header {
     @apply rounded-lg mb-4;
   }
   .card.card-product.clean-card .card-content {

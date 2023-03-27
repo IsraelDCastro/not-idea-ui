@@ -4462,9 +4462,15 @@ table td, table th,
 }
 
 .card.card-product .card-image {
-  aspect-ratio: 16/9;
   position: relative;
+  height: 18rem;
   overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  .card.card-product .card-image {
+    height: 24rem;
+  }
 }
 
 .card.card-product .card-image img {
@@ -4599,7 +4605,7 @@ table td, table th,
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
-.card.card-product.clean-card .card-image {
+.card.card-product.clean-card .card-header {
   margin-bottom: 1rem;
   border-radius: 0.5rem;
 }

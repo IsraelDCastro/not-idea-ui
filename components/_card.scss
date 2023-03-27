@@ -152,8 +152,7 @@
   &.card-product {
     @apply relative;
     .card-image {
-      aspect-ratio: 16/9;
-      @apply relative overflow-hidden;
+      @apply relative h-72 md:h-96 overflow-hidden;
       img {
         @apply w-full h-full object-cover object-center;
       }
@@ -188,7 +187,7 @@
     }
     &.clean-card {
       @apply shadow-none bg-transparent;
-      .card-image {
+      .card-header {
         @apply rounded-lg mb-4;
       }
       .card-content {
