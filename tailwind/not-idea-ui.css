@@ -1,5 +1,5 @@
 /*!
- * Not Idea UI 2.1.10 (https://not-idea-ui.netlify.app/)
+ * Not Idea UI 2.1.11 (https://not-idea-ui.netlify.app/)
 */
 @tailwind components;
 @layer components {
@@ -1584,10 +1584,10 @@
     @apply flex flex-wrap gap-2;
   }
   .card .card-content .top-header .multi-items > * {
-    @apply text-slate-400 font-light leading-none inline-block content-[""];
+    @apply text-gray-400 font-light leading-none inline-block content-[""];
   }
   .card .card-content .top-header .multi-items > *:nth-child(n+2) {
-    @apply before:align-middle before:mr-2 before:inline-block before:w-1 before:h-1 before:rounded-full before:bg-slate-300;
+    @apply before:align-middle before:mr-2 before:inline-block before:w-1 before:h-1 before:rounded-full before:bg-gray-300;
   }
   .card .card-content .top-header .info {
     @apply text-gray-400;

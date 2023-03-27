@@ -1,5 +1,5 @@
 /*!
- * Not Idea UI 2.1.10 (https://not-idea-ui.netlify.app/)
+ * Not Idea UI 2.1.11 (https://not-idea-ui.netlify.app/)
 */
 
 .container {
@@ -4135,7 +4135,7 @@ table td, table th,
   font-weight: 300;
   line-height: 1;
   --tw-text-opacity: 1;
-  color: rgb(148 163 184 / var(--tw-text-opacity));
+  color: rgb(156 163 175 / var(--tw-text-opacity));
   --tw-content: "";
   content: var(--tw-content);
 }
@@ -4147,7 +4147,7 @@ table td, table th,
   width: 0.25rem;
   border-radius: 9999px;
   --tw-bg-opacity: 1;
-  background-color: rgb(203 213 225 / var(--tw-bg-opacity));
+  background-color: rgb(209 213 219 / var(--tw-bg-opacity));
   content: var(--tw-content);
   vertical-align: middle;
 }
