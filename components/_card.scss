@@ -14,6 +14,24 @@
     }
   }
   .card-content {
+    .top-header {
+      @apply flex flex-wrap gap-4 justify-between mb-4;
+      .multi-items {
+        @apply flex flex-wrap gap-2;
+        > * {
+          @apply text-slate-400 font-light leading-none inline-block content-[""];
+        }
+        > *:nth-child(n+2) {
+          @apply before:align-middle before:mr-2 before:inline-block before:w-1 before:h-1 before:rounded-full before:bg-slate-300;
+        }
+      }
+      .info {
+        @apply text-gray-400;
+      }
+      .price {
+        @apply font-bold;
+      }
+    }
     @apply p-6;
     .card-title {
       @apply text-2xl text-primary-700 font-semibold mb-2;
@@ -192,15 +210,6 @@
       }
       .card-content {
         @apply p-0;
-        .top-header {
-          @apply flex flex-wrap gap-4 justify-between mb-4;
-          .info {
-            @apply text-gray-400;
-          }
-          .price {
-            @apply font-bold;
-          }
-        }
         .card-title {
           @apply text-3xl text-gray-700;
           &:has(a) {

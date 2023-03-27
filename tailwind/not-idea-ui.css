@@ -1,5 +1,5 @@
 /*!
- * Not Idea UI 2.1.8 (https://not-idea-ui.netlify.app/)
+ * Not Idea UI 2.1.10 (https://not-idea-ui.netlify.app/)
 */
 @tailwind components;
 @layer components {
@@ -1577,6 +1577,24 @@
   .card .card-content {
     @apply p-6;
   }
+  .card .card-content .top-header {
+    @apply flex flex-wrap gap-4 justify-between mb-4;
+  }
+  .card .card-content .top-header .multi-items {
+    @apply flex flex-wrap gap-2;
+  }
+  .card .card-content .top-header .multi-items > * {
+    @apply text-slate-400 font-light leading-none inline-block content-[""];
+  }
+  .card .card-content .top-header .multi-items > *:nth-child(n+2) {
+    @apply before:align-middle before:mr-2 before:inline-block before:w-1 before:h-1 before:rounded-full before:bg-slate-300;
+  }
+  .card .card-content .top-header .info {
+    @apply text-gray-400;
+  }
+  .card .card-content .top-header .price {
+    @apply font-bold;
+  }
   .card .card-content .card-title {
     @apply text-2xl text-primary-700 font-semibold mb-2;
   }
@@ -1757,15 +1775,6 @@
   }
   .card.card-product.clean-card .card-content {
     @apply p-0;
-  }
-  .card.card-product.clean-card .card-content .top-header {
-    @apply flex flex-wrap gap-4 justify-between mb-4;
-  }
-  .card.card-product.clean-card .card-content .top-header .info {
-    @apply text-gray-400;
-  }
-  .card.card-product.clean-card .card-content .top-header .price {
-    @apply font-bold;
   }
   .card.card-product.clean-card .card-content .card-title {
     @apply text-3xl text-gray-700;
