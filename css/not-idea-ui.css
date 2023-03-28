@@ -1,5 +1,5 @@
 /*!
- * Not Idea UI 2.1.12 (https://not-idea-ui.netlify.app/)
+ * Not Idea UI 2.1.13 (https://not-idea-ui.netlify.app/)
 */
 
 .container {
@@ -4101,12 +4101,12 @@ table td, table th,
   color: rgb(229 231 235 / var(--tw-text-opacity));
 }
 
-.link.is-grey {
+.link.is-gray {
   --tw-text-opacity: 1;
   color: rgb(156 163 175 / var(--tw-text-opacity));
 }
 
-.link.is-grey:hover {
+.link.is-gray:hover {
   --tw-text-opacity: 1;
   color: rgb(75 85 99 / var(--tw-text-opacity));
 }

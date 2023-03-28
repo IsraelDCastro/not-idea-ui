@@ -1,5 +1,5 @@
 /*!
- * Not Idea UI 2.1.12 (https://not-idea-ui.netlify.app/)
+ * Not Idea UI 2.1.13 (https://not-idea-ui.netlify.app/)
 */
 @tailwind components;
 @layer components {
@@ -1576,10 +1576,10 @@
   .link.is-white:hover {
     @apply text-gray-200;
   }
-  .link.is-grey {
+  .link.is-gray {
     @apply text-gray-400;
   }
-  .link.is-grey:hover {
+  .link.is-gray:hover {
     @apply text-gray-600;
   }
   .link.is-darked {
