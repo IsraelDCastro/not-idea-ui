@@ -1,6 +1,6 @@
 {
   "name": "not-idea-ui",
-  "version": "2.1.11",
+  "version": "2.1.12",
   "description": "A Framework UI to start making beautiful things. Based and created with TailwindCSS.",
   "type": "module",
   "scripts": {

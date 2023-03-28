@@ -623,39 +623,75 @@
 }
 
 .link {
-  @apply no-underline inline-block text-blue-300 transition-all duration-400 ease-in-out;
-  &.info {
+  @apply no-underline inline-block text-slate-400 hover:text-slate-600 transition-all duration-400 ease-in-out;
+  
+  &.is-primary {
+    @apply text-primary-400;
+    &:hover {
+      @apply text-primary-500;
+    }
+  }
+
+  &.is-secondary {
+    @apply text-secondary-400;
+    &:hover {
+      @apply text-secondary-500;
+    }
+  }
+
+  &.is-tertiary {
+    @apply text-tertiary-400;
+    &:hover {
+      @apply text-tertiary-500;
+    }
+  }
+
+  &.is-info {
     @apply text-blue-400;
     &:hover {
       @apply text-blue-500;
     }
   }
 
-  &.danger {
+  &.is-danger {
     @apply text-red-400;
     &:hover {
       @apply text-red-500;
     }
   }
 
-  &.warning {
+  &.is-warning {
     @apply text-yellow-400;
     &:hover {
       @apply text-yellow-500;
     }
   }
 
-  &.success {
+  &.is-success {
     @apply text-green-400;
     &:hover {
       @apply text-green-500;
     }
   }
 
-  &.white {
+  &.is-white {
     @apply text-white;
     &:hover {
       @apply text-gray-200;
+    }
+  }
+
+  &.is-grey {
+    @apply text-gray-400;
+    &:hover {
+      @apply text-gray-600;
+    }
+  }
+
+  &.is-darked {
+    @apply text-gray-700;
+    &:hover {
+      @apply text-gray-900;
     }
   }
 }

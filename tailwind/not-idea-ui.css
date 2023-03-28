@@ -1,5 +1,5 @@
 /*!
- * Not Idea UI 2.1.11 (https://not-idea-ui.netlify.app/)
+ * Not Idea UI 2.1.12 (https://not-idea-ui.netlify.app/)
 */
 @tailwind components;
 @layer components {
@@ -1526,37 +1526,67 @@
     @apply pointer-events-auto opacity-70 cursor-not-allowed hover:bg-opacity-70 hover:border-opacity-70;
   }
   .link {
-    @apply no-underline inline-block text-blue-300 transition-all duration-400 ease-in-out;
+    @apply no-underline inline-block text-slate-400 hover:text-slate-600 transition-all duration-400 ease-in-out;
   }
-  .link.info {
+  .link.is-primary {
+    @apply text-primary-400;
+  }
+  .link.is-primary:hover {
+    @apply text-primary-500;
+  }
+  .link.is-secondary {
+    @apply text-secondary-400;
+  }
+  .link.is-secondary:hover {
+    @apply text-secondary-500;
+  }
+  .link.is-tertiary {
+    @apply text-tertiary-400;
+  }
+  .link.is-tertiary:hover {
+    @apply text-tertiary-500;
+  }
+  .link.is-info {
     @apply text-blue-400;
   }
-  .link.info:hover {
+  .link.is-info:hover {
     @apply text-blue-500;
   }
-  .link.danger {
+  .link.is-danger {
     @apply text-red-400;
   }
-  .link.danger:hover {
+  .link.is-danger:hover {
     @apply text-red-500;
   }
-  .link.warning {
+  .link.is-warning {
     @apply text-yellow-400;
   }
-  .link.warning:hover {
+  .link.is-warning:hover {
     @apply text-yellow-500;
   }
-  .link.success {
+  .link.is-success {
     @apply text-green-400;
   }
-  .link.success:hover {
+  .link.is-success:hover {
     @apply text-green-500;
   }
-  .link.white {
+  .link.is-white {
     @apply text-white;
   }
-  .link.white:hover {
+  .link.is-white:hover {
     @apply text-gray-200;
+  }
+  .link.is-grey {
+    @apply text-gray-400;
+  }
+  .link.is-grey:hover {
+    @apply text-gray-600;
+  }
+  .link.is-darked {
+    @apply text-gray-700;
+  }
+  .link.is-darked:hover {
+    @apply text-gray-900;
   }
   .card {
     @apply bg-white shadow rounded overflow-hidden;
@@ -1687,6 +1717,33 @@
   }
   .card.card-team .card-content p {
     @apply mb-2;
+  }
+  .card.b-space {
+    @apply p-5;
+  }
+  .card.b-space .card-header {
+    @apply rounded-lg mb-4;
+  }
+  .card.b-space .card-content {
+    @apply p-0;
+  }
+  .card.b-space:not(:has(.card-even)) .card-header {
+    @apply mb-4;
+  }
+  .card.card-even {
+    @apply flex flex-wrap gap-5;
+  }
+  .card.card-even:is(.b-space) .card-header {
+    @apply mb-0;
+  }
+  .card.card-even .card-header {
+    @apply w-full sm:w-5/12 md:w-4/12 overflow-hidden rounded-lg;
+  }
+  .card.card-even .card-header img {
+    @apply object-cover object-center;
+  }
+  .card.card-even .card-content {
+    @apply md:flex-1;
   }
   .card.card-hover {
     @apply relative;

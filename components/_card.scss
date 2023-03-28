@@ -122,7 +122,37 @@
       }
     }
   }
-
+  &.b-space {
+    @apply p-5;
+    .card-header {
+      @apply rounded-lg mb-4;
+    }
+    .card-content {
+      @apply p-0;
+    }
+    &:not(:has(.card-even)) {
+      .card-header {
+        @apply mb-4;
+      }
+    }
+  }
+  &.card-even {
+    @apply flex flex-wrap gap-5;
+    &:is(.b-space) {
+      .card-header {
+        @apply mb-0;
+      }
+    }
+    .card-header {
+      @apply w-full sm:w-5/12 md:w-4/12 overflow-hidden rounded-lg;
+      img {
+        @apply object-cover object-center;
+      }
+    }
+    .card-content {
+      @apply md:flex-1;
+    }
+  }
   &.card-hover {
     @apply relative;
     .card-image {
