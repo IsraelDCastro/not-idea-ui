@@ -1,5 +1,5 @@
 /*!
- * Not Idea UI 2.1.14 (https://not-idea-ui.netlify.app/)
+ * Not Idea UI 2.1.15 (https://not-idea-ui.netlify.app/)
 */
 
 .container {
@@ -1328,8 +1328,15 @@
   color: rgb(203 213 225 / var(--tw-text-opacity));
 }
 
+.sidebar.rounded-links .sidebar-nav > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0.75rem * var(--tw-space-y-reverse));
+}
+
 .sidebar.rounded-links .sidebar-nav .sidebar-item {
   border-radius: 0.5rem;
+  padding: 0.75rem;
   font-weight: 500;
   --tw-text-opacity: 1;
   color: rgb(226 232 240 / var(--tw-text-opacity));

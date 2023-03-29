@@ -1,5 +1,5 @@
 /*!
- * Not Idea UI 2.1.14 (https://not-idea-ui.netlify.app/)
+ * Not Idea UI 2.1.15 (https://not-idea-ui.netlify.app/)
 */
 @tailwind components;
 @layer components {
@@ -536,8 +536,11 @@
   .sidebar .menu-title {
     @apply mb-2 font-sans text-sm font-medium uppercase text-slate-300;
   }
+  .sidebar.rounded-links .sidebar-nav {
+    @apply space-y-3;
+  }
   .sidebar.rounded-links .sidebar-nav .sidebar-item {
-    @apply text-slate-200 rounded-lg font-medium;
+    @apply p-3 text-slate-200 rounded-lg font-medium;
   }
   .sidebar.rounded-links .sidebar-nav .sidebar-item .sidebar-icon {
     @apply mr-2;

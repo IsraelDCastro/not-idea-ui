@@ -75,8 +75,9 @@
   }
   &.rounded-links {
     .sidebar-nav {
+      @apply space-y-3;
       .sidebar-item  {
-        @apply text-slate-200 rounded-lg font-medium;
+        @apply p-3 text-slate-200 rounded-lg font-medium;
         .sidebar-icon {
           @apply mr-2;
           .tooltip { @apply hidden; }
