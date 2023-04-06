@@ -4,6 +4,12 @@
 
 .double-field {
   @apply grid grid-cols-1 md:grid-cols-2 gap-y-4 gap-x-5 md:gap-x-8;
+  > .field {
+    @apply mb-0;
+  }
+  &:not(:last-child) {
+    @apply mb-4;
+  }
 }
 
 .is-primary {

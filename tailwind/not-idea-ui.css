@@ -1,5 +1,5 @@
 /*!
- * Not Idea UI 2.1.18 (https://not-idea-ui.netlify.app/)
+ * Not Idea UI 2.1.19 (https://not-idea-ui.netlify.app/)
 */
 @tailwind components;
 @layer components {
@@ -41,6 +41,12 @@
   }
   .double-field {
     @apply grid grid-cols-1 md:grid-cols-2 gap-y-4 gap-x-5 md:gap-x-8;
+  }
+  .double-field > .field {
+    @apply mb-0;
+  }
+  .double-field:not(:last-child) {
+    @apply mb-4;
   }
   .is-primary {
     @apply accent-primary-700;

@@ -1,5 +1,5 @@
 /*!
- * Not Idea UI 2.1.18 (https://not-idea-ui.netlify.app/)
+ * Not Idea UI 2.1.19 (https://not-idea-ui.netlify.app/)
 */
 
 .container {
@@ -173,6 +173,14 @@
     -moz-column-gap: 2rem;
          column-gap: 2rem;
   }
+}
+
+.double-field > .field {
+  margin-bottom: 0px;
+}
+
+.double-field:not(:last-child) {
+  margin-bottom: 1rem;
 }
 
 .is-primary {
