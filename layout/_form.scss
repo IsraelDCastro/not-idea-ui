@@ -3,11 +3,7 @@
 }
 
 .double-field {
-  @apply flex flex-wrap justify-between;
-  .field {
-    width: calc(50% - 10px);
-    flex: 0 0 calc(50% - 10px);
-  }
+  @apply grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-8;
 }
 
 .is-primary {

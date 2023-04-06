@@ -1,5 +1,5 @@
 /*!
- * Not Idea UI 2.1.16 (https://not-idea-ui.netlify.app/)
+ * Not Idea UI 2.1.17 (https://not-idea-ui.netlify.app/)
 */
 
 .container {
@@ -160,14 +160,16 @@
 }
 
 .double-field {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 1.25rem;
 }
 
-.double-field .field {
-  width: calc(50% - 10px);
-  flex: 0 0 calc(50% - 10px);
+@media (min-width: 768px) {
+  .double-field {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 2rem;
+  }
 }
 
 .is-primary {
