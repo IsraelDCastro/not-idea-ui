@@ -1,5 +1,5 @@
 /*!
- * Not Idea UI 2.1.17 (https://not-idea-ui.netlify.app/)
+ * Not Idea UI 2.1.18 (https://not-idea-ui.netlify.app/)
 */
 @tailwind components;
 @layer components {
@@ -40,7 +40,7 @@
     @apply p-8 rounded bg-white;
   }
   .double-field {
-    @apply grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-8;
+    @apply grid grid-cols-1 md:grid-cols-2 gap-y-4 gap-x-5 md:gap-x-8;
   }
   .is-primary {
     @apply accent-primary-700;

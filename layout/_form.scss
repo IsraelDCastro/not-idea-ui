@@ -3,7 +3,7 @@
 }
 
 .double-field {
-  @apply grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-8;
+  @apply grid grid-cols-1 md:grid-cols-2 gap-y-4 gap-x-5 md:gap-x-8;
 }
 
 .is-primary {

@@ -1,5 +1,5 @@
 /*!
- * Not Idea UI 2.1.17 (https://not-idea-ui.netlify.app/)
+ * Not Idea UI 2.1.18 (https://not-idea-ui.netlify.app/)
 */
 
 .container {
@@ -162,13 +162,16 @@
 .double-field {
   display: grid;
   grid-template-columns: repeat(1, minmax(0, 1fr));
-  gap: 1.25rem;
+  row-gap: 1rem;
+  -moz-column-gap: 1.25rem;
+       column-gap: 1.25rem;
 }
 
 @media (min-width: 768px) {
   .double-field {
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 2rem;
+    -moz-column-gap: 2rem;
+         column-gap: 2rem;
   }
 }
 
