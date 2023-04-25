@@ -99,7 +99,7 @@
   .radio {
     @apply cursor-pointer;
     .label {
-      @apply inline-block font-normal ml-2 cursor-pointer;
+      @apply font-body inline-block font-normal ml-2 cursor-pointer;
     }
     &.is-toggle {
       @apply cursor-auto;

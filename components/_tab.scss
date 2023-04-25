@@ -48,6 +48,29 @@
       }
     }
   }
+  &.clean-underline {
+    .tabs-lists {
+      @apply md:border-b-4 mb-0;
+      .tab-link {
+        @apply font-medium text-base bg-transparent transition-all ease-in-out duration-200 relative;
+        &::after {
+          @apply content-[''] h-1 w-full rounded-md -bottom-1 absolute left-0 right-0 bg-transparent transition-all ease-in-out duration-200;
+        }
+        &.is-active,
+        &:hover {
+          @apply text-primary-700;
+          &::after {
+            @apply bg-primary-700;
+          }
+        }
+      }
+    }
+    .tabs-content {
+      .tab-content {
+        @apply bg-transparent p-5 rounded-none;
+      }
+    }
+  }
   //&.is-transparent {
   //  .tab-link {
   //    @apply bg-transparent relative;

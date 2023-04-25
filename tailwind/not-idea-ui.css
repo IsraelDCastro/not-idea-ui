@@ -164,7 +164,7 @@
   }
   .field .checkbox .label,
   .field .radio .label {
-    @apply inline-block font-normal ml-2 cursor-pointer;
+    @apply font-body inline-block font-normal ml-2 cursor-pointer;
   }
   .field .checkbox.is-toggle,
   .field .radio.is-toggle {
@@ -560,10 +560,13 @@
     @apply bg-slate-100 text-slate-700;
   }
   .sidebar.rounded-links .sidebar-nav .has-submenu .sidebar-submenu {
-    @apply rounded-lg bg-slate-100;
+    @apply space-y-1  rounded bg-secondary-900 p-1;
   }
   .sidebar.rounded-links .sidebar-nav .has-submenu .sidebar-submenu .sidebar-item {
-    @apply font-light;
+    @apply bg-transparent font-normal text-base px-4 py-1;
+  }
+  .sidebar.rounded-links .sidebar-nav .has-submenu .sidebar-submenu .sidebar-item.is-active, .sidebar.rounded-links .sidebar-nav .has-submenu .sidebar-submenu .sidebar-item:hover {
+    @apply text-tertiary-600;
   }
   .sidebar.is-primary {
     @apply bg-primary-700;
@@ -2389,6 +2392,24 @@
   }
   .tabs-wrapper.is-rounded .tab-link.is-active, .tabs-wrapper.is-rounded .tab-link:hover {
     @apply bg-primary-300/40 text-primary-800;
+  }
+  .tabs-wrapper.clean-underline .tabs-lists {
+    @apply md:border-b-4 mb-0;
+  }
+  .tabs-wrapper.clean-underline .tabs-lists .tab-link {
+    @apply font-medium text-base bg-transparent transition-all ease-in-out duration-200 relative;
+  }
+  .tabs-wrapper.clean-underline .tabs-lists .tab-link::after {
+    @apply content-[""] h-1 w-full rounded-md -bottom-1 absolute left-0 right-0 bg-transparent transition-all ease-in-out duration-200;
+  }
+  .tabs-wrapper.clean-underline .tabs-lists .tab-link.is-active, .tabs-wrapper.clean-underline .tabs-lists .tab-link:hover {
+    @apply text-primary-700;
+  }
+  .tabs-wrapper.clean-underline .tabs-lists .tab-link.is-active::after, .tabs-wrapper.clean-underline .tabs-lists .tab-link:hover::after {
+    @apply bg-primary-700;
+  }
+  .tabs-wrapper.clean-underline .tabs-content .tab-content {
+    @apply bg-transparent p-5 rounded-none;
   }
   .tabs-wrapper .tabs-content .tab-content {
     @apply p-6 bg-gray-100;

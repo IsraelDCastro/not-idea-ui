@@ -184,11 +184,11 @@
 }
 
 .is-primary {
-  accent-color: #2F70C8;
+  accent-color: #2f70c8;
 }
 
 .is-secondary {
-  accent-color: #FF8736;
+  accent-color: #057f80;
 }
 
 .is-tertiary {
@@ -237,7 +237,7 @@
   .field .select-inner:focus,
   .field .input-file:focus {
   --tw-border-opacity: 1;
-  border-color: rgb(115 164 223 / var(--tw-border-opacity));
+  border-color: rgb(111 187 235 / var(--tw-border-opacity));
 }
 
 .field .input[disabled],
@@ -365,7 +365,7 @@
 
 .field .input-file:hover {
   --tw-bg-opacity: 1;
-  background-color: rgb(69 130 208 / var(--tw-bg-opacity));
+  background-color: rgb(56 132 216 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
@@ -391,6 +391,7 @@
   margin-left: 0.5rem;
   display: inline-block;
   cursor: pointer;
+  font-family: Noto Sans KR, Nunito, Lato, "Helvetica Neue", Helvetica , Arial, sans-serif;
   font-weight: 400;
 }
 
@@ -444,14 +445,14 @@
 
 .field .checkbox.is-toggle input:checked + label,
   .field .radio.is-toggle input:checked + label {
-  background-color: rgb(138 181 231 / 0.4);
+  background-color: rgb(157 212 243 / 0.4);
 }
 
 .field .checkbox.is-toggle input:checked + label::before,
   .field .radio.is-toggle input:checked + label::before {
   left: 2.5rem;
   --tw-bg-opacity: 1;
-  background-color: rgb(69 130 208 / var(--tw-bg-opacity));
+  background-color: rgb(56 132 216 / var(--tw-bg-opacity));
 }
 
 .field .checkbox.is-toggle input:disabled + label,
@@ -468,24 +469,24 @@
 
 .field .checkbox.is-toggle.is-secondary input:checked + label,
   .field .radio.is-toggle.is-secondary input:checked + label {
-  background-color: rgb(255 200 163 / 0.4);
+  background-color: rgb(81 247 236 / 0.4);
 }
 
 .field .checkbox.is-toggle.is-secondary input:checked + label::before,
   .field .radio.is-toggle.is-secondary input:checked + label::before {
   --tw-bg-opacity: 1;
-  background-color: rgb(255 151 82 / var(--tw-bg-opacity));
+  background-color: rgb(0 168 168 / var(--tw-bg-opacity));
 }
 
 .field .checkbox.is-toggle.is-tertiary input:checked + label,
   .field .radio.is-toggle.is-tertiary input:checked + label {
-  background-color: rgb(191 164 209 / 0.4);
+  background-color: rgb(215 186 237 / 0.4);
 }
 
 .field .checkbox.is-toggle.is-tertiary input:checked + label::before,
   .field .radio.is-toggle.is-tertiary input:checked + label::before {
   --tw-bg-opacity: 1;
-  background-color: rgb(132 82 163 / var(--tw-bg-opacity));
+  background-color: rgb(134 70 179 / var(--tw-bg-opacity));
 }
 
 .field .error-message,
@@ -860,7 +861,7 @@
 
 .navbar .menu-icon:hover {
   --tw-text-opacity: 1;
-  color: rgb(92 147 216 / var(--tw-text-opacity));
+  color: rgb(77 159 228 / var(--tw-text-opacity));
 }
 
 .navbar .burger-menu {
@@ -869,7 +870,7 @@
   cursor: pointer;
   border-radius: 0.375rem;
   --tw-bg-opacity: 1;
-  background-color: rgb(206 233 255 / var(--tw-bg-opacity));
+  background-color: rgb(241 248 253 / var(--tw-bg-opacity));
   padding: 0.5rem;
   --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
@@ -988,7 +989,7 @@
 
 .topbar .topbar-menu .topbar-link:hover {
   --tw-text-opacity: 1;
-  color: rgb(255 135 54 / var(--tw-text-opacity));
+  color: rgb(5 127 128 / var(--tw-text-opacity));
 }
 
 @media (min-width: 1024px) {
@@ -1079,10 +1080,7 @@
 
   .navbar .menu.enter-left, .navbar .menu.enter-right {
     position: relative;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
+    inset: 0px;
     width: auto;
   }
 
@@ -1102,7 +1100,7 @@
 
   .navbar.is-filled .menu .nav-link:hover, .navbar.is-filled .menu .nav-link.is-active {
     --tw-bg-opacity: 1;
-    background-color: rgb(92 147 216 / var(--tw-bg-opacity));
+    background-color: rgb(77 159 228 / var(--tw-bg-opacity));
     --tw-text-opacity: 1;
     color: rgb(255 255 255 / var(--tw-text-opacity));
   }
@@ -1141,12 +1139,12 @@
 
   .navbar.is-underline .menu .nav-link:hover, .navbar.is-underline .menu .nav-link.is-active {
     --tw-text-opacity: 1;
-    color: rgb(24 95 192 / var(--tw-text-opacity));
+    color: rgb(44 90 161 / var(--tw-text-opacity));
   }
 
   .navbar.is-underline .menu .nav-link:hover::after, .navbar.is-underline .menu .nav-link.is-active::after {
     --tw-bg-opacity: 1;
-    background-color: rgb(24 95 192 / var(--tw-bg-opacity));
+    background-color: rgb(44 90 161 / var(--tw-bg-opacity));
   }
 
   .navbar.is-underline .menu .has-submenu .submenu li:last-child {
@@ -1201,7 +1199,7 @@
 
 .sidebar .sidebar-head .close-sidebar:hover {
   --tw-text-opacity: 1;
-  color: rgb(1 78 184 / var(--tw-text-opacity));
+  color: rgb(40 77 128 / var(--tw-text-opacity));
 }
 
 .sidebar .sidebar-head .close-sidebar.close {
@@ -1240,7 +1238,7 @@
 
 .sidebar .sidebar-nav .sidebar-item:hover, .sidebar .sidebar-nav .sidebar-item.is-active {
   --tw-text-opacity: 1;
-  color: rgb(69 130 208 / var(--tw-text-opacity));
+  color: rgb(56 132 216 / var(--tw-text-opacity));
 }
 
 .sidebar .sidebar-nav .has-submenu .sidebar-submenu {
@@ -1275,7 +1273,7 @@
 
 .sidebar .sidebar-nav .has-submenu .sidebar-submenu .sidebar-item:hover, .sidebar .sidebar-nav .has-submenu .sidebar-submenu .sidebar-item.is-active {
   --tw-text-opacity: 1;
-  color: rgb(255 151 82 / var(--tw-text-opacity));
+  color: rgb(0 168 168 / var(--tw-text-opacity));
 }
 
 .sidebar .sidebar-nav .has-submenu .sidebar-submenu li {
@@ -1294,7 +1292,7 @@
 
 .sidebar .sidebar-nav.semi-transparent .sidebar-item {
   border-radius: 0.25rem;
-  background-color: rgb(206 233 255 / 0.2);
+  background-color: rgb(241 248 253 / 0.2);
   padding-left: 1.25rem;
   padding-right: 1.25rem;
   padding-top: 0.5rem;
@@ -1311,15 +1309,15 @@
 
 .sidebar .sidebar-nav.semi-transparent .sidebar-item:hover, .sidebar .sidebar-nav.semi-transparent .sidebar-item.is-active {
   --tw-bg-opacity: 1;
-  background-color: rgb(206 233 255 / var(--tw-bg-opacity));
+  background-color: rgb(241 248 253 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
-  color: rgb(1 78 184 / var(--tw-text-opacity));
+  color: rgb(40 77 128 / var(--tw-text-opacity));
 }
 
 .sidebar .sidebar-nav.semi-transparent .sidebar-item.is-active {
   border-left-width: 6px;
   --tw-border-opacity: 1;
-  border-color: rgb(92 147 216 / var(--tw-border-opacity));
+  border-color: rgb(77 159 228 / var(--tw-border-opacity));
 }
 
 .sidebar .sidebar-nav .sidebar-text {
@@ -1384,14 +1382,33 @@
   color: rgb(51 65 85 / var(--tw-text-opacity));
 }
 
+.sidebar.rounded-links .sidebar-nav .has-submenu .sidebar-submenu > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(0.25rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0.25rem * var(--tw-space-y-reverse));
+}
+
 .sidebar.rounded-links .sidebar-nav .has-submenu .sidebar-submenu {
-  border-radius: 0.5rem;
+  border-radius: 0.25rem;
   --tw-bg-opacity: 1;
-  background-color: rgb(241 245 249 / var(--tw-bg-opacity));
+  background-color: rgb(13 83 84 / var(--tw-bg-opacity));
+  padding: 0.25rem;
 }
 
 .sidebar.rounded-links .sidebar-nav .has-submenu .sidebar-submenu .sidebar-item {
-  font-weight: 300;
+  background-color: transparent;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 400;
+}
+
+.sidebar.rounded-links .sidebar-nav .has-submenu .sidebar-submenu .sidebar-item.is-active, .sidebar.rounded-links .sidebar-nav .has-submenu .sidebar-submenu .sidebar-item:hover {
+  --tw-text-opacity: 1;
+  color: rgb(134 70 179 / var(--tw-text-opacity));
 }
 
 .sidebar.is-primary {
@@ -1411,7 +1428,7 @@
 
 .sidebar.is-secondary {
   --tw-bg-opacity: 1;
-  background-color: rgb(255 135 54 / var(--tw-bg-opacity));
+  background-color: rgb(5 127 128 / var(--tw-bg-opacity));
 }
 
 .sidebar.is-secondary .sidebar-head {
@@ -1578,13 +1595,13 @@ table thead.has-background th,
 
 table tbody.tbody tr,
   .table tbody.tbody tr {
-  background-color: rgb(183 216 247 / var(--tw-bg-opacity));
+  background-color: rgb(222 239 251 / var(--tw-bg-opacity));
   --tw-bg-opacity: 0.3;
 }
 
 table tbody.tbody tr:nth-child(even),
   .table tbody.tbody tr:nth-child(even) {
-  background-color: rgb(160 199 239 / var(--tw-bg-opacity));
+  background-color: rgb(197 228 248 / var(--tw-bg-opacity));
   --tw-bg-opacity: 0.3;
 }
 
@@ -1908,7 +1925,7 @@ table td, table th,
 }
 
 .accordion.focused .accordion-head:focus {
-  background-color: rgb(206 233 255 / 0.1);
+  background-color: rgb(241 248 253 / 0.1);
 }
 
 .accordion.focused .accordion-head:focus + .accordion-content {
@@ -1982,21 +1999,21 @@ table td, table th,
 
 .alert.is-primary {
   --tw-bg-opacity: 1;
-  background-color: rgb(69 130 208 / var(--tw-bg-opacity));
+  background-color: rgb(56 132 216 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .alert.is-secondary {
   --tw-bg-opacity: 1;
-  background-color: rgb(255 151 82 / var(--tw-bg-opacity));
+  background-color: rgb(0 168 168 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .alert.is-tertiary {
   --tw-bg-opacity: 1;
-  background-color: rgb(132 82 163 / var(--tw-bg-opacity));
+  background-color: rgb(134 70 179 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
@@ -2062,7 +2079,7 @@ table td, table th,
 
 .alert.has-left-border.is-secondary {
   --tw-border-opacity: 1;
-  border-color: rgb(255 135 54 / var(--tw-border-opacity));
+  border-color: rgb(5 127 128 / var(--tw-border-opacity));
 }
 
 .alert.has-left-border.is-tertiary {
@@ -2155,19 +2172,19 @@ table td, table th,
 
 .alert.is-primary .close-button:hover {
   --tw-bg-opacity: 1;
-  background-color: rgb(24 95 192 / var(--tw-bg-opacity));
+  background-color: rgb(44 90 161 / var(--tw-bg-opacity));
 }
 
 .alert.is-secondary .close-button {
   --tw-bg-opacity: 1;
-  background-color: rgb(255 135 54 / var(--tw-bg-opacity));
+  background-color: rgb(5 127 128 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .alert.is-secondary .close-button:hover {
   --tw-bg-opacity: 1;
-  background-color: rgb(255 118 27 / var(--tw-bg-opacity));
+  background-color: rgb(10 99 101 / var(--tw-bg-opacity));
 }
 
 .alert.is-tertiary .close-button {
@@ -2179,7 +2196,7 @@ table td, table th,
 
 .alert.is-tertiary .close-button:hover {
   --tw-bg-opacity: 1;
-  background-color: rgb(93 27 133 / var(--tw-bg-opacity));
+  background-color: rgb(94 47 121 / var(--tw-bg-opacity));
 }
 
 .alert.is-danger .close-button {
@@ -2282,14 +2299,14 @@ table td, table th,
 
 .\!state.is-secondary {
   --tw-bg-opacity: 1;
-  background-color: rgb(255 135 54 / var(--tw-bg-opacity));
+  background-color: rgb(5 127 128 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .state.is-secondary {
   --tw-bg-opacity: 1;
-  background-color: rgb(255 135 54 / var(--tw-bg-opacity));
+  background-color: rgb(5 127 128 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
@@ -2297,13 +2314,13 @@ table td, table th,
 .\!state.is-secondary.semi-transparent {
   --tw-bg-opacity: 0.3;
   --tw-text-opacity: 1;
-  color: rgb(255 135 54 / var(--tw-text-opacity));
+  color: rgb(5 127 128 / var(--tw-text-opacity));
 }
 
 .state.is-secondary.semi-transparent {
   --tw-bg-opacity: 0.3;
   --tw-text-opacity: 1;
-  color: rgb(255 135 54 / var(--tw-text-opacity));
+  color: rgb(5 127 128 / var(--tw-text-opacity));
 }
 
 .\!state.is-tertiary {
@@ -2475,19 +2492,19 @@ table td, table th,
 .\!state.is-secondary-outline {
   border-width: 2px;
   --tw-border-opacity: 1;
-  border-color: rgb(255 135 54 / var(--tw-border-opacity));
+  border-color: rgb(5 127 128 / var(--tw-border-opacity));
   background-color: transparent;
   --tw-text-opacity: 1;
-  color: rgb(255 135 54 / var(--tw-text-opacity));
+  color: rgb(5 127 128 / var(--tw-text-opacity));
 }
 
 .state.is-secondary-outline {
   border-width: 2px;
   --tw-border-opacity: 1;
-  border-color: rgb(255 135 54 / var(--tw-border-opacity));
+  border-color: rgb(5 127 128 / var(--tw-border-opacity));
   background-color: transparent;
   --tw-text-opacity: 1;
-  color: rgb(255 135 54 / var(--tw-text-opacity));
+  color: rgb(5 127 128 / var(--tw-text-opacity));
 }
 
 .\!state.is-tertiary-outline {
@@ -2752,15 +2769,15 @@ table td, table th,
 
 .button.button-primary:hover {
   --tw-border-opacity: 1;
-  border-color: rgb(24 95 192 / var(--tw-border-opacity));
+  border-color: rgb(44 90 161 / var(--tw-border-opacity));
   --tw-bg-opacity: 1;
-  background-color: rgb(24 95 192 / var(--tw-bg-opacity));
+  background-color: rgb(44 90 161 / var(--tw-bg-opacity));
 }
 
 .button.button-primary.semi-transparent {
-  border-color: rgb(138 181 231 / var(--tw-border-opacity));
+  border-color: rgb(157 212 243 / var(--tw-border-opacity));
   --tw-border-opacity: 0.2;
-  background-color: rgb(92 147 216 / var(--tw-bg-opacity));
+  background-color: rgb(77 159 228 / var(--tw-bg-opacity));
   --tw-bg-opacity: 0.2;
   --tw-text-opacity: 1;
   color: rgb(47 112 200 / var(--tw-text-opacity));
@@ -2818,9 +2835,9 @@ table td, table th,
 }
 
 .button.button-primary-flat.semi-transparent {
-  border-color: rgb(138 181 231 / var(--tw-border-opacity));
+  border-color: rgb(157 212 243 / var(--tw-border-opacity));
   --tw-border-opacity: 0.2;
-  background-color: rgb(92 147 216 / var(--tw-bg-opacity));
+  background-color: rgb(77 159 228 / var(--tw-bg-opacity));
   --tw-bg-opacity: 0.2;
   --tw-text-opacity: 1;
   color: rgb(47 112 200 / var(--tw-text-opacity));
@@ -2875,15 +2892,15 @@ table td, table th,
 
 .button.button-primary-rounded:hover {
   --tw-border-opacity: 1;
-  border-color: rgb(24 95 192 / var(--tw-border-opacity));
+  border-color: rgb(44 90 161 / var(--tw-border-opacity));
   --tw-bg-opacity: 1;
-  background-color: rgb(24 95 192 / var(--tw-bg-opacity));
+  background-color: rgb(44 90 161 / var(--tw-bg-opacity));
 }
 
 .button.button-primary-rounded.semi-transparent {
-  border-color: rgb(138 181 231 / var(--tw-border-opacity));
+  border-color: rgb(157 212 243 / var(--tw-border-opacity));
   --tw-border-opacity: 0.2;
-  background-color: rgb(92 147 216 / var(--tw-bg-opacity));
+  background-color: rgb(77 159 228 / var(--tw-bg-opacity));
   --tw-bg-opacity: 0.2;
   --tw-text-opacity: 1;
   color: rgb(47 112 200 / var(--tw-text-opacity));
@@ -2930,27 +2947,27 @@ table td, table th,
 
 .button.button-secondary {
   --tw-border-opacity: 1;
-  border-color: rgb(255 135 54 / var(--tw-border-opacity));
+  border-color: rgb(5 127 128 / var(--tw-border-opacity));
   --tw-bg-opacity: 1;
-  background-color: rgb(255 135 54 / var(--tw-bg-opacity));
+  background-color: rgb(5 127 128 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .button.button-secondary:hover {
   --tw-border-opacity: 1;
-  border-color: rgb(255 118 27 / var(--tw-border-opacity));
+  border-color: rgb(10 99 101 / var(--tw-border-opacity));
   --tw-bg-opacity: 1;
-  background-color: rgb(255 118 27 / var(--tw-bg-opacity));
+  background-color: rgb(10 99 101 / var(--tw-bg-opacity));
 }
 
 .button.button-secondary.semi-transparent {
-  border-color: rgb(255 200 163 / var(--tw-border-opacity));
+  border-color: rgb(81 247 236 / var(--tw-border-opacity));
   --tw-border-opacity: 0.2;
-  background-color: rgb(255 167 109 / var(--tw-bg-opacity));
+  background-color: rgb(4 200 195 / var(--tw-bg-opacity));
   --tw-bg-opacity: 0.2;
   --tw-text-opacity: 1;
-  color: rgb(255 135 54 / var(--tw-text-opacity));
+  color: rgb(5 127 128 / var(--tw-text-opacity));
 }
 
 .button.button-secondary.semi-transparent:hover {
@@ -2962,29 +2979,29 @@ table td, table th,
   border-color: transparent;
   background-color: transparent;
   --tw-text-opacity: 1;
-  color: rgb(255 135 54 / var(--tw-text-opacity));
+  color: rgb(5 127 128 / var(--tw-text-opacity));
 }
 
 .button.button-secondary.link:hover {
   --tw-border-opacity: 1;
-  border-color: rgb(255 135 54 / var(--tw-border-opacity));
+  border-color: rgb(5 127 128 / var(--tw-border-opacity));
   --tw-bg-opacity: 1;
-  background-color: rgb(255 135 54 / var(--tw-bg-opacity));
+  background-color: rgb(5 127 128 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .button.button-secondary-outline {
   --tw-border-opacity: 1;
-  border-color: rgb(255 135 54 / var(--tw-border-opacity));
+  border-color: rgb(5 127 128 / var(--tw-border-opacity));
   background-color: transparent;
   --tw-text-opacity: 1;
-  color: rgb(255 135 54 / var(--tw-text-opacity));
+  color: rgb(5 127 128 / var(--tw-text-opacity));
 }
 
 .button.button-secondary-outline:hover {
   --tw-bg-opacity: 1;
-  background-color: rgb(255 135 54 / var(--tw-bg-opacity));
+  background-color: rgb(5 127 128 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
@@ -2992,27 +3009,27 @@ table td, table th,
 .button.button-secondary-flat {
   border-radius: 0px;
   --tw-border-opacity: 1;
-  border-color: rgb(255 135 54 / var(--tw-border-opacity));
+  border-color: rgb(5 127 128 / var(--tw-border-opacity));
   --tw-bg-opacity: 1;
-  background-color: rgb(255 135 54 / var(--tw-bg-opacity));
+  background-color: rgb(5 127 128 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .button.button-secondary-flat:hover {
   --tw-border-opacity: 1;
-  border-color: rgb(255 118 27 / var(--tw-border-opacity));
+  border-color: rgb(10 99 101 / var(--tw-border-opacity));
   --tw-bg-opacity: 1;
-  background-color: rgb(255 118 27 / var(--tw-bg-opacity));
+  background-color: rgb(10 99 101 / var(--tw-bg-opacity));
 }
 
 .button.button-secondary-flat.semi-transparent {
-  border-color: rgb(255 200 163 / var(--tw-border-opacity));
+  border-color: rgb(81 247 236 / var(--tw-border-opacity));
   --tw-border-opacity: 0.2;
-  background-color: rgb(255 167 109 / var(--tw-bg-opacity));
+  background-color: rgb(4 200 195 / var(--tw-bg-opacity));
   --tw-bg-opacity: 0.2;
   --tw-text-opacity: 1;
-  color: rgb(255 135 54 / var(--tw-text-opacity));
+  color: rgb(5 127 128 / var(--tw-text-opacity));
 }
 
 .button.button-secondary-flat.semi-transparent:hover {
@@ -3024,14 +3041,14 @@ table td, table th,
   border-color: transparent;
   background-color: transparent;
   --tw-text-opacity: 1;
-  color: rgb(255 135 54 / var(--tw-text-opacity));
+  color: rgb(5 127 128 / var(--tw-text-opacity));
 }
 
 .button.button-secondary-flat.link:hover {
   --tw-border-opacity: 1;
-  border-color: rgb(255 135 54 / var(--tw-border-opacity));
+  border-color: rgb(5 127 128 / var(--tw-border-opacity));
   --tw-bg-opacity: 1;
-  background-color: rgb(255 135 54 / var(--tw-bg-opacity));
+  background-color: rgb(5 127 128 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
@@ -3039,15 +3056,15 @@ table td, table th,
 .button.button-secondary-flat-outline {
   border-radius: 0px;
   --tw-border-opacity: 1;
-  border-color: rgb(255 135 54 / var(--tw-border-opacity));
+  border-color: rgb(5 127 128 / var(--tw-border-opacity));
   background-color: transparent;
   --tw-text-opacity: 1;
-  color: rgb(255 135 54 / var(--tw-text-opacity));
+  color: rgb(5 127 128 / var(--tw-text-opacity));
 }
 
 .button.button-secondary-flat-outline:hover {
   --tw-bg-opacity: 1;
-  background-color: rgb(255 135 54 / var(--tw-bg-opacity));
+  background-color: rgb(5 127 128 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
@@ -3055,27 +3072,27 @@ table td, table th,
 .button.button-secondary-rounded {
   border-radius: 1.5rem;
   --tw-border-opacity: 1;
-  border-color: rgb(255 135 54 / var(--tw-border-opacity));
+  border-color: rgb(5 127 128 / var(--tw-border-opacity));
   --tw-bg-opacity: 1;
-  background-color: rgb(255 135 54 / var(--tw-bg-opacity));
+  background-color: rgb(5 127 128 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .button.button-secondary-rounded:hover {
   --tw-border-opacity: 1;
-  border-color: rgb(255 118 27 / var(--tw-border-opacity));
+  border-color: rgb(10 99 101 / var(--tw-border-opacity));
   --tw-bg-opacity: 1;
-  background-color: rgb(255 118 27 / var(--tw-bg-opacity));
+  background-color: rgb(10 99 101 / var(--tw-bg-opacity));
 }
 
 .button.button-secondary-rounded.semi-transparent {
-  border-color: rgb(255 200 163 / var(--tw-border-opacity));
+  border-color: rgb(81 247 236 / var(--tw-border-opacity));
   --tw-border-opacity: 0.2;
-  background-color: rgb(255 167 109 / var(--tw-bg-opacity));
+  background-color: rgb(4 200 195 / var(--tw-bg-opacity));
   --tw-bg-opacity: 0.2;
   --tw-text-opacity: 1;
-  color: rgb(255 135 54 / var(--tw-text-opacity));
+  color: rgb(5 127 128 / var(--tw-text-opacity));
 }
 
 .button.button-secondary-rounded.semi-transparent:hover {
@@ -3087,14 +3104,14 @@ table td, table th,
   border-color: transparent;
   background-color: transparent;
   --tw-text-opacity: 1;
-  color: rgb(255 135 54 / var(--tw-text-opacity));
+  color: rgb(5 127 128 / var(--tw-text-opacity));
 }
 
 .button.button-secondary-rounded.link:hover {
   --tw-border-opacity: 1;
-  border-color: rgb(255 135 54 / var(--tw-border-opacity));
+  border-color: rgb(5 127 128 / var(--tw-border-opacity));
   --tw-bg-opacity: 1;
-  background-color: rgb(255 135 54 / var(--tw-bg-opacity));
+  background-color: rgb(5 127 128 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
@@ -3102,17 +3119,17 @@ table td, table th,
 .button.button-secondary-rounded-outline {
   border-radius: 1.5rem;
   --tw-border-opacity: 1;
-  border-color: rgb(255 135 54 / var(--tw-border-opacity));
+  border-color: rgb(5 127 128 / var(--tw-border-opacity));
   background-color: transparent;
   --tw-text-opacity: 1;
-  color: rgb(255 135 54 / var(--tw-text-opacity));
+  color: rgb(5 127 128 / var(--tw-text-opacity));
 }
 
 .button.button-secondary-rounded-outline:hover {
   --tw-border-opacity: 1;
-  border-color: rgb(255 135 54 / var(--tw-border-opacity));
+  border-color: rgb(5 127 128 / var(--tw-border-opacity));
   --tw-bg-opacity: 1;
-  background-color: rgb(255 135 54 / var(--tw-bg-opacity));
+  background-color: rgb(5 127 128 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
@@ -3128,15 +3145,15 @@ table td, table th,
 
 .button.button-tertiary:hover {
   --tw-border-opacity: 1;
-  border-color: rgb(93 27 133 / var(--tw-border-opacity));
+  border-color: rgb(94 47 121 / var(--tw-border-opacity));
   --tw-bg-opacity: 1;
-  background-color: rgb(93 27 133 / var(--tw-bg-opacity));
+  background-color: rgb(94 47 121 / var(--tw-bg-opacity));
 }
 
 .button.button-tertiary.semi-transparent {
-  border-color: rgb(191 164 209 / var(--tw-border-opacity));
+  border-color: rgb(215 186 237 / var(--tw-border-opacity));
   --tw-border-opacity: 0.2;
-  background-color: rgb(152 109 178 / var(--tw-bg-opacity));
+  background-color: rgb(162 101 208 / var(--tw-bg-opacity));
   --tw-bg-opacity: 0.2;
   --tw-text-opacity: 1;
   color: rgb(112 55 148 / var(--tw-text-opacity));
@@ -3190,15 +3207,15 @@ table td, table th,
 
 .button.button-tertiary-flat:hover {
   --tw-border-opacity: 1;
-  border-color: rgb(93 27 133 / var(--tw-border-opacity));
+  border-color: rgb(94 47 121 / var(--tw-border-opacity));
   --tw-bg-opacity: 1;
-  background-color: rgb(93 27 133 / var(--tw-bg-opacity));
+  background-color: rgb(94 47 121 / var(--tw-bg-opacity));
 }
 
 .button.button-tertiary-flat.semi-transparent {
-  border-color: rgb(191 164 209 / var(--tw-border-opacity));
+  border-color: rgb(215 186 237 / var(--tw-border-opacity));
   --tw-border-opacity: 0.2;
-  background-color: rgb(152 109 178 / var(--tw-bg-opacity));
+  background-color: rgb(162 101 208 / var(--tw-bg-opacity));
   --tw-bg-opacity: 0.2;
   --tw-text-opacity: 1;
   color: rgb(112 55 148 / var(--tw-text-opacity));
@@ -3253,15 +3270,15 @@ table td, table th,
 
 .button.button-tertiary-rounded:hover {
   --tw-border-opacity: 1;
-  border-color: rgb(93 27 133 / var(--tw-border-opacity));
+  border-color: rgb(94 47 121 / var(--tw-border-opacity));
   --tw-bg-opacity: 1;
-  background-color: rgb(93 27 133 / var(--tw-bg-opacity));
+  background-color: rgb(94 47 121 / var(--tw-bg-opacity));
 }
 
 .button.button-tertiary-rounded.semi-transparent {
-  border-color: rgb(191 164 209 / var(--tw-border-opacity));
+  border-color: rgb(215 186 237 / var(--tw-border-opacity));
   --tw-border-opacity: 0.2;
-  background-color: rgb(152 109 178 / var(--tw-bg-opacity));
+  background-color: rgb(162 101 208 / var(--tw-bg-opacity));
   --tw-bg-opacity: 0.2;
   --tw-text-opacity: 1;
   color: rgb(112 55 148 / var(--tw-text-opacity));
@@ -4143,32 +4160,32 @@ table td, table th,
 
 .link.is-primary {
   --tw-text-opacity: 1;
-  color: rgb(115 164 223 / var(--tw-text-opacity));
+  color: rgb(111 187 235 / var(--tw-text-opacity));
 }
 
 .link.is-primary:hover {
   --tw-text-opacity: 1;
-  color: rgb(92 147 216 / var(--tw-text-opacity));
+  color: rgb(77 159 228 / var(--tw-text-opacity));
 }
 
 .link.is-secondary {
   --tw-text-opacity: 1;
-  color: rgb(255 184 136 / var(--tw-text-opacity));
+  color: rgb(29 228 221 / var(--tw-text-opacity));
 }
 
 .link.is-secondary:hover {
   --tw-text-opacity: 1;
-  color: rgb(255 167 109 / var(--tw-text-opacity));
+  color: rgb(4 200 195 / var(--tw-text-opacity));
 }
 
 .link.is-tertiary {
   --tw-text-opacity: 1;
-  color: rgb(171 137 194 / var(--tw-text-opacity));
+  color: rgb(191 145 225 / var(--tw-text-opacity));
 }
 
 .link.is-tertiary:hover {
   --tw-text-opacity: 1;
-  color: rgb(152 109 178 / var(--tw-text-opacity));
+  color: rgb(162 101 208 / var(--tw-text-opacity));
 }
 
 .link.is-info {
@@ -4425,7 +4442,7 @@ table td, table th,
 .card.card-user .card-head h5 {
   font-weight: 600;
   --tw-text-opacity: 1;
-  color: rgb(1 78 184 / var(--tw-text-opacity));
+  color: rgb(40 77 128 / var(--tw-text-opacity));
 }
 
 .card.card-user .card-head p {
@@ -4511,10 +4528,12 @@ table td, table th,
   width: 14rem;
   border-bottom-left-radius: 9999px;
   background-image: linear-gradient(to top right, var(--tw-gradient-stops));
-  --tw-gradient-from: #FFD8BF;
-  --tw-gradient-to: rgb(255 216 191 / 0);
+  --tw-gradient-from: #90fff3 var(--tw-gradient-from-position);
+  --tw-gradient-from-position:  ;
+  --tw-gradient-to: rgb(144 255 243 / 0)  var(--tw-gradient-from-position);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
-  --tw-gradient-to: #FF8736;
+  --tw-gradient-to: #057f80 var(--tw-gradient-to-position);
+  --tw-gradient-to-position:  ;
   --tw-content: "";
   content: var(--tw-content);
 }
@@ -4561,10 +4580,12 @@ table td, table th,
   display: block;
   height: 7.25rem;
   background-image: linear-gradient(to top, var(--tw-gradient-stops));
-  --tw-gradient-from: #5C93D8;
-  --tw-gradient-to: rgb(92 147 216 / 0);
+  --tw-gradient-from: #4d9fe4 var(--tw-gradient-from-position);
+  --tw-gradient-from-position:  ;
+  --tw-gradient-to: rgb(77 159 228 / 0)  var(--tw-gradient-from-position);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
-  --tw-gradient-to: #185FC0;
+  --tw-gradient-to: #2c5aa1 var(--tw-gradient-to-position);
+  --tw-gradient-to-position:  ;
   --tw-content: "";
   content: var(--tw-content);
 }
@@ -4647,10 +4668,7 @@ table td, table th,
 
 .card.card-hover .card-image img {
   position: absolute;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
+  inset: 0px;
   height: 66.666667%;
   width: 100%;
   -o-object-fit: cover;
@@ -4767,7 +4785,7 @@ table td, table th,
   z-index: 1;
   border-top-left-radius: 0.25rem;
   --tw-bg-opacity: 1;
-  background-color: rgb(92 147 216 / var(--tw-bg-opacity));
+  background-color: rgb(77 159 228 / var(--tw-bg-opacity));
   padding-left: 1rem;
   padding-right: 1rem;
   padding-top: 0.5rem;
@@ -4810,7 +4828,7 @@ table td, table th,
   line-height: 1.75rem;
   font-weight: 700;
   --tw-text-opacity: 1;
-  color: rgb(69 130 208 / var(--tw-text-opacity));
+  color: rgb(56 132 216 / var(--tw-text-opacity));
 }
 
 .card.card-product .hover-buttons {
@@ -4856,12 +4874,12 @@ table td, table th,
 
 .card.card-product .hover-buttons .add-to-bag:hover {
   --tw-bg-opacity: 1;
-  background-color: rgb(92 147 216 / var(--tw-bg-opacity));
+  background-color: rgb(77 159 228 / var(--tw-bg-opacity));
 }
 
 .card.card-product .hover-buttons .see-details:hover {
   --tw-bg-opacity: 1;
-  background-color: rgb(255 167 109 / var(--tw-bg-opacity));
+  background-color: rgb(4 200 195 / var(--tw-bg-opacity));
 }
 
 .card.card-product .hover-buttons .like:hover {
@@ -4907,7 +4925,7 @@ table td, table th,
 
 .card.card-product.clean-card .card-content .card-title:has(a):hover {
   --tw-text-opacity: 1;
-  color: rgb(69 130 208 / var(--tw-text-opacity));
+  color: rgb(56 132 216 / var(--tw-text-opacity));
 }
 
 .card.card-product.clean-card .card-content p {
@@ -4989,7 +5007,7 @@ table td, table th,
   --tw-scale-y: 1.25;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   --tw-bg-opacity: 1;
-  background-color: rgb(255 135 54 / var(--tw-bg-opacity));
+  background-color: rgb(5 127 128 / var(--tw-bg-opacity));
 }
 
 .btn-slide {
@@ -5173,7 +5191,7 @@ table td, table th,
 
 .dropdown .dropdown-wrap .dropdown-text:hover, .dropdown .dropdown-wrap .dropdown-text:focus, .dropdown .dropdown-wrap .dropdown-text:focus-within {
   --tw-text-opacity: 1;
-  color: rgb(255 151 82 / var(--tw-text-opacity));
+  color: rgb(0 168 168 / var(--tw-text-opacity));
 }
 
 .dropdown .dropdown-wrap .dropdown-wrap-icon {
@@ -5231,7 +5249,7 @@ table td, table th,
 
 .dropdown .dropdown-content .dropdown-item:hover {
   --tw-bg-opacity: 1;
-  background-color: rgb(92 147 216 / var(--tw-bg-opacity));
+  background-color: rgb(77 159 228 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
@@ -5436,10 +5454,7 @@ table td, table th,
 
 .backdrop {
   position: absolute;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
+  inset: 0px;
   z-index: -1;
   display: flex;
   align-items: flex-start;
@@ -5457,10 +5472,7 @@ table td, table th,
 
 .modal-wrap {
   position: fixed;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
+  inset: 0px;
   z-index: -1;
   display: flex;
   height: 100vh;
@@ -5906,7 +5918,7 @@ table td, table th,
 
 .progress.is-primary {
   --tw-bg-opacity: 1;
-  background-color: rgb(183 216 247 / var(--tw-bg-opacity));
+  background-color: rgb(222 239 251 / var(--tw-bg-opacity));
 }
 
 .progress.is-primary .inner-progress {
@@ -5916,7 +5928,7 @@ table td, table th,
 
 .progress.is-primary::-webkit-progress-bar {
   --tw-bg-opacity: 1;
-  background-color: rgb(183 216 247 / var(--tw-bg-opacity));
+  background-color: rgb(222 239 251 / var(--tw-bg-opacity));
 }
 
 .progress.is-primary::-webkit-progress-value {
@@ -5926,27 +5938,27 @@ table td, table th,
 
 .progress.is-secondary {
   --tw-bg-opacity: 1;
-  background-color: rgb(255 233 218 / var(--tw-bg-opacity));
+  background-color: rgb(199 255 249 / var(--tw-bg-opacity));
 }
 
 .progress.is-secondary .inner-progress {
   --tw-bg-opacity: 1;
-  background-color: rgb(255 135 54 / var(--tw-bg-opacity));
+  background-color: rgb(5 127 128 / var(--tw-bg-opacity));
 }
 
 .progress.is-secondary::-webkit-progress-bar {
   --tw-bg-opacity: 1;
-  background-color: rgb(255 233 218 / var(--tw-bg-opacity));
+  background-color: rgb(199 255 249 / var(--tw-bg-opacity));
 }
 
 .progress.is-secondary::-webkit-progress-value {
   --tw-bg-opacity: 1;
-  background-color: rgb(255 135 54 / var(--tw-bg-opacity));
+  background-color: rgb(5 127 128 / var(--tw-bg-opacity));
 }
 
 .progress.is-tertiary {
   --tw-bg-opacity: 1;
-  background-color: rgb(230 219 239 / var(--tw-bg-opacity));
+  background-color: rgb(244 236 251 / var(--tw-bg-opacity));
 }
 
 .progress.is-tertiary .inner-progress {
@@ -5956,12 +5968,12 @@ table td, table th,
 
 .progress.is-tertiary::-webkit-progress-bar {
   --tw-bg-opacity: 1;
-  background-color: rgb(230 219 239 / var(--tw-bg-opacity));
+  background-color: rgb(244 236 251 / var(--tw-bg-opacity));
 }
 
 .progress.is-tertiary::-webkit-progress-value {
   --tw-bg-opacity: 1;
-  background-color: rgb(132 82 163 / var(--tw-bg-opacity));
+  background-color: rgb(134 70 179 / var(--tw-bg-opacity));
 }
 
 .progress.is-danger {
@@ -6127,9 +6139,9 @@ table td, table th,
 }
 
 .tabs-wrapper.is-semi-transparent .tab-link.is-active, .tabs-wrapper.is-semi-transparent .tab-link:hover {
-  background-color: rgb(138 181 231 / 0.4);
+  background-color: rgb(157 212 243 / 0.4);
   --tw-text-opacity: 1;
-  color: rgb(24 95 192 / var(--tw-text-opacity));
+  color: rgb(44 90 161 / var(--tw-text-opacity));
 }
 
 .tabs-wrapper.is-rounded .tabs-lists {
@@ -6162,9 +6174,62 @@ table td, table th,
 }
 
 .tabs-wrapper.is-rounded .tab-link.is-active, .tabs-wrapper.is-rounded .tab-link:hover {
-  background-color: rgb(138 181 231 / 0.4);
+  background-color: rgb(157 212 243 / 0.4);
   --tw-text-opacity: 1;
-  color: rgb(24 95 192 / var(--tw-text-opacity));
+  color: rgb(44 90 161 / var(--tw-text-opacity));
+}
+
+.tabs-wrapper.clean-underline .tabs-lists {
+  margin-bottom: 0px;
+}
+
+@media (min-width: 768px) {
+  .tabs-wrapper.clean-underline .tabs-lists {
+    border-bottom-width: 4px;
+  }
+}
+
+.tabs-wrapper.clean-underline .tabs-lists .tab-link {
+  position: relative;
+  background-color: transparent;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 500;
+  transition-property: all;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.tabs-wrapper.clean-underline .tabs-lists .tab-link::after {
+  position: absolute;
+  bottom: -0.25rem;
+  left: 0px;
+  right: 0px;
+  height: 0.25rem;
+  width: 100%;
+  border-radius: 0.375rem;
+  background-color: transparent;
+  transition-property: all;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  --tw-content: "";
+  content: var(--tw-content);
+}
+
+.tabs-wrapper.clean-underline .tabs-lists .tab-link.is-active, .tabs-wrapper.clean-underline .tabs-lists .tab-link:hover {
+  --tw-text-opacity: 1;
+  color: rgb(47 112 200 / var(--tw-text-opacity));
+}
+
+.tabs-wrapper.clean-underline .tabs-lists .tab-link.is-active::after, .tabs-wrapper.clean-underline .tabs-lists .tab-link:hover::after {
+  --tw-bg-opacity: 1;
+  background-color: rgb(47 112 200 / var(--tw-bg-opacity));
+}
+
+.tabs-wrapper.clean-underline .tabs-content .tab-content {
+  border-radius: 0px;
+  background-color: transparent;
+  padding: 1.25rem;
 }
 
 .tabs-wrapper .tabs-content .tab-content {
