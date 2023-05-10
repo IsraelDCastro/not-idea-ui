@@ -1,5 +1,5 @@
 /*!
- * Not Idea UI 2.1.19 (https://not-idea-ui.netlify.app/)
+ * Not Idea UI 2.1.21 (https://not-idea-ui.netlify.app/)
 */
 @tailwind components;
 @layer components {
@@ -946,43 +946,61 @@
     @apply bg-primary-700 text-white;
   }
   .state.is-primary.semi-transparent {
-    @apply bg-opacity-30 text-primary-700;
+    @apply bg-opacity-20 text-primary-700;
   }
   .state.is-secondary {
     @apply bg-secondary-700 text-white;
   }
   .state.is-secondary.semi-transparent {
-    @apply bg-opacity-30 text-secondary-700;
+    @apply bg-opacity-20 text-secondary-700;
   }
   .state.is-tertiary {
     @apply bg-tertiary-700 text-white;
   }
   .state.is-tertiary.semi-transparent {
-    @apply bg-opacity-30 text-tertiary-700;
+    @apply bg-opacity-20 text-tertiary-700;
   }
   .state.is-danger {
     @apply bg-red-500 text-white;
   }
   .state.is-danger.semi-transparent {
-    @apply bg-opacity-30 text-red-600;
+    @apply bg-opacity-20 text-red-600;
   }
   .state.is-warning {
     @apply bg-yellow-400 text-white;
   }
   .state.is-warning.semi-transparent {
-    @apply bg-opacity-30 text-yellow-600;
+    @apply bg-opacity-20 text-yellow-600;
   }
   .state.is-success {
     @apply bg-green-500 text-white;
   }
   .state.is-success.semi-transparent {
-    @apply bg-opacity-30 text-green-600;
+    @apply bg-opacity-20 text-green-600;
   }
   .state.is-info {
     @apply bg-sky-500 text-white;
   }
   .state.is-info.semi-transparent {
-    @apply bg-opacity-30 text-sky-600;
+    @apply bg-opacity-20 text-sky-600;
+  }
+  .state.is-white {
+    @apply bg-white text-gray-700;
+  }
+  .state.is-white.semi-transparent {
+    @apply bg-opacity-20;
+  }
+  .state.is-gray {
+    @apply bg-gray-300 text-gray-700;
+  }
+  .state.is-gray.semi-transparent {
+    @apply bg-opacity-20;
+  }
+  .state.is-dark {
+    @apply bg-black text-white;
+  }
+  .state.is-dark.semi-transparent {
+    @apply bg-opacity-20 text-gray-700;
   }
   .state.is-outlined {
     @apply bg-transparent text-gray-600 border-2 border-gray-600;
@@ -1008,6 +1026,15 @@
   .state.is-info-outline {
     @apply text-sky-500 border-2 border-sky-500 bg-transparent;
   }
+  .state.is-white-outline {
+    @apply text-white border-2 border-white bg-transparent;
+  }
+  .state.is-gray-outline {
+    @apply text-gray-400 border-2 border-gray-400 bg-transparent;
+  }
+  .state.is-dark-outline {
+    @apply text-black border-2 border-black bg-transparent;
+  }
   .state.has-icon {
     @apply inline-flex flex-wrap items-center;
   }
@@ -1022,6 +1049,12 @@
   }
   .state.is-circle {
     @apply rounded-full;
+  }
+  .state.is-small {
+    @apply text-sm  px-2;
+  }
+  .state.is-large {
+    @apply text-lg  px-6 py-2;
   }
   .breadcrumb {
     @apply w-fit;
@@ -1644,10 +1677,10 @@
   .link.is-gray:hover {
     @apply text-gray-600;
   }
-  .link.is-darked {
+  .link.is-dark {
     @apply text-gray-700;
   }
-  .link.is-darked:hover {
+  .link.is-dark:hover {
     @apply text-gray-900;
   }
   .card {
@@ -2139,7 +2172,7 @@
     @apply justify-end;
   }
   .modal-wrap:is(.modal-right) .modal {
-    @apply flex flex-col relative -right-full m-0 h-full w-10/12 sm:w-8/12 md:w-6/12 lg:w-5/12 duration-400;
+    @apply flex flex-col relative -right-full m-0 w-10/12 sm:w-8/12 md:w-6/12 lg:w-5/12 duration-400;
   }
   .modal-wrap:is(.modal-right) .modal .modal-footer {
     @apply mt-auto;
@@ -2175,7 +2208,7 @@
     @apply absolute right-2 top-2 z-10 rounded-full p-1 text-gray-600 hover:text-white hover:bg-red-500 inline-block transition-all duration-300 ease-in-out;
   }
   .modal {
-    @apply my-10 w-10/12 sm:w-8/12 md:w-6/12 lg:w-4/12 relative z-20 bg-white rounded p-8 opacity-0 transition-all duration-200 ease-in-out;
+    @apply max-h-[95%] overflow-y-auto my-10 w-10/12 sm:w-8/12 md:w-6/12 lg:w-4/12 relative z-20 bg-white rounded p-8 opacity-0 transition-all duration-200 ease-in-out;
   }
   .modal .modal-head {
     @apply flex flex-wrap items-center justify-between mb-4 pb-4 border-b border-gray-100;
@@ -2418,5 +2451,125 @@
     .tabs-wrapper .tabs-lists {
       @apply overflow-auto;
     }
+  }
+  .tooltip {
+    @apply text-gray-600 border-0 inline-block relative cursor-help;
+  }
+  .tooltip::after {
+    @apply max-w-[100vw] w-max content-[attr(data-tooltip)] transition-all duration-200 ease-in-out text-center absolute -z-1 px-2 py-1 shadow-sm bg-gray-50 rounded-md opacity-0;
+  }
+  .tooltip.to-top::after {
+    @apply left-0 bottom-[110%] md:-translate-x-1/2 md:left-1/2;
+  }
+  .tooltip.to-right::after {
+    @apply -translate-y-1/2 top-1/2 left-[110%];
+  }
+  .tooltip.to-bottom::after {
+    @apply top-[110%] -translate-x-1/2 left-1/2;
+  }
+  .tooltip.to-left::after {
+    @apply -translate-y-1/2 top-1/2 right-[110%];
+  }
+  .tooltip:hover::after {
+    @apply opacity-100 z-10;
+  }
+  .tooltip.is-filled {
+    @apply px-4 py-2 rounded bg-gray-200;
+  }
+  .tooltip.is-filled.is-rounded {
+    @apply rounded-full;
+  }
+  .tooltip.is-filled.is-flat {
+    @apply rounded-none;
+  }
+  .tooltip.is-filled.is-primary {
+    @apply bg-primary-100 text-primary-700;
+  }
+  .tooltip.is-filled.is-secondary {
+    @apply bg-secondary-100 text-secondary-700;
+  }
+  .tooltip.is-filled.is-tertiary {
+    @apply bg-tertiary-100 text-tertiary-700;
+  }
+  .tooltip.is-filled.is-info {
+    @apply bg-blue-100 text-blue-500;
+  }
+  .tooltip.is-filled.is-danger {
+    @apply bg-red-100 text-red-500;
+  }
+  .tooltip.is-filled.is-warning {
+    @apply bg-yellow-100 text-yellow-500;
+  }
+  .tooltip.is-filled.is-success {
+    @apply bg-green-100 text-green-500;
+  }
+  .tooltip.is-filled.is-white {
+    @apply bg-gray-50 text-gray-700;
+  }
+  .tooltip.is-filled.is-gray {
+    @apply bg-gray-100 text-gray-500;
+  }
+  .tooltip.is-filled.is-dark {
+    @apply bg-gray-900 text-gray-100;
+  }
+  .tooltip.is-primary {
+    @apply text-primary-700;
+  }
+  .tooltip.is-primary::after {
+    @apply bg-primary-50 text-primary-700 shadow-primary-100;
+  }
+  .tooltip.is-secondary {
+    @apply text-secondary-700;
+  }
+  .tooltip.is-secondary::after {
+    @apply bg-secondary-50 text-secondary-700 shadow-secondary-100;
+  }
+  .tooltip.is-tertiary {
+    @apply text-tertiary-700;
+  }
+  .tooltip.is-tertiary::after {
+    @apply bg-tertiary-50 text-tertiary-700 shadow-tertiary-100;
+  }
+  .tooltip.is-info {
+    @apply text-blue-500;
+  }
+  .tooltip.is-info::after {
+    @apply bg-blue-50 text-blue-700 shadow-blue-100;
+  }
+  .tooltip.is-danger {
+    @apply text-red-500;
+  }
+  .tooltip.is-danger::after {
+    @apply bg-red-50 text-red-700 shadow-red-100;
+  }
+  .tooltip.is-warning {
+    @apply text-yellow-500;
+  }
+  .tooltip.is-warning::after {
+    @apply bg-yellow-50 text-yellow-700 shadow-yellow-100;
+  }
+  .tooltip.is-success {
+    @apply text-green-500;
+  }
+  .tooltip.is-success::after {
+    @apply bg-green-50 text-green-700 shadow-green-100;
+  }
+  .tooltip.is-white {
+    @apply text-white;
+  }
+  .tooltip.is-white::after {
+    @apply bg-gray-50 text-gray-700 shadow-gray-100;
+  }
+  .tooltip.is-gray {
+    @apply text-gray-500;
+  }
+  .tooltip.is-gray::after {
+    @apply bg-gray-50 text-gray-700 shadow-gray-100;
+  }
+  .tooltip.is-dark {
+    @apply text-gray-700;
+  }
+  .tooltip.is-dark::after {
+    @apply bg-gray-100 text-gray-700 shadow-gray-100;
   }
 }

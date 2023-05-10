@@ -1,0 +1,142 @@
+.tooltip {
+  @apply text-gray-600 border-0 inline-block relative cursor-help;
+  &::after {
+    @apply max-w-[100vw] w-max content-[attr(data-tooltip)] transition-all duration-200 ease-in-out text-center absolute -z-1 px-2 py-1 shadow-sm bg-gray-50 rounded-md opacity-0;
+  }
+  &.to-top {
+    &::after {
+      @apply left-0 bottom-[110%] md:-translate-x-1/2 md:left-1/2;
+    }
+  }
+  &.to-right {
+    &::after {
+      @apply -translate-y-1/2 top-1/2 left-[110%];
+    }
+  }
+  &.to-bottom {
+    &::after {
+      @apply top-[110%] -translate-x-1/2 left-1/2;
+    }
+  }
+  &.to-left {
+    &::after {
+      @apply -translate-y-1/2 top-1/2 right-[110%];
+    }
+  }
+  &:hover::after {
+    @apply opacity-100 z-10;
+  }
+
+  &.is-filled {
+    @apply px-4 py-2 rounded bg-gray-200;
+    &.is-rounded {
+      @apply rounded-full;
+    }
+    &.is-flat {
+      @apply rounded-none;
+    }
+    &.is-primary {
+      @apply bg-primary-100 text-primary-700;
+    }
+    &.is-secondary {
+      @apply bg-secondary-100 text-secondary-700;
+    }
+    &.is-tertiary {
+      @apply bg-tertiary-100 text-tertiary-700;
+    }
+    &.is-info {
+      @apply bg-blue-100 text-blue-500;
+    }
+
+    &.is-danger {
+      @apply bg-red-100 text-red-500;
+    }
+
+    &.is-warning {
+      @apply bg-yellow-100 text-yellow-500;
+    }
+
+    &.is-success {
+      @apply bg-green-100 text-green-500;
+    }
+
+    &.is-white {
+      @apply bg-gray-50 text-gray-700;
+    }
+
+    &.is-gray {
+      @apply bg-gray-100 text-gray-500;
+    }
+
+    &.is-dark {
+      @apply bg-gray-900 text-gray-100;
+    }
+  }
+
+  &.is-primary {
+    @apply text-primary-700;
+    &::after {
+      @apply bg-primary-50 text-primary-700 shadow-primary-100; 
+    }
+  }
+  &.is-secondary {
+    @apply text-secondary-700;
+    &::after {
+      @apply bg-secondary-50 text-secondary-700 shadow-secondary-100; 
+    }
+  }
+  &.is-tertiary {
+    @apply text-tertiary-700;
+    &::after {
+      @apply bg-tertiary-50 text-tertiary-700 shadow-tertiary-100; 
+    }
+  }
+  &.is-info {
+    @apply text-blue-500;
+    &::after {
+      @apply bg-blue-50 text-blue-700 shadow-blue-100; 
+    }
+  }
+
+  &.is-danger {
+    @apply text-red-500;
+    &::after {
+      @apply bg-red-50 text-red-700 shadow-red-100; 
+    }
+  }
+
+  &.is-warning {
+    @apply text-yellow-500;
+    &::after {
+      @apply bg-yellow-50 text-yellow-700 shadow-yellow-100; 
+    }
+  }
+
+  &.is-success {
+    @apply text-green-500;
+    &::after {
+      @apply bg-green-50 text-green-700 shadow-green-100; 
+    }
+  }
+
+  &.is-white {
+    @apply text-white;
+    &::after {
+      @apply bg-gray-50 text-gray-700 shadow-gray-100; 
+    }
+  }
+
+  &.is-gray {
+    @apply text-gray-500;
+    &::after {
+      @apply bg-gray-50 text-gray-700 shadow-gray-100; 
+    }
+  }
+
+  &.is-dark {
+    @apply text-gray-700;
+    &::after {
+      @apply bg-gray-100 text-gray-700 shadow-gray-100; 
+    }
+  }
+}

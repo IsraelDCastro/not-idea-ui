@@ -1,5 +1,5 @@
 /*!
- * Not Idea UI 2.1.19 (https://not-idea-ui.netlify.app/)
+ * Not Idea UI 2.1.21 (https://not-idea-ui.netlify.app/)
 */
 
 @tailwind components;
@@ -27,5 +27,6 @@
   @import "components/pagination";
   @import "components/progress";
   @import "components/tab";
+  @import "components/tooltips";
 }
 

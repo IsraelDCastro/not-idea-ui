@@ -13,7 +13,7 @@
   &:is(.modal-right) {
     @apply justify-end;
     .modal {
-      @apply flex flex-col relative -right-full m-0 h-full w-10/12 sm:w-8/12 md:w-6/12 lg:w-5/12 duration-400;
+      @apply flex flex-col relative -right-full m-0 w-10/12 sm:w-8/12 md:w-6/12 lg:w-5/12 duration-400;
       .modal-footer {
         @apply mt-auto;
       }
@@ -56,7 +56,7 @@
 }
 
 .modal {
-  @apply my-10 w-10/12 sm:w-8/12 md:w-6/12 lg:w-4/12 relative z-20 bg-white rounded p-8 opacity-0 transition-all duration-200 ease-in-out;
+  @apply max-h-[95%] overflow-y-auto my-10 w-10/12 sm:w-8/12 md:w-6/12 lg:w-4/12 relative z-20 bg-white rounded p-8 opacity-0 transition-all duration-200 ease-in-out;
   .modal-head {
     .modal-title {
       @apply font-semibold;
