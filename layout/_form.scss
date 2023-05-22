@@ -106,26 +106,29 @@
       input {
         @apply absolute -z-[1] opacity-0;
       }
-      label {
-        @apply relative w-[4.5rem] h-8 m-0 px-2 py-1 bg-gray-100 rounded-2xl transition-all duration-300 ease-in-out;
+      .label {
+        @apply align-middle relative w-[4.5rem] h-8 m-0 px-2 py-1 bg-gray-100 rounded-2xl transition-all duration-300 ease-in-out;
         &::before {
           @apply absolute z-1 left-2 content-[""] block h-6 w-6 bg-gray-400 rounded-full transition-all duration-300 ease-in-out;
         }
       }
-      input:checked + label {
+      .label-text {
+        @apply align-middle cursor-pointer;
+      }
+      input:checked + .label {
         @apply bg-primary-300/40;
         &::before {
           @apply left-10 bg-primary-600;
         }
       }
-      input:disabled + label {
+      input:disabled + .label {
         @apply bg-gray-100/70 cursor-not-allowed;
         &::before {
           @apply bg-gray-400/50 cursor-not-allowed;
         }
       }
       &.is-secondary {
-        input:checked + label {
+        input:checked + .label {
           @apply bg-secondary-300/40;
           &::before {
             @apply bg-secondary-600;
@@ -133,7 +136,7 @@
         }
       }
       &.is-tertiary {
-        input:checked + label {
+        input:checked + .label {
           @apply bg-tertiary-300/40;
           &::before {
             @apply bg-tertiary-600;

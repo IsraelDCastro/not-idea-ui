@@ -1,5 +1,5 @@
 /*!
- * Not Idea UI 2.1.21 (https://not-idea-ui.netlify.app/)
+ * Not Idea UI 2.2.0 (https://not-idea-ui.netlify.app/)
 */
 @tailwind components;
 @layer components {
@@ -174,44 +174,48 @@
   .field .radio.is-toggle input {
     @apply absolute -z-[1] opacity-0;
   }
-  .field .checkbox.is-toggle label,
-  .field .radio.is-toggle label {
-    @apply relative w-[4.5rem] h-8 m-0 px-2 py-1 bg-gray-100 rounded-2xl transition-all duration-300 ease-in-out;
+  .field .checkbox.is-toggle .label,
+  .field .radio.is-toggle .label {
+    @apply align-middle relative w-[4.5rem] h-8 m-0 px-2 py-1 bg-gray-100 rounded-2xl transition-all duration-300 ease-in-out;
   }
-  .field .checkbox.is-toggle label::before,
-  .field .radio.is-toggle label::before {
+  .field .checkbox.is-toggle .label::before,
+  .field .radio.is-toggle .label::before {
     @apply absolute z-1 left-2 content-[""] block h-6 w-6 bg-gray-400 rounded-full transition-all duration-300 ease-in-out;
   }
-  .field .checkbox.is-toggle input:checked + label,
-  .field .radio.is-toggle input:checked + label {
+  .field .checkbox.is-toggle .label-text,
+  .field .radio.is-toggle .label-text {
+    @apply align-middle cursor-pointer;
+  }
+  .field .checkbox.is-toggle input:checked + .label,
+  .field .radio.is-toggle input:checked + .label {
     @apply bg-primary-300/40;
   }
-  .field .checkbox.is-toggle input:checked + label::before,
-  .field .radio.is-toggle input:checked + label::before {
+  .field .checkbox.is-toggle input:checked + .label::before,
+  .field .radio.is-toggle input:checked + .label::before {
     @apply left-10 bg-primary-600;
   }
-  .field .checkbox.is-toggle input:disabled + label,
-  .field .radio.is-toggle input:disabled + label {
+  .field .checkbox.is-toggle input:disabled + .label,
+  .field .radio.is-toggle input:disabled + .label {
     @apply bg-gray-100/70 cursor-not-allowed;
   }
-  .field .checkbox.is-toggle input:disabled + label::before,
-  .field .radio.is-toggle input:disabled + label::before {
+  .field .checkbox.is-toggle input:disabled + .label::before,
+  .field .radio.is-toggle input:disabled + .label::before {
     @apply bg-gray-400/50 cursor-not-allowed;
   }
-  .field .checkbox.is-toggle.is-secondary input:checked + label,
-  .field .radio.is-toggle.is-secondary input:checked + label {
+  .field .checkbox.is-toggle.is-secondary input:checked + .label,
+  .field .radio.is-toggle.is-secondary input:checked + .label {
     @apply bg-secondary-300/40;
   }
-  .field .checkbox.is-toggle.is-secondary input:checked + label::before,
-  .field .radio.is-toggle.is-secondary input:checked + label::before {
+  .field .checkbox.is-toggle.is-secondary input:checked + .label::before,
+  .field .radio.is-toggle.is-secondary input:checked + .label::before {
     @apply bg-secondary-600;
   }
-  .field .checkbox.is-toggle.is-tertiary input:checked + label,
-  .field .radio.is-toggle.is-tertiary input:checked + label {
+  .field .checkbox.is-toggle.is-tertiary input:checked + .label,
+  .field .radio.is-toggle.is-tertiary input:checked + .label {
     @apply bg-tertiary-300/40;
   }
-  .field .checkbox.is-toggle.is-tertiary input:checked + label::before,
-  .field .radio.is-toggle.is-tertiary input:checked + label::before {
+  .field .checkbox.is-toggle.is-tertiary input:checked + .label::before,
+  .field .radio.is-toggle.is-tertiary input:checked + .label::before {
     @apply bg-tertiary-600;
   }
   .field .error-message,
@@ -2156,6 +2160,30 @@
   .list.ordered ol {
     @apply list-decimal pl-6;
   }
+  .list.list-separation {
+    @apply divide-y divide-gray-300 space-y-2;
+  }
+  .list.list-separation li {
+    @apply pt-2;
+  }
+  .list.list-bg {
+    @apply space-y-1 list-none;
+  }
+  .list.list-bg li {
+    @apply bg-gray-100 rounded px-4 py-1;
+  }
+  .list.todo-list {
+    @apply space-y-1 list-none;
+  }
+  .list.todo-list li {
+    @apply px-2 py-1 flex items-center gap-4 flex-wrap bg-gray-50;
+  }
+  .list.todo-list li .field {
+    @apply mb-0;
+  }
+  .list.todo-list li.completed > * {
+    @apply text-gray-400 line-through;
+  }
   .backdrop {
     @apply -z-1 opacity-0 overflow-y-auto flex items-start justify-center absolute inset-0 bg-black/20 backdrop-filter backdrop-blur-[2px] transition-all duration-200 ease-in-out;
   }
@@ -2470,7 +2498,7 @@
   .tooltip.to-left::after {
     @apply -translate-y-1/2 top-1/2 right-[110%];
   }
-  .tooltip:hover::after {
+  .tooltip:hover::after, .tooltip:focus::after {
     @apply opacity-100 z-10;
   }
   .tooltip.is-filled {

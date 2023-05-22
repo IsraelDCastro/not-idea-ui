@@ -12,4 +12,30 @@
       @apply list-decimal pl-6;
     }
   }
+  &.list-separation {
+    @apply divide-y divide-gray-300 space-y-2;
+    li {
+      @apply pt-2;
+    }
+  }
+  &.list-bg {
+    @apply space-y-1 list-none;
+    li {
+      @apply bg-gray-100 rounded px-4 py-1;
+    }
+  }
+  &.todo-list {
+    @apply space-y-1 list-none;
+    li {
+      @apply px-2 py-1 flex items-center gap-4 flex-wrap bg-gray-50;
+      .field {
+        @apply mb-0;
+      }
+      &.completed {
+        > * {
+          @apply text-gray-400 line-through;
+        }
+      }
+    }
+  }
 }

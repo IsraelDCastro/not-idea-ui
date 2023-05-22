@@ -1,6 +1,14 @@
 # Not Idea UI Changelog
 
 ---
+### Version 2.2.0
+
+- Add default font-familty to tailwind.config.cjs
+- List: It were added more designs. Also, a todo list design. [View doc](https://not-idea-ui.netlify.app/docs/components/lists)
+- Badges: It were added sizes for badges and more colors. [View doc](https://not-idea-ui.netlify.app/docs/components/badges)
+- Tooltips: You can easily add tooltips to your buttons, cards, or any other element using CSS. Here's how to do it:
+ [View doc](#!)
+
 ### Version 2.1.20
 
 - Tailwind CSS update to the last version, secondary color was changed to `Persian Green`. According to the recommendation of Tailwind CSS, 950 colors were added to primary, secondary, and tertiary.

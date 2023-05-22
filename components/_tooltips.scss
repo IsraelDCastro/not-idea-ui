@@ -23,9 +23,11 @@
       @apply -translate-y-1/2 top-1/2 right-[110%];
     }
   }
-  &:hover::after {
+  &:hover::after,
+  &:focus::after {
     @apply opacity-100 z-10;
   }
+  
 
   &.is-filled {
     @apply px-4 py-2 rounded bg-gray-200;

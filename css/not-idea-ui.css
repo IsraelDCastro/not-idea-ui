@@ -1,5 +1,5 @@
 /*!
- * Not Idea UI 2.1.21 (https://not-idea-ui.netlify.app/)
+ * Not Idea UI 2.2.0 (https://not-idea-ui.netlify.app/)
 */
 
 .container {
@@ -407,8 +407,8 @@
   opacity: 0;
 }
 
-.field .checkbox.is-toggle label,
-  .field .radio.is-toggle label {
+.field .checkbox.is-toggle .label,
+  .field .radio.is-toggle .label {
   position: relative;
   margin: 0px;
   height: 2rem;
@@ -420,13 +420,14 @@
   padding-right: 0.5rem;
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
+  vertical-align: middle;
   transition-property: all;
   transition-duration: 300ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.field .checkbox.is-toggle label::before,
-  .field .radio.is-toggle label::before {
+.field .checkbox.is-toggle .label::before,
+  .field .radio.is-toggle .label::before {
   position: absolute;
   left: 0.5rem;
   z-index: 1;
@@ -443,48 +444,54 @@
   content: var(--tw-content);
 }
 
-.field .checkbox.is-toggle input:checked + label,
-  .field .radio.is-toggle input:checked + label {
+.field .checkbox.is-toggle .label-text,
+  .field .radio.is-toggle .label-text {
+  cursor: pointer;
+  vertical-align: middle;
+}
+
+.field .checkbox.is-toggle input:checked + .label,
+  .field .radio.is-toggle input:checked + .label {
   background-color: rgb(157 212 243 / 0.4);
 }
 
-.field .checkbox.is-toggle input:checked + label::before,
-  .field .radio.is-toggle input:checked + label::before {
+.field .checkbox.is-toggle input:checked + .label::before,
+  .field .radio.is-toggle input:checked + .label::before {
   left: 2.5rem;
   --tw-bg-opacity: 1;
   background-color: rgb(56 132 216 / var(--tw-bg-opacity));
 }
 
-.field .checkbox.is-toggle input:disabled + label,
-  .field .radio.is-toggle input:disabled + label {
+.field .checkbox.is-toggle input:disabled + .label,
+  .field .radio.is-toggle input:disabled + .label {
   cursor: not-allowed;
   background-color: rgb(243 244 246 / 0.7);
 }
 
-.field .checkbox.is-toggle input:disabled + label::before,
-  .field .radio.is-toggle input:disabled + label::before {
+.field .checkbox.is-toggle input:disabled + .label::before,
+  .field .radio.is-toggle input:disabled + .label::before {
   cursor: not-allowed;
   background-color: rgb(156 163 175 / 0.5);
 }
 
-.field .checkbox.is-toggle.is-secondary input:checked + label,
-  .field .radio.is-toggle.is-secondary input:checked + label {
+.field .checkbox.is-toggle.is-secondary input:checked + .label,
+  .field .radio.is-toggle.is-secondary input:checked + .label {
   background-color: rgb(81 247 236 / 0.4);
 }
 
-.field .checkbox.is-toggle.is-secondary input:checked + label::before,
-  .field .radio.is-toggle.is-secondary input:checked + label::before {
+.field .checkbox.is-toggle.is-secondary input:checked + .label::before,
+  .field .radio.is-toggle.is-secondary input:checked + .label::before {
   --tw-bg-opacity: 1;
   background-color: rgb(0 168 168 / var(--tw-bg-opacity));
 }
 
-.field .checkbox.is-toggle.is-tertiary input:checked + label,
-  .field .radio.is-toggle.is-tertiary input:checked + label {
+.field .checkbox.is-toggle.is-tertiary input:checked + .label,
+  .field .radio.is-toggle.is-tertiary input:checked + .label {
   background-color: rgb(215 186 237 / 0.4);
 }
 
-.field .checkbox.is-toggle.is-tertiary input:checked + label::before,
-  .field .radio.is-toggle.is-tertiary input:checked + label::before {
+.field .checkbox.is-toggle.is-tertiary input:checked + .label::before,
+  .field .radio.is-toggle.is-tertiary input:checked + .label::before {
   --tw-bg-opacity: 1;
   background-color: rgb(134 70 179 / var(--tw-bg-opacity));
 }
@@ -5608,6 +5615,74 @@ table td, table th,
   padding-left: 1.5rem;
 }
 
+.list.list-separation > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
+  --tw-divide-y-reverse: 0;
+  border-top-width: calc(1px * calc(1 - var(--tw-divide-y-reverse)));
+  border-bottom-width: calc(1px * var(--tw-divide-y-reverse));
+  --tw-divide-opacity: 1;
+  border-color: rgb(209 213 219 / var(--tw-divide-opacity));
+}
+
+.list.list-separation li {
+  padding-top: 0.5rem;
+}
+
+.list.list-bg {
+  list-style-type: none;
+}
+
+.list.list-bg > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(0.25rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0.25rem * var(--tw-space-y-reverse));
+}
+
+.list.list-bg li {
+  border-radius: 0.25rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(243 244 246 / var(--tw-bg-opacity));
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
+.list.todo-list {
+  list-style-type: none;
+}
+
+.list.todo-list > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(0.25rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0.25rem * var(--tw-space-y-reverse));
+}
+
+.list.todo-list li {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(249 250 251 / var(--tw-bg-opacity));
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
+.list.todo-list li .field {
+  margin-bottom: 0px;
+}
+
+.list.todo-list li.completed > * {
+  --tw-text-opacity: 1;
+  color: rgb(156 163 175 / var(--tw-text-opacity));
+  text-decoration-line: line-through;
+}
+
 .backdrop {
   position: absolute;
   inset: 0px;
@@ -6469,7 +6544,7 @@ table td, table th,
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-.tooltip:hover::after {
+.tooltip:hover::after, .tooltip:focus::after {
   z-index: 10;
   opacity: 1;
 }
