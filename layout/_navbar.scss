@@ -23,7 +23,7 @@
       .submenu {
         @apply bg-slate-100 px-4 divide-y;
         .nav-link {
-          @apply text-base font-medium px-6 py-2;
+          @apply font-medium px-6 py-2 whitespace-normal text-sm md:text-base;
         }
       }
       &:hover {

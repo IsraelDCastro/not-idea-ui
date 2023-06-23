@@ -1,5 +1,5 @@
 /*!
- * Not Idea UI 2.2.0 (https://not-idea-ui.netlify.app/)
+ * Not Idea UI 2.2.1 (https://not-idea-ui.netlify.app/)
 */
 @tailwind components;
 @layer components {
@@ -168,7 +168,7 @@
   }
   .field .checkbox.is-toggle,
   .field .radio.is-toggle {
-    @apply cursor-auto;
+    @apply cursor-auto relative;
   }
   .field .checkbox.is-toggle input,
   .field .radio.is-toggle input {
@@ -328,7 +328,7 @@
     @apply bg-slate-100 px-4 divide-y;
   }
   .navbar > .menu .has-submenu .submenu .nav-link {
-    @apply text-base font-medium px-6 py-2;
+    @apply font-medium px-6 py-2 whitespace-normal text-sm md:text-base;
   }
   .navbar > .menu .has-submenu:hover .submenu {
     @apply z-1 opacity-100;

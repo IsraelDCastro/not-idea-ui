@@ -1,5 +1,5 @@
 /*!
- * Not Idea UI 2.2.0 (https://not-idea-ui.netlify.app/)
+ * Not Idea UI 2.2.1 (https://not-idea-ui.netlify.app/)
 */
 
 .container {
@@ -397,6 +397,7 @@
 
 .field .checkbox.is-toggle,
   .field .radio.is-toggle {
+  position: relative;
   cursor: auto;
 }
 
@@ -786,13 +787,21 @@
 }
 
 .navbar > .menu .has-submenu .submenu .nav-link {
+  white-space: normal;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
-  font-size: 1rem;
-  line-height: 1.5rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
   font-weight: 500;
+}
+
+@media (min-width: 768px) {
+  .navbar > .menu .has-submenu .submenu .nav-link {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
 }
 
 .navbar > .menu .has-submenu:hover .submenu {
