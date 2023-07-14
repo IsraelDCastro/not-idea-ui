@@ -694,5 +694,13 @@
       @apply text-gray-900;
     }
   }
+
+  &.is-small {
+    @apply text-sm;
+  }
+
+  &.is-large {
+    @apply text-xl;
+  }
 }
 

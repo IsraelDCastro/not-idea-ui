@@ -1,5 +1,5 @@
 /*!
- * Not Idea UI 2.2.1 (https://not-idea-ui.netlify.app/)
+ * Not Idea UI 2.2.2 (https://not-idea-ui.netlify.app/)
 */
 @tailwind components;
 @layer components {
@@ -144,6 +144,12 @@
   .field .textarea.is-full-rounded {
     @apply rounded-3xl;
   }
+  .field .textarea.is-small {
+    @apply min-h-[4rem] h-20 max-h-28;
+  }
+  .field .textarea.is-large {
+    @apply min-h-[6rem] h-40 max-h-52;
+  }
   .field .input-file {
     @apply p-2 cursor-pointer;
   }
@@ -264,7 +270,7 @@
     @apply relative;
   }
   .has-button .input-float-button button, .has-button .input-float-button .button {
-    @apply rounded-md absolute right-4 z-1 top-1/2 -translate-y-1/2;
+    @apply absolute right-4 z-1 top-1/2 -translate-y-1/2;
   }
   .has-select .input-select {
     @apply flex;
@@ -1687,6 +1693,12 @@
   .link.is-dark:hover {
     @apply text-gray-900;
   }
+  .link.is-small {
+    @apply text-sm;
+  }
+  .link.is-large {
+    @apply text-xl;
+  }
   .card {
     @apply bg-white shadow rounded overflow-hidden;
   }
@@ -2044,13 +2056,13 @@
     @apply relative bg-white rounded-sm shadow-sm cursor-pointer;
   }
   .dropdown .dropdown-wrap {
-    @apply p-2 inline-block w-full;
+    @apply p-2 inline-block w-full transition-all duration-200 ease-linear hover:bg-gray-50;
   }
   .dropdown .dropdown-wrap .dropdown-text {
-    @apply text-white;
+    @apply flex items-center justify-between w-full transition-all duration-200 ease-linear;
   }
-  .dropdown .dropdown-wrap .dropdown-text:hover, .dropdown .dropdown-wrap .dropdown-text:focus, .dropdown .dropdown-wrap .dropdown-text:focus-within {
-    @apply text-secondary-600;
+  .dropdown .dropdown-wrap:hover .dropdown-text, .dropdown .dropdown-wrap:focus .dropdown-text, .dropdown .dropdown-wrap:focus-within .dropdown-text {
+    @apply text-primary-600;
   }
   .dropdown .dropdown-wrap .dropdown-wrap-icon {
     @apply inline-block transform transition-all duration-300 ease-in-out;
@@ -2068,7 +2080,7 @@
     @apply my-2 mx-6 border-t-2 border-gray-200;
   }
   .dropdown .dropdown-content .dropdown-title {
-    @apply font-semibold px-4 mb-2 text-xs text-gray-600/50 uppercase;
+    @apply font-semibold px-4 my-2 text-xs text-gray-600/50 uppercase;
   }
   .dropdown .dropdown-content.is-fade-up {
     top: 200%;
@@ -2076,6 +2088,12 @@
   .dropdown .user-dropdown,
   .dropdown .wrap-text {
     @apply flex items-center justify-between w-full;
+  }
+  .dropdown .user-dropdown:hover, .dropdown .user-dropdown:focus, .dropdown .user-dropdown:focus-within,
+  .dropdown .wrap-text:hover,
+  .dropdown .wrap-text:focus,
+  .dropdown .wrap-text:focus-within {
+    @apply text-primary-600;
   }
   .dropdown svg {
     @apply ml-2 transition-all duration-200 ease-in-out;
@@ -2099,6 +2117,30 @@
   }
   .dropdown.has-large-text .dropdown-content .dropdown-item, .dropdown.has-large-text .dropdown-content button {
     @apply whitespace-nowrap;
+  }
+  .dropdown.dropdown-primary .dropdown-wrap {
+    @apply hover:bg-primary-50;
+  }
+  .dropdown.dropdown-primary .dropdown-content .dropdown-item:hover {
+    @apply bg-primary-600 text-white;
+  }
+  .dropdown.dropdown-secondary .dropdown-wrap {
+    @apply hover:bg-secondary-50;
+  }
+  .dropdown.dropdown-secondary .dropdown-wrap:hover .dropdown-text, .dropdown.dropdown-secondary .dropdown-wrap:focus .dropdown-text, .dropdown.dropdown-secondary .dropdown-wrap:focus-within .dropdown-text {
+    @apply text-secondary-600;
+  }
+  .dropdown.dropdown-secondary .dropdown-content .dropdown-item:hover {
+    @apply bg-secondary-600 text-white;
+  }
+  .dropdown.dropdown-tertiary .dropdown-wrap {
+    @apply hover:bg-tertiary-50;
+  }
+  .dropdown.dropdown-tertiary .dropdown-wrap:hover .dropdown-text, .dropdown.dropdown-tertiary .dropdown-wrap:focus .dropdown-text, .dropdown.dropdown-tertiary .dropdown-wrap:focus-within .dropdown-text {
+    @apply text-tertiary-600;
+  }
+  .dropdown.dropdown-tertiary .dropdown-content .dropdown-item:hover {
+    @apply bg-tertiary-600 text-white;
   }
   .gallery {
     @apply grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-5;
