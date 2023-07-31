@@ -1,5 +1,5 @@
 /*!
- * Not Idea UI 2.2.2 (https://not-idea-ui.netlify.app/)
+ * Not Idea UI 2.2.3 (https://not-idea-ui.netlify.app/)
 */
 
 .container {
@@ -4722,11 +4722,9 @@ table td, table th,
   border-bottom-left-radius: 9999px;
   background-image: linear-gradient(to top right, var(--tw-gradient-stops));
   --tw-gradient-from: #90fff3 var(--tw-gradient-from-position);
-  --tw-gradient-from-position:  ;
-  --tw-gradient-to: rgb(144 255 243 / 0)  var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(144 255 243 / 0) var(--tw-gradient-to-position);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
   --tw-gradient-to: #057f80 var(--tw-gradient-to-position);
-  --tw-gradient-to-position:  ;
   --tw-content: "";
   content: var(--tw-content);
 }
@@ -4774,11 +4772,9 @@ table td, table th,
   height: 7.25rem;
   background-image: linear-gradient(to top, var(--tw-gradient-stops));
   --tw-gradient-from: #4d9fe4 var(--tw-gradient-from-position);
-  --tw-gradient-from-position:  ;
-  --tw-gradient-to: rgb(77 159 228 / 0)  var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(77 159 228 / 0) var(--tw-gradient-to-position);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
   --tw-gradient-to: #2c5aa1 var(--tw-gradient-to-position);
-  --tw-gradient-to-position:  ;
   --tw-content: "";
   content: var(--tw-content);
 }
