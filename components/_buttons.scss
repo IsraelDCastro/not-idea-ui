@@ -588,6 +588,174 @@
     }
   }
 
+  &.button-gray {
+    @apply bg-gray-500 border-gray-500 text-white;
+    &:hover {
+      @apply bg-gray-700 border-gray-700;
+    }
+
+    &.semi-transparent {
+      @apply bg-gray-400 border-gray-400 bg-opacity-20 border-opacity-20 text-gray-700;
+      &:hover {
+        @apply bg-opacity-70 border-opacity-70;
+      }
+    }
+
+    &.link {
+      @apply bg-transparent border-transparent text-gray-700;
+      &:hover {
+        @apply bg-gray-700 border-gray-700 text-white;
+      }
+    }
+  }
+
+  &.button-gray-outline {
+    @apply border-gray-500 text-gray-500 bg-transparent ;
+    &:hover {
+      @apply bg-gray-700 border-gray-700 text-white;
+    }
+  }
+
+  &.button-gray-flat {
+    @apply bg-gray-500 border-gray-500 text-white rounded-none;
+    &:hover {
+      @apply bg-gray-700 border-gray-700;
+    }
+
+    &.semi-transparent {
+      @apply bg-gray-400 border-gray-400 bg-opacity-20 border-opacity-20 text-gray-700;
+      &:hover {
+        @apply bg-opacity-70 border-opacity-70;
+      }
+    }
+
+    &.link {
+      @apply bg-transparent border-transparent text-gray-700;
+      &:hover {
+        @apply bg-gray-700 border-gray-700 text-white;
+      }
+    }
+  }
+
+  &.button-gray-flat-outline {
+    @apply border-gray-500 text-gray-500 bg-transparent rounded-none;
+    &:hover {
+      @apply bg-gray-700 border-gray-700 text-white;
+    }
+  }
+
+  &.button-gray-rounded {
+    @apply bg-gray-500 border-gray-500 rounded-3xl text-white;
+    &:hover {
+      @apply bg-gray-700 border-gray-700;
+    }
+
+    &.semi-transparent {
+      @apply bg-gray-400 border-gray-400 bg-opacity-20 border-opacity-20 text-gray-700;
+      &:hover {
+        @apply bg-opacity-70 border-opacity-70;
+      }
+    }
+
+    &.link {
+      @apply bg-transparent border-transparent text-gray-700;
+      &:hover {
+        @apply bg-gray-700 border-gray-700 text-white;
+      }
+    }
+  }
+
+  &.button-gray-rounded-outline {
+    @apply border-gray-500 text-gray-500 bg-transparent rounded-3xl;
+    &:hover {
+      @apply bg-gray-700 border-gray-700 text-white;
+    }
+  }
+
+  &.button-dark {
+    @apply bg-zinc-700 border-zinc-700 text-white;
+    &:hover {
+      @apply bg-zinc-900 border-zinc-900;
+    }
+
+    &.semi-transparent {
+      @apply bg-zinc-500 border-zinc-500 bg-opacity-20 border-opacity-20 text-zinc-900;
+      &:hover {
+        @apply bg-opacity-70 border-opacity-70;
+      }
+    }
+
+    &.link {
+      @apply bg-transparent border-transparent text-zinc-900;
+      &:hover {
+        @apply bg-zinc-900 border-zinc-900 text-white;
+      }
+    }
+  }
+
+  &.button-dark-outline {
+    @apply border-zinc-700 text-zinc-700 bg-transparent ;
+    &:hover {
+      @apply bg-zinc-900 border-zinc-900 text-white;
+    }
+  }
+
+  &.button-dark-flat {
+    @apply bg-zinc-700 border-zinc-700 text-white rounded-none;
+    &:hover {
+      @apply bg-zinc-900 border-zinc-900;
+    }
+
+    &.semi-transparent {
+      @apply bg-zinc-500 border-zinc-500 bg-opacity-20 border-opacity-20 text-zinc-900;
+      &:hover {
+        @apply bg-opacity-70 border-opacity-70;
+      }
+    }
+
+    &.link {
+      @apply bg-transparent border-transparent text-zinc-900;
+      &:hover {
+        @apply bg-zinc-900 border-zinc-900 text-white;
+      }
+    }
+  }
+
+  &.button-dark-flat-outline {
+    @apply border-zinc-700 text-zinc-700 bg-transparent rounded-none;
+    &:hover {
+      @apply bg-zinc-900 border-zinc-900 text-white;
+    }
+  }
+
+  &.button-dark-rounded {
+    @apply bg-zinc-700 border-zinc-700 rounded-3xl text-white;
+    &:hover {
+      @apply bg-zinc-900 border-zinc-900;
+    }
+
+    &.semi-transparent {
+      @apply bg-zinc-500 border-zinc-500 bg-opacity-20 border-opacity-20 text-zinc-900;
+      &:hover {
+        @apply bg-opacity-70 border-opacity-70;
+      }
+    }
+
+    &.link {
+      @apply bg-transparent border-transparent text-zinc-900;
+      &:hover {
+        @apply bg-zinc-900 border-zinc-900 text-white;
+      }
+    }
+  }
+
+  &.button-dark-rounded-outline {
+    @apply border-zinc-700 text-zinc-700 bg-transparent rounded-3xl;
+    &:hover {
+      @apply bg-zinc-900 border-zinc-900 text-white;
+    }
+  }
+
 
   &.is-small {
     @apply text-sm px-3 py-1;
@@ -612,9 +780,6 @@
       @apply w-10 h-10 text-2xl;
     }
     i, span { @apply leading-none }
-  }
-
-  &.semi-transparent {
   }
 
   &[disabled] {

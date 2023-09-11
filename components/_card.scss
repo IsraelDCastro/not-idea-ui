@@ -197,6 +197,29 @@
       }
     }
   }
+  &.card-animated-hover {
+    @apply p-4 h-[22rem] md:h-80 overflow-visible transition-all duration-300 ease-in-out;
+    * {
+      @apply transition-all duration-300 ease-in-out;
+    }
+    .card-image {
+      @apply relative z-1 w-full h-48 overflow-hidden rounded;
+    }
+    .card-content {
+      @apply px-0 py-5;
+      & *:not(.card-title) {
+        @apply opacity-0;
+      }
+    }
+    &:hover {
+      .card-image {
+        @apply -mt-20;
+      }
+      & *:not(.card-title) {
+        @apply opacity-100;
+      }
+    }
+  }
   &.card-product {
     @apply relative;
     .card-image {

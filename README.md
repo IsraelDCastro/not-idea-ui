@@ -1,7 +1,3 @@
----
-description: "Not Idea UI is an Open Source CSS framework based and created with TailwindCSS, with components created to use everywhere, easily and simply."
----
-
 # Installation
 
 You have different options to install it with **npm or yarn**.

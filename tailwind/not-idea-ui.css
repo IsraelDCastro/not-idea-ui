@@ -1,5 +1,5 @@
 /*!
- * Not Idea UI 2.2.3 (https://not-idea-ui.netlify.app/)
+ * Not Idea UI 2.2.5 (https://not-idea-ui.netlify.app/)
 */
 @tailwind components;
 @layer components {
@@ -1606,6 +1606,150 @@
   .button.button-info-rounded-outline:hover {
     @apply bg-blue-500 border-blue-500 text-white;
   }
+  .button.button-gray {
+    @apply bg-gray-500 border-gray-500 text-white;
+  }
+  .button.button-gray:hover {
+    @apply bg-gray-700 border-gray-700;
+  }
+  .button.button-gray.semi-transparent {
+    @apply bg-gray-400 border-gray-400 bg-opacity-20 border-opacity-20 text-gray-700;
+  }
+  .button.button-gray.semi-transparent:hover {
+    @apply bg-opacity-70 border-opacity-70;
+  }
+  .button.button-gray.link {
+    @apply bg-transparent border-transparent text-gray-700;
+  }
+  .button.button-gray.link:hover {
+    @apply bg-gray-700 border-gray-700 text-white;
+  }
+  .button.button-gray-outline {
+    @apply border-gray-500 text-gray-500 bg-transparent;
+  }
+  .button.button-gray-outline:hover {
+    @apply bg-gray-700 border-gray-700 text-white;
+  }
+  .button.button-gray-flat {
+    @apply bg-gray-500 border-gray-500 text-white rounded-none;
+  }
+  .button.button-gray-flat:hover {
+    @apply bg-gray-700 border-gray-700;
+  }
+  .button.button-gray-flat.semi-transparent {
+    @apply bg-gray-400 border-gray-400 bg-opacity-20 border-opacity-20 text-gray-700;
+  }
+  .button.button-gray-flat.semi-transparent:hover {
+    @apply bg-opacity-70 border-opacity-70;
+  }
+  .button.button-gray-flat.link {
+    @apply bg-transparent border-transparent text-gray-700;
+  }
+  .button.button-gray-flat.link:hover {
+    @apply bg-gray-700 border-gray-700 text-white;
+  }
+  .button.button-gray-flat-outline {
+    @apply border-gray-500 text-gray-500 bg-transparent rounded-none;
+  }
+  .button.button-gray-flat-outline:hover {
+    @apply bg-gray-700 border-gray-700 text-white;
+  }
+  .button.button-gray-rounded {
+    @apply bg-gray-500 border-gray-500 rounded-3xl text-white;
+  }
+  .button.button-gray-rounded:hover {
+    @apply bg-gray-700 border-gray-700;
+  }
+  .button.button-gray-rounded.semi-transparent {
+    @apply bg-gray-400 border-gray-400 bg-opacity-20 border-opacity-20 text-gray-700;
+  }
+  .button.button-gray-rounded.semi-transparent:hover {
+    @apply bg-opacity-70 border-opacity-70;
+  }
+  .button.button-gray-rounded.link {
+    @apply bg-transparent border-transparent text-gray-700;
+  }
+  .button.button-gray-rounded.link:hover {
+    @apply bg-gray-700 border-gray-700 text-white;
+  }
+  .button.button-gray-rounded-outline {
+    @apply border-gray-500 text-gray-500 bg-transparent rounded-3xl;
+  }
+  .button.button-gray-rounded-outline:hover {
+    @apply bg-gray-700 border-gray-700 text-white;
+  }
+  .button.button-dark {
+    @apply bg-zinc-700 border-zinc-700 text-white;
+  }
+  .button.button-dark:hover {
+    @apply bg-zinc-900 border-zinc-900;
+  }
+  .button.button-dark.semi-transparent {
+    @apply bg-zinc-500 border-zinc-500 bg-opacity-20 border-opacity-20 text-zinc-900;
+  }
+  .button.button-dark.semi-transparent:hover {
+    @apply bg-opacity-70 border-opacity-70;
+  }
+  .button.button-dark.link {
+    @apply bg-transparent border-transparent text-zinc-900;
+  }
+  .button.button-dark.link:hover {
+    @apply bg-zinc-900 border-zinc-900 text-white;
+  }
+  .button.button-dark-outline {
+    @apply border-zinc-700 text-zinc-700 bg-transparent;
+  }
+  .button.button-dark-outline:hover {
+    @apply bg-zinc-900 border-zinc-900 text-white;
+  }
+  .button.button-dark-flat {
+    @apply bg-zinc-700 border-zinc-700 text-white rounded-none;
+  }
+  .button.button-dark-flat:hover {
+    @apply bg-zinc-900 border-zinc-900;
+  }
+  .button.button-dark-flat.semi-transparent {
+    @apply bg-zinc-500 border-zinc-500 bg-opacity-20 border-opacity-20 text-zinc-900;
+  }
+  .button.button-dark-flat.semi-transparent:hover {
+    @apply bg-opacity-70 border-opacity-70;
+  }
+  .button.button-dark-flat.link {
+    @apply bg-transparent border-transparent text-zinc-900;
+  }
+  .button.button-dark-flat.link:hover {
+    @apply bg-zinc-900 border-zinc-900 text-white;
+  }
+  .button.button-dark-flat-outline {
+    @apply border-zinc-700 text-zinc-700 bg-transparent rounded-none;
+  }
+  .button.button-dark-flat-outline:hover {
+    @apply bg-zinc-900 border-zinc-900 text-white;
+  }
+  .button.button-dark-rounded {
+    @apply bg-zinc-700 border-zinc-700 rounded-3xl text-white;
+  }
+  .button.button-dark-rounded:hover {
+    @apply bg-zinc-900 border-zinc-900;
+  }
+  .button.button-dark-rounded.semi-transparent {
+    @apply bg-zinc-500 border-zinc-500 bg-opacity-20 border-opacity-20 text-zinc-900;
+  }
+  .button.button-dark-rounded.semi-transparent:hover {
+    @apply bg-opacity-70 border-opacity-70;
+  }
+  .button.button-dark-rounded.link {
+    @apply bg-transparent border-transparent text-zinc-900;
+  }
+  .button.button-dark-rounded.link:hover {
+    @apply bg-zinc-900 border-zinc-900 text-white;
+  }
+  .button.button-dark-rounded-outline {
+    @apply border-zinc-700 text-zinc-700 bg-transparent rounded-3xl;
+  }
+  .button.button-dark-rounded-outline:hover {
+    @apply bg-zinc-900 border-zinc-900 text-white;
+  }
   .button.is-small {
     @apply text-sm px-3 py-1;
   }
@@ -1896,6 +2040,27 @@
     @apply bottom-0;
   }
   .card.card-image-hover:hover .card-content p, .card.card-image-hover:hover .card-content a {
+    @apply opacity-100;
+  }
+  .card.card-animated-hover {
+    @apply p-4 h-[22rem] md:h-80 overflow-visible transition-all duration-300 ease-in-out;
+  }
+  .card.card-animated-hover * {
+    @apply transition-all duration-300 ease-in-out;
+  }
+  .card.card-animated-hover .card-image {
+    @apply relative z-1 w-full h-48 overflow-hidden rounded;
+  }
+  .card.card-animated-hover .card-content {
+    @apply px-0 py-5;
+  }
+  .card.card-animated-hover .card-content *:not(.card-title) {
+    @apply opacity-0;
+  }
+  .card.card-animated-hover:hover .card-image {
+    @apply -mt-20;
+  }
+  .card.card-animated-hover:hover *:not(.card-title) {
     @apply opacity-100;
   }
   .card.card-product {
