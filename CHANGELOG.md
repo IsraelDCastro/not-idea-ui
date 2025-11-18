@@ -1,6 +1,15 @@
 # Not Idea UI Changelog
 
 ---
+### Version 3.0.0 (unreleased)
+
+- Migración del build a Vite 7 en modo librería compatible con Tailwind CSS v4 (`@tailwindcss/vite`).
+- Nuevos bundles públicos: `dist/css/not-idea-ui.css`, `dist/css/not-idea-ui.min.css` y fuentes raw preservadas en `dist/tailwind/`.
+- Playground actualizado (React + React Router 7) con selector de tema para validar componentes.
+- Documentación renovada con secciones de theming, rutas de importación y requisitos Node 20+/Bun.
+- Stylelint + lint-staged + simple-git-hooks y workflow de GitHub Actions para validar lint y build automáticamente.
+
+---
 ### Version 2.2.0
 
 - Add default font-familty to tailwind.config.cjs

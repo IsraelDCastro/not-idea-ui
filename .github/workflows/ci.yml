@@ -1,0 +1,31 @@
+name: CI
+
+on:
+  push:
+    branches: ["main", "master"]
+  pull_request:
+    branches: ["*"]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20.19.0
+          cache: "npm"
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Lint CSS sources
+        run: npm run lint:css
+
+      - name: Build library bundle
+        run: npm run build
+

@@ -1,0 +1,29 @@
+/*!
+ * Not Idea UI 2.3.0 (https://not-idea-ui.netlify.app/)
+*/
+@import "tailwindcss";
+@import "./theme.css";
+
+@import "./layouts/_footer.css";
+@import "./layouts/_form.css";
+@import "./layouts/_navbar.css";
+@import "./layouts/_sidebar.css";
+@import "./layouts/_table.css";
+
+@import "./components/_accordion.css";
+@import "./components/_alerts.css";
+@import "./components/_badges.css";
+@import "./components/_breadcrumb.css";
+@import "./components/_buttons.css";
+@import "./components/_card.css";
+@import "./components/_carousel.css";
+@import "./components/_comments.css";
+@import "./components/_dropdown.css";
+@import "./components/_gallery.css";
+@import "./components/_images.css";
+@import "./components/_lists.css";
+@import "./components/_modal.css";
+@import "./components/_pagination.css";
+@import "./components/_progress.css";
+@import "./components/_tab.css";
+@import "./components/_tooltips.css";
