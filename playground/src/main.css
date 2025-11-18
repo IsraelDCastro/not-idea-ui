@@ -1,0 +1,93 @@
+:root {
+  color-scheme: light;
+  font-family: var(--font-sans, "Inter", system-ui, sans-serif);
+  background-color: #f8fafc;
+  color: #0f172a;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-color: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+code {
+  font-family: "Source Code Pro", "Fira Mono", "Menlo", monospace;
+  background: rgba(15, 23, 42, 0.08);
+  padding: 0.15rem 0.35rem;
+  border-radius: 0.35rem;
+}
+
+.app-shell {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  min-height: 100vh;
+}
+
+.app-header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  backdrop-filter: blur(12px);
+  background: rgba(248, 250, 252, 0.85);
+  border-bottom: 1px solid rgba(15, 23, 42, 0.08);
+}
+
+.app-content {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+@media (max-width: 960px) {
+  .app-content {
+    grid-template-columns: 1fr;
+  }
+}
+
+.sidebar-nav {
+  position: sticky;
+  top: 5.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.sidebar-link {
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  transition: background-color 150ms ease, color 150ms ease;
+}
+
+.sidebar-link.active {
+  background-color: rgba(37, 99, 235, 0.12);
+  color: rgba(29, 78, 216, 1);
+}
+
+.content-card {
+  background: #fff;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  box-shadow: 0 24px 50px -30px rgba(15, 23, 42, 0.35);
+  border: 1px solid rgba(15, 23, 42, 0.05);
+}
+
+.component-grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.component-grid.columns-2 {
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.component-grid.columns-3 {
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+}

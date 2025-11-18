@@ -1,15 +1,54 @@
 {
   "name": "not-idea-ui",
-  "version": "2.2.5",
-  "description": "A Framework UI to start making beautiful things. Based and created with TailwindCSS.",
-  "type": "module",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "version": "3.0.0",
+  "packageManager": "bun@1.2.2",
+  "author": {
+    "name": "Israel De Castro Alfonso",
+    "email": "israeldalfons@gmail.com",
+    "url": "https://castrodev.netlify.app/"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/IsraelDCastro/not-idea-ui.git"
   },
+  "engines": {
+    "node": ">=20.19.0",
+    "bun": ">=1.0.0"
+  },
+  "files": [
+    "dist/**/*"
+  ],
+  "sideEffects": [
+    "**/*.css"
+  ],
+  "exports": {
+    "./css/not-idea-ui.css": "./dist/css/not-idea-ui.css",
+    "./css/not-idea-ui.min.css": "./dist/css/not-idea-ui.min.css",
+    "./tailwind/not-idea-ui.css": "./dist/tailwind/not-idea-ui.css",
+    "./package.json": "./package.json"
+  },
+  "style": "dist/css/not-idea-ui.css",
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.1.16",
+    "lint-staged": "^15.2.10",
+    "lightningcss": "^1.30.2",
+    "rimraf": "^6.1.0",
+    "simple-git-hooks": "^2.10.0",
+    "stylelint": "^16.11.0",
+    "stylelint-config-standard": "^36.0.0",
+    "stylelint-config-tailwindcss": "^0.0.8",
+    "stylelint-order": "^6.0.4",
+    "tailwindcss": "^4.1.16",
+    "vite": "^7.1.12"
+  },
+  "peerDependencies": {
+    "tailwindcss": "^4.1.0"
+  },
+  "bugs": {
+    "url": "https://github.com/IsraelDCastro/not-idea-ui/issues"
+  },
+  "description": "A Framework UI to start making beautiful things. Based and created with TailwindCSS.",
+  "homepage": "https://not-idea-ui.netlify.app/",
   "keywords": [
     "css",
     "sass",
@@ -22,26 +61,24 @@
     "tailwind",
     "tailwindcss"
   ],
-  "author": {
-    "name": "Israel De Castro Alfonso",
-    "email": "israeldalfons@gmail.com",
-    "url": "https://castrodev.netlify.app/"
-  },
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/IsraelDCastro/not-idea-ui/issues"
+  "scripts": {
+    "build": "rimraf dist && vite build && node scripts/build-raw-alias.mjs && node scripts/minify-css.mjs",
+    "build:lib": "vite build",
+    "build:raw:alias": "node scripts/build-raw-alias.mjs",
+    "build:min": "node scripts/minify-css.mjs",
+    "lint": "stylelint \"src/**/*.css\" \"playground/src/**/*.css\"",
+    "lint:css": "stylelint \"src/**/*.css\" \"playground/src/**/*.css\"",
+    "prepare": "simple-git-hooks",
+    "dev": "vite",
+    "preview": "vite preview",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "homepage": "https://not-idea-ui.netlify.app/",
-  "dependencies": {
-    "autoprefixer": "^10.4.7",
-    "postcss": "^8.4.14"
+  "lint-staged": {
+    "**/*.css": "stylelint --fix"
   },
-  "peerDependencies": {
-    "autoprefixer": "^10.4.7",
-    "postcss": "^8.4.14",
-    "tailwindcss": "^3.2.4"
+  "simple-git-hooks": {
+    "pre-commit": "npx lint-staged"
   },
-  "devDependencies": {
-    "tailwindcss": "^3.2.4"
-  }
+  "type": "module"
 }
